@@ -12,7 +12,7 @@ parts:
     chapters:
     - file: programming/programming # chapters need at least one file before sections.
       sections:
-  #    - glob: programming/* # cannot decide the order of files
+#      - glob: programming/* # cannot decide the order of files
       - file: programming/packageManager
       - file: programming/linux
       - file: programming/alias
