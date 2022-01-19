@@ -105,7 +105,7 @@ pip install jupyterlab
 Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is different from usual python packages.
 Scipy, which is for scientific computing, is also a useful package for some people.
 Now you can see many packages in your test virtual env; try pip freeze, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with  jupyter-lab.
-To deactivate the virtual env, just input: deactivate in the terminal. To activate again; source test/bin/activate.
+To deactivate the virtual env, just input: `deactivate` in the terminal. To activate again; `source test/bin/activate`.
 
 ## Let's use jupyter-lab!
 You installed jupyter-lab, so let's try to use it !!
@@ -117,5 +117,4 @@ Your Safari or Chrome will show up and open jupyter-lab.
 
 To deactivate juypter-lab (not virtual env), in the Terminal; Control + c and you will be asked whether to quit, so enter y [yes]. 
 For more details, see Python page.
-Pyenv
 
