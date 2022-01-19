@@ -1,0 +1,66 @@
+# Table of contents
+format: jb-book
+root: intro
+
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: false
+options:   # The options key will be applied to all chapters, but not sub-sections
+  numbered: 3
+
+parts:
+  - caption: a # capital letters. when remove captions, need to lower a tab.
+    chapters:
+    - file: programming/programming # chapters need at least one file before sections.
+      sections:
+  #    - glob: programming/* # cannot decide the order of files
+      - file: programming/packageManager
+      - file: programming/linux
+      - file: programming/alias
+      - file: programming/github/github
+      - file: programming/github/commitMessage
+      - file: programming/path
+      - file: programming/jb
+      - file: others/myst
+      - file: programming/vscodeExtensions
+      - file: programming/python
+      - file: programming/numericalCalc
+
+  - caption: b
+    chapters:
+    - file: others/others
+      sections:
+#      - glob: others/*
+      - file: others/usefulMacApps/usefulMacApps
+      - file: others/zotero/zotero
+#      - file: others/Latex
+
+
+
+# Examples of structure of jupyter-book
+
+# ex1
+# format: jb-book
+# root: index
+# parts:
+#   - caption: Name of Part 1
+#     chapters:
+#     - file: path/to/part1/chapter1
+#     - file: path/to/part1/chapter2
+#       sections:
+#       - file: path/to/part1/chapter2/section1
+#   - caption: Name of Part 2
+#     chapters:
+#     - file: path/to/part2/chapter1
+#     - file: path/to/part2/chapter2
+#       sections:
+#       - file: path/to/part2/chapter2/section1
+
+# ex2
+# format: jb-book
+# root: index
+# chapters:
+# - file: path/to/chapter1
+# - url: https://example.com # When a title: entry is provided its text is used instead of the full URL.
+#   title: Example website 
+# - glob: subfolder/*
+
