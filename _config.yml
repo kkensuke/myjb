@@ -78,7 +78,7 @@ html:
   comments:
     hypothesis              : true
     utterances:
-      repo                  : "kk564/jb-test"
+      repo                  : "kk564/myjb"
 
 #######################################################################################
 # LaTeX-specific settings
@@ -106,7 +106,7 @@ launch_buttons:
 
 repository:                           # Information about where the book exists on the web
   url                       : https://github.com/kk564/jb-test  # The URL to your book's repository
-  path_to_book              : _build/html     # A path to your book's folder, relative to the repository root.
+  path_to_book              : doc     # A path to your book's folder, relative to the repository root.
   branch                    : main    # Which branch of the repository should be used when creating links
 
 #######################################################################################
