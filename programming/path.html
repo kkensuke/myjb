@@ -1,0 +1,525 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PATH as an environmental variable &#8212; My Jupyter Book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "kk564/jb-test");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Jupyter book" href="jb.html" />
+    <link rel="prev" title="Commit Masssages with emoji" href="github/commitMessage.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CEP1WDLLCF"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-CEP1WDLLCF');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  a
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="programming.html">
+   Programming
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="packageManager.html">
+     Package Manager and Virtual Environment
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="linux.html">
+     Linux/Unix
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alias.html">
+     Alias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github/commitMessage.html">
+     Commit Masssages with emoji
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     PATH as an environmental variable
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jb.html">
+     Jupyter book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/myst.html">
+     MyST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vscodeExtensions.html">
+     VScode extensions and settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="numericalCalc.html">
+     Numerical Calculation using Scipy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  b
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../others/others.html">
+   Others
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/usefulMacApps/usefulMacApps.html">
+     Useful Mac Apps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/zotero/zotero.html">
+     How to use Zotero
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/programming/path.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/kk564/jb-test"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/kk564/jb-test/issues/new?title=Issue%20on%20page%20%2Fprogramming/path.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/kk564/jb-test/edit/main/_build/html/programming/path.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-command-search-path">
+   Add command search path
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environmental-variables">
+   Environmental variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
+     make a new environmental variable
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remove-a-environmental-variable">
+     Remove a environmental variable
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>PATH as an environmental variable</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-command-search-path">
+   Add command search path
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#environmental-variables">
+   Environmental variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-a-new-environmental-variable">
+     make a new environmental variable
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remove-a-environmental-variable">
+     Remove a environmental variable
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="path-as-an-environmental-variable">
+<h1>PATH as an environmental variable<a class="headerlink" href="#path-as-an-environmental-variable" title="Permalink to this headline">¶</a></h1>
+<p>A path usually indicates a string to identify a location of a file/directory in a directory tree.
+PATH is one of the environmental variables and different from a path explained above.</p>
+<p>When you input a command in the shell, the shell have to find and run the command. PATH specify the places your shell should search for a command you input.</p>
+<p>To see the PATH, run <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span></code>:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<span class="c1"># /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</span>
+</pre></div>
+</div>
+<p>The result shows PATH holds some directories (colon is a separator): <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/bin</span></code>, <code class="docutils literal notranslate"><span class="pre">/usr/sbin</span></code>, <code class="docutils literal notranslate"><span class="pre">/sbin</span></code></p>
+<p>When you input a command, the shell searches <code class="docutils literal notranslate"><span class="pre">/usr/local/bin</span></code> at first. If the shell finds a command, it run the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/usr/bin</span></code>. If it finds the command, it run the command. If not, then it searches <code class="docutils literal notranslate"><span class="pre">/bin</span></code>. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, shell returns <code class="docutils literal notranslate"><span class="pre">zsh:</span> <span class="pre">command</span> <span class="pre">not</span> <span class="pre">found:</span> <span class="pre">xxx</span></code>.</p>
+<p>Command <code class="docutils literal notranslate"><span class="pre">which</span></code> shows the directories where (for example) the <code class="docutils literal notranslate"><span class="pre">ls</span></code> is.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>which ls
+<span class="c1"># /bin/ls</span>
+</pre></div>
+</div>
+<div class="section" id="add-command-search-path">
+<h2>Add command search path<a class="headerlink" href="#add-command-search-path" title="Permalink to this headline">¶</a></h2>
+<p>Add the following code in one of ~/.zshrc, ~/.bashrc, ~/.bash_profile.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span><span class="nv">$PATH</span>:&lt;<span class="nb">command</span> search path&gt;
+<span class="o">(</span>or <span class="nb">export</span> <span class="nv">PATH</span><span class="o">=</span>&lt;<span class="nb">command</span> search path&gt;:<span class="nv">$PATH</span><span class="o">)</span>
+</pre></div>
+</div>
+<p>and save ths changes.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">source</span> ~/.zshrc
+<span class="nb">source</span> ~/.bashrc
+<span class="nb">source</span> ~/.bash_profile
+</pre></div>
+</div>
+</div>
+<div class="section" id="environmental-variables">
+<h2>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> -p
+...
+<span class="nb">export</span> <span class="nv">LC_CTYPE</span><span class="o">=</span>UTF-8
+<span class="nb">export</span> -T PATH <span class="nv">path</span><span class="o">=(</span> /usr/local/bin /usr/bin /bin /usr/sbin /sbin <span class="o">)</span>
+<span class="nb">export</span> <span class="nv">TERM_PROGRAM</span><span class="o">=</span>Apple_Terminal
+...
+</pre></div>
+</div>
+<div class="section" id="make-a-new-environmental-variable">
+<h3>make a new environmental variable<a class="headerlink" href="#make-a-new-environmental-variable" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">US</span><span class="o">=</span>/usr/sbin
+<span class="nb">echo</span> <span class="nv">$US</span>
+<span class="c1"># /usr/sbin</span>
+</pre></div>
+</div>
+<p>each command shows the same results</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls /usr/sbin
+ls <span class="nv">$US</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="remove-a-environmental-variable">
+<h3>Remove a environmental variable<a class="headerlink" href="#remove-a-environmental-variable" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">unset</span> <span class="nv">$US</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "kk564/jb-test",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./programming"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="github/commitMessage.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Commit Masssages with emoji</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="jb.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Jupyter book</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By kk564<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
