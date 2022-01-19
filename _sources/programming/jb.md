@@ -33,7 +33,7 @@ You can see you are using python in venv.
 $ /Users/<home>/jupyter-book/test-book/.venv/bin/python3 -m pip install --upgrade pip
 ```
 
-install jupyter-book package
+Install jupyter-book package
 ```zsh
 (venv)$ pip install -U jupyter-book
 ```
@@ -48,8 +48,8 @@ $ open /Applications/Safari.app _build/html/index.html
 (jb short for jupyter-book)
 
 ## Publish
-First, make a repository named `test-book` on GitHub website without initializing.
-Second, execute the commands below on your local computer
+First, we make a repository named `test-book` on GitHub website without initializing.
+Second, we execute the commands below on your local computer
 ```zsh
 echo "# test-book" >> README.md
 git init
@@ -66,12 +66,12 @@ $ pip install ghp-import
 $ ghp-import -n -p -f _build/html
 ```
 
-you can see the published website!
-https://<Username>.github.io/test-book
+You can see the published website!
+https://Username.github.io/test-book
 
 
 ## Update
-update source code
+Update source code
 ```zsh
 $ cd test-book
 $ jb build --all .
@@ -80,7 +80,7 @@ $ git commit -m "comment"
 $ git push origin main
 ```
 
-update GitHub Pages
+Update GitHub Pages
 ```zsh
 $ ghp-import -n -p -f _build/html
 ```
