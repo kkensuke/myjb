@@ -131,7 +131,7 @@ alias acv='source venv/bin/activate'
 alias deac='deactivate'
 ```
 
-(jbgh)=
+
 ### make venv and create jupyter-book
 ```
 mkvjb() {
@@ -154,7 +154,7 @@ mkvjb() {
 	    ├── .venv
 	    └── test-book
 ```
-
+(jbgh)=
 ### build and publish jupyter-book
 ```
 jbgh(){

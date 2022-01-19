@@ -298,7 +298,7 @@ commentsRunWhenDOMLoaded(addUtterances);
             href="https://github.com/kk564/myjb/issues/new?title=Issue%20on%20page%20%2Fprogramming/jb.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/kk564/myjb/edit/main/doc/programming/jb.md"><button
+        <a class="edit-button" href="https://github.com/kk564/myjb/edit/main//programming/jb.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -481,7 +481,7 @@ $ <span class="nb">source</span> venv/bin/activate
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ /Users/&lt;home&gt;/jupyter-book/test-book/.venv/bin/python3 -m pip install --upgrade pip
 </pre></div>
 </div>
-<p>install jupyter-book package</p>
+<p>Install jupyter-book package</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="o">(</span>venv<span class="o">)</span>$ pip install -U jupyter-book
 </pre></div>
 </div>
@@ -499,8 +499,8 @@ $ open /Applications/Safari.app _build/html/index.html
 </div>
 <div class="section" id="publish">
 <h2>Publish<a class="headerlink" href="#publish" title="Permalink to this headline">¶</a></h2>
-<p>First, make a repository named <code class="docutils literal notranslate"><span class="pre">test-book</span></code> on GitHub website without initializing.
-Second, execute the commands below on your local computer</p>
+<p>First, we make a repository named <code class="docutils literal notranslate"><span class="pre">test-book</span></code> on GitHub website without initializing.
+Second, we execute the commands below on your local computer</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;# test-book&quot;</span> &gt;&gt; README.md
 git init
 git add .
@@ -515,12 +515,12 @@ git push -u origin main
 $ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
-<p>you can see the published website!
-https://<Username>.github.io/test-book</p>
+<p>You can see the published website!
+<a class="reference external" href="https://Username.github.io/test-book">https://Username.github.io/test-book</a></p>
 </div>
 <div class="section" id="update">
 <h2>Update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h2>
-<p>update source code</p>
+<p>Update source code</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ <span class="nb">cd</span> test-book
 $ jb build --all .
 $ git add .
@@ -528,7 +528,7 @@ $ git commit -m <span class="s2">&quot;comment&quot;</span>
 $ git push origin main
 </pre></div>
 </div>
-<p>update GitHub Pages</p>
+<p>Update GitHub Pages</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ ghp-import -n -p -f _build/html
 </pre></div>
 </div>
