@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linux/Unix &#8212; My Jupyter Book</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
+    <script kind="utterances">
+
+    var commentsRunWhenDOMLoaded = cb => {
+    if (document.readyState != 'loading') {
+        cb()
+    } else if (document.addEventListener) {
+        document.addEventListener('DOMContentLoaded', cb)
+    } else {
+        document.attachEvent('onreadystatechange', function() {
+        if (document.readyState == 'complete') cb()
+        })
+    }
+}
+
+var addUtterances = () => {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = "https://utteranc.es/client.js";
+    script.async = "async";
+
+    script.setAttribute("repo", "kk564/jb-test");
+    script.setAttribute("issue-term", "pathname");
+    script.setAttribute("theme", "github-light");
+    script.setAttribute("label", "💬 comment");
+    script.setAttribute("crossorigin", "anonymous");
+
+    sections = document.querySelectorAll("div.section");
+    if (sections !== null) {
+        section = sections[sections.length-1];
+        section.appendChild(script);
+    }
+}
+commentsRunWhenDOMLoaded(addUtterances);
+</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe,.cell"
+        const thebe_selector_input = "pre,.cell_input div.highlight"
+        const thebe_selector_output = ".output,.cell_output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Alias" href="alias.html" />
+    <link rel="prev" title="Package Manager and Virtual Environment" href="packageManager.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-CEP1WDLLCF"></script>
+<script>
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    gtag('js', new Date());
+                    gtag('config', 'G-CEP1WDLLCF');
+                </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  a
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="programming.html">
+   Programming
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="packageManager.html">
+     Package Manager and Virtual Environment
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Linux/Unix
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="alias.html">
+     Alias
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github/github.html">
+     GitHub
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="github/commitMessage.html">
+     Commit Masssages with emoji
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="path.html">
+     PATH as an environmental variable
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="jb.html">
+     Jupyter book
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/myst.html">
+     MyST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="vscodeExtensions.html">
+     VScode extensions and settings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="python.html">
+     Python
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="numericalCalc.html">
+     Numerical Calculation using Scipy
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  b
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../others/others.html">
+   Others
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/usefulMacApps/usefulMacApps.html">
+     Useful Mac Apps
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../others/zotero/zotero.html">
+     How to use Zotero
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/programming/linux.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/kk564/jb-test"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/kk564/jb-test/issues/new?title=Issue%20on%20page%20%2Fprogramming/linux.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/kk564/jb-test/edit/main/_build/html/programming/linux.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic">
+   Basic
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
+   Use symbolic links instead of alias
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Linux/Unix</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#basic">
+   Basic
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
+   Use symbolic links instead of alias
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="linux-unix">
+<h1>Linux/Unix<a class="headerlink" href="#linux-unix" title="Permalink to this headline">¶</a></h1>
+<p>You can find many Linux cheat sheets using Google.</p>
+<div class="section" id="basic">
+<h2>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
+<p>Ctrl + C 処理の強制終了<br />
+Ctrl + Z 処理の休止<br />
+Ctrl + S 画面出力の停止<br />
+Ctrl + Q 画面出力の再開<br />
+Ctrl + L 画面クリア<br />
+Ctrl + D ログアウト</p>
+<p>Ctrl + A 行頭へ<br />
+Ctrl + E 行末へ<br />
+Ctrl + W 単語の先頭まで消す<br />
+Ctrl + U 行頭まで消す<br />
+Ctrl + K 行末まで消す<br />
+Ctrl + Y 上で消去した内容の貼り付け</p>
+<p>/	root dir<br />
+.	current dir<br />
+..	parent dir<br />
+~	home dir</p>
+<p>pwd:	show current directory<br />
+ls:		directory listing</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>:		make directory</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir ~/tmp
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span></code>:		change directory</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/tmp
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">touch</span></code>:		file を作る</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span></code>: dir内のファイルやディレクトリを表示する</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls
+<span class="c1"># file</span>
+</pre></div>
+</div>
+<p>ここで階層を持った dir 構造をtmp内に作る</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir -p dir/subdir/ssubdir
+ls
+<span class="c1"># file dir</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">rm</span></code>:		file を消去<br />
+<code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span></code>:	directory を消去</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm file
+rm -r dir
+</pre></div>
+</div>
+<p>cf.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm -v file <span class="c1"># show filename when removed</span>
+rm -i file <span class="c1"># comfirm whether to rmove</span>
+rm -f file <span class="c1"># force remove</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">rmdir</span></code>:		remove empty directory</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir dir
+ls
+<span class="c1"># dir</span>
+rmdir dir
+ls
+<span class="c1"># (nothing)</span>
+</pre></div>
+</div>
+<p>cf.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rmdir -p dir/subdir/ssubdir
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">echo</span></code>:</p>
+<ol class="simple">
+<li><p>環境変数などを表示する．</p></li>
+</ol>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>ファイルを作る．</p></li>
+</ol>
+<ul class="simple">
+<li><p>新規 or 上書き</p></li>
+</ul>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>ファイルに書き出したい文字列<span class="o">]</span> &gt; <span class="o">[</span>書き込みファイル名<span class="o">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>追記</p></li>
+</ul>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>ファイルに書き出したい文字列<span class="o">]</span> &gt;&gt; <span class="o">[</span>書き込みファイル名<span class="o">]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span></code>:	file の内容を表示</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file1
+<span class="nb">echo</span> hello &gt; file1
+cat file1
+<span class="c1"># hello</span>
+</pre></div>
+</div>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cat &gt;&gt; file2
+asdf  <span class="o">(</span>入力状態になるので何か入力する<span class="o">)</span>
+Ctrl + D<span class="o">(</span>入力終了<span class="o">)</span>
+cat file2
+<span class="c1"># asdf</span>
+</pre></div>
+</div>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cp file1 file3
+cat file3
+<span class="c1"># hello</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>:		file or dir を copy</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir dir1
+touch dir1/file4
+cp -r dir1 dir2
+ls dir2
+<span class="c1"># file4</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">file1</span> <span class="pre">file2</span></code>において，file2が既に存在するときは上書きするか聞かれる．
+<code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">dir1</span> <span class="pre">dir2</span></code>において，dir2がまだ存在しない時，dir1の中身がdir2内にコピーされる．dir2が存在するときはdir1がdir2内にコピーされる．</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">mv</span></code>:	file or dir を move<br />
+もし file5 が存在しなければ，次の操作は rename</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv file1 file5
+mkdir dir3
+mv file5 dir3
+</pre></div>
+</div>
+<p>この時 file5 は dir3 に入る</p>
+<p>もし dir4 が存在しなければ，次の操作は rename</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
+</pre></div>
+</div>
+<p>存在する場合，dir1がdir4内に移る．</p>
+<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: ファイル・ディレクトリをツリー状に表示する
+zshではまずインストールする必要がある．</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew install tree
+</pre></div>
+</div>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree      pwd以下の全てを表示
+<span class="nb">test</span>
+├── dir2
+│   └── file4
+├── dir3
+│   └── file5
+├── dir4
+│   └── file4
+├── file2
+└── file3
+</pre></div>
+</div>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree -d   ディレクトリのみ表示
+tree -L <span class="m">2</span> 2階層だけ表示
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h2><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">chomd</span></code>: 権限</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod モード file
+</pre></div>
+</div>
+<p>モードは，所有者，グループ，他人に対して
+それぞれ，rwx(読み取り，書き込み，実行)のどれを許可するか
+3bitsで指定
+全員に全て許可するなら 777<br />
+所有者に全て(rwx)、グループ内の人とそれ以外の他人に読み取りだけ(r–)許可する場合、744</p>
+<p>あるいは，</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">変更対象</span>	<span class="n">意味</span>
+<span class="n">u</span>	<span class="n">ユーザー</span>
+<span class="n">g</span>	<span class="n">グループ</span>
+<span class="n">o</span>	<span class="n">その他</span>
+<span class="n">a</span>	<span class="n">すべて</span>
+
+<span class="n">変更方法</span>	<span class="n">意味</span>
+<span class="o">=</span>	<span class="n">指定した権限にする</span>
+<span class="o">+</span>	<span class="n">指定した権限を付与する</span>
+<span class="o">-</span>	<span class="n">指定した権限を除去する</span>
+
+<span class="n">変更内容</span>	<span class="n">意味</span>
+<span class="n">r</span>	<span class="n">読み取り</span>
+<span class="n">w</span>	<span class="n">書き込み</span>
+<span class="n">x</span>	<span class="n">実行</span>
+</pre></div>
+</div>
+<p>を用いて，</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ chmod u+x file
+</pre></div>
+</div>
+<p>のように変更もできる．</p>
+</div>
+<div class="section" id="use-symbolic-links-instead-of-alias">
+<h2>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
+</pre></div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "kk564/jb-test",
+            ref: "main",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./programming"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="packageManager.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Package Manager and Virtual Environment</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="alias.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Alias</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By kk564<br/>
+    
+        &copy; Copyright 2021.<br/>
+      <div class="extra_footer">
+        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+      </div>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
