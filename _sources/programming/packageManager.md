@@ -58,7 +58,7 @@ If you succeeded, you get; `Homebrew 3.3.8`.
 ## Venv
 To make a virtual environment for python, venv is the easiest tool! Although there are pyenv or anaconda for python, they are not necessary for beginners.
 Let's make a virtual env.
-Making a virtual env by venv and deleting it is really easy. Let's make a test virtual env in your home directory (below for zsh).
+Making a virtual environment by venv and deleting it is really easy. Let's make a test virtual env in the home directory (below for zsh).
 
 ```zsh
 python3 -m venv ~/test
@@ -72,7 +72,7 @@ or
 . test/bin/activate
 ```
 
-Now your virtual env is activated. You can see the name of virtual env on the left side of your user name in the terminal.
+Now your virtual environment is activated. You can see the name of virtual env on the left side of your user name in the terminal.
 Let's check the version of python:
 ```zsh
 python -V
@@ -81,7 +81,7 @@ and you get `Python 3.x.x`.
 
 Now you made a new virtual env and entered it, but actually there is no package in it.
 pip freeze shows the packages in your virtual env and there is no output for now. 
-Before installing something, you might have to upgrade pip which is python package manager(change Username below):
+Before installing something, you might have to upgrade pip, which is a python package manager(change Username below):
 ```zsh
 /Users/Username/test/bin/python3 -m pip install --upgrade pip
 ```
@@ -104,7 +104,7 @@ pip install jupyterlab
 
 Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is different from usual python packages.
 Scipy, which is for scientific computing, is also a useful package for some people.
-Now you can see many packages in your test virtual env; try pip freeze, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with  jupyter-lab.
+Now you can see many packages in your test virtual environment; try pip freeze, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
 To deactivate the virtual env, just input: `deactivate` in the terminal. To activate again; `source test/bin/activate`.
 
 ## Let's use jupyter-lab!

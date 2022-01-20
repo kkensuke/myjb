@@ -9,7 +9,7 @@ If you find some useful aliases, write them in `~/.zshrc`.
 PS1="%F{082}%n%f %F{051}%~%f %# "
 ```
 
-### puts a blank line before every prompt except the first one.
+### Put a blank line before every prompt except the first one.
 ```
 precmd() { precmd() { echo } }
 ```
@@ -89,7 +89,7 @@ gcm() {
 ```
 
 
-### define an alias of several commands
+### Define an alias of several commands
 ```
 gacp(){
 	git add .
@@ -103,7 +103,7 @@ gacp(){
 function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
 ```
 
-### make a new repository based on your current directory
+### Make a new repository based on the current directory
 ```
 ginit() {
 	git init
@@ -112,7 +112,7 @@ ginit() {
 	gh repo create --private --source=. --push'
 }
 ```
-you need to install GiHub CLI
+You need to install GitHub CLI
 
 ## Related to Python
 ```
@@ -125,14 +125,14 @@ alias p3in='pip3 install'
 alias wpy='which python'
 ```
 
-### venv activate
+### Activate a venv
 ```
 alias acv='source venv/bin/activate'
 alias deac='deactivate'
 ```
 
 
-### make venv and create jupyter-book
+### Make a venv and create a jupyter-book
 ```
 mkvjb() {
 	mkdir -p ~/jupyter-book/$1
@@ -155,7 +155,7 @@ mkvjb() {
 	    └── test-book
 ```
 (jbgh)=
-### build and publish jupyter-book
+### Build and publish a jupyter-book
 ```
 jbgh(){
 	cd ~/jupyter-book/$1/$1
@@ -169,7 +169,7 @@ jbgh(){
 
 
 ## Related to Latex
-### copy latex-template directory;
+### Copy latex-template directory to somewhere;
 ```
 mklt(){
 	cd ~/Report

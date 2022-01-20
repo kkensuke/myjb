@@ -334,8 +334,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#take-new-changes-of-remote-repository-into-your-local-repository">
-     take new changes of remote repository into your local repository
+    <a class="reference internal nav-link" href="#take-new-changes-of-the-remote-repository-into-the-local-repository">
+     take new changes of the remote repository into the local repository
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -381,8 +381,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-your-current-directory">
-     make a new repository based on your current directory
+    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-the-current-directory">
+     make a new repository based on the current directory
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -452,8 +452,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#take-new-changes-of-remote-repository-into-your-local-repository">
-     take new changes of remote repository into your local repository
+    <a class="reference internal nav-link" href="#take-new-changes-of-the-remote-repository-into-the-local-repository">
+     take new changes of the remote repository into the local repository
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -499,8 +499,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-your-current-directory">
-     make a new repository based on your current directory
+    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-the-current-directory">
+     make a new repository based on the current directory
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -543,7 +543,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="section" id="basic">
 <h2><span class="section-number">1.4.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../../_images/GitHub-flow.png" id="flow"><img alt="../../_images/GitHub-flow.png" class="align-center" id="flow" src="../../_images/GitHub-flow.png" style="width: 600px;" /></a>
-<p>you can learn Git/GitHub at <a class="reference external" href="https://www.atlassian.com/git/tutorials">https://www.atlassian.com/git/tutorials</a></p>
+<p>You can learn Git/GitHub at <a class="reference external" href="https://www.atlassian.com/git/tutorials">https://www.atlassian.com/git/tutorials</a></p>
 <!--
 VCS (version control system)
 プログラムのソースコードやドキュメントを開発する際に，最新の状態を保存するだけでなく，様々なタイミングの状態を保存しておき，
@@ -578,8 +578,8 @@ git add -A
 -->
 <div class="section" id="create-a-new-repository">
 <h3>Create a new repository<a class="headerlink" href="#create-a-new-repository" title="Permalink to this headline">¶</a></h3>
-<p>First, make a repository on GitHub website without initializing.
-Second, execute the commands below on your local computer</p>
+<p>First, make a repository on the GitHub website without initializing.
+Second, execute the commands below on the local computer</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mkdir</span> <span class="n">project_name</span><span class="p">]</span>
 <span class="p">[</span><span class="n">cd</span> <span class="n">project_name</span><span class="p">]</span>
 <span class="n">echo</span> <span class="s2">&quot;# test&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
@@ -592,7 +592,7 @@ Second, execute the commands below on your local computer</p>
 <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> makes repository, or <code class="docutils literal notranslate"><span class="pre">.git</span></code>, in current directory.</p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> makes repository, or <code class="docutils literal notranslate"><span class="pre">.git</span></code>, in the current directory.</p>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span> <span class="pre">project_name</span></code> makes a directory named project_name and <code class="docutils literal notranslate"><span class="pre">.git</span></code> in it.</p>
 </div>
 <div class="section" id="push-an-existing-repository-from-the-command-line">
@@ -605,7 +605,7 @@ Second, execute the commands below on your local computer</p>
 </div>
 <div class="section" id="clone">
 <h3>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h3>
-<p>In your arbitrary directory,</p>
+<p>In an arbitrary directory,</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone [branch, or you can omit here for main] https://github.com/&lt;Username&gt;/&lt;repository&gt;.git
 $ cd &lt;repository&gt;
 </pre></div>
@@ -631,8 +631,8 @@ $ git push origin main
 1. リポジトリAをfork2. forkしたリポジトリBをローカルにclone3. cloneしたリポジトリCで開発し、リポジトリBに反映4. リポジトリAの管理者にPull Requestを送信
 -->
 </div>
-<div class="section" id="take-new-changes-of-remote-repository-into-your-local-repository">
-<h3>take new changes of remote repository into your local repository<a class="headerlink" href="#take-new-changes-of-remote-repository-into-your-local-repository" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="take-new-changes-of-the-remote-repository-into-the-local-repository">
+<h3>take new changes of the remote repository into the local repository<a class="headerlink" href="#take-new-changes-of-the-remote-repository-into-the-local-repository" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git pull origin main
 </pre></div>
 </div>
@@ -644,18 +644,18 @@ $ git merge origin main
 </div>
 <div class="section" id="make-a-branch-and-change-branches-at-local">
 <h3>make a branch and change branches at local<a class="headerlink" href="#make-a-branch-and-change-branches-at-local" title="Permalink to this headline">¶</a></h3>
-<p>When you make a repository, only main branch exists at first.
-So, you are in main branch by default.</p>
-<p>you can check your current branch by</p>
+<p>When you make a repository, the only main branch exists at first.
+So, you are in the main branch by default.</p>
+<p>You can check the current branch by</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch
 </pre></div>
 </div>
-<p>you can see all branches including remote branches by</p>
+<p>You can see all branches including the remote branches by</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout -a
 </pre></div>
 </div>
-<p>1, when making new branch at local (branch not in remote)
-Let’s make a new branch!</p>
+<p>1, Making new branch at local (branch not in remote)</p>
+<p>Let’s make a new branch!</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span># make a branch
 $ git branch &lt;branch&gt;
 # switch to branch1 from main
@@ -669,7 +669,7 @@ $ git checkout &lt;branch&gt;
 </pre></div>
 </div>
 </div>
-<p>Then reflect new branch to remote repository.</p>
+<p>Then reflect the new branch to the remote repository.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin &lt;branch&gt;
 </pre></div>
 </div>
@@ -691,13 +691,13 @@ $ git checkout &lt;branch&gt;
 <div class="section" id="gitignore">
 <h3>.gitignore<a class="headerlink" href="#gitignore" title="Permalink to this headline">¶</a></h3>
 <p>You can configure Git to ignore files you don’t want to check in to GitHub.
-All you have to do is write down filenames in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>, which is in the same directory as <code class="docutils literal notranslate"><span class="pre">.git</span></code>.</p>
+All you have to do is write down filenames in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> in the same directory as <code class="docutils literal notranslate"><span class="pre">.git</span></code>.</p>
 <p>However, making <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> and writing filenames in each directory in the control of Git is troublesome. You can make <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> easily with <a class="reference external" href="https://www.toptal.com/developers/gitignore">gitignore.io website</a> or <a class="reference external" href="https://docs.gitignore.io">gitignore.io CLI</a></p>
-<p>As to somefiles, you will append their filenames in evey <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.
-To avoid it, making <code class="docutils literal notranslate"><span class="pre">~/.gitignore_global</span></code> is a solution. <code class="docutils literal notranslate"><span class="pre">~/</span></code> represents home directory.</p>
+<p>As to some files, you will append their filenames in every <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.
+To avoid it, making <code class="docutils literal notranslate"><span class="pre">~/.gitignore_global</span></code> is a solution. <code class="docutils literal notranslate"><span class="pre">~/</span></code> represents the home directory.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>First, make <code class="docutils literal notranslate"><span class="pre">~/.gitignore_global</span></code> if you haven’t made yet</p>
+<p>First, make <code class="docutils literal notranslate"><span class="pre">~/.gitignore_global</span></code> if you haven’t made it yet</p>
 </div>
 <p>install .gitignore.io from <a class="reference external" href="https://docs.gitignore.io/install/command-line">https://docs.gitignore.io/install/command-line</a></p>
 <p>for macOS :</p>
@@ -724,12 +724,12 @@ Second, open the corresponding [.git-&gt;config], and [url = https://~.&lt;renam
 </div>
 <div class="section" id="quit-git-administration">
 <h3>quit Git administration<a class="headerlink" href="#quit-git-administration" title="Permalink to this headline">¶</a></h3>
-<p>All you have to do is remove <code class="docutils literal notranslate"><span class="pre">.git</span></code> directory.</p>
+<p>All you have to do is remove the <code class="docutils literal notranslate"><span class="pre">.git</span></code> directory.</p>
 </div>
 <div class="section" id="remove-files">
 <h3>remove files<a class="headerlink" href="#remove-files" title="Permalink to this headline">¶</a></h3>
-<p>1, remove files from repository and local directory
-2, remove files from repository</p>
+<p>1, remove files from the repository and local directory
+2, remove files from the repository</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git rm FILENAME 1
 $ git rm --cached FILENAME 2
 $ git commit -m &quot;delete&quot;; git push origin main
@@ -748,8 +748,8 @@ $ git commit -m &quot;delete&quot;; git push origin main
 </pre></div>
 </div>
 </div>
-<div class="section" id="make-a-new-repository-based-on-your-current-directory">
-<h3>make a new repository based on your current directory<a class="headerlink" href="#make-a-new-repository-based-on-your-current-directory" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="make-a-new-repository-based-on-the-current-directory">
+<h3>make a new repository based on the current directory<a class="headerlink" href="#make-a-new-repository-based-on-the-current-directory" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git init; git add .
 $ git commit -m &quot;Initial commit&quot;
 $ gh repo create --private --source=. --push&#39;
