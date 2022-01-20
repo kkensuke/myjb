@@ -8,8 +8,10 @@ options:   # The options key will be applied to all chapters, but not sub-sectio
   numbered: 3
 
 parts:
-  - chapters:
+  - numbered: 3
+    chapters:
     - file: programming/programming # chapters need at least one file before sections.
+#      title:
       sections:
 #      - glob: programming/* # cannot decide the order of files
       - file: programming/packageManager
@@ -23,8 +25,8 @@ parts:
       - file: programming/vscodeExtensions
       - file: programming/python
       - file: programming/numericalCalc
-
-  - chapters:
+  - numbered: 3
+    chapters:
     - file: others/others
       sections:
 #      - glob: others/*
