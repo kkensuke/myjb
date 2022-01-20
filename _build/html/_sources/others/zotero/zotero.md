@@ -4,7 +4,7 @@ Useful settings for beginners are below.
 
 
 - [View] in the menu bar -> check [show items from subcollections]
-- open preferences[press Cmd and ,], and uncheck the box of [Automatically take snapshots …] in [General]
+- Open preferences[press Cmd and ,], and uncheck the box of [Automatically take snapshots …] in [General]
 
 ```{image} img/general.png
 :name: set-general
@@ -12,7 +12,7 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-- you don't have to check [Enable the Zotero PDF reader] if you wanna use the default PDF viewer.
+- You don't have to check [Enable the Zotero PDF reader] if you wanna use the default PDF viewer.
 - Zotero -> Preferences -> Sync. Check all the boxes of [Data Syncing], uncheck all the boxes of [File Syncing] if you wanna use another cloud such as Google Drive (note Zotero storage is up to 300MB). To use Google Drive as a Zetoro cloud, you have to go to [Advanced] in the preferences, and open [Files and Folders]. Here, you specify the path to the base directory in your Google Drive.
 
 ```{image} img/sync.png
@@ -26,15 +26,9 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-- you also need to install ZotFile, which is a useful tool and necessary for Syncing. If you finish download, then open [Tools -> Addon -> ⚙ -> Install Add-on From File], and restart. Again, open [Tools -> ZotFile preferences]. In the General setting, specify the same path as above in [Source Folder for Attaching New Files, Location of Files], and set [Use subfolder defined by /%c] to keep the same directory structure.
+- You also need to install ZotFile, which is a useful tool and necessary for Syncing. If you finish download, open [Tools -> Addon -> ⚙ -> Install Add-on From File], and restart. Again, open [Tools -> ZotFile preferences]. In the General setting, specify the same path as above in [Source Folder for Attaching New Files, Location of Files], and set [Use subfolder defined by /%c] to keep the same directory structure.
 ```{image} img/zotfile-general.png
 :name: set-zot-general
-:width: 600px
-:align: center
-```
-- [Tools] in the menu bar -> Zotfile Preferences -> Renaming Rules -> uncheck [Use Zotero to Rename], and fill two lines below with {%t}{_%y}{_%a}, and Additional Settings is up to you(setting example is below).
-```{image} img/zotfile-preferences.png
-:name: set-zot-pref
 :width: 600px
 :align: center
 ```
@@ -44,8 +38,14 @@ Useful settings for beginners are below.
 :width: 600px
 :align: center
 ```
+- (Optional)[Tools] in the menu bar -> Zotfile Preferences -> Renaming Rules -> uncheck [Use Zotero to Rename], and fill two lines below with {%t}{_%y}{_%a}, and Additional Settings is up to you(setting example is below).
+```{image} img/zotfile-preferences.png
+:name: set-zot-pref
+:width: 600px
+:align: center
+```
 
 ```{note}
-Other settings are up to you. You may set up [Tablet Setting], but it seems Zotero for iOS beta is coming soon.
+It seems Zotero for iOS beta is coming soon.
 ```
 
