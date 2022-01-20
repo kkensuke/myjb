@@ -12,7 +12,7 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-+++
+---
 - You don't have to check [Enable the Zotero PDF reader] if you wanna use the default PDF viewer.
 - Zotero -> Preferences -> Sync. Check all the boxes of [Data Syncing], uncheck all the boxes of [File Syncing] if you wanna use another cloud such as Google Drive (note Zotero storage is up to 300MB). To use Google Drive as a Zetoro cloud, you have to go to [Advanced] in the preferences, and open [Files and Folders]. Here, you specify the path to the base directory in your Google Drive.
 
