@@ -13,7 +13,7 @@ We are going to make a structure below.
 ## Make a jupyter book
 
 ### Make directories
-At first, we make the structure and activate venv(virtual environment).
+At first, we make the structure and activate a venv(virtual environment).
 ```zsh
 $ mkdir -p ~/jupyter-book/test-book
 $ cd ~/jupyter-book/test-book
@@ -21,11 +21,11 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 ```
 
-see which python you are using:
+see which python is working:
 ```zsh
 $ which python
 ```
-You can see you are using python in venv.
+You can see that you are using python in the venv.
 
 
 ### Update pip:
@@ -60,7 +60,7 @@ git remote add origin https://github.com/Username/test-book.git
 git push -u origin main
 ```
 
-just once
+One time
 ```zsh
 $ pip install ghp-import
 $ ghp-import -n -p -f _build/html

@@ -19,7 +19,7 @@ tags:
 :align: center
 ```
 
-you can learn Git/GitHub at https://www.atlassian.com/git/tutorials
+You can learn Git/GitHub at https://www.atlassian.com/git/tutorials
 
 
 <!--
@@ -58,8 +58,8 @@ git add -A
 -->
 
 ### Create a new repository
-First, make a repository on GitHub website without initializing.
-Second, execute the commands below on your local computer
+First, make a repository on the GitHub website without initializing.
+Second, execute the commands below on the local computer
 
 ```
 [mkdir project_name]
@@ -74,7 +74,7 @@ git remote add origin https://github.com/<Username>/<repository>.git
 git push -u origin main
 ```
 
-`git init` makes repository, or `.git`, in current directory.
+`git init` makes repository, or `.git`, in the current directory.
 
 `git init project_name` makes a directory named project_name and `.git` in it. 
 
@@ -86,7 +86,7 @@ git push -u origin main
 ```
 
 ### Clone
-In your arbitrary directory,
+In an arbitrary directory,
 ```
 $ git clone [branch, or you can omit here for main] https://github.com/<Username>/<repository>.git
 $ cd <repository>
@@ -114,7 +114,7 @@ $ git push origin main
 1. リポジトリAをfork2. forkしたリポジトリBをローカルにclone3. cloneしたリポジトリCで開発し、リポジトリBに反映4. リポジトリAの管理者にPull Requestを送信
 -->
 
-### take new changes of remote repository into your local repository
+### take new changes of the remote repository into the local repository
 ```
 $ git pull origin main
 ```
@@ -128,20 +128,21 @@ $ git merge origin main
 
 ### make a branch and change branches at local
 
-When you make a repository, only main branch exists at first.
-So, you are in main branch by default. 
+When you make a repository, the only main branch exists at first.
+So, you are in the main branch by default. 
 
-you can check your current branch by
+You can check the current branch by
 ```
 $ git branch
 ```
 
-you can see all branches including remote branches by
+You can see all branches including the remote branches by
 ```
 $ git checkout -a
 ```
 
-1, when making new branch at local (branch not in remote)
+1, Making new branch at local (branch not in remote)
+
 Let's make a new branch!
 ```
 # make a branch
@@ -157,7 +158,7 @@ $ git checkout -b <branch>
 ```
 ````
 
-Then reflect new branch to remote repository.
+Then reflect the new branch to the remote repository.
 ```
 $ git push origin <branch>
 ```
@@ -183,15 +184,15 @@ $ git checkout -b <branch> origin/<branch>
 ### .gitignore
 
 You can configure Git to ignore files you don't want to check in to GitHub.
-All you have to do is write down filenames in `.gitignore`, which is in the same directory as `.git`.
+All you have to do is write down filenames in `.gitignore` in the same directory as `.git`.
 
 However, making `.gitignore` and writing filenames in each directory in the control of Git is troublesome. You can make `.gitignore` easily with [gitignore.io website](https://www.toptal.com/developers/gitignore) or [gitignore.io CLI](https://docs.gitignore.io)
 
-As to somefiles, you will append their filenames in evey `.gitignore`.
-To avoid it, making `~/.gitignore_global` is a solution. `~/` represents home directory.
+As to some files, you will append their filenames in every `.gitignore`.
+To avoid it, making `~/.gitignore_global` is a solution. `~/` represents the home directory.
 
 ```{note}
-First, make `~/.gitignore_global` if you haven't made yet
+First, make `~/.gitignore_global` if you haven't made it yet
 ```
 install .gitignore.io from https://docs.gitignore.io/install/command-line
 
@@ -218,12 +219,12 @@ Second, open the corresponding [.git->config], and [url = https://~.<rename_here
 
 ### quit Git administration
 
-All you have to do is remove `.git` directory.
+All you have to do is remove the `.git` directory.
 
 
 ### remove files
-1, remove files from repository and local directory
-2, remove files from repository
+1, remove files from the repository and local directory
+2, remove files from the repository
 
 ```
 $ git rm FILENAME 1
@@ -243,7 +244,7 @@ $ git commit -m "delete"; git push origin main
 ```
 $ brew install gh
 ```
-### make a new repository based on your current directory
+### make a new repository based on the current directory
 ```
 $ git init; git add .
 $ git commit -m "Initial commit"

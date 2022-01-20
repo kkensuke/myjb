@@ -1,9 +1,9 @@
 # PATH as an environmental variable
 
 A path usually indicates a string to identify a location of a file/directory in a directory tree.
-PATH is one of the environmental variables and different from a path explained above.
+PATH is one of the environmental variables and is different from the path explained above.
 
-When you input a command in the shell, the shell have to find and run the command. PATH specify the places your shell should search for a command you input.
+When you input a command in the shell, the shell has to find and run the command. PATH specifies the places the shell should search for a command you input.
 
 To see the PATH, run `echo $PATH`:
 ```zsh
@@ -12,7 +12,7 @@ echo $PATH
 ```
 The result shows PATH holds some directories (colon is a separator): `/usr/local/bin`, `/usr/bin`, `/bin`, `/usr/sbin`, `/sbin`
 
-When you input a command, the shell searches `/usr/local/bin` at first. If the shell finds a command, it run the command. If not, then it searches `/usr/bin`. If it finds the command, it run the command. If not, then it searches `/bin`. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, shell returns `zsh: command not found: xxx`.
+When you input a command, the shell searches `/usr/local/bin` at first. If the shell finds a command, it runs the command. If not, then it searches `/usr/bin`. If it finds the command, it runs the command. If not, then it searches `/bin`. This flow repeats until it finds and runs the command. So only the command found at first is run. If the shell could not find the command in all the directories in PATH, the shell returns `zsh: command not found: xxx`.
 
 
 Command `which` shows the directories where (for example) the `ls` is. 

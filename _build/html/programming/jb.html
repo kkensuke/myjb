@@ -453,18 +453,18 @@ commentsRunWhenDOMLoaded(addUtterances);
 <h2><span class="section-number">1.7.1. </span>Make a jupyter book<a class="headerlink" href="#make-a-jupyter-book" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="make-directories">
 <h3>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this headline">¶</a></h3>
-<p>At first, we make the structure and activate venv(virtual environment).</p>
+<p>At first, we make the structure and activate a venv(virtual environment).</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ~/jupyter-book/test-book
 $ <span class="nb">cd</span> ~/jupyter-book/test-book
 $ python3 -m venv venv
 $ <span class="nb">source</span> venv/bin/activate
 </pre></div>
 </div>
-<p>see which python you are using:</p>
+<p>see which python is working:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ which python
 </pre></div>
 </div>
-<p>You can see you are using python in venv.</p>
+<p>You can see that you are using python in the venv.</p>
 </div>
 <div class="section" id="update-pip">
 <h3>Update pip:<a class="headerlink" href="#update-pip" title="Permalink to this headline">¶</a></h3>
@@ -500,7 +500,7 @@ git remote add origin https://github.com/Username/test-book.git
 git push -u origin main
 </pre></div>
 </div>
-<p>just once</p>
+<p>One time</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ pip install ghp-import
 $ ghp-import -n -p -f _build/html
 </pre></div>
