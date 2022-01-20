@@ -21,7 +21,7 @@ parts:
       - file: programming/github/commitMessage
       - file: programming/path
       - file: programming/jb
-      - file: others/myst
+      - file: programming/myst
       - file: programming/vscodeExtensions
       - file: programming/python
       - file: programming/numericalCalc
