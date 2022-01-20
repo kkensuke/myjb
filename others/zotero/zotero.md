@@ -27,7 +27,7 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-+++
+---
 - You also need to install ZotFile, which is a useful tool and necessary for Syncing. If you finish download, open [Tools -> Addon -> ⚙ -> Install Add-on From File], and restart. Again, open [Tools -> ZotFile preferences]. In the General setting, specify the same path as above in [Source Folder for Attaching New Files, Location of Files], and set [Use subfolder defined by /%c] to keep the same directory structure.
 ```{image} img/zotfile-general.png
 :name: set-zot-general
@@ -35,7 +35,7 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-+++
+---
 - If you download a pdf file from the browser to Zotero, you can see files in Google Drive by doing the following. Right-click the files, and select [Manage Attachment-> Rename Attachment] (actually, it's easy to choose all the files and do the same procedure so that you don't need to find files you've downloaded. Doing this many times doesn't change anything).
 ```{image} img/rename.png
 :name: rename
@@ -43,7 +43,7 @@ Useful settings for beginners are below.
 :align: center
 ```
 
-+++
+---
 - (Optional)[Tools] in the menu bar -> Zotfile Preferences -> Renaming Rules -> uncheck [Use Zotero to Rename], and fill two lines below with {%t}{_%y}{_%a}, and Additional Settings is up to you(setting example is below).
 ```{image} img/zotfile-preferences.png
 :name: set-zot-pref
