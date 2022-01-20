@@ -11,7 +11,7 @@ parts:
   - numbered: 3
     chapters:
     - file: programming/programming # chapters need at least one file before sections.
-#      title:
+#     title:
       sections:
 #      - glob: programming/* # cannot decide the order of files
       - file: programming/packageManager
@@ -25,8 +25,6 @@ parts:
       - file: programming/vscodeExtensions
       - file: programming/python
       - file: programming/numericalCalc
-  - numbered: 3
-    chapters:
     - file: others/others
       sections:
 #      - glob: others/*
