@@ -37,9 +37,12 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script async="async" kind="hypothesis" src="https://hypothes.is/embed.js"></script>
     <script kind="utterances">
 
@@ -77,15 +80,14 @@ commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe,.cell"
-        const thebe_selector_input = "pre,.cell_input div.highlight"
-        const thebe_selector_output = ".output,.cell_output"
-    </script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="1.10. VScode extensions and settings" href="vscodeExtensions.html" />
@@ -197,7 +199,7 @@ commentsRunWhenDOMLoaded(addUtterances);
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="numericalCalc.html">
-     1.12. Numerical Calculation using Scipy
+     1.12. Numerical Calculation by Scipy
     </a>
    </li>
   </ul>
@@ -215,11 +217,6 @@ commentsRunWhenDOMLoaded(addUtterances);
    <li class="toctree-l2">
     <a class="reference internal" href="../others/usefulMacApps/usefulMacApps.html">
      2.1. Useful Mac Apps
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../others/zotero/zotero.html">
-     2.2. How to use Zotero
     </a>
    </li>
   </ul>
@@ -1082,21 +1079,21 @@ asdf
 <h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
 <p>ex1</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="b560d067-57d4-43ea-84b4-1acf22629284" name="fef08001-1d83-448c-ac70-1fb095d93b99" type="radio">
-</input><label class="tabbed-label" for="b560d067-57d4-43ea-84b4-1acf22629284">
+<input checked="checked" id="b3d06ef3-6a8e-48d2-8b2a-7ddfbb88a70f" name="1ca46b1c-b1a6-486e-adaa-b835712f5b02" type="radio">
+</input><label class="tabbed-label" for="b3d06ef3-6a8e-48d2-8b2a-7ddfbb88a70f">
 Tab 1 title</label><div class="tabbed-content docutils">
 <p>My first tab</p>
 </div>
-<input id="4acce608-7cc2-433f-80c5-21d9e643ff2b" name="fef08001-1d83-448c-ac70-1fb095d93b99" type="radio">
-</input><label class="tabbed-label" for="4acce608-7cc2-433f-80c5-21d9e643ff2b">
+<input id="0c2dcffb-e2d6-4db6-84bf-8f4e924f10bf" name="1ca46b1c-b1a6-486e-adaa-b835712f5b02" type="radio">
+</input><label class="tabbed-label" for="0c2dcffb-e2d6-4db6-84bf-8f4e924f10bf">
 Tab 2 title</label><div class="tabbed-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
 </div>
 <p>ex2</p>
 <div class="tabbed-set docutils">
-<input checked="checked" id="fcd3b4d8-09a5-40e9-a169-750d497abc29" name="39818aa9-4977-41c1-a4ae-4011c127cc89" type="radio">
-</input><label class="tabbed-label" for="fcd3b4d8-09a5-40e9-a169-750d497abc29">
+<input checked="checked" id="a12997ef-062e-48e0-a550-afd5ae7282a6" name="f8a683a4-bc33-49b1-bcc0-580bff07fa8a" type="radio">
+</input><label class="tabbed-label" for="a12997ef-062e-48e0-a550-afd5ae7282a6">
 c++</label><div class="tabbed-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -1104,16 +1101,16 @@ c++</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="06141d33-8e47-4c9d-97aa-f501d19c52eb" name="39818aa9-4977-41c1-a4ae-4011c127cc89" type="radio">
-</input><label class="tabbed-label" for="06141d33-8e47-4c9d-97aa-f501d19c52eb">
+<input id="f7403a45-2d8b-4616-87b2-c47ccb6397ca" name="f8a683a4-bc33-49b1-bcc0-580bff07fa8a" type="radio">
+</input><label class="tabbed-label" for="f7403a45-2d8b-4616-87b2-c47ccb6397ca">
 python</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
     <span class="k">return</span>
 </pre></div>
 </div>
 </div>
-<input id="30f287dd-3372-430d-9991-da3d49e65da6" name="39818aa9-4977-41c1-a4ae-4011c127cc89" type="radio">
-</input><label class="tabbed-label" for="30f287dd-3372-430d-9991-da3d49e65da6">
+<input id="2ce8d220-87fe-440e-9386-be0d5778b5b2" name="f8a683a4-bc33-49b1-bcc0-580bff07fa8a" type="radio">
+</input><label class="tabbed-label" for="2ce8d220-87fe-440e-9386-be0d5778b5b2">
 java</label><div class="tabbed-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -1122,16 +1119,16 @@ java</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="f6674148-212b-4943-9fff-9ae508b1eae8" name="39818aa9-4977-41c1-a4ae-4011c127cc89" type="radio">
-</input><label class="tabbed-label" for="f6674148-212b-4943-9fff-9ae508b1eae8">
+<input id="b0b8f0fe-d9e4-40f7-a73b-27b8deec6762" name="f8a683a4-bc33-49b1-bcc0-580bff07fa8a" type="radio">
+</input><label class="tabbed-label" for="b0b8f0fe-d9e4-40f7-a73b-27b8deec6762">
 julia</label><div class="tabbed-content docutils">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">main</span><span class="p">()</span>
 <span class="k">end</span>
 </pre></div>
 </div>
 </div>
-<input id="575c6bf6-c062-44d6-9dec-e03fd7615e32" name="39818aa9-4977-41c1-a4ae-4011c127cc89" type="radio">
-</input><label class="tabbed-label" for="575c6bf6-c062-44d6-9dec-e03fd7615e32">
+<input id="db1d45b6-f313-4757-bd4f-f9201162b39c" name="f8a683a4-bc33-49b1-bcc0-580bff07fa8a" type="radio">
+</input><label class="tabbed-label" for="db1d45b6-f313-4757-bd4f-f9201162b39c">
 fortran</label><div class="tabbed-content docutils">
 <div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
 <span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
