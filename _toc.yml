@@ -29,7 +29,7 @@ parts:
       sections:
 #      - glob: others/*
       - file: others/usefulMacApps/usefulMacApps
-      - file: others/zotero/zotero
+#      - file: others/zotero/zotero
 #      - file: others/Latex
 
 

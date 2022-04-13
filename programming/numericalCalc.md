@@ -1,4 +1,4 @@
-# Numerical Calculation using Scipy
+# Numerical Calculation by Scipy
 
 [Scipy](https://docs.scipy.org/doc/scipy/reference/optimize.html)
 
