@@ -33,13 +33,13 @@ print('3+4')
 print('3'+'4')
 
 
-# In[7]:
+# In[27]:
 
 
 # print(3+'4') # This will be an error. You can't add a number and a string. You need to convert the string to a number or vice versa.
 
 
-# In[9]:
+# In[28]:
 
 
 a = 3 # This is a variable. 
@@ -47,7 +47,7 @@ b = '4'
 # print(a+b) # This will be the same as the above cell.
 
 
-# In[10]:
+# In[29]:
 
 
 print(a + int(b)) # This will convert the string to a number.
@@ -86,7 +86,7 @@ l[1] = 7 # You can change the value of an element in a list.
 print(l)
 
 
-# In[19]:
+# In[30]:
 
 
 t = (3,4,5)
