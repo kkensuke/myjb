@@ -3,7 +3,7 @@
 
 # 
 
-# # Python
+# # Python and Jupyter
 
 # ## four arithmetic operations and print() function
 
@@ -86,6 +86,13 @@ l[1] = 7 # You can change the value of an element in a list.
 print(l)
 
 
+# In[31]:
+
+
+# You can use other types of data in a list.
+l = [3,4,5,'a','b','c', True, False, [1,2,3]]
+
+
 # In[30]:
 
 
@@ -101,7 +108,7 @@ s = {3,4,5,5}
 print(s)
 
 
-# In[24]:
+# In[34]:
 
 
 d = {'a':3,'b':4,'c':5}
@@ -110,6 +117,10 @@ print(d['a'])
 d['a'] = 6 # You can change the value of an element in a dictionary.
 d['d'] = 7 # You can add a new key-value pair to a dictionary.
 print(d)
+
+print(d.items()) # This will return a list of all the key-value pairs in the dictionary.
+print(d.keys()) # This will return a list of all the keys in the dictionary.
+print(d.values()) # This will return a list of all the values in the dictionary.
 
 
 # ## Functions

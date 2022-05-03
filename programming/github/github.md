@@ -28,6 +28,7 @@ There are two types of repositories: local repositories on your PC and remote re
 
 You can learn Git/GitHub in detail at [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) and [Bitbucket](https://www.atlassian.com/git/tutorials).
 
+## Basic commands
 ### Create a new repository
 First, make a repository on the GitHub website without initializing.
 Second, execute the commands below on the local computer
