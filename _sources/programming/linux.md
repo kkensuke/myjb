@@ -214,7 +214,7 @@ $ chmod u+x file
 
 ## Shell globbing
 
-`glob patterns` specify sets of filenames with wildcard characters. Using `glob` to find files is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
+`glob patterns` specify sets of filenames with wildcard characters. Using `glob` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
 
 There are several common wildcard characters:
 ```zsh
@@ -226,55 +226,70 @@ There are several common wildcard characters:
 [!a-z] : matches any character not in range
 ```
 
+Some examples:
 ```zsh
+# move all files and directories to `directory`
 mv * folder
-mv ./{foo,bar,baz}.txt folder
+# move foo.txt, bar.txt, and baz.txt in path to `directory`
+# = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `directory`
+mv ./path/{foo,bar,baz}.txt folder
+# move all pyhon and shell files to `directory`
 mv *{.py,.sh} folder
 ```
 
 
 `find`: ファイル・ディレクトリを検索する
 ```zsh
-find filename # カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）
+# カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）
+find filename
 
-find target -name lecture[0-9] -type d # targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）
+# targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）
+find target -name lecture[0-9] -type d
 
-find . -atime -1 # 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)
+# 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)
+find . -atime -1
 
-find . -mtime -1 # 一日前に変更された全てのファイルを検索
+# 一日前に変更された全てのファイルを検索
+find . -mtime -1
 
-find . -size +30k -size -1M -name '*.py' # 30kB以上、1MB以下のpythonファイルを検索
+# 30kB以上、1MB以下のpythonファイルを検索
+find . -size +30k -size -1M -name '*.py'
 
-find target condtion1 -and condition2 # targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）
+# targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）
+find target condtion1 -and condition2
 
-find . -name '*.txt' -exec rm {} \; # .txtファイルを削除
+# .txtファイルを削除
+find . -name '*.txt' -exec rm {} \;
 ```
 
 `grep`: 文字列を検索する
 ```zsh
-grep [-Options] 'word' filename # Search any line that contains the word in filename
+# Search any line that contains `word` in filename
+grep [-Options] 'word' filename 
+
 grep 'word' file1 file2 file3
 grep 'string1 string2'  filename
-
-Options 	Description
--i 	Ignore case distinctions on Linux and Unix
--w 	The expression is searched for as a word
--v 	Select non-matching lines
--n 	Print line number with output lines
--h 	Suppress the Unix file name prefix on output
--H 	Print file name with output lines
--r 	Search directories recursivly on Linux
--R 	Just like -r but follow all symlinks
--l 	Print only names of FILEs with matches
--L  Print only names of FILEs without matches
--c 	Print only a count of selected lines per FILE
---color 	Display matched pattern in colors
--m NUMBER 	Stop grep command NUMBER selected lines
--o 	Display only matched parts of lines
 ```
 
+| Options |	Description |
+|---------|-------------|
+|-i | Ignore case distinctions|
+|-w | The expression is searched for as a word|
+|-v | Select non-matching lines|
+|-n | Print line number with output lines|
+|-h | Suppress the Unix file name prefix on output|
+|-H | Print file name with output lines|
+|-r | Search directories recursivly on Linux|
+|-R | Just like -r but follow all symlinks|
+|-l | Print only names of FILEs with matches
+|-L | Print only names of FILEs without matches|
+|-c | Print only a count of selected lines per FILE|
+|--color | Display matched pattern in colors|
+|-m NUMBER | Stop grep command NUMBER selected lines|
+|-o | Display only matched parts of lines|
 
-## Use symbolic links instead of alias
+
+### Use symbolic links instead of alias
 ```zsh
 ln -s original-dir/file where/to/put/SymboliLink
 ```
