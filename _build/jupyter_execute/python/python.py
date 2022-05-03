@@ -36,7 +36,7 @@ print('3'+'4')
 # In[7]:
 
 
-print(3+'4') # This will be an error. You can't add a number and a string. You need to convert the string to a number or vice versa.
+# print(3+'4') # This will be an error. You can't add a number and a string. You need to convert the string to a number or vice versa.
 
 
 # In[9]:
@@ -44,7 +44,7 @@ print(3+'4') # This will be an error. You can't add a number and a string. You n
 
 a = 3 # This is a variable. 
 b = '4'
-print(a+b) # This will be the same as the above cell.
+# print(a+b) # This will be the same as the above cell.
 
 
 # In[10]:
@@ -91,7 +91,7 @@ print(l)
 
 t = (3,4,5)
 
-t[2] = 7 # You can't change the value of an element in a tuple.
+# t[2] = 7 # You can't change the value of an element in a tuple.
 
 
 # In[22]:
