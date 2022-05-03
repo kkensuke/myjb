@@ -4,8 +4,8 @@ root: intro
 
 defaults:  # The defaults key will be applied to all chapters and sub-sections
   titlesonly: false
-options:   # The options key will be applied to all chapters, but not sub-sections
-  numbered: 3
+#options:   # The options key will be applied to all chapters, but not sub-sections
+#  numbered: 3
 
 parts:
   - numbered: 3
@@ -23,8 +23,10 @@ parts:
       - file: programming/jb
       - file: programming/myst
       - file: programming/vscodeExtensions
-      - file: programming/python
-      - file: programming/numericalCalc
+    - file: python/python0
+      sections:
+        - file: python/python
+        - file: python/numericalCalc
     - file: others/others
       sections:
 #      - glob: others/*
