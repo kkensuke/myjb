@@ -3,19 +3,20 @@
 You can find many Linux cheat sheets using Google.
 ## Basic
 
-Ctrl + C 処理の強制終了\
-Ctrl + Z 処理の休止\
-Ctrl + S 画面出力の停止\
-Ctrl + Q 画面出力の再開\
-Ctrl + L 画面クリア\
-Ctrl + D ログアウト
-
-Ctrl + A 行頭へ\
-Ctrl + E 行末へ\
-Ctrl + W 単語の先頭まで消す\
-Ctrl + U 行頭まで消す\
-Ctrl + K 行末まで消す\
-Ctrl + Y 上で消去した内容の貼り付け
+| Command | Description |
+| --- | --- |
+|Ctrl + C| Interrupt the current process|
+|Ctrl + Z| Suspend the current process|
+|Ctrl + S| Stop command output to the screen|
+|Ctrl + Q| resume output to the screen paused by Ctrl+S|
+|Ctrl + L| Clears the screen|
+|Ctrl + D| Exits the shell|
+|Ctrl + A| Moves the cursor to the start of a line|
+|Ctrl + E| Moves the cursor to the end of the line|
+|Ctrl + W| Cut the word before the cursor|
+|Ctrl + U| Cut the part of the line before the cursor|
+|Ctrl + K| Cut the part of the line after the cursor|
+|Ctrl + Y| Paste the last thing you cut|
 
 
 /	root dir\
@@ -279,7 +280,7 @@ grep 'string1 string2'  filename
 |-n | Print line number with output lines|
 |-h | Suppress the Unix file name prefix on output|
 |-H | Print file name with output lines|
-|-r | Search directories recursivly on Linux|
+|-r | Search directories recursivly|
 |-R | Just like -r but follow all symlinks|
 |-l | Print only names of FILEs with matches
 |-L | Print only names of FILEs without matches|

@@ -309,18 +309,13 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-git-github">
-   1.4.1. What is Git/GitHub?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#vcs-version-control-system">
-   1.4.2. VCS (version control system)
+   1.4.1. VCS (version control system)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#local-repository-and-remote-repository">
-   1.4.3. Local repository and remote repository
+   1.4.2. Local repository and remote repository
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -377,7 +372,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#github-cli">
-   1.4.4. GitHub CLI
+   1.4.3. GitHub CLI
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -437,18 +432,13 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-git-github">
-   1.4.1. What is Git/GitHub?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#vcs-version-control-system">
-   1.4.2. VCS (version control system)
+   1.4.1. VCS (version control system)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#local-repository-and-remote-repository">
-   1.4.3. Local repository and remote repository
+   1.4.2. Local repository and remote repository
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -505,7 +495,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#github-cli">
-   1.4.4. GitHub CLI
+   1.4.3. GitHub CLI
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -555,21 +545,18 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="github">
 <h1><span class="section-number">1.4. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-git-github">
-<h2><span class="section-number">1.4.1. </span>What is Git/GitHub?<a class="headerlink" href="#what-is-git-github" title="Permalink to this headline">¶</a></h2>
 <a class="reference internal image-reference" href="../../_images/GitHub-flow.png" id="flow"><img alt="../../_images/GitHub-flow.png" class="align-center" id="flow" src="../../_images/GitHub-flow.png" style="width: 600px;" /></a>
-</div>
 <div class="section" id="vcs-version-control-system">
-<h2><span class="section-number">1.4.2. </span>VCS (version control system)<a class="headerlink" href="#vcs-version-control-system" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.4.1. </span>VCS (version control system)<a class="headerlink" href="#vcs-version-control-system" title="Permalink to this headline">¶</a></h2>
 <p>When developing source code or documentation, VCS(version control system) is a system that not only saves the latest state but also saves the state at every moments so that it can be referred back to or restored later.
 Program development does not necessarily proceed in a straight line from ver1 to ver2.
-Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development version that actively adds new functions.
+Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development versions that actively adds new functions.
 Git has a branching mechanism that allows you to branch projects and develop each branches, and also allows you to merge the branched projects.</p>
 </div>
 <div class="section" id="local-repository-and-remote-repository">
-<h2><span class="section-number">1.4.3. </span>Local repository and remote repository<a class="headerlink" href="#local-repository-and-remote-repository" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.4.2. </span>Local repository and remote repository<a class="headerlink" href="#local-repository-and-remote-repository" title="Permalink to this headline">¶</a></h2>
 <p>There are two types of repositories: local repositories on your PC and remote repositories on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.</p>
-<p>You can learn Git/GitHub in detail at <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">What is Git?</a> and <a class="reference external" href="https://www.atlassian.com/git/tutorials">https://www.atlassian.com/git/tutorials</a></p>
+<p>You can learn Git/GitHub in detail at <a class="reference external" href="https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F">What is Git?</a> and <a class="reference external" href="https://www.atlassian.com/git/tutorials">Bitbucket</a>.</p>
 <div class="section" id="create-a-new-repository">
 <h3>Create a new repository<a class="headerlink" href="#create-a-new-repository" title="Permalink to this headline">¶</a></h3>
 <p>First, make a repository on the GitHub website without initializing.
@@ -630,10 +617,13 @@ $ git push origin main
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git pull origin main
 </pre></div>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p>This is equivalent to</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git fetch
 $ git merge origin main
 </pre></div>
+</div>
 </div>
 </div>
 <div class="section" id="make-a-branch-and-change-branches-at-local">
@@ -735,7 +725,7 @@ $ git commit -m &quot;delete&quot;; git push origin main
 </div>
 </div>
 <div class="section" id="github-cli">
-<h2><span class="section-number">1.4.4. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.4.3. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="install">
 <h3>install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install gh

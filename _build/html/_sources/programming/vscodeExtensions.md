@@ -9,6 +9,5 @@
 - indent-rainbow
 - Live Server
 - Code Spell Checker
-
-## Settings
 - bracket pair
+## Settings
