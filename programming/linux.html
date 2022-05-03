@@ -386,18 +386,51 @@ const thebe_selector_output = ".output, .cell_output"
 <p>You can find many Linux cheat sheets using Google.</p>
 <div class="section" id="basic">
 <h2><span class="section-number">1.2.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
-<p>Ctrl + C 処理の強制終了<br />
-Ctrl + Z 処理の休止<br />
-Ctrl + S 画面出力の停止<br />
-Ctrl + Q 画面出力の再開<br />
-Ctrl + L 画面クリア<br />
-Ctrl + D ログアウト</p>
-<p>Ctrl + A 行頭へ<br />
-Ctrl + E 行末へ<br />
-Ctrl + W 単語の先頭まで消す<br />
-Ctrl + U 行頭まで消す<br />
-Ctrl + K 行末まで消す<br />
-Ctrl + Y 上で消去した内容の貼り付け</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Command</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ctrl + C</p></td>
+<td><p>Interrupt the current process</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + Z</p></td>
+<td><p>Suspend the current process</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl + S</p></td>
+<td><p>Stop command output to the screen</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + Q</p></td>
+<td><p>resume output to the screen paused by Ctrl+S</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl + L</p></td>
+<td><p>Clears the screen</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + D</p></td>
+<td><p>Exits the shell</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl + A</p></td>
+<td><p>Moves the cursor to the start of a line</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + E</p></td>
+<td><p>Moves the cursor to the end of the line</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl + W</p></td>
+<td><p>Cut the word before the cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + U</p></td>
+<td><p>Cut the part of the line before the cursor</p></td>
+</tr>
+<tr class="row-even"><td><p>Ctrl + K</p></td>
+<td><p>Cut the part of the line after the cursor</p></td>
+</tr>
+<tr class="row-odd"><td><p>Ctrl + Y</p></td>
+<td><p>Paste the last thing you cut</p></td>
+</tr>
+</tbody>
+</table>
 <p>/	root dir<br />
 .	current dir<br />
 ..	parent dir<br />
@@ -655,7 +688,7 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 <td><p>Print file name with output lines</p></td>
 </tr>
 <tr class="row-even"><td><p>-r</p></td>
-<td><p>Search directories recursivly on Linux</p></td>
+<td><p>Search directories recursivly</p></td>
 </tr>
 <tr class="row-odd"><td><p>-R</p></td>
 <td><p>Just like -r but follow all symlinks</p></td>

@@ -1,6 +1,6 @@
 # Programming
 
-- Package Manager and Virtual Environment
+- Install Homebrew and make a Virtual Environment of python
 - Linux/Unix
 - Alias
 - GitHub

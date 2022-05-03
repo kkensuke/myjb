@@ -11,8 +11,6 @@ tags:
 ---
 # GitHub
 
-## What is Git/GitHub?
-
 ```{image} ./img/GitHub-flow.png
 :name: flow
 :width: 600px
@@ -22,14 +20,13 @@ tags:
 ## VCS (version control system)
 When developing source code or documentation, VCS(version control system) is a system that not only saves the latest state but also saves the state at every moments so that it can be referred back to or restored later.
 Program development does not necessarily proceed in a straight line from ver1 to ver2.
-Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development version that actively adds new functions.
+Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development versions that actively adds new functions.
 Git has a branching mechanism that allows you to branch projects and develop each branches, and also allows you to merge the branched projects.
 
 ## Local repository and remote repository
 There are two types of repositories: local repositories on your PC and remote repositories on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.
 
-
-You can learn Git/GitHub in detail at [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) and https://www.atlassian.com/git/tutorials
+You can learn Git/GitHub in detail at [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) and [Bitbucket](https://www.atlassian.com/git/tutorials).
 
 ### Create a new repository
 First, make a repository on the GitHub website without initializing.
@@ -93,12 +90,13 @@ $ git push origin main
 $ git pull origin main
 ```
 
+````{tip}
 This is equivalent to
 ```
 $ git fetch
 $ git merge origin main
 ```
-
+````
 
 ### make a branch and change branches at local
 
