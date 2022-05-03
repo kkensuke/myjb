@@ -9,10 +9,10 @@ You can find many Linux cheat sheets using Google.
 |Ctrl + Z| Suspend the current process|
 |Ctrl + S| Stop command output to the screen|
 |Ctrl + Q| resume output to the screen paused by Ctrl+S|
-|Ctrl + L| Clears the screen|
-|Ctrl + D| Exits the shell|
-|Ctrl + A| Moves the cursor to the start of a line|
-|Ctrl + E| Moves the cursor to the end of the line|
+|Ctrl + L| Clear the screen|
+|Ctrl + D| Exit the shell|
+|Ctrl + A| Move the cursor to the start of a line|
+|Ctrl + E| Move the cursor to the end of the line|
 |Ctrl + W| Cut the word before the cursor|
 |Ctrl + U| Cut the part of the line before the cursor|
 |Ctrl + K| Cut the part of the line after the cursor|
@@ -28,36 +28,36 @@ You can find many Linux cheat sheets using Google.
 pwd:	show current directory\
 ls:		directory listing
 
-`mkdir`:		make directory
+`mkdir`: make directory
 ```zsh
 mkdir ~/tmp
 ```
 
-`cd`:		change directory
+`cd`: change directory
 ```zsh
 cd ~/tmp
 ```
 
-`touch`:		file を作る
+`touch`: make file or directory
 ```zsh
 touch file
 ```
 
-`ls`: dir内のファイルやディレクトリを表示する
+`ls`: list files or directories
 ```zsh
 ls
 # file
 ```
 
-ここで階層を持った dir 構造をtmp内に作る
+`mkdir -p`; make parent directories as needed 
 ```zsh
 mkdir -p dir/subdir/ssubdir
 ls
 # file dir
 ```
 
-`rm`:		file を消去\
-`rm -r`:	directory を消去
+`rm`: remove file(s)\
+`rm -r`: remove directories and their contents
 ```zsh
 rm file
 rm -r dir
@@ -87,21 +87,21 @@ rmdir -p dir/subdir/ssubdir
 
 
 `echo`:
-1. 環境変数などを表示する．
+1. print environment variables
 ```zsh
 echo $PATH
 ```
-2. ファイルを作る．
-- 新規 or 上書き
+2. make files with contents
+- Make new file or overwrite existing file
 ```zsh
-echo [ファイルに書き出したい文字列] > [書き込みファイル名]
+echo [Strings] > [filename]
 ```
-- 追記
+- Append
 ```zsh
-echo [ファイルに書き出したい文字列] >> [書き込みファイル名]
+echo [Strings] >> [filename]
 ```
 
-`cat`:	file の内容を表示
+`cat`: print file contents
 ```zsh
 touch file1
 echo hello > file1
@@ -111,13 +111,13 @@ cat file1
 
 ```zsh
 cat > file2
-asdf  (入力状態になるので何か入力する)
-Ctrl + D(入力終了)
+asdf  (input something)
+Ctrl + D (end input)
 cat file2
 # asdf
 ```
 
-`cp`:		file or dir を copy
+`cp`: copy file(s) or directory(ies)
 ```zsh
 cp file1 file3
 cat file3
@@ -133,33 +133,37 @@ ls dir2
 ```
 
 ```{note}
-`cp file1 file2`において，file2が既に存在するときは上書きするか聞かれる．
-`cp -r dir1 dir2`において，dir2がまだ存在しない時，dir1の中身がdir2内にコピーされる．dir2が存在するときはdir1がdir2内にコピーされる．
+When doing `cp file1 file2` and the file2 already exists,
+you will be asked whether to overwrite the contents of file2.
+
+If the file2 does not exist, the contents of file1 will be copied to file2.
+
+When doing `cp -r dir1 dir2` and the dir2 already exists, new dir1 will be created in dir2.
+
+If the directory2 does not exist, the contents of dir1 will be copied to dir2. So the contents of these directories are the same.
 ```
 
-`mv`:	file or dir を move\
-もし file5 が存在しなければ，次の操作は rename
+`mv`: move file(s) or directory(ies)
+If file5 does not exist, the following operation is rename
 ```zsh
 mv file1 file5
 mkdir dir3
 mv file5 dir3
 ```
-この時 file5 は dir3 に入る
 
-もし dir4 が存在しなければ，次の操作は rename
+If dir4 does not exist, the following operation is rename. Otherwise dir1 will be moved to dir4.
 ```zsh
 mv dir1 dir4
 ```
-存在する場合，dir1がdir4内に移る．
 
-`tree`: ファイル・ディレクトリをツリー状に表示する
-zshではまずインストールする必要がある．
+`tree`: print contents of current directory in tree format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
+You have to install `tree` command in zsh first.
 ```zsh
 brew install tree
 ```
 
 ```zsh
-tree      pwd以下の全てを表示
+tree
 test
 ├── dir2
 │   └── file4
@@ -172,45 +176,55 @@ test
 ```
 
 ```zsh
-tree -d   ディレクトリのみ表示
-tree -L 2 2階層だけ表示
+# print directory contents up to level 2
+tree -L 2
 ```
 
 ## 
-`chomd`: 権限
+`chomd`: change file modes(permissions)
 ```zsh
-chmod モード file
+chmod 755 file
 ```
 
-モードは，所有者，グループ，他人に対して
-それぞれ，rwx(読み取り，書き込み，実行)のどれを許可するか
-3bitsで指定
-全員に全て許可するなら 777\
-所有者に全て(rwx)、グループ内の人とそれ以外の他人に読み取りだけ(r--)許可する場合、744
+You can specify the mode with octal number or with symbol like `u+x` for user, `g+x` for group, `o+x` for others.
 
-あるいは，
+When you specify the mode with octal number;\
+4 stands for "read"\
+2 stands for "write"\
+1 stands for "execute" \
+0 stands for "no permission"
+
+If you permit all operations(4+2+1) to everyone, you can use `777` for example.
+If you permit all operations(4+2+1) to owner and read and execute(4+1) to group and others, you can use `755` for example.
+
+|target| meaning|
+|----|----|
+|u|	User|
+|g| Group|
+|o| Others|
+|a|	All|
+
+|operation| meaning|
+|----|----|
+|=|	set the modes|
+|+|	add the mode|
+|-|	remove the mode|
+
+|mode| meaning|
+|----|----|
+|r|	read|
+|w|	write|
+|x|	execute|
 ```
-変更対象	意味
-u	ユーザー
-g	グループ
-o	その他
-a	すべて
 
-変更方法	意味
-=	指定した権限にする
-+	指定した権限を付与する
--	指定した権限を除去する
-
-変更内容	意味
-r	読み取り
-w	書き込み
-x	実行
-```
-を用いて，
+For example,
 ```zsh
-$ chmod u+x file
+chmod u=rwx,g=rx,o=r file
+
+chmod u+x file
 ```
-のように変更もできる．
+
+You can use `chmod -R` to change permissions recursively.
 
 
 ## Shell globbing
@@ -239,31 +253,31 @@ mv *{.py,.sh} folder
 ```
 
 
-`find`: ファイル・ディレクトリを検索する
+`find`: find files and directories
 ```zsh
-# カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）
+# search current directory for filename(not recursively)
 find filename
 
-# targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）
+# search target directory recursively for lecture0~lecture9 directories (cf. -type f)
 find target -name lecture[0-9] -type d
 
-# 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)
+# search current directory recursively for files accessed within 1 day(. represents current directory)
 find . -atime -1
 
-# 一日前に変更された全てのファイルを検索
+# search current directory recursively for files modified within 1 day
 find . -mtime -1
 
-# 30kB以上、1MB以下のpythonファイルを検索
+# search current directory recursively for files with size between 30kB and 1MB
 find . -size +30k -size -1M -name '*.py'
 
-# targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）
+# search target directory recursively for files or directories that match condition1 and condition2 (cf. -or, -not)
 find target condtion1 -and condition2
 
-# .txtファイルを削除
+# search current directory recursively for .txt files and remove them all.
 find . -name '*.txt' -exec rm {} \;
 ```
 
-`grep`: 文字列を検索する
+`grep`: search files for patterns
 ```zsh
 # Search any line that contains `word` in filename
 grep [-Options] 'word' filename 

@@ -406,16 +406,16 @@ const thebe_selector_output = ".output, .cell_output"
 <td><p>resume output to the screen paused by Ctrl+S</p></td>
 </tr>
 <tr class="row-even"><td><p>Ctrl + L</p></td>
-<td><p>Clears the screen</p></td>
+<td><p>Clear the screen</p></td>
 </tr>
 <tr class="row-odd"><td><p>Ctrl + D</p></td>
-<td><p>Exits the shell</p></td>
+<td><p>Exit the shell</p></td>
 </tr>
 <tr class="row-even"><td><p>Ctrl + A</p></td>
-<td><p>Moves the cursor to the start of a line</p></td>
+<td><p>Move the cursor to the start of a line</p></td>
 </tr>
 <tr class="row-odd"><td><p>Ctrl + E</p></td>
-<td><p>Moves the cursor to the end of the line</p></td>
+<td><p>Move the cursor to the end of the line</p></td>
 </tr>
 <tr class="row-even"><td><p>Ctrl + W</p></td>
 <td><p>Cut the word before the cursor</p></td>
@@ -437,31 +437,31 @@ const thebe_selector_output = ".output, .cell_output"
 ~	home dir</p>
 <p>pwd:	show current directory<br />
 ls:		directory listing</p>
-<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>:		make directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>: make directory</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir ~/tmp
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">cd</span></code>:		change directory</p>
+<p><code class="docutils literal notranslate"><span class="pre">cd</span></code>: change directory</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/tmp
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">touch</span></code>:		file を作る</p>
+<p><code class="docutils literal notranslate"><span class="pre">touch</span></code>: make file or directory</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">ls</span></code>: dir内のファイルやディレクトリを表示する</p>
+<p><code class="docutils literal notranslate"><span class="pre">ls</span></code>: list files or directories</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls
 <span class="c1"># file</span>
 </pre></div>
 </div>
-<p>ここで階層を持った dir 構造をtmp内に作る</p>
+<p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">-p</span></code>; make parent directories as needed</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir -p dir/subdir/ssubdir
 ls
 <span class="c1"># file dir</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">rm</span></code>:		file を消去<br />
-<code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span></code>:	directory を消去</p>
+<p><code class="docutils literal notranslate"><span class="pre">rm</span></code>: remove file(s)<br />
+<code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span></code>: remove directories and their contents</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm file
 rm -r dir
 </pre></div>
@@ -487,27 +487,27 @@ ls
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">echo</span></code>:</p>
 <ol class="simple">
-<li><p>環境変数などを表示する．</p></li>
+<li><p>print environment variables</p></li>
 </ol>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
 </pre></div>
 </div>
 <ol class="simple">
-<li><p>ファイルを作る．</p></li>
+<li><p>make files with contents</p></li>
 </ol>
 <ul class="simple">
-<li><p>新規 or 上書き</p></li>
+<li><p>Make new file or overwrite existing file</p></li>
 </ul>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>ファイルに書き出したい文字列<span class="o">]</span> &gt; <span class="o">[</span>書き込みファイル名<span class="o">]</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
 <ul class="simple">
-<li><p>追記</p></li>
+<li><p>Append</p></li>
 </ul>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>ファイルに書き出したい文字列<span class="o">]</span> &gt;&gt; <span class="o">[</span>書き込みファイル名<span class="o">]</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt;&gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">cat</span></code>:	file の内容を表示</p>
+<p><code class="docutils literal notranslate"><span class="pre">cat</span></code>: print file contents</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file1
 <span class="nb">echo</span> hello &gt; file1
 cat file1
@@ -515,13 +515,13 @@ cat file1
 </pre></div>
 </div>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cat &gt; file2
-asdf  <span class="o">(</span>入力状態になるので何か入力する<span class="o">)</span>
-Ctrl + D<span class="o">(</span>入力終了<span class="o">)</span>
+asdf  <span class="o">(</span>input something<span class="o">)</span>
+Ctrl + D <span class="o">(</span>end input<span class="o">)</span>
 cat file2
 <span class="c1"># asdf</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>:		file or dir を copy</p>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>: copy file(s) or directory(ies)</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cp file1 file3
 cat file3
 <span class="c1"># hello</span>
@@ -536,28 +536,29 @@ ls dir2
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">file1</span> <span class="pre">file2</span></code>において，file2が既に存在するときは上書きするか聞かれる．
-<code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">dir1</span> <span class="pre">dir2</span></code>において，dir2がまだ存在しない時，dir1の中身がdir2内にコピーされる．dir2が存在するときはdir1がdir2内にコピーされる．</p>
+<p>When doing <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">file1</span> <span class="pre">file2</span></code> and the file2 already exists,
+you will be asked whether to overwrite the contents of file2.</p>
+<p>If the file2 does not exist, the contents of file1 will be copied to file2.</p>
+<p>When doing <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span> <span class="pre">dir1</span> <span class="pre">dir2</span></code> and the dir2 already exists, new dir1 will be created in dir2.</p>
+<p>If the directory2 does not exist, the contents of dir1 will be copied to dir2. So the contents of these directories are the same.</p>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">mv</span></code>:	file or dir を move<br />
-もし file5 が存在しなければ，次の操作は rename</p>
+<p><code class="docutils literal notranslate"><span class="pre">mv</span></code>: move file(s) or directory(ies)
+If file5 does not exist, the following operation is rename</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv file1 file5
 mkdir dir3
 mv file5 dir3
 </pre></div>
 </div>
-<p>この時 file5 は dir3 に入る</p>
-<p>もし dir4 が存在しなければ，次の操作は rename</p>
+<p>If dir4 does not exist, the following operation is rename. Otherwise dir1 will be moved to dir4.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
-<p>存在する場合，dir1がdir4内に移る．</p>
-<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: ファイル・ディレクトリをツリー状に表示する
-zshではまずインストールする必要がある．</p>
+<p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in tree format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
+You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in zsh first.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew install tree
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree      pwd以下の全てを表示
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree
 <span class="nb">test</span>
 ├── dir2
 │   └── file4
@@ -569,45 +570,91 @@ zshではまずインストールする必要がある．</p>
 └── file3
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree -d   ディレクトリのみ表示
-tree -L <span class="m">2</span> 2階層だけ表示
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># print directory contents up to level 2</span>
+tree -L <span class="m">2</span>
 </pre></div>
 </div>
 </div>
 <div class="section" id="id1">
 <h2><span class="section-number">1.2.2. </span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">chomd</span></code>: 権限</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod モード file
+<p><code class="docutils literal notranslate"><span class="pre">chomd</span></code>: change file modes(permissions)</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">755</span> file
 </pre></div>
 </div>
-<p>モードは，所有者，グループ，他人に対して
-それぞれ，rwx(読み取り，書き込み，実行)のどれを許可するか
-3bitsで指定
-全員に全て許可するなら 777<br />
-所有者に全て(rwx)、グループ内の人とそれ以外の他人に読み取りだけ(r–)許可する場合、744</p>
-<p>あるいは，</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">変更対象</span>	<span class="n">意味</span>
-<span class="n">u</span>	<span class="n">ユーザー</span>
-<span class="n">g</span>	<span class="n">グループ</span>
-<span class="n">o</span>	<span class="n">その他</span>
-<span class="n">a</span>	<span class="n">すべて</span>
+<p>You can specify the mode with octal number or with symbol like <code class="docutils literal notranslate"><span class="pre">u+x</span></code> for user, <code class="docutils literal notranslate"><span class="pre">g+x</span></code> for group, <code class="docutils literal notranslate"><span class="pre">o+x</span></code> for others.</p>
+<p>When you specify the mode with octal number;<br />
+4 stands for “read”<br />
+2 stands for “write”<br />
+1 stands for “execute” <br />
+0 stands for “no permission”</p>
+<p>If you permit all operations(4+2+1) to everyone, you can use <code class="docutils literal notranslate"><span class="pre">777</span></code> for example.
+If you permit all operations(4+2+1) to owner and read and execute(4+1) to group and others, you can use <code class="docutils literal notranslate"><span class="pre">755</span></code> for example.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>target</p></th>
+<th class="head"><p>meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>u</p></td>
+<td><p>User</p></td>
+</tr>
+<tr class="row-odd"><td><p>g</p></td>
+<td><p>Group</p></td>
+</tr>
+<tr class="row-even"><td><p>o</p></td>
+<td><p>Others</p></td>
+</tr>
+<tr class="row-odd"><td><p>a</p></td>
+<td><p>All</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>operation</p></th>
+<th class="head"><p>meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>=</p></td>
+<td><p>set the modes</p></td>
+</tr>
+<tr class="row-odd"><td><p>+</p></td>
+<td><p>add the mode</p></td>
+</tr>
+<tr class="row-even"><td><p>-</p></td>
+<td><p>remove the mode</p></td>
+</tr>
+</tbody>
+</table>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>mode</p></th>
+<th class="head"><p>meaning</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>r</p></td>
+<td><p>read</p></td>
+</tr>
+<tr class="row-odd"><td><p>w</p></td>
+<td><p>write</p></td>
+</tr>
+<tr class="row-even"><td><p>x</p></td>
+<td><p>execute</p></td>
+</tr>
+</tbody>
+</table>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+For example,
+```zsh
+chmod u=rwx,g=rx,o=r file
 
-<span class="n">変更方法</span>	<span class="n">意味</span>
-<span class="o">=</span>	<span class="n">指定した権限にする</span>
-<span class="o">+</span>	<span class="n">指定した権限を付与する</span>
-<span class="o">-</span>	<span class="n">指定した権限を除去する</span>
-
-<span class="n">変更内容</span>	<span class="n">意味</span>
-<span class="n">r</span>	<span class="n">読み取り</span>
-<span class="n">w</span>	<span class="n">書き込み</span>
-<span class="n">x</span>	<span class="n">実行</span>
+chmod u+x file
 </pre></div>
 </div>
-<p>を用いて，</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ chmod u+x file
-</pre></div>
-</div>
-<p>のように変更もできる．</p>
+<p>You can use <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">-R</span></code> to change permissions recursively.</p>
 </div>
 <div class="section" id="shell-globbing">
 <h2><span class="section-number">1.2.3. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
@@ -631,30 +678,30 @@ mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt folder
 mv *<span class="o">{</span>.py,.sh<span class="o">}</span> folder
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">find</span></code>: ファイル・ディレクトリを検索する</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）</span>
+<p><code class="docutils literal notranslate"><span class="pre">find</span></code>: find files and directories</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># search current directory for filename(not recursively)</span>
 find filename
 
-<span class="c1"># targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）</span>
+<span class="c1"># search target directory recursively for lecture0~lecture9 directories (cf. -type f)</span>
 find target -name lecture<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span> -type d
 
-<span class="c1"># 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)</span>
+<span class="c1"># search current directory recursively for files accessed within 1 day(. represents current directory)</span>
 find . -atime -1
 
-<span class="c1"># 一日前に変更された全てのファイルを検索</span>
+<span class="c1"># search current directory recursively for files modified within 1 day</span>
 find . -mtime -1
 
-<span class="c1"># 30kB以上、1MB以下のpythonファイルを検索</span>
+<span class="c1"># search current directory recursively for files with size between 30kB and 1MB</span>
 find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span>
 
-<span class="c1"># targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）</span>
+<span class="c1"># search target directory recursively for files or directories that match condition1 and condition2 (cf. -or, -not)</span>
 find target condtion1 -and condition2
 
-<span class="c1"># .txtファイルを削除</span>
+<span class="c1"># search current directory recursively for .txt files and remove them all.</span>
 find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: 文字列を検索する</p>
+<p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: search files for patterns</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search any line that contains `word` in filename</span>
 grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename 
 
