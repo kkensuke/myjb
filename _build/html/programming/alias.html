@@ -609,6 +609,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <span class="n">Or</span>
 
+<span class="c1"># use alias as a function</span>
 <span class="n">gcm</span><span class="p">(){</span> <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;$1&quot;</span> <span class="p">}</span>
 <span class="c1"># usage: gcm add</span>
 </pre></div>
@@ -695,7 +696,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="section" id="build-and-publish-a-jupyter-book">
-<span id="jbgh"></span><h3>Build and publish a jupyter-book<a class="headerlink" href="#build-and-publish-a-jupyter-book" title="Permalink to this headline">¶</a></h3>
+<h3>Build and publish a jupyter-book<a class="headerlink" href="#build-and-publish-a-jupyter-book" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>jbgh(){
 	cd ~/jupyter-book/$1/$1
 	jb build --all .

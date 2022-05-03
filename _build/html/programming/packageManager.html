@@ -415,7 +415,7 @@ To install it, input next code in the Terminal (you should check the newest code
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew --version
 </pre></div>
 </div>
-<p>if you get: Your system is ready to brew. you succeeded.
+<p>if you get: <code class="docutils literal notranslate"><span class="pre">Your</span> <span class="pre">system</span> <span class="pre">is</span> <span class="pre">ready</span> <span class="pre">to</span> <span class="pre">brew.</span></code>, you succeeded.
 you can also check by;</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew doctor
 </pre></div>
@@ -444,9 +444,9 @@ Let’s check the version of python:</p>
 </pre></div>
 </div>
 <p>and you get <code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.x.x</span></code>.</p>
-<p>Now you made a new virtual env and entered it, but actually there is no package in it.
+<p>Now you made a new virtual env and activated it, but actually there is no package in it.
 pip freeze shows the packages in your virtual env and there is no output for now.
-Before installing something, you might have to upgrade pip, which is a python package manager(change Username below):</p>
+Before installing something, you might have to upgrade <code class="docutils literal notranslate"><span class="pre">pip</span></code>, which is a python package manager(change Username below):</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>/Users/Username/test/bin/python3 -m pip install --upgrade pip
 </pre></div>
 </div>
@@ -469,6 +469,14 @@ pip install jupyterlab
 Scipy, which is for scientific computing, is also a useful package for some people.
 Now you can see many packages in your test virtual environment; try <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span></code>, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
 To deactivate the virtual env, just input: <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> in the terminal. To activate again; <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">test/bin/activate</span></code>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you want to delete the virtual env, you input</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm -rf ~/test
+</pre></div>
+</div>
+<p>in the terminal.</p>
+</div>
 </div>
 <div class="section" id="lets-use-jupyter-lab">
 <h2><span class="section-number">1.1.3. </span>Let’s use jupyter-lab!<a class="headerlink" href="#lets-use-jupyter-lab" title="Permalink to this headline">¶</a></h2>
@@ -479,6 +487,14 @@ To deactivate the virtual env, just input: <code class="docutils literal notrans
 <p>Your default browser will show up and open jupyter-lab.</p>
 <p>To deactivate juypter-lab (not virtual env), in the Terminal; Control + c and you will be asked whether to quit, so enter y [yes].
 For more details, see Python page.</p>
+<p>You can also use jupyter notebook.</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter notebook
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Renaming the virtual environment is not recommended.</p>
+</div>
 </div>
 </div>
 

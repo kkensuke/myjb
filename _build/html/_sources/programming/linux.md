@@ -17,10 +17,12 @@ Ctrl + U 行頭まで消す\
 Ctrl + K 行末まで消す\
 Ctrl + Y 上で消去した内容の貼り付け
 
+
 /	root dir\
 \.	current dir\
 \.\.	parent dir\
 ~	home dir
+
 
 pwd:	show current directory\
 ls:		directory listing
@@ -107,20 +109,20 @@ cat file1
 ```
 
 ```zsh
-cat >> file2
+cat > file2
 asdf  (入力状態になるので何か入力する)
 Ctrl + D(入力終了)
 cat file2
 # asdf
 ```
 
+`cp`:		file or dir を copy
 ```zsh
 cp file1 file3
 cat file3
 # hello
 ```
 
-`cp`:		file or dir を copy
 ```zsh
 mkdir dir1
 touch dir1/file4
@@ -208,6 +210,69 @@ x	実行
 $ chmod u+x file
 ```
 のように変更もできる．
+
+
+## Shell globbing
+
+`glob patterns` specify sets of filenames with wildcard characters. Using `glob` to find files is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
+
+There are several common wildcard characters:
+```zsh
+* : matches zero or more characters
+? : matches any single character
+[abc] : matches any character in set
+[a-z] : matches any character in range
+[!abc] : matches any character not in set
+[!a-z] : matches any character not in range
+```
+
+```zsh
+mv * folder
+mv ./{foo,bar,baz}.txt folder
+mv *{.py,.sh} folder
+```
+
+
+`find`: ファイル・ディレクトリを検索する
+```zsh
+find filename # カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）
+
+find target -name lecture[0-9] -type d # targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）
+
+find . -atime -1 # 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)
+
+find . -mtime -1 # 一日前に変更された全てのファイルを検索
+
+find . -size +30k -size -1M -name '*.py' # 30kB以上、1MB以下のpythonファイルを検索
+
+find target condtion1 -and condition2 # targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）
+
+find . -name '*.txt' -exec rm {} \; # .txtファイルを削除
+```
+
+`grep`: 文字列を検索する
+```zsh
+grep [-Options] 'word' filename # Search any line that contains the word in filename
+grep 'word' file1 file2 file3
+grep 'string1 string2'  filename
+
+Options 	Description
+-i 	Ignore case distinctions on Linux and Unix
+-w 	The expression is searched for as a word
+-v 	Select non-matching lines
+-n 	Print line number with output lines
+-h 	Suppress the Unix file name prefix on output
+-H 	Print file name with output lines
+-r 	Search directories recursivly on Linux
+-R 	Just like -r but follow all symlinks
+-l 	Print only names of FILEs with matches
+-L  Print only names of FILEs without matches
+-c 	Print only a count of selected lines per FILE
+--color 	Display matched pattern in colors
+-m NUMBER 	Stop grep command NUMBER selected lines
+-o 	Display only matched parts of lines
+```
+
 
 ## Use symbolic links instead of alias
 ```zsh

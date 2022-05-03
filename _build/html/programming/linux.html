@@ -319,8 +319,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shell-globbing">
+   1.2.3. Shell globbing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-   1.2.3. Use symbolic links instead of alias
+   1.2.4. Use symbolic links instead of alias
   </a>
  </li>
 </ul>
@@ -354,8 +359,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#shell-globbing">
+   1.2.3. Shell globbing
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-   1.2.3. Use symbolic links instead of alias
+   1.2.4. Use symbolic links instead of alias
   </a>
  </li>
 </ul>
@@ -467,19 +477,19 @@ cat file1
 <span class="c1"># hello</span>
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cat &gt;&gt; file2
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cat &gt; file2
 asdf  <span class="o">(</span>入力状態になるので何か入力する<span class="o">)</span>
 Ctrl + D<span class="o">(</span>入力終了<span class="o">)</span>
 cat file2
 <span class="c1"># asdf</span>
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>:		file or dir を copy</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cp file1 file3
 cat file3
 <span class="c1"># hello</span>
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">cp</span></code>:		file or dir を copy</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir dir1
 touch dir1/file4
 cp -r dir1 dir2
@@ -562,8 +572,64 @@ tree -L <span class="m">2</span> 2階層だけ表示
 </div>
 <p>のように変更もできる．</p>
 </div>
+<div class="section" id="shell-globbing">
+<h2><span class="section-number">1.2.3. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> to find files is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
+<p>There are several common wildcard characters:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
+? : matches any single character
+<span class="o">[</span>abc<span class="o">]</span> : matches any character <span class="k">in</span> <span class="nb">set</span>
+<span class="o">[</span>a-z<span class="o">]</span> : matches any character <span class="k">in</span> range
+<span class="o">[</span>!abc<span class="o">]</span> : matches any character not <span class="k">in</span> <span class="nb">set</span>
+<span class="o">[</span>!a-z<span class="o">]</span> : matches any character not <span class="k">in</span> range
+</pre></div>
+</div>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv * folder
+mv ./<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt folder
+mv *<span class="o">{</span>.py,.sh<span class="o">}</span> folder
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">find</span></code>: ファイル・ディレクトリを検索する</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>find filename <span class="c1"># カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）</span>
+
+find target -name lecture<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span> -type d <span class="c1"># targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）</span>
+
+find . -atime -1 <span class="c1"># 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)</span>
+
+find . -mtime -1 <span class="c1"># 一日前に変更された全てのファイルを検索</span>
+
+find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span> <span class="c1"># 30kB以上、1MB以下のpythonファイルを検索</span>
+
+find target condtion1 -and condition2 <span class="c1"># targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）</span>
+
+find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span> <span class="c1"># .txtファイルを削除</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: 文字列を検索する</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename <span class="c1"># Search any line that contains the word in filename</span>
+grep <span class="s1">&#39;word&#39;</span> file1 file2 file3
+grep <span class="s1">&#39;string1 string2&#39;</span>  filename
+
+Options 	Description
+-i 	Ignore <span class="k">case</span> distinctions on Linux and Unix
+-w 	The expression is searched <span class="k">for</span> as a word
+-v 	Select non-matching lines
+-n 	Print line number with output lines
+-h 	Suppress the Unix file name prefix on output
+-H 	Print file name with output lines
+-r 	Search directories recursivly on Linux
+-R 	Just like -r but follow all symlinks
+-l 	Print only names of FILEs with matches
+-L  Print only names of FILEs without matches
+-c 	Print only a count of selected lines per FILE
+--color 	Display matched pattern <span class="k">in</span> colors
+-m NUMBER 	Stop grep <span class="nb">command</span> NUMBER selected lines
+-o 	Display only matched parts of lines
+</pre></div>
+</div>
+</div>
 <div class="section" id="use-symbolic-links-instead-of-alias">
-<h2><span class="section-number">1.2.3. </span>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.2.4. </span>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
 </pre></div>
 </div>

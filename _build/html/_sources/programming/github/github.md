@@ -11,7 +11,7 @@ tags:
 ---
 # GitHub
 
-## Basic
+## What is Git/GitHub?
 
 ```{image} ./img/GitHub-flow.png
 :name: flow
@@ -19,43 +19,17 @@ tags:
 :align: center
 ```
 
-You can learn Git/GitHub at https://www.atlassian.com/git/tutorials
+## VCS (version control system)
+When developing source code or documentation, VCS(version control system) is a system that not only saves the latest state but also saves the state at every moments so that it can be referred back to or restored later.
+Program development does not necessarily proceed in a straight line from ver1 to ver2.
+Sometimes a program is divided into two or more branches: a stable version that maintains the current state and only fixes problems, and a development version that actively adds new functions.
+Git has a branching mechanism that allows you to branch projects and develop each branches, and also allows you to merge the branched projects.
+
+## Local repository and remote repository
+There are two types of repositories: local repositories on your PC and remote repositories on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.
 
 
-<!--
-VCS (version control system)
-プログラムのソースコードやドキュメントを開発する際に，最新の状態を保存するだけでなく，様々なタイミングの状態を保存しておき，
-後から遡って参照したり，元に戻せるようにする仕組みをVCSという．プログラムの開発は，ver1, ver2と一本道で進むとは限りません．
-現状を維持して問題点の修正のみを行う安定板と新子機能を積極的に追加する開発版など，複数に枝分かれさせることがあります．
-Gitにはブラン位という仕組みがあり，プロジェクトを分岐させてそれぞれの開発を進めたり，また，分岐させたプロジェクトを合流させる機能があります．
-
-local repo and remote repo
-　本章ではパッケージ管理ようのリポジトリという言葉が何度も登場しますが，Gitでもソースコードや変更履歴，コメントなどを一括して保管する場所として，リポジトリが使われています．Gitのリポジトリは自分のPC状に作るローカルリポジトリと共有するサーバー状に作るリモートリポジトリの二つがあります．変更履歴などの情報は，それぞれのリポジトリに保存されています．このような管理方法を分散型バージョン管理(distributed version control)と言います．
-
-
-
--->
-
-
-<!--
-解説
-保管場所であるリポジトリに対し、ファイルの編集などを行う場所を「ワークツリー」あるいは「ワーキングエリア」などと呼びます。「git clone」や「git pull」で取得した最新版のファイルはワークツリーに配置されます。つまり「作業ディレクトリ」です。
-
-ワークツリー（作業ディレクトリ）で編集した結果をリポジトリに反映する操作を「コミット」と呼びます。「git add」コマンドでコミットしたいファイルを「インデックス」あるいは「ステージングエリア」と呼ばれる領域に追加します。インデックスにはファイルの変更箇所などが記録されます。
-
-インデックスの内容は「git commit」コマンドでローカルリポジトリにコミットされ、「git push」コマンドでローカルリポジトリの内容をリモートリポジトリに反映します。従って、「git add」や「git commit」などを行わなければ、自分の環境で編集した内容がリポジトリに影響を与えることはありません。自由に編集し、テストできます。なお、ワークツリーのファイルを過去の任意のコミット状態に戻すことも可能です。
-
-### git add
-
-```
-git add FILENAME
-git add .
-git add -A
-```
-
-```
-```
--->
+You can learn Git/GitHub in detail at [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) and https://www.atlassian.com/git/tutorials
 
 ### Create a new repository
 First, make a repository on the GitHub website without initializing.
@@ -147,7 +121,7 @@ Let's make a new branch!
 ```
 # make a branch
 $ git branch <branch>
-# switch to branch1 from main
+# switch to <branch> from main
 $ git checkout <branch>
 ```
 
