@@ -1,6 +1,4 @@
-# Jupyter book
-
-
+# Let's make a Jupyter book
 
 We are going to make a structure below.
 ```zsh

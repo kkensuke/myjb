@@ -20,9 +20,11 @@ parts:
       - file: programming/github/github
       - file: programming/github/commitMessage
       - file: programming/path
-      - file: programming/jb
-      - file: programming/myst
       - file: programming/vscodeExtensions
+    - file: jb/jb
+      sections:
+        - file: jb/mkjb
+        - file : jb/myst
     - file: python/python0
       sections:
         - file: python/python
