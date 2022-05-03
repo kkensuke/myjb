@@ -1,13 +1,13 @@
 # Useful Mac Apps
 
 - Rectangle
-- Copyclip
+- Clipy
 - CheatSheet
 - CustomShortCut
 - DeepL
 - Accelerate
-- IINA
-- G app launcher for Safari
+- G app launcher
+- Zotero
 
 
 ## Rectangle
@@ -56,14 +56,9 @@ DeepL is the world's best translation machine!
 You can speedup/down youtube video easily.
 Playback speed range is 0.25x~16x and you can decide speed interval.
 
-## IINA
+## G app launcher
 
-Good video player
-
-
-## G app launcher for Safari
-
-You can use Google apps(Google map, Google Keep, YouTube, etc.) as extensions in Safari.
+You can use Google apps(Google map, Google Keep, YouTube, etc.) as extensions in Safari, Firefox.
 
 
 ## Zotero

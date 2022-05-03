@@ -322,11 +322,13 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#shell-globbing">
    1.2.3. Shell globbing
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-   1.2.4. Use symbolic links instead of alias
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
+     Use symbolic links instead of alias
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -362,11 +364,13 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#shell-globbing">
    1.2.3. Shell globbing
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-   1.2.4. Use symbolic links instead of alias
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
+     Use symbolic links instead of alias
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -574,7 +578,7 @@ tree -L <span class="m">2</span> 2階層だけ表示
 </div>
 <div class="section" id="shell-globbing">
 <h2><span class="section-number">1.2.3. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> to find files is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
+<p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
 ? : matches any single character
@@ -584,54 +588,103 @@ tree -L <span class="m">2</span> 2階層だけ表示
 <span class="o">[</span>!a-z<span class="o">]</span> : matches any character not <span class="k">in</span> range
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv * folder
-mv ./<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt folder
+<p>Some examples:</p>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `directory`</span>
+mv * folder
+<span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `directory`</span>
+<span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `directory`</span>
+mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt folder
+<span class="c1"># move all pyhon and shell files to `directory`</span>
 mv *<span class="o">{</span>.py,.sh<span class="o">}</span> folder
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code>: ファイル・ディレクトリを検索する</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>find filename <span class="c1"># カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># カレントディレクトリでfilenameと言う名前のファイル・ディレクトリを検索（下の階層は検索されない）</span>
+find filename
 
-find target -name lecture<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span> -type d <span class="c1"># targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）</span>
+<span class="c1"># targetより下の階層でlecture0~lecture9までの名前のディレクトリを検索（cf. -type f）</span>
+find target -name lecture<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span> -type d
 
-find . -atime -1 <span class="c1"># 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)</span>
+<span class="c1"># 1日以内にアクセスされたファイルを検索(. はカレントディレクトリ)</span>
+find . -atime -1
 
-find . -mtime -1 <span class="c1"># 一日前に変更された全てのファイルを検索</span>
+<span class="c1"># 一日前に変更された全てのファイルを検索</span>
+find . -mtime -1
 
-find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span> <span class="c1"># 30kB以上、1MB以下のpythonファイルを検索</span>
+<span class="c1"># 30kB以上、1MB以下のpythonファイルを検索</span>
+find . -size +30k -size -1M -name <span class="s1">&#39;*.py&#39;</span>
 
-find target condtion1 -and condition2 <span class="c1"># targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）</span>
+<span class="c1"># targetより下の階層でcondition1とcondition2を同時に満たすファイルを検索（cf. -or, -not）</span>
+find target condtion1 -and condition2
 
-find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span> <span class="c1"># .txtファイルを削除</span>
+<span class="c1"># .txtファイルを削除</span>
+find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}</span> <span class="se">\;</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: 文字列を検索する</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename <span class="c1"># Search any line that contains the word in filename</span>
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search any line that contains `word` in filename</span>
+grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename 
+
 grep <span class="s1">&#39;word&#39;</span> file1 file2 file3
 grep <span class="s1">&#39;string1 string2&#39;</span>  filename
-
-Options 	Description
--i 	Ignore <span class="k">case</span> distinctions on Linux and Unix
--w 	The expression is searched <span class="k">for</span> as a word
--v 	Select non-matching lines
--n 	Print line number with output lines
--h 	Suppress the Unix file name prefix on output
--H 	Print file name with output lines
--r 	Search directories recursivly on Linux
--R 	Just like -r but follow all symlinks
--l 	Print only names of FILEs with matches
--L  Print only names of FILEs without matches
--c 	Print only a count of selected lines per FILE
---color 	Display matched pattern <span class="k">in</span> colors
--m NUMBER 	Stop grep <span class="nb">command</span> NUMBER selected lines
--o 	Display only matched parts of lines
 </pre></div>
 </div>
-</div>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Options</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>-i</p></td>
+<td><p>Ignore case distinctions</p></td>
+</tr>
+<tr class="row-odd"><td><p>-w</p></td>
+<td><p>The expression is searched for as a word</p></td>
+</tr>
+<tr class="row-even"><td><p>-v</p></td>
+<td><p>Select non-matching lines</p></td>
+</tr>
+<tr class="row-odd"><td><p>-n</p></td>
+<td><p>Print line number with output lines</p></td>
+</tr>
+<tr class="row-even"><td><p>-h</p></td>
+<td><p>Suppress the Unix file name prefix on output</p></td>
+</tr>
+<tr class="row-odd"><td><p>-H</p></td>
+<td><p>Print file name with output lines</p></td>
+</tr>
+<tr class="row-even"><td><p>-r</p></td>
+<td><p>Search directories recursivly on Linux</p></td>
+</tr>
+<tr class="row-odd"><td><p>-R</p></td>
+<td><p>Just like -r but follow all symlinks</p></td>
+</tr>
+<tr class="row-even"><td><p>-l</p></td>
+<td><p>Print only names of FILEs with matches</p></td>
+</tr>
+<tr class="row-odd"><td><p>-L</p></td>
+<td><p>Print only names of FILEs without matches</p></td>
+</tr>
+<tr class="row-even"><td><p>-c</p></td>
+<td><p>Print only a count of selected lines per FILE</p></td>
+</tr>
+<tr class="row-odd"><td><p>–color</p></td>
+<td><p>Display matched pattern in colors</p></td>
+</tr>
+<tr class="row-even"><td><p>-m NUMBER</p></td>
+<td><p>Stop grep command NUMBER selected lines</p></td>
+</tr>
+<tr class="row-odd"><td><p>-o</p></td>
+<td><p>Display only matched parts of lines</p></td>
+</tr>
+</tbody>
+</table>
 <div class="section" id="use-symbolic-links-instead-of-alias">
-<h2><span class="section-number">1.2.4. </span>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h2>
+<h3>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
 </pre></div>
+</div>
 </div>
 </div>
 </div>
