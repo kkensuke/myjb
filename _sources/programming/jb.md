@@ -30,7 +30,7 @@ You can see that you are using python in the venv.
 
 ### Update pip:
 ```zsh
-$ /Users/<home>/jupyter-book/test-book/.venv/bin/python3 -m pip install --upgrade pip
+$ /Users/<home>/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 ```
 
 Install jupyter-book package

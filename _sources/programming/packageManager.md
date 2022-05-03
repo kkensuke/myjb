@@ -48,7 +48,7 @@ Let's check whether you succeeded!
 brew --version
 ```
 
-if you get: Your system is ready to brew. you succeeded.
+if you get: `Your system is ready to brew.`, you succeeded.
 you can also check by;
 ```zsh
 brew doctor
@@ -79,9 +79,9 @@ python -V
 ```
 and you get `Python 3.x.x`.
 
-Now you made a new virtual env and entered it, but actually there is no package in it.
+Now you made a new virtual env and activated it, but actually there is no package in it.
 pip freeze shows the packages in your virtual env and there is no output for now. 
-Before installing something, you might have to upgrade pip, which is a python package manager(change Username below):
+Before installing something, you might have to upgrade `pip`, which is a python package manager(change Username below):
 ```zsh
 /Users/Username/test/bin/python3 -m pip install --upgrade pip
 ```
@@ -107,6 +107,14 @@ Scipy, which is for scientific computing, is also a useful package for some peop
 Now you can see many packages in your test virtual environment; try `pip freeze`, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
 To deactivate the virtual env, just input: `deactivate` in the terminal. To activate again; `source test/bin/activate`.
 
+````{warning}
+If you want to delete the virtual env, you input 
+```zsh
+rm -rf ~/test
+```
+in the terminal.
+````
+
 ## Let's use jupyter-lab!
 You installed jupyter-lab, so let's try to use it !!
 
@@ -117,4 +125,14 @@ Your default browser will show up and open jupyter-lab.
 
 To deactivate juypter-lab (not virtual env), in the Terminal; Control + c and you will be asked whether to quit, so enter y [yes]. 
 For more details, see Python page.
+
+You can also use jupyter notebook.
+```zsh
+jupyter notebook
+```
+
+```{note}
+Renaming the virtual environment is not recommended.
+```
+
 

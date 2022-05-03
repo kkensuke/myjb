@@ -76,6 +76,7 @@ alias gcm='git commit -m '
 
 Or
 
+# use alias as a function
 gcm(){ git commit -m "$1" }
 # usage: gcm add
 ```
@@ -154,7 +155,7 @@ mkvjb() {
 	    ├── .venv
 	    └── test-book
 ```
-(jbgh)=
+
 ### Build and publish a jupyter-book
 ```
 jbgh(){
