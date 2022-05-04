@@ -8,8 +8,8 @@ author                      : kk564            # The author of the book
 email                       :
 #authors                     :
 copyright                   : "2022"           # Copyright year to be placed in the footer
-# project_copyright          : an alias of copyright
-logo                        : logo.png         # A path to the book logo
+#project_copyright           : an alias of copyright
+#logo                        : logo.png         # A path to the book logo
 #organization                : 
 #address                     : 
 #contact                     : 

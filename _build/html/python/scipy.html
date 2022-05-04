@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2.3. Numerical Calculation by Scipy &#8212; My Jupyter Book</title>
+    <title>2.3. Scipy &#8212; My Jupyter Book</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -119,11 +119,6 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
-        
-      
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
       
       
       <h1 class="site-logo" id="site-title">My Jupyter Book</h1>
@@ -209,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
-     2.3. Numerical Calculation by Scipy
+     2.3. Scipy
     </a>
    </li>
    <li class="toctree-l2">
@@ -299,9 +294,9 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/python/scipy.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/python/scipy.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
                 onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -322,7 +317,7 @@ const thebe_selector_output = ".output, .cell_output"
             href="https://github.com/kk564/myjb/issues/new?title=Issue%20on%20page%20%2Fpython/scipy.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/kk564/myjb/edit/main//python/scipy.md"><button
+        <a class="edit-button" href="https://github.com/kk564/myjb/edit/main//python/scipy.ipynb"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -342,72 +337,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#differentiation">
-   2.3.1. Differentiation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">
-     scipy.integrate.solve_ivp
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#integration">
-   2.3.2. Integration
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-integrate-quad">
-     scipy.integrate.quad
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#root-finding">
-   2.3.3. Root finding
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-optimize-root-scalar">
-     scipy.optimize.root_scalar
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-optimize-root">
-     scipy.optimize.root
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#optimization">
-   2.3.4. Optimization
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#local-multivariate-optimization">
-     Local (multivariate) optimization
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#least-squares">
-     Least-squares
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -415,245 +344,181 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Numerical Calculation by Scipy</h1>
+                <h1>Scipy</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#differentiation">
-   2.3.1. Differentiation
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-integrate-solve-ivp">
-     scipy.integrate.solve_ivp
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#integration">
-   2.3.2. Integration
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-integrate-quad">
-     scipy.integrate.quad
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#root-finding">
-   2.3.3. Root finding
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-optimize-root-scalar">
-     scipy.optimize.root_scalar
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#scipy-optimize-root">
-     scipy.optimize.root
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#optimization">
-   2.3.4. Optimization
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#local-multivariate-optimization">
-     Local (multivariate) optimization
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#least-squares">
-     Least-squares
-    </a>
-   </li>
-  </ul>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="numerical-calculation-by-scipy">
-<h1><span class="section-number">2.3. </span>Numerical Calculation by Scipy<a class="headerlink" href="#numerical-calculation-by-scipy" title="Permalink to this headline">¶</a></h1>
-<p><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/optimize.html">Scipy</a></p>
-<div class="section" id="differentiation">
-<h2><span class="section-number">2.3.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="scipy-integrate-solve-ivp">
-<h3>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">¶</a></h3>
-<p>Solve an initial value problem for a system of ODEs.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">dy</span> <span class="o">/</span> <span class="n">dt</span> <span class="o">=</span> <span class="n">fun</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-<span class="n">y</span><span class="p">(</span><span class="n">t0</span><span class="p">)</span> <span class="o">=</span> <span class="n">y0</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">solve_ivp</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">t_span</span><span class="p">,</span> <span class="n">y0</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;RK45&#39;</span><span class="p">,</span> <span class="n">t_eval</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                          <span class="n">dense_output</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">events</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">vectorized</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
-                          <span class="n">args</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+  <div class="tex2jax_ignore mathjax_ignore section" id="scipy">
+<h1><span class="section-number">2.3. </span><a class="reference external" href="https://docs.scipy.org/doc/scipy/reference/optimize.html">Scipy</a><a class="headerlink" href="#scipy" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>## Differentiation
+### scipy.integrate.solve_ivp
+Solve an initial value problem for a system of ODEs.
+```
+dy / dt = fun(t, y)
+y(t0) = y0
+```
 
-<span class="k">def</span> <span class="nf">lotkavolterra</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
-    <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">z</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">a</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="n">b</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">,</span> <span class="o">-</span><span class="n">c</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="n">d</span><span class="o">*</span><span class="n">x</span><span class="o">*</span><span class="n">y</span><span class="p">]</span>
+```python
+scipy.integrate.solve_ivp(fun, t_span, y0, method=&#39;RK45&#39;, t_eval=None,
+                          dense_output=False, events=None, vectorized=False,
+                          args=None, **options)
+```
 
-<span class="n">sol</span> <span class="o">=</span> <span class="n">solve_ivp</span><span class="p">(</span><span class="n">lotkavolterra</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">],</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-                <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span>   <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span><span class="n">dense_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+```python
+import matplotlib.pyplot as plt
 
-<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">300</span><span class="p">)</span>
-<span class="n">z</span> <span class="o">=</span> <span class="n">sol</span><span class="o">.</span><span class="n">sol</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+def lotkavolterra(t, z, a, b, c, d):
+    x, y = z
+    return [a*x - b*x*y, -c*y + d*x*y]
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Lotka-Volterra System&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="integration">
-<h2><span class="section-number">2.3.2. </span>Integration<a class="headerlink" href="#integration" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="scipy-integrate-quad">
-<h3>scipy.integrate.quad<a class="headerlink" href="#scipy-integrate-quad" title="Permalink to this headline">¶</a></h3>
-<p>Compute a definite integral.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">full_output</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">epsabs</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span>
-                     <span class="n">epsrel</span><span class="o">=</span><span class="mf">1.49e-08</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">points</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">weight</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                     <span class="n">wvar</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">wopts</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">maxp1</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">limlst</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Return <code class="docutils literal notranslate"><span class="pre">y</span></code> and <code class="docutils literal notranslate"><span class="pre">abserr</span></code>.</p>
-<ul class="simple">
-<li><p>y(float): The integral of func from a to b.</p></li>
-<li><p>abserr(float): An estimate of the absolute error in the result.</p></li>
-</ul>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">integrate</span>
+sol = solve_ivp(lotkavolterra, [0, 15], [10, 5],
+                args=(1.5, 1,   3, 1),dense_output=True)
 
-<span class="n">x2</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">integrate</span><span class="o">.</span><span class="n">quad</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>  <span class="c1"># numerical result</span>
-<span class="c1"># (21.333333333333332, 2.3684757858670003e-13)</span>
+t = np.linspace(0, 15, 300)
+z = sol.sol(t)
 
-<span class="nb">print</span><span class="p">(</span><span class="mi">4</span><span class="o">**</span><span class="mi">3</span> <span class="o">/</span> <span class="mf">3.</span><span class="p">)</span>  <span class="c1"># analytical result</span>
-<span class="c1"># 21.3333333333</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="root-finding">
-<h2><span class="section-number">2.3.3. </span>Root finding<a class="headerlink" href="#root-finding" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="scipy-optimize-root-scalar">
-<h3>scipy.optimize.root_scalar<a class="headerlink" href="#scipy-optimize-root-scalar" title="Permalink to this headline">¶</a></h3>
-<p>Find a root of a scalar function.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                           <span class="n">fprime</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">fprime2</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                           <span class="n">xtol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">rtol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mi">1</span>
+plt.plot(t, z.T)
+plt.xlabel(&#39;t&#39;)
+plt.legend([&#39;x&#39;, &#39;y&#39;], shadow=True)
+plt.title(&#39;Lotka-Volterra System&#39;)
+plt.show()
+```
 
-<span class="n">sol</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">root_scalar</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">bracket</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">root</span><span class="p">)</span>
-<span class="c1"># 1.0</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="scipy-optimize-root">
-<h3>scipy.optimize.root<a class="headerlink" href="#scipy-optimize-root" title="Permalink to this headline">¶</a></h3>
-<p>Find a root of a vector function.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">root</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;hybr&#39;</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                    <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">optimize</span>
+## Integration
+### scipy.integrate.quad
+Compute a definite integral.
+```python
+scipy.integrate.quad(func, a, b, args=(), full_output=0, epsabs=1.49e-08,
+                     epsrel=1.49e-08, limit=50, points=None, weight=None,
+                     wvar=None, wopts=None, maxp1=50, limlst=50)
+```
 
-<span class="k">def</span> <span class="nf">fun</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>  <span class="o">+</span> <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">3</span> <span class="o">-</span> <span class="mf">1.0</span><span class="p">,</span>
-    <span class="mf">0.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+Return `y` and `abserr`.
 
-<span class="k">def</span> <span class="nf">jac</span><span class="p">(</span><span class="n">x</span><span class="p">):</span><span class="c1"># Jacbian</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
-                    <span class="o">-</span><span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">],</span>
-                    <span class="p">[</span><span class="o">-</span><span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
-                    <span class="mi">1</span> <span class="o">+</span> <span class="mf">1.5</span> <span class="o">*</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span><span class="p">]])</span>
+- y(float): The integral of func from a to b.
+- abserr(float): An estimate of the absolute error in the result.
 
-<span class="n">sol</span> <span class="o">=</span> <span class="n">optimize</span><span class="o">.</span><span class="n">root</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="n">jac</span><span class="o">=</span><span class="n">jac</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;hybr&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">sol</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
-<span class="c1"># array([ 0.8411639,  0.1588361])</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="section" id="optimization">
-<h2><span class="section-number">2.3.4. </span>Optimization<a class="headerlink" href="#optimization" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="local-multivariate-optimization">
-<h3>Local (multivariate) optimization<a class="headerlink" href="#local-multivariate-optimization" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">minimize</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">method</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">hess</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
-                        <span class="n">hessp</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">constraints</span><span class="o">=</span><span class="p">(),</span> <span class="n">tol</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
-                        <span class="n">callback</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">options</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">minimize</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+```python
+from scipy import integrate
 
-<span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
-<span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="n">res</span> <span class="o">=</span> <span class="n">minimize</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">&#39;CG&#39;</span><span class="p">,</span><span class="n">options</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;disp&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">})</span>
-<span class="n">res</span><span class="o">.</span><span class="n">x</span> <span class="c1"># solution</span>
-</pre></div>
-</div>
-</div>
-<div class="section" id="least-squares">
-<h3>Least-squares<a class="headerlink" href="#least-squares" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">scipy</span><span class="o">.</span><span class="n">optimize</span><span class="o">.</span><span class="n">least_squares</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">jac</span><span class="o">=</span><span class="s1">&#39;2-point&#39;</span><span class="p">,</span> <span class="n">bounds</span><span class="o">=</span><span class="p">(</span><span class="o">-</span> <span class="n">inf</span><span class="p">,</span> <span class="n">inf</span><span class="p">),</span> 
-                            <span class="n">method</span><span class="o">=</span><span class="s1">&#39;trf&#39;</span><span class="p">,</span> <span class="n">ftol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">xtol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> <span class="n">gtol</span><span class="o">=</span><span class="mf">1e-08</span><span class="p">,</span> 
-                            <span class="n">x_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">loss</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">f_scale</span><span class="o">=</span><span class="mf">1.0</span><span class="p">,</span> <span class="n">diff_step</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
-                            <span class="n">tr_solver</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tr_options</span><span class="o">=</span><span class="p">{},</span> <span class="n">jac_sparsity</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> 
-                            <span class="n">max_nfev</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(),</span> <span class="n">kwargs</span><span class="o">=</span><span class="p">{})</span>
-</pre></div>
-</div>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Solve a nonlinear least-squares problem with bounds on the variables.</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">os</span>
-<span class="kn">import</span> <span class="nn">scipy.optimize</span> <span class="k">as</span> <span class="nn">opt</span>
+x2 = lambda x: x**2
+integrate.quad(x2, 0, 4)  # numerical result
+# (21.333333333333332, 2.3684757858670003e-13)
 
-<span class="n">fitFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span><span class="n">t</span><span class="p">:</span> <span class="n">p</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="n">p</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="n">t</span><span class="p">)</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">p</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">*</span><span class="n">t</span><span class="p">)</span>
-<span class="n">errFunc</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">p</span><span class="p">,</span><span class="n">t</span><span class="p">,</span><span class="n">u</span><span class="p">:</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">t</span><span class="p">)</span> <span class="o">-</span> <span class="n">u</span>
+print(4**3 / 3.)  # analytical result
+# 21.3333333333
+```
 
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">([</span><span class="mi">3</span><span class="p">,</span><span class="mf">0.5</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">/</span><span class="mi">3</span>
+## Root finding
+### scipy.optimize.root_scalar
+Find a root of a scalar function.
+```python
+scipy.optimize.root_scalar(f, args=(), method=None, bracket=None,
+                           fprime=None, fprime2=None, x0=None, x1=None,
+                           xtol=None, rtol=None, maxiter=None, options=None)
+```
 
-<span class="n">p0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="c1"># Initial values</span>
-<span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">success</span><span class="p">)</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">leastsq</span><span class="p">(</span><span class="n">errFunc</span><span class="p">,</span> <span class="n">p0</span><span class="p">,</span> <span class="n">args</span><span class="o">=</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">success</span><span class="p">)</span>
-<span class="n">nfit</span> <span class="o">=</span> <span class="n">fitFunc</span><span class="p">(</span><span class="n">p</span><span class="p">,</span><span class="n">x</span><span class="p">)</span>
+```python
+from scipy import optimize
+def f(x):
+    return x**3 - 1
 
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;Measured data&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;orange&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">nfit</span><span class="p">,</span><span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;fitting curve&#39;</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;red&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+sol = optimize.root_scalar(f, bracket=[0, 3])
+print(sol.root)
+# 1.0
+```
+
+
+### scipy.optimize.root
+Find a root of a vector function.
+```python
+scipy.optimize.root(func, x0, args=(), method=&#39;hybr&#39;, jac=None, tol=None,
+                    callback=None, options=None)
+```
+
+```python
+from scipy import optimize
+
+def fun(x):
+    return [x[0]  + 0.5 * (x[0] - x[1])**3 - 1.0,
+    0.5 * (x[1] - x[0])**3 + x[1]]
+
+def jac(x):# Jacbian
+    return np.array([[1 + 1.5 * (x[0] - x[1])**2,
+                    -1.5 * (x[0] - x[1])**2],
+                    [-1.5 * (x[1] - x[0])**2,
+                    1 + 1.5 * (x[1] - x[0])**2]])
+
+sol = optimize.root(fun, [0, 0], jac=jac, method=&#39;hybr&#39;)
+print(sol.x)
+# array([ 0.8411639,  0.1588361])
+```
+
+## Optimization
+### Local (multivariate) optimization
+
+```python
+scipy.optimize.minimize(fun, x0, args=(), method=None, jac=None, hess=None, 
+                        hessp=None, bounds=None, constraints=(), tol=None,
+                        callback=None, options=None)
+```
+
+```python
+import numpy as np
+from scipy.optimize import minimize
+def f(x):
+    return (1 - x[0])**2 + 5*(x[1] - x[0]**2)**2
+
+f = lambda x: (1 - x[0])**2 + 5*(x[1] - x[0]**2)**2
+x0 = [-1,-1]
+res = minimize(f, x0, method=&#39;CG&#39;,options={&#39;disp&#39;: True})
+res.x # solution
+```
+
+
+### Least-squares
+```python
+scipy.optimize.least_squares(fun, x0, jac=&#39;2-point&#39;, bounds=(- inf, inf), 
+                            method=&#39;trf&#39;, ftol=1e-08, xtol=1e-08, gtol=1e-08, 
+                            x_scale=1.0, loss=&#39;linear&#39;, f_scale=1.0, diff_step=None, 
+                            tr_solver=None, tr_options={}, jac_sparsity=None, 
+                            max_nfev=None, verbose=0, args=(), kwargs={})
+```
+
+
+```python
+# Solve a nonlinear least-squares problem with bounds on the variables.
+import numpy as np
+import matplotlib.pyplot as plt
+import os
+import scipy.optimize as opt
+
+fitFunc = lambda p,t: p[0]*np.exp(-p[1]*t)*np.cos(p[2]*t)
+errFunc = lambda p,t,u: fitFunc(p,t) - u
+
+x = np.linspace(0,5,100)
+y = fitFunc([3,0.5,3],x) + np.random.randn(len(x))/3
+
+p0 = [1,1,1]# Initial values
+(p,success) = opt.leastsq(errFunc, p0, args=(x,y))
+print(p,success)
+nfit = fitFunc(p,x)
+
+plt.plot(x,y,label = &#39;Measured data&#39;, color = &#39;orange&#39;)
+plt.plot(x,nfit,label = &#39;fitting curve&#39;, color = &#39;red&#39;)
+plt.legend()
+plt.show()
+```
+
 </pre></div>
 </div>
 </div>
