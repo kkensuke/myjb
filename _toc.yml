@@ -20,7 +20,7 @@ parts:
       - file: programming/github/github
       - file: programming/github/commitMessage
       - file: programming/path
-#      - file: programming/markdown
+      - file: programming/markdown
       - file: programming/vscodeExtensions
     - file: jb/jb
       sections:
