@@ -3,7 +3,7 @@
 
 # # Sympy
 
-# In[7]:
+# In[2]:
 
 
 from sympy import *
@@ -14,12 +14,11 @@ import sympy
 sympy.init_printing() # If all you want is the best pretty printing, use the init_printing() function.
 
 
-# In[8]:
+# In[3]:
 
 
 x = Symbol('x')
 y = Symbol('y')
-z = sympy.var('z')
 
 
 # In[9]:

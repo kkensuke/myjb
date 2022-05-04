@@ -74,7 +74,8 @@ print(4**3 / 3.)  # analytical result
 # >    x0=None, x1=None, xtol=None, rtol=None, maxiter=None, options=None)
 # >```
 
-# find a root of a scalar function $$f(x) = x^2 - x -1 $$
+# find a root of a scalar function
+# $$f(x) = x^2 - x -1 $$
 
 # In[25]:
 
@@ -122,7 +123,8 @@ print(sol.x)
 # >    hessp=None, bounds=None, constraints=(), tol=None, callback=None, options=None)
 # >```
 
-# find the minimum point of $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
+# find the minimum point of
+# $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
 
 # In[31]:
 

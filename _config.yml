@@ -3,7 +3,7 @@
 
 #######################################################################################
 # Book settings
-title                       : My Jupyter Book  # The title of the book. Will be placed in the left navbar.
+title                       : My note  # The title of the book. Will be placed in the left navbar.
 author                      : kk564            # The author of the book
 email                       :
 #authors                     :
