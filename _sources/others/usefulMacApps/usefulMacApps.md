@@ -5,7 +5,6 @@
 - CheatSheet
 - CustomShortCut
 - DeepL
-- Accelerate
 - G app launcher
 - Zotero
 
@@ -51,10 +50,8 @@ You can redefine shortcut keys easily.
 
 DeepL is the world's best translation machine!
 
-## Accelerate
-
-You can speedup/down youtube video easily.
-Playback speed range is 0.25x~16x and you can decide speed interval.
+## Enhancer for YouTube
+Best extension to improve your user experience on YouTube!
 
 ## G app launcher
 

@@ -1,6 +1,8 @@
 # Welcome to my Jupyter Book
 
- still under construction
+Under construction
 
-- Programming
-- Apps
+- Programming basics
+- Python
+- Jupyer book
+- Others
