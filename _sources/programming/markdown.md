@@ -57,9 +57,9 @@
 
 ## Color
 >```
-><font color="red">赤い文字！！！</font>
+><font color="red">Red string</font>
 >```
->><font color="red">赤い文字！！！</font>
+>><font color="red">Red string </font>
 ---
 
 ## Code
@@ -103,8 +103,6 @@
 >
 >`asdf`
 >
->$\LaTeX$
->
 >*asdf*
 >_adsf_
 >
@@ -122,8 +120,6 @@
 >>
 >>`asdf`
 >>
->>$\LaTeX$
->>
 >>*asdf*
 >>_adsf_
 >>
@@ -139,11 +135,13 @@
 
 ## Latex
 >```
+>>$\LaTeX$
 >$$
 >\left( \sum_{k=1}^n a_k b_k \right)^2 \leq
 >\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 >\right)
 >$$
 >```
+>>$\LaTeX$
 >>$$
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq
 \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)

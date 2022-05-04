@@ -3,7 +3,7 @@
 ## Extensions
 - Material Theme
 - Material Icon Theme
-- GitLens — Git supercharged
+- GitLens
 - GitHub Copilot
 - Prettier - Code formatter
 - indent-rainbow
