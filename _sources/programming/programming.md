@@ -1,4 +1,4 @@
-# Programming
+# Programming basics
 
 - Install Homebrew and make a Virtual Environment of python
 - Linux/Unix
