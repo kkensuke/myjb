@@ -74,6 +74,8 @@ print(4**3 / 3.)  # analytical result
 # >    x0=None, x1=None, xtol=None, rtol=None, maxiter=None, options=None)
 # >```
 
+# find a root of a scalar function $$f(x) = x^2 - x -1 $$
+
 # In[25]:
 
 
@@ -120,12 +122,12 @@ print(sol.x)
 # >    hessp=None, bounds=None, constraints=(), tol=None, callback=None, options=None)
 # >```
 
-# In[28]:
+# find the minimum point of $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
+
+# In[31]:
 
 
 from scipy.optimize import minimize
-def f(x):
-    return (1 - x[0])**2 + 5*(x[1] - x[0]**2)**2
 
 f = lambda x: (1 - x[0])**2 + 5*(x[1] - x[0]**2)**2
 x0 = [-1,-1]
