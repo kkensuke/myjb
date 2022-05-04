@@ -3,8 +3,101 @@
 
 # # Sympy
 
-# In[ ]:
+# In[7]:
 
 
+from sympy import *
+import numpy as np
+import matplotlib.pyplot as plt
 
+import sympy
+sympy.init_printing() # If all you want is the best pretty printing, use the init_printing() function.
+
+
+# In[8]:
+
+
+x = Symbol('x')
+y = Symbol('y')
+z = sympy.var('z')
+
+
+# In[9]:
+
+
+(x + y)**2
+
+
+# In[10]:
+
+
+f = expand((x + y)**2)
+display(f)
+
+
+# In[11]:
+
+
+f.subs({x:1, y:2})
+
+
+# In[19]:
+
+
+factor(x**2-4*x+3)
+
+
+# In[21]:
+
+
+apart(1/(x**5-1))
+
+
+# In[10]:
+
+
+a = Symbol('a') # Without real=True, a is treated as a complex number.
+b = Symbol('b')
+
+u = exp(a*x)*sin(b*x)
+display(u)
+
+
+# In[12]:
+
+
+int_u = integrate(u, x)
+display(int_u)
+
+
+# In[23]:
+
+
+R = diff(u, x, 2) + u + x
+display(R)
+
+
+# In[4]:
+
+
+k, N = sympy.symbols('k, N', integer = True)
+sympy.factor(sympy.summation(k, (k, 1, N) ))
+
+
+# In[13]:
+
+
+s = Symbol('s')
+t = Symbol('t')
+
+l = (s**2 * x**3) + (t * x**2) + (3 * x) + 1
+
+int_l = integrate(l, (x, 0, 1))
+display(int_l)
+
+
+# In[16]:
+
+
+limit(sin(x)/x, x, 0)
 
