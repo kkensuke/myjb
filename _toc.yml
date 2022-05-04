@@ -22,14 +22,16 @@ parts:
       - file: programming/path
       - file: programming/markdown
       - file: programming/vscodeExtensions
+    - file: python/python0
+      sections:
+      - file: python/python
+      - file: python/pandas
+      - file: python/scipy
+      - file: python/sympy
     - file: jb/jb
       sections:
       - file: jb/mkjb
       - file : jb/myst
-    - file: python/python0
-      sections:
-      - file: python/python
-      - file: python/scipy
     - file: others/others
       sections:
 #      - glob: others/*
