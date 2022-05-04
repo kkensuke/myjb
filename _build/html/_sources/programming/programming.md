@@ -6,9 +6,7 @@
 - GitHub
 - Commit Masssages with emoji
 - PATH as an environmental variable
-- Jupyter book
-- MyST
+- Markdown
 - VScode extensions and settings
-- Python
-- Numerical Calculation using Scipy
+
 

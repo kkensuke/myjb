@@ -36,7 +36,9 @@ print('3'+'4')
 # In[27]:
 
 
-# print(3+'4') # This will be an error. You can't add a number and a string. You need to convert the string to a number or vice versa.
+# This will be an error. You can't add a number and a string. 
+# You need to convert the string to a number or vice versa.
+# print(3+'4')
 
 
 # In[28]:
@@ -70,7 +72,8 @@ print('exponentiation 5**2 = ',5**2)
 # In[12]:
 
 
-print('adsf'); print('asdf') # Instead of using a new line, you can use a semicolon.
+# Instead of using a new line, you can use a semicolon.
+print('adsf'); print('asdf')
 
 
 # ## List, tuple, set, dictionary
@@ -192,15 +195,10 @@ for _ in range(5):
 [i for i in range(5)]
 
 
-# In[11]:
-
-
-data = [3,14,23,28,35,46,55,65,76,87,98,109,120,131,142]
-
-
 # In[14]:
 
 
+data = [3,14,23,28,35,46,55,65,76,87,98,109,120,131,142]
 [x*10 for x in data]
 
 
@@ -274,7 +272,7 @@ plt.show()
 
 # ## lambda functions
 
-# - $ f(x) = x^2 $
+# $$ f(x) = x^2 $$
 
 # In[4]:
 

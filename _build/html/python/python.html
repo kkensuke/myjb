@@ -90,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="3.2. Numerical Calculation by Scipy" href="numericalCalc.html" />
+    <link rel="next" title="3.2. Numerical Calculation by Scipy" href="scipy.html" />
     <link rel="prev" title="3. Python" href="python0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -227,7 +227,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="numericalCalc.html">
+    <a class="reference internal" href="scipy.html">
      3.2. Numerical Calculation by Scipy
     </a>
    </li>
@@ -516,7 +516,9 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># print(3+&#39;4&#39;) # This will be an error. You can&#39;t add a number and a string. You need to convert the string to a number or vice versa.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This will be an error. You can&#39;t add a number and a string. </span>
+<span class="c1"># You need to convert the string to a number or vice versa.</span>
+<span class="c1"># print(3+&#39;4&#39;)</span>
 </pre></div>
 </div>
 </div>
@@ -571,7 +573,8 @@ exponentiation 5**2 =  25
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adsf&#39;</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;asdf&#39;</span><span class="p">)</span> <span class="c1"># Instead of using a new line, you can use a semicolon.</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Instead of using a new line, you can use a semicolon.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;adsf&#39;</span><span class="p">);</span> <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;asdf&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -796,13 +799,7 @@ Hello
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">23</span><span class="p">,</span><span class="mi">28</span><span class="p">,</span><span class="mi">35</span><span class="p">,</span><span class="mi">46</span><span class="p">,</span><span class="mi">55</span><span class="p">,</span><span class="mi">65</span><span class="p">,</span><span class="mi">76</span><span class="p">,</span><span class="mi">87</span><span class="p">,</span><span class="mi">98</span><span class="p">,</span><span class="mi">109</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">131</span><span class="p">,</span><span class="mi">142</span><span class="p">]</span>
-</pre></div>
-</div>
-</div>
-</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
+<span class="p">[</span><span class="n">x</span><span class="o">*</span><span class="mi">10</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">data</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -954,15 +951,14 @@ Hello
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_38_0.png" src="../_images/python_38_0.png" />
+<img alt="../_images/python_37_0.png" src="../_images/python_37_0.png" />
 </div>
 </div>
 </div>
 <div class="section" id="lambda-functions">
 <h2><span class="section-number">3.1.7. </span>lambda functions<a class="headerlink" href="#lambda-functions" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\( f(x) = x^2 \)</span></p></li>
-</ul>
+<div class="math notranslate nohighlight">
+\[ f(x) = x^2 \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span>
@@ -998,7 +994,7 @@ Hello
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_43_0.png" src="../_images/python_43_0.png" />
+<img alt="../_images/python_42_0.png" src="../_images/python_42_0.png" />
 </div>
 </div>
 </div>
@@ -1036,7 +1032,7 @@ Hello
             <p class="prev-next-title"><span class="section-number">3. </span>Python</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="numericalCalc.html" title="next page">
+    <a class='right-next' id="next-link" href="scipy.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title"><span class="section-number">3.2. </span>Numerical Calculation by Scipy</p>

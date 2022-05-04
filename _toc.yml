@@ -29,7 +29,7 @@ parts:
     - file: python/python0
       sections:
       - file: python/python
-      - file: python/numericalCalc
+      - file: python/scipy
     - file: others/others
       sections:
 #      - glob: others/*
