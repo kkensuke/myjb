@@ -180,7 +180,6 @@ test
 tree -L 2
 ```
 
-## 
 `chomd`: change file modes(permissions)
 ```zsh
 chmod 755 file
@@ -243,13 +242,13 @@ There are several common wildcard characters:
 
 Some examples:
 ```zsh
-# move all files and directories to `directory`
-mv * folder
-# move foo.txt, bar.txt, and baz.txt in path to `directory`
-# = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `directory`
-mv ./path/{foo,bar,baz}.txt folder
-# move all pyhon and shell files to `directory`
-mv *{.py,.sh} folder
+# move all files and directories to `dir`
+mv * dir
+# move foo.txt, bar.txt, and baz.txt in path to `dir`
+# = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`
+mv ./path/{foo,bar,baz}.txt dir
+# move all pyhon and shell files to `dir`
+mv *{.py,.sh} dir
 ```
 
 
@@ -304,7 +303,7 @@ grep 'string1 string2'  filename
 |-o | Display only matched parts of lines|
 
 
-### Use symbolic links instead of alias
+`ln -s`: symbolic links
 ```zsh
 ln -s original-dir/file where/to/put/SymboliLink
 ```

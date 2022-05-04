@@ -343,21 +343,9 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   1.2.2.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#shell-globbing">
-   1.2.3. Shell globbing
+   1.2.2. Shell globbing
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-     Use symbolic links instead of alias
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -385,21 +373,9 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   1.2.2.
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#shell-globbing">
-   1.2.3. Shell globbing
+   1.2.2. Shell globbing
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#use-symbolic-links-instead-of-alias">
-     Use symbolic links instead of alias
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -603,9 +579,6 @@ You have to install <code class="docutils literal notranslate"><span class="pre"
 tree -L <span class="m">2</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="id1">
-<h2><span class="section-number">1.2.2. </span><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">chomd</span></code>: change file modes(permissions)</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">755</span> file
 </pre></div>
@@ -686,7 +659,7 @@ chmod u+x file
 <p>You can use <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">-R</span></code> to change permissions recursively.</p>
 </div>
 <div class="section" id="shell-globbing">
-<h2><span class="section-number">1.2.3. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.2.2. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
@@ -698,13 +671,13 @@ chmod u+x file
 </pre></div>
 </div>
 <p>Some examples:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `directory`</span>
-mv * folder
-<span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `directory`</span>
-<span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `directory`</span>
-mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt folder
-<span class="c1"># move all pyhon and shell files to `directory`</span>
-mv *<span class="o">{</span>.py,.sh<span class="o">}</span> folder
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
+mv * dir
+<span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `dir`</span>
+<span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`</span>
+mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt dir
+<span class="c1"># move all pyhon and shell files to `dir`</span>
+mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code>: find files and directories</p>
@@ -789,11 +762,9 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 </tr>
 </tbody>
 </table>
-<div class="section" id="use-symbolic-links-instead-of-alias">
-<h3>Use symbolic links instead of alias<a class="headerlink" href="#use-symbolic-links-instead-of-alias" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: symbolic links</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
 </pre></div>
-</div>
 </div>
 </div>
 </div>
