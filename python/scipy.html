@@ -515,7 +515,7 @@ const thebe_selector_output = ".output, .cell_output"
 <h2><span class="section-number">2.3.1. </span>Differentiation<a class="headerlink" href="#differentiation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="scipy-integrate-solve-ivp">
 <h3>scipy.integrate.solve_ivp<a class="headerlink" href="#scipy-integrate-solve-ivp" title="Permalink to this headline">¶</a></h3>
-<p>Solve an initial value problem for a system of ODEs.</p>
+<p>Solve an <strong>initial value problem</strong> for a system of ODEs.</p>
 <div class="math notranslate nohighlight">
 \[ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 \]</div>
 <blockquote>
@@ -524,6 +524,9 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div></blockquote>
+<p>Solve the Lotka-Volterra equations</p>
+<div class="math notranslate nohighlight">
+\[ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  \]</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">solve_ivp</span>
@@ -539,14 +542,14 @@ const thebe_selector_output = ".output, .cell_output"
 
 <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">([</span><span class="s1">&#39;x; prey&#39;</span><span class="p">,</span> <span class="s1">&#39;y; predator&#39;</span><span class="p">],</span> <span class="n">shadow</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Lotka-Volterra System&#39;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/scipy_4_0.png" src="../_images/scipy_4_0.png" />
+<img alt="../_images/scipy_5_0.png" src="../_images/scipy_5_0.png" />
 </div>
 </div>
 </div>
@@ -729,7 +732,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3.16797844 0.47384801 3.01772427] 1
 </pre></div>
 </div>
-<img alt="../_images/scipy_16_1.png" src="../_images/scipy_16_1.png" />
+<img alt="../_images/scipy_17_1.png" src="../_images/scipy_17_1.png" />
 </div>
 </div>
 </div>
