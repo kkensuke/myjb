@@ -13,7 +13,7 @@ from scipy import integrate, diff, optimize
 
 # ## Differentiation
 # ### scipy.integrate.solve_ivp
-# Solve an initial value problem for a system of ODEs.
+# Solve an **initial value problem** for a system of ODEs.
 # 
 # $$ \frac{dy}{dt} = f(t, y), \quad y(t_0) = y_0 $$
 
@@ -22,7 +22,11 @@ from scipy import integrate, diff, optimize
 # >    dense_output=False, events=None, vectorized=False, args=None, **options)
 # >```
 
-# In[18]:
+# Solve the Lotka-Volterra equations
+# 
+# $$ \frac{dx}{dt} = ax - bxy ,\quad \frac{dy}{dt} = -cx + dxy  $$
+
+# In[32]:
 
 
 from scipy.integrate import solve_ivp
@@ -38,7 +42,7 @@ z = sol.sol(t)
 
 plt.plot(t, z.T)
 plt.xlabel('t')
-plt.legend(['x', 'y'], shadow=True)
+plt.legend(['x; prey', 'y; predator'], shadow=True)
 plt.title('Lotka-Volterra System')
 plt.show()
 
