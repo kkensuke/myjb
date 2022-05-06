@@ -25,9 +25,9 @@ parts:
     - file: python/python0
       sections:
       - file: python/python
-      - file: python/pandas
       - file: python/scipy
       - file: python/sympy
+      - file: python/pandas
     - file: jb/jb
       sections:
       - file: jb/mkjb
