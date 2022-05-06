@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # [Scipy](https://docs.scipy.org/doc/scipy/reference/optimize.html)
+# # [Scipy](https://docs.scipy.org/doc/scipy/index.html)
 
 # In[17]:
 

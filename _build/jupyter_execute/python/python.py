@@ -249,7 +249,7 @@ myfunc(3, 'Hello')
 # = myfunc(arg1=3, arg2='Hello')
 
 
-# In[2]:
+# In[11]:
 
 
 import numpy as np
@@ -258,11 +258,11 @@ import matplotlib.pyplot as plt # Matplotlib is a package that contains many use
 x = np.linspace(0,10, 100)
 y = np.sin(x)
 
-print(x)
-print(y)
+print(x[:5])
+print(y[:5])
 
 
-# In[3]:
+# In[8]:
 
 
 plt.plot(x,y)
