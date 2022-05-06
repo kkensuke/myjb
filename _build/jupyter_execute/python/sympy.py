@@ -3,56 +3,58 @@
 
 # # Sympy
 
-# In[2]:
+# In[8]:
 
 
 from sympy import *
 import numpy as np
 import matplotlib.pyplot as plt
 
+from IPython.display import display
+
 import sympy
 sympy.init_printing() # If all you want is the best pretty printing, use the init_printing() function.
 
 
-# In[3]:
+# In[9]:
 
 
 x = Symbol('x')
 y = Symbol('y')
 
 
-# In[9]:
+# In[10]:
 
 
 (x + y)**2
 
 
-# In[10]:
+# In[11]:
 
 
 f = expand((x + y)**2)
 display(f)
 
 
-# In[11]:
+# In[12]:
 
 
 f.subs({x:1, y:2})
 
 
-# In[19]:
+# In[13]:
 
 
 factor(x**2-4*x+3)
 
 
-# In[21]:
+# In[14]:
 
 
 apart(1/(x**5-1))
 
 
-# In[10]:
+# In[15]:
 
 
 a = Symbol('a') # Without real=True, a is treated as a complex number.
@@ -62,28 +64,28 @@ u = exp(a*x)*sin(b*x)
 display(u)
 
 
-# In[12]:
+# In[16]:
 
 
 int_u = integrate(u, x)
 display(int_u)
 
 
-# In[23]:
+# In[17]:
 
 
 R = diff(u, x, 2) + u + x
 display(R)
 
 
-# In[4]:
+# In[18]:
 
 
 k, N = sympy.symbols('k, N', integer = True)
 sympy.factor(sympy.summation(k, (k, 1, N) ))
 
 
-# In[13]:
+# In[19]:
 
 
 s = Symbol('s')
