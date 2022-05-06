@@ -86,6 +86,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "floor": ["\\lfloor#1\\rfloor", 1], "bmat": ["\\left[\\begin{array}"], "emat": ["\\end{array}\\right]"]}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="3. Jupyter Book" href="../jb/jb.html" />
@@ -386,12 +388,9 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-
-<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span>
 
 <span class="kn">import</span> <span class="nn">sympy</span>
-<span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">()</span> <span class="c1"># If all you want is the best pretty printing, use the init_printing() function.</span>
+<span class="c1">#sympy.init_printing() # If all you want is the best pretty printing, use the init_printing() function.</span>
 </pre></div>
 </div>
 </div>
@@ -411,7 +410,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_3_0.png" src="../_images/sympy_3_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left(x + y\right)^{2}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -422,7 +422,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_4_0.png" src="../_images/sympy_4_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x^{2} + 2 x y + y^{2}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -432,7 +433,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_5_0.png" src="../_images/sympy_5_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 9\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -442,7 +444,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_6_0.png" src="../_images/sympy_6_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left(x - 3\right) \left(x - 1\right)\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -452,7 +455,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_7_0.png" src="../_images/sympy_7_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - \frac{x^{3} + 2 x^{2} + 3 x + 4}{5 \left(x^{4} + x^{3} + x^{2} + x + 1\right)} + \frac{1}{5 \left(x - 1\right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -466,7 +470,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_8_0.png" src="../_images/sympy_8_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle e^{a x} \sin{\left(b x \right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -477,7 +482,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_9_0.png" src="../_images/sympy_9_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} - \frac{e^{- i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{e^{i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -488,7 +494,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_10_0.png" src="../_images/sympy_10_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x + \left(a^{2} \sin{\left(b x \right)} + 2 a b \cos{\left(b x \right)} - b^{2} \sin{\left(b x \right)}\right) e^{a x} + e^{a x} \sin{\left(b x \right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -499,7 +506,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_11_0.png" src="../_images/sympy_11_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{N \left(N + 1\right)}{2}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -515,7 +523,8 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/sympy_12_0.png" src="../_images/sympy_12_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{s^{2}}{4} + \frac{t}{3} + \frac{5}{2}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
