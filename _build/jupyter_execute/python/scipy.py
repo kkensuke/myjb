@@ -75,6 +75,7 @@ print(4**3 / 3.)  # analytical result
 # >```
 
 # find a root of a scalar function
+# 
 # $$f(x) = x^2 - x -1 $$
 
 # In[25]:
@@ -124,6 +125,7 @@ print(sol.x)
 # >```
 
 # find the minimum point of
+# 
 # $$ f(x,y) = (1-x)^2 + 5(y-x^2)^2 $$
 
 # In[31]:
