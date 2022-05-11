@@ -534,9 +534,9 @@ const thebe_selector_output = ".output, .cell_output"
   <div class="tex2jax_ignore mathjax_ignore section" id="markdown">
 <h1><span class="section-number">1.7. </span>Markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Heading 1</span>
-<span class="c1">## Heading 2</span>
-<span class="c1">### Heading 3</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="gh"># Heading 1</span>
+<span class="gu">## Heading 2</span>
+<span class="gu">### Heading 3</span>
 </pre></div>
 </div>
 </div></blockquote>
@@ -552,7 +552,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="horizontal-rule">
 <h2><span class="section-number">1.8.2. </span>horizontal rule<a class="headerlink" href="#horizontal-rule" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---</span>
+<div class="highlight-md notranslate"><div class="highlight"><pre><span></span>---
 </pre></div>
 </div>
 </div>
@@ -560,20 +560,20 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="list">
 <h2><span class="section-number">1.8.3. </span>list<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">1</span>
-<span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">2</span>
-<span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span>
-   <span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">1</span>
-   <span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">2</span>
-       <span class="o">-</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span>
-       <span class="o">*</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">2</span>
-       <span class="o">+</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">2</span><span class="o">-</span><span class="mi">3</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">-</span> list item 1
+<span class="k">-</span> list item 2
+<span class="k">-</span> list item 3
+   <span class="k">-</span> list item 3-1
+   <span class="k">-</span> list item 3-2
+       <span class="k">-</span> list item 3-2-1
+       <span class="k">*</span> list item 3-2-2
+       + list item 3-2-3
 
-<span class="mf">1.</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">1</span>
-<span class="mf">2.</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">2</span>
-<span class="mf">3.</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span>
-   <span class="mf">1.</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">1</span>
-   <span class="mf">2.</span> <span class="nb">list</span> <span class="n">item</span> <span class="mi">3</span><span class="o">-</span><span class="mi">2</span>
+<span class="k">1.</span> list item 1
+<span class="k">2.</span> list item 2
+<span class="k">3.</span> list item 3
+   <span class="k">1.</span> list item 3-1
+   <span class="k">2.</span> list item 3-2
 </pre></div>
 </div>
 <blockquote>
@@ -614,7 +614,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="color">
 <h2><span class="section-number">1.8.4. </span>Color<a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">font</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;red&quot;</span><span class="o">&gt;</span><span class="n">Red</span> <span class="n">string</span><span class="o">&lt;/</span><span class="n">font</span><span class="o">&gt;</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&lt;font color=&quot;red&quot;&gt;Red string&lt;/font&gt;
 </pre></div>
 </div>
 <blockquote>
@@ -626,11 +626,11 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="code">
 <h2><span class="section-number">1.8.5. </span>Code<a class="headerlink" href="#code" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```python
-import streamlit as st
-import numpy as np
-import pandas as pd
-```
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">```python</span>
+<span class="kn">import</span> <span class="nn">streamlit</span> <span class="k">as</span> <span class="nn">st</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="sb">```</span>
 </pre></div>
 </div>
 <blockquote>
@@ -646,7 +646,7 @@ import pandas as pd
 <div class="section" id="links">
 <h2><span class="section-number">1.8.6. </span>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[Wikipedia: Viola–Jones object detection framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">Wikipedia: Viola–Jones object detection framework</span>](<span class="na">https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework</span>)
 </pre></div>
 </div>
 <blockquote>
@@ -659,8 +659,8 @@ import pandas as pd
 <div class="section" id="checkbox">
 <h2><span class="section-number">1.8.7. </span>Checkbox<a class="headerlink" href="#checkbox" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">-</span> <span class="p">[</span> <span class="p">]</span> <span class="n">タスク1</span>
-<span class="o">-</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="n">タスク2</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">- [ ]</span> タスク1
+<span class="k">- [x]</span> タスク2
 </pre></div>
 </div>
 <blockquote>
@@ -675,22 +675,22 @@ import pandas as pd
 <div class="section" id="raw-text-code-bold-italic-strikethrough">
 <h2><span class="section-number">1.8.8. </span>raw text, code, bold, italic, strikethrough<a class="headerlink" href="#raw-text-code-bold-italic-strikethrough" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```
-asdf
-```
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="sb">```</span>
+<span class="sb">asdf</span>
+<span class="sb">```</span>
 
-`asdf`
+<span class="sb">`asdf`</span>
 
-*asdf*
-_adsf_
+<span class="ge">*asdf*</span>
+<span class="ge">_adsf_</span>
 
-**asdf**
-__adsf__
+<span class="gs">**asdf**</span>
+<span class="gs">__adsf__</span>
 
 ***asdf***
 ___adsf___
-*__adsf__*
-~~asdf~~
+<span class="ge">*__adsf__*</span>
+<span class="gd">~~asdf~~</span>
 </pre></div>
 </div>
 <blockquote>
@@ -713,26 +713,27 @@ ___adsf___
 <div class="section" id="latex">
 <h2><span class="section-number">1.8.9. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;$\LaTeX$
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>&gt;$\LaTeX$
 $$
-\left( \sum_{k=1}^n a_k b_k \right)^2 \leq
-\left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 &gt;\right)
+\left( \sum_{k=1}^n a<span class="ge">_k b_</span>k \right)^2 \leq
+\left( \sum_{k=1}^n a<span class="ge">_k^2 \right) \left( \sum_</span>{k=1}^n b_k^2 &gt;\right)
 $$
 </pre></div>
 </div>
 <blockquote>
-<div><p><span class="math notranslate nohighlight">\(\LaTeX\)</span>
-$<span class="math notranslate nohighlight">\(
+<div><p><span class="math notranslate nohighlight">\(\LaTeX\)</span></p>
+<div class="math notranslate nohighlight">
+\[
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq
 \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
-\)</span>$</p>
+\]</div>
 </div></blockquote>
 </div></blockquote>
 </div>
 <div class="section" id="quote">
 <h2><span class="section-number">1.8.10. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">quote</span><span class="o">.</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span><span class="k">&gt; </span><span class="ge">This is a quote.</span>
 </pre></div>
 </div>
 <blockquote>
@@ -744,12 +745,12 @@ $<span class="math notranslate nohighlight">\(
 <div class="section" id="table">
 <h2><span class="section-number">1.8.11. </span>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">|</span> <span class="n">Header</span> <span class="mi">1</span> <span class="o">|</span> <span class="n">Header</span> <span class="mi">2</span> <span class="o">|</span> <span class="n">Header</span> <span class="mi">3</span> <span class="o">|</span>
-<span class="o">|</span> <span class="p">:</span><span class="o">--------</span> <span class="o">|</span> <span class="p">:</span><span class="o">--------</span><span class="p">:</span> <span class="o">|</span> <span class="o">--------</span><span class="p">:</span> <span class="o">|</span>
-<span class="o">|</span> <span class="n">align</span><span class="o">=</span><span class="n">left</span> <span class="o">|</span> <span class="n">align</span><span class="o">=</span><span class="n">center</span> <span class="o">|</span> <span class="n">align</span><span class="o">=</span><span class="n">right</span> <span class="o">|</span>
-<span class="o">|</span> <span class="n">cell</span> <span class="mi">1</span>   <span class="o">|</span> <span class="n">cell</span> <span class="mi">2</span>   <span class="o">|</span> <span class="n">cell</span> <span class="mi">3</span>   <span class="o">|</span>
-<span class="o">|</span> <span class="n">cell</span> <span class="mi">4</span>   <span class="o">|</span> <span class="n">cell</span> <span class="mi">5</span>   <span class="o">|</span> <span class="n">cell</span> <span class="mi">6</span>   <span class="o">|</span>
-<span class="o">|</span> <span class="n">caption</span> <span class="o">|</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>| Header 1 | Header 2 | Header 3 |
+| :-------- | :--------: | --------: |
+| align=left | align=center | align=right |
+| cell 1   | cell 2   | cell 3   |
+| cell 4   | cell 5   | cell 6   |
+| caption |
 </pre></div>
 </div>
 <blockquote>
@@ -786,7 +787,7 @@ $<span class="math notranslate nohighlight">\(
 <div class="section" id="in-page-link">
 <h2><span class="section-number">1.8.12. </span>In-page link<a class="headerlink" href="#in-page-link" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">link</span> <span class="n">to</span> <span class="nb">list</span><span class="p">](</span><span class="c1">#list)</span>
+<div><div class="highlight-md notranslate"><div class="highlight"><pre><span></span>[<span class="nt">link to list</span>](<span class="na">#list</span>)
 </pre></div>
 </div>
 <blockquote>
