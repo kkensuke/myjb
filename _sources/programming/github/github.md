@@ -229,7 +229,7 @@ $ gh repo create --private --source=. --push'
 $ gh alias set repo-delete 'api -X DELETE repos/$1'
 $ gh auth refresh -h github.com -s delete_repo
 ```
-### usage (WARNING: no confirmation!)
+#### usage (WARNING: no confirmation!)
 ```
 $ gh repo-delete user/myrepo
 ```
