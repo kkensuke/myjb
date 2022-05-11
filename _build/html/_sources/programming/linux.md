@@ -87,16 +87,16 @@ rmdir -p dir/subdir/ssubdir
 
 
 `echo`:
-1. print environment variables
+- print environment variables
 ```zsh
 echo $PATH
 ```
-2. make files with contents
-- Make new file or overwrite existing file
+- make files with contents
+    - Make new file or overwrite existing file
 ```zsh
 echo [Strings] > [filename]
 ```
-- Append
+    - Append
 ```zsh
 echo [Strings] >> [filename]
 ```

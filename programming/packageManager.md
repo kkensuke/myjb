@@ -93,7 +93,7 @@ and let's check:
 ```zsh
 pip freeze
 ```
-and you get `numpy==1.xx.x`.
+and you get `numpy==x.xx.x`.
 
 If you want to use python as a beginner, you should install matplotlib, pandas, and jupyter-lab;
 ```zsh
