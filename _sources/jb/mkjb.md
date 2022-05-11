@@ -47,7 +47,7 @@ $ open /Applications/Safari.app _build/html/index.html
 
 ## Publish
 First, we make a repository named `test-book` on GitHub website without initializing.
-Second, we execute the commands below on your local computer
+Second, we execute the commands below in the test-book directory on your local computer.
 ```zsh
 echo "# test-book" >> README.md
 git init

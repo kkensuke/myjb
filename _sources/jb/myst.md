@@ -15,50 +15,97 @@ substitutions:
 
 % This file provide you the MyST syntax.
 
-## Heading
-```
-# Heading level 1
-## Heading level 2
-### Heading level 3
-#### Heading level 4
-##### Heading level 5
-###### Heading level 6
-```
+>## Heading
+>```
+># Heading level 1
+>## Heading level 2
+>### Heading level 3
+>#### Heading level 4
+>##### Heading level 5
+>###### Heading level 6
+>```
+>>
+>># Heading level 1
+>>## Heading level 2
+>>### Heading level 3
+>>#### Heading level 4
+>>##### Heading level 5
+>>###### Heading level 6
+>>
+
 
 ## Target headers
-(myst_cheatsheet)=
-### target
-
-see [here](myst_cheatsheet)
-
+>```
+>(target)=
+>### target
+>...
+>see [target](target)
+>```
+>
+>>(target)=
+>>### target
+>>...
+>>see [target](target)
+>>
 ## Quote
-> this is a quote
+>```
+>> this is a quote
+>```
+>>this is a quote
+
 
 ## End line
-This is the end of some text.
-
----
-
-## New Header
+>```
+>This is the end of some text.
+>---
+>```
+>>This is the end of some text.
+>>---
 
 ## Line comment
-
-% This is a line comment.
-
+>```
+>% This is a line comment.
+>```
+>>% This is a line comment.
 ## Block break
-This is an example of
-+++ {"meta": "data"}
-a block break
+>```
+>This is an example of
+>+++ {"meta": "data"}
+>a block break
+>```
+>>This is an example of
+>>+++ {"meta": "data"}
+>>a block break
 
 ## List
-1. First item
-2. Second item
-    * First sub-item
-    * Second sub-item
-      * Third subsub-item
-
+>```
+>1. First item
+>2. Second item
+>    * First sub-item
+>    * Second sub-item
+>      * Third subsub-item
+>```
+>>1. First item
+>>2. Second item
+>>    * First sub-item
+>>    * Second sub-item
+>>      * Third subsub-item
 
 ## Table
+>````
+>```{list-table} This table title
+>:header-rows: 1
+>:name: example-table
+>
+>* - Training
+>  - Validation
+>* - 0
+>  - 5
+>* - 13720
+>  - 2744
+>```
+>````
+>
 ```{list-table} This table title
 :header-rows: 1
 :name: example-table
@@ -71,55 +118,117 @@ a block break
   - 2744
 ```
 
+
 ## admonition
-```{admonition} This is a title
-An example of an admonition with a title.
-```
+>````
+>```{admonition} This is a title
+>An example of an admonition with a title.
+>```
+>````
+>```{admonition} This is a title
+>An example of an admonition with a title.
+>```
 
-```{note} Notes require **no** arguments,
-so content can start here.
-```
+>````
+>```{note} Notes require **no** arguments,
+>so content can start here.
+>```
+>````
+>```{note} Notes require **no** arguments,
+>so content can start here.
+>```
 
-```{warning}
-warning
-```
+>````
+>```{warning} Warnings require **no** arguments,
+>so content can start here.
+>```
+>````
+>```{warning}
+>Warnings
+>```
 
-```{tip}
-tip
-```
+>````
+>```{tip}
+>Tip
+>```
+>````
+>```{tip}
+>Tip
+>```
 
-```{caution}
-caution
-```
+>````
+>```{caution}
+>Caution
+>```
+>````
+>```{caution}
+>Caution
+>```
 
-```{attention}
-attention
-```
+>````
+>```{attention}
+>Attention
+>```
+>````
+>```{attention}
+>Attention
+>```
 
-```{danger}
-danger
-```
+>````
+>```{danger}
+>Danger
+>```
+>````
+>```{danger}
+>Danger
+>```
 
-```{error}
-error
-```
+>````
+>```{error}
+>Error
+>```
+>````
+>```{error}
+>Error
+>```
 
-```{hint}
-hint
-```
+>````
+>```{hint}
+>hint
+>```
+>````
+>```{hint}
+>hint
+>```
 
-```{important}
-importan
 
-```
+>````
+>```{important}
+>Important
+>```
+>````
+>```{important}
+>Important
+>```
 
-```{seealso}
-see also
-```
+>````
+>```{seealso}
+>see also
+>```
+>````
+>```{seealso}
+>see also
+>```
 
-{fa}`check, text-success mr-1` This is an example of Roles (check mark & success color).
+>```
+>{fa}`check, text-success mr-1` This is an example of Roles (check mark & success color).
+>```
+>>{fa}`check, text-success mr-1` This is an example of Roles (check mark & success color).
 
-{fa}`check, text-info mr-1` This is an example of Roles (check mark & info color).
+>```
+>{fa}`check, text-info mr-1` This is an example of Roles (check mark & info color).
+>```
+>>{fa}`check, text-info mr-1` This is an example of Roles (check mark & info color).
 
 
 ### Figure parameters
@@ -148,14 +257,22 @@ The following options are supported:
 : Value of the figure’s class attribute which can be used to add custom CSS or JavaScript. Predefined options include:
 
 ## Math
-This is an example of an
-inline equation $z=\sqrt{x^2+y^2}$.
+>```
+>This is an example of an
+>inline equation $z=\sqrt{x^2+y^2}$.
+>```
+>>This is an example of an
+>>inline equation $z=\sqrt{x^2+y^2}$.
 
-$$
-z=\sqrt{x^2+y^2}
-$$ (mylabel)
+>```
+>$$
+>z=\sqrt{x^2+y^2}
+>$$ (mylabel)
+>equation ref: {eq}`mylabel`
+>```
+>>$$z=\sqrt{x^2+y^2}$$ (mylabel)
+>>equation ref: {eq}`mylabel`
 
-equation ref: {eq}`mylabel`
 
 
 ## Executable code
@@ -169,40 +286,68 @@ print(note)
 
 ## Reference documents
 
-See {doc}`../programming/alias`
-for more information.
-
+>```
+>See {doc}`../programming/alias` for more information.
+>```
+>>See {doc}`../programming/alias` for more information.
 
 ## Toggle
-toggle
-````{toggle}
-```python
-print('hello')
-```
-````
+>`````
+>````{toggle}
+>```python
+>print('hello')
+>```
+>````
+>`````
+>>````{toggle}
+>>```python
+>>print('hello')
+>>```
+>>````
 
 ## Margin
-```{margin} **My margin title**
-Here is my margin content, it is pretty cool!
-```
+>````
+>```{margin} **My margin title**
+>Here is my margin content, it is pretty cool!
+>```
+>````
+>>```{margin} **My margin title**
+>>Here is my margin content, it is pretty cool!
+>>```
+---
 
-
-:::{tip}
-:class: margin toggle
-This note will be in the margin!
-:::
+>```
+>:::{tip}
+>:class: margin toggle
+>This note will be in the margin!
+>:::
+>```
+>>:::{tip}
+>>:class: margin toggle
+>>This note will be in the margin!
+>>:::
+---
 
 % :class: toggle = :class: dropdown?
 
-
-```{figure} ./Zotero/img/general.png
----
-figclass: margin
-alt: My figure text
-name: myfig4
----
-And here is my figure caption
-```
+>````
+>``{figure} ./Zotero/img/general.png
+>---
+>figclass: margin
+>alt: My figure text
+>name: myfig4
+>---
+>And here is my figure caption
+>```
+>````
+>>```{figure} ./Zotero/img/general.png
+>>---
+>>figclass: margin
+>>alt: My figure text
+>>name: myfig4
+>>---
+>>And here is my figure caption
+>>```
 
 <!--
 ```{typescript}
@@ -216,33 +361,62 @@ asdf
 ## Panel
 https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 
-````{panels}
-Panel header 1
-^^^
-Panel body 1
-+++
-Panel footer 1
----
-
-Panel header 2
-^^^
-Panel body 2
-+++
-Panel footer 2
-````
+>`````
+>````{panels}
+>Panel header 1
+>^^^
+>Panel body 1
+>+++
+>Panel footer 1
+>---
+>
+>Panel header 2
+>^^^
+>Panel body 2
+>+++
+>Panel footer 2
+>````
+>`````
+>>````{panels}
+>>Panel header 1
+>>^^^
+>>Panel body 1
+>>+++
+>>Panel footer 1
+>>---
+>>
+>>Panel header 2
+>>^^^
+>>Panel body 2
+>>+++
+>>Panel footer 2
+>>````
 
 ## Badge
-{badge}`primary,badge-primary`
-{badge}`primary,badge-primary badge-pill`
-
-{badge}`primary,badge-primary`
-{badge}`secondary,badge-secondary`
-{badge}`info,badge-info`
-{badge}`success,badge-success`
-{badge}`danger,badge-danger`
-{badge}`warning,badge-warning`
-{badge}`light,badge-light`
-{badge}`dark,badge-dark`
+>```
+>{badge}`primary,badge-primary`
+>{badge}`primary,badge-primary badge-pill`
+>
+>{badge}`primary,badge-primary`
+>{badge}`secondary,badge-secondary`
+>{badge}`info,badge-info`
+>{badge}`success,badge-success`
+>{badge}`danger,badge-danger`
+>{badge}`warning,badge-warning`
+>{badge}`light,badge-light`
+>{badge}`dark,badge-dark`
+>```
+>>{badge}`primary,badge-primary`
+>>{badge}`primary,badge-primary badge-pill`
+>>
+>>{badge}`primary,badge-primary`
+>>{badge}`secondary,badge-secondary`
+>>{badge}`info,badge-info`
+>>{badge}`success,badge-success`
+>>{badge}`danger,badge-danger`
+>>{badge}`warning,badge-warning`
+>>{badge}`light,badge-light`
+>>{badge}`dark,badge-dark`
 
 
 %{link-badge}`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
