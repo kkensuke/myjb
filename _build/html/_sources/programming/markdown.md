@@ -1,7 +1,7 @@
 # Markdown
 
 
->```
+>```md
 ># Heading 1
 >## Heading 2
 >### Heading 3
@@ -14,14 +14,14 @@
 
 
 ## horizontal rule
-```
+```md
 ---
 ```
 ---
 
 
 ## list
->```
+>```md
 >- list item 1
 >- list item 2
 >- list item 3
@@ -56,14 +56,14 @@
 ---
 
 ## Color
->```
+>```md
 ><font color="red">Red string</font>
 >```
 >><font color="red">Red string </font>
 ---
 
 ## Code
->````
+>````md
 >```python
 >import streamlit as st
 >import numpy as np
@@ -78,7 +78,7 @@
 ---
 
 ## Links
->```
+>```md
 >[Wikipedia: Viola–Jones object detection framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework)
 >```
 >>リンク
@@ -86,7 +86,7 @@
 ---
 
 ## Checkbox
->```
+>```md
 >- [ ] タスク1
 >- [x] タスク2
 >```
@@ -96,7 +96,7 @@
 
 
 ## raw text, code, bold, italic, strikethrough
->````
+>````md
 >```
 >asdf
 >```
@@ -134,7 +134,7 @@
 ---
 
 ## Latex
->```
+>```md
 >>$\LaTeX$
 >$$
 >\left( \sum_{k=1}^n a_k b_k \right)^2 \leq
@@ -142,20 +142,21 @@
 >$$
 >```
 >>$\LaTeX$
+>>
 >>$$
 \left( \sum_{k=1}^n a_k b_k \right)^2 \leq
 \left( \sum_{k=1}^n a_k^2 \right) \left( \sum_{k=1}^n b_k^2 \right)
 $$
 
 ## Quote
->```
+>```md
 >> This is a quote.
 >```
 >> This is a quote.
 ---
 
 ## Table
->```
+>```md
 >| Header 1 | Header 2 | Header 3 |
 >| :-------- | :--------: | --------: |
 >| align=left | align=center | align=right |
@@ -173,7 +174,7 @@ $$
 
 
 ## In-page link
->```
+>```md
 >[link to list](#list)
 >```
 >>[link to list](#list)
