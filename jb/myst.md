@@ -424,103 +424,200 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 %{link-badge}`panels/usage,my reference,ref,badge-success text-white,hallo`
 
 ### dropdown
-````{dropdown}
-:animate: fade-in-slide-down
-```
-git add .
-git commit -m "update"
-git push origin main
-```
-````
+>`````
+>````{dropdown}
+>:animate: fade-in-slide-down
+>```
+>git add .
+>git commit -m "update"
+>git push origin main
+>```
+>````
+>`````
+>>````{dropdown}
+>>:animate: fade-in-slide-down
+>>```
+>>git add .
+>>git commit -m "update"
+>>git push origin main
+>>```
+>>````
+
 % fade-in, fade-in-slide-down : fade in for the first time
-
-```{admonition} Click the button to reveal!
-:class: dropdown
-Some hidden toggle content!
-```
-
+>````
+>```{admonition} Click the button to reveal!
+>:class: dropdown
+>Some hidden toggle content!
+>```
+>````
+>
+>>```{admonition} Click the button to reveal!
+>>:class: dropdown
+>>Some hidden toggle content!
+>>```
 ## Definition lists
+>```
+>Term 1
+>: Definition
+>
+>Term 2
+>: Definition
+>```
+>>Term 1
+>>: Definition
+>>
+>>Term 2
+>>: Definition
 
-Term 1
-: Definition
+>````
+>```{glossary}
+>Term one
+>  An indented explanation of term 1
+>
+>A second term
+>  An indented explanation of term2
+>```
+>````
+>>```{glossary}
+>>Term one
+>>  An indented explanation of term 1
+>>
+>>A second term
+>>  An indented explanation of term2
+>>```
 
-Term 2
-: Definition
-
-
-```{glossary}
-Term one
-  An indented explanation of term 1
-
-A second term
-  An indented explanation of term2
-```
-
-```{epigraph}
-Here is a cool quotation.
-
--- Jo the Jovyan
-```
-
+>````
+>```{epigraph}
+>Here is a cool quotation.
+>
+>-- Jo the Jovyan
+>```
+>````
+>>```{epigraph}
+>>Here is a cool quotation.
+>>
+>>-- Jo the Jovyan
+>>```
 
 ### tabs
-ex1
-```{tabbed} Tab 1 title
-My first tab
-```
 
-```{tabbed} Tab 2 title
-My second tab with `some code`!
-```
+ex1
+>````
+>```{tabbed} Tab 1 title
+>My first tab
+>```
+>
+>```{tabbed} Tab 2 title
+>My second tab with `some code`!
+>```
+>````
+>>```{tabbed} Tab 1 title
+>>My first tab
+>>```
+>>
+>>```{tabbed} Tab 2 title
+>>My second tab with `some code`!
+>>```
+
 
 ex2
-````{tabbed} c++
-
-```{code-block} c++
-
-int main(const int argc, const char **argv) {
-  return 0;
-}
-```
-````
-
-````{tabbed} python
-
-```{code-block} python
-
-def main():
-    return
-```
-````
-
-````{tabbed} java
-
-```{code-block} java
-
-class Main {
-    public static void main(String[] args) {
-    }
-}
-```
-````
-
-````{tabbed} julia
-
-```{code-block} julia
-
-function main()
-end
-```
-````
-
-````{tabbed} fortran
-
-```{code-block} fortran
-
-PROGRAM main
-END PROGRAM main
-```
-````
+>`````
+>````{tabbed} c++
+>
+>```{code-block} c++
+>
+>int main(const int argc, const char **argv) {
+>  return 0;
+>}
+>```
+>````
+>
+>````{tabbed} python
+>
+>```{code-block} python
+>
+>def main():
+>    return
+>```
+>````
+>
+>````{tabbed} java
+>
+>```{code-block} java
+>
+>class Main {
+>    public static void main(String[] args) {
+>    }
+>}
+>```
+>````
+>
+>````{tabbed} julia
+>
+>```{code-block} julia
+>
+>function main()
+>end
+>```
+>````
+>
+>````{tabbed} fortran
+>
+>```{code-block} fortran
+>
+>PROGRAM main
+>END PROGRAM main
+>```
+>````
+>`````
+>
+>>````{tabbed} c++
+>>
+>>```{code-block} c++
+>>
+>>int main(const int argc, const char **argv) {
+>>  return 0;
+>>}
+>>```
+>>````
+>>
+>>````{tabbed} python
+>>
+>>```{code-block} python
+>>
+>>def main():
+>>    return
+>>```
+>>````
+>>
+>>````{tabbed} java
+>>
+>>```{code-block} java
+>>
+>>class Main {
+>>    public static void main(String[] args) {
+>>    }
+>>}
+>>```
+>>````
+>>
+>>````{tabbed} julia
+>>
+>>```{code-block} julia
+>>
+>>function main()
+>>end
+>>```
+>>````
+>>
+>>````{tabbed} fortran
+>>
+>>```{code-block} fortran
+>>
+>>PROGRAM main
+>>END PROGRAM main
+>>```
+>>````
 
 ## key
 
@@ -559,16 +656,21 @@ The original key1: {{ key1 }}
 ```
 substitutions:
   repo_url: [my repo url](https://github.com/executablebooks/jupyter-book)
-  ```
-
-## Footnotes
-[^mylabel]: My footnote text.
-
-## Custom <div> blocks
-```{div} my-class
-**Some content.**
 ```
 
+## Footnotes
+
+[^mylabel]: My footnote text.
+
+## Custom \<div> blocks
+>````
+>```{div} my-class
+>**Some content.**
+>```
+>````
+>>```{div} my-class
+>>**Some content.**
+>>```
 ## Check for missing references
 
 You can check for missing references when building a Jupyter Book. To do so, use the following options:
@@ -578,10 +680,16 @@ jupyter-book build -W -n --keep-going docs/
 
 ## Layout
 full-width
-```{note}
-:class: full-width
-Here's a note that will take the full width
-```
+>````
+>```{note}
+>:class: full-width
+>Here's a note that will take the full width
+>```
+>````
+>>```{note}
+>>:class: full-width
+>>Here's a note that will take the full width
+>>```
 
 ## Proofs, Theorems, and Algorithms
 

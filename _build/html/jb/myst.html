@@ -531,10 +531,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#custom-div-blocks">
-     3.3.21. Custom
-     <div>
-      blocks
-     </div>
+     3.3.21. Custom &lt;div&gt; blocks
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -810,10 +807,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#custom-div-blocks">
-     3.3.21. Custom
-     <div>
-      blocks
-     </div>
+     3.3.21. Custom &lt;div&gt; blocks
     </a>
    </li>
    <li class="toc-h2 nav-item toc-entry">
@@ -1420,7 +1414,19 @@ Panel footer 2
 </div></blockquote>
 <div class="section" id="dropdown">
 <h3>dropdown<a class="headerlink" href="#dropdown" title="Permalink to this headline">¶</a></h3>
-<details class="sphinx-bs dropdown card mb-3 fade-in-slide-down">
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{dropdown}
+:animate: fade-in-slide-down
+```
+git add .
+git commit -m &quot;update&quot;
+git push origin main
+```
+````
+</pre></div>
+</div>
+<blockquote>
+<div><details class="sphinx-bs dropdown card mb-3 fade-in-slide-down">
 <summary class="summary-title card-header">
 <svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
     class="octicon no-title" aria-hidden="true">
@@ -1440,84 +1446,195 @@ Panel footer 2
 </pre></div>
 </div>
 </div>
-</details><div class="dropdown admonition">
+</details></div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} Click the button to reveal!
+:class: dropdown
+Some hidden toggle content!
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="dropdown admonition">
 <p class="admonition-title">Click the button to reveal!</p>
 <p>Some hidden toggle content!</p>
 </div>
+</div></blockquote>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="definition-lists">
 <h2><span class="section-number">3.3.18. </span>Definition lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h2>
-<dl class="simple myst">
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Term</span> <span class="mi">1</span>
+<span class="p">:</span> <span class="n">Definition</span>
+
+<span class="n">Term</span> <span class="mi">2</span>
+<span class="p">:</span> <span class="n">Definition</span>
+</pre></div>
+</div>
+<blockquote>
+<div><dl class="simple myst">
 <dt>Term 1</dt><dd><p>Definition</p>
 </dd>
 <dt>Term 2</dt><dd><p>Definition</p>
 </dd>
 </dl>
-<dl class="glossary simple">
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{glossary}
+Term one
+ An indented explanation of term 1
+
+A second term
+ An indented explanation of term2
+```
+</pre></div>
+</div>
+<blockquote>
+<div><dl class="glossary simple">
 <dt id="term-Term-one">Term one<a class="headerlink" href="#term-Term-one" title="Permalink to this term">¶</a></dt><dd><p>An indented explanation of term 1</p>
 </dd>
 <dt id="term-A-second-term">A second term<a class="headerlink" href="#term-A-second-term" title="Permalink to this term">¶</a></dt><dd><p>An indented explanation of term2</p>
 </dd>
 </dl>
-<blockquote class="epigraph">
+</div></blockquote>
+</div></blockquote>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{epigraph}
+Here is a cool quotation.
+
+-- Jo the Jovyan
+```
+</pre></div>
+</div>
+<blockquote>
+<div><blockquote class="epigraph">
 <div><p>Here is a cool quotation.</p>
 <p class="attribution">—Jo the Jovyan</p>
+</div></blockquote>
+</div></blockquote>
 </div></blockquote>
 <div class="section" id="tabs">
 <h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
 <p>ex1</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="296836c9-19e6-417d-b9c8-d45b47337513" name="ac0f2f93-f821-4faa-8c8c-a434d39d38f3" type="radio">
-</input><label class="tabbed-label" for="296836c9-19e6-417d-b9c8-d45b47337513">
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tabbed} Tab 1 title
+My first tab
+```
+
+```{tabbed} Tab 2 title
+My second tab with `some code`!
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="tabbed-set docutils">
+<input checked="checked" id="01197169-0213-4648-b999-092f5c6b52b4" name="92dc34a3-a0c3-4d47-801a-735f4a6437c3" type="radio">
+</input><label class="tabbed-label" for="01197169-0213-4648-b999-092f5c6b52b4">
 Tab 1 title</label><div class="tabbed-content docutils">
 <p>My first tab</p>
 </div>
-<input id="3436a50a-e473-4daa-bc70-2ef0631fc128" name="ac0f2f93-f821-4faa-8c8c-a434d39d38f3" type="radio">
-</input><label class="tabbed-label" for="3436a50a-e473-4daa-bc70-2ef0631fc128">
+<input id="e8008e8a-3abb-4e22-813c-427120d7fee6" name="92dc34a3-a0c3-4d47-801a-735f4a6437c3" type="radio">
+</input><label class="tabbed-label" for="e8008e8a-3abb-4e22-813c-427120d7fee6">
 Tab 2 title</label><div class="tabbed-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
 </div>
+</div></blockquote>
+</div></blockquote>
 <p>ex2</p>
-<div class="tabbed-set docutils">
-<input checked="checked" id="4c797197-3050-45f6-a86d-2186e3dec4fa" name="187f938c-c360-43d7-a0fc-5f688499be0a" type="radio">
-</input><label class="tabbed-label" for="4c797197-3050-45f6-a86d-2186e3dec4fa">
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tabbed} c++
+
+```{code-block} c++
+
+int main(const int argc, const char **argv) {
+ return 0;
+}
+```
+````
+
+````{tabbed} python
+
+```{code-block} python
+
+def main():
+   return
+```
+````
+
+````{tabbed} java
+
+```{code-block} java
+
+class Main {
+   public static void main(String[] args) {
+   }
+}
+```
+````
+
+````{tabbed} julia
+
+```{code-block} julia
+
+function main()
+end
+```
+````
+
+````{tabbed} fortran
+
+```{code-block} fortran
+
+PROGRAM main
+END PROGRAM main
+```
+````
+</pre></div>
+</div>
+<blockquote>
+<div><div class="tabbed-set docutils">
+<input checked="checked" id="e7418859-65b7-4138-aa41-8958fad234e5" name="941d6360-5f3a-4d33-a4f1-5ac315e7a878" type="radio">
+</input><label class="tabbed-label" for="e7418859-65b7-4138-aa41-8958fad234e5">
 c++</label><div class="tabbed-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w">  </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
-<input id="e538ae6c-095e-4fd9-976a-7a3cba91266e" name="187f938c-c360-43d7-a0fc-5f688499be0a" type="radio">
-</input><label class="tabbed-label" for="e538ae6c-095e-4fd9-976a-7a3cba91266e">
+<input id="2d6103f9-5a3f-4dd1-b306-9d5d385bdb4c" name="941d6360-5f3a-4d33-a4f1-5ac315e7a878" type="radio">
+</input><label class="tabbed-label" for="2d6103f9-5a3f-4dd1-b306-9d5d385bdb4c">
 python</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="k">return</span>
+   <span class="k">return</span>
 </pre></div>
 </div>
 </div>
-<input id="73ef0a00-6991-4dd3-90e4-4bf92e845c3f" name="187f938c-c360-43d7-a0fc-5f688499be0a" type="radio">
-</input><label class="tabbed-label" for="73ef0a00-6991-4dd3-90e4-4bf92e845c3f">
+<input id="2179e7be-a0df-4cc0-b866-9084561f333f" name="941d6360-5f3a-4d33-a4f1-5ac315e7a878" type="radio">
+</input><label class="tabbed-label" for="2179e7be-a0df-4cc0-b866-9084561f333f">
 java</label><div class="tabbed-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-    <span class="p">}</span>
+   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+   <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
 </div>
-<input id="0afeae08-dfe9-4812-80f2-c1c47b479336" name="187f938c-c360-43d7-a0fc-5f688499be0a" type="radio">
-</input><label class="tabbed-label" for="0afeae08-dfe9-4812-80f2-c1c47b479336">
+<input id="419a60fe-5777-4de9-9b60-a762e9fc8232" name="941d6360-5f3a-4d33-a4f1-5ac315e7a878" type="radio">
+</input><label class="tabbed-label" for="419a60fe-5777-4de9-9b60-a762e9fc8232">
 julia</label><div class="tabbed-content docutils">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">main</span><span class="p">()</span>
 <span class="k">end</span>
 </pre></div>
 </div>
 </div>
-<input id="91cf18f3-0c4a-4b24-8fd3-26e4a682834b" name="187f938c-c360-43d7-a0fc-5f688499be0a" type="radio">
-</input><label class="tabbed-label" for="91cf18f3-0c4a-4b24-8fd3-26e4a682834b">
+<input id="46b19c44-ff7a-491c-9be5-053740f8ef98" name="941d6360-5f3a-4d33-a4f1-5ac315e7a878" type="radio">
+</input><label class="tabbed-label" for="46b19c44-ff7a-491c-9be5-053740f8ef98">
 fortran</label><div class="tabbed-content docutils">
 <div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
 <span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
@@ -1525,6 +1642,8 @@ fortran</label><div class="tabbed-content docutils">
 </div>
 </div>
 </div>
+</div></blockquote>
+</div></blockquote>
 </div>
 </div>
 <div class="section" id="key">
@@ -1566,10 +1685,19 @@ I’m a <strong>substitution</strong></p>
 <h2><span class="section-number">3.3.20. </span>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="custom-div-blocks">
-<h2><span class="section-number">3.3.21. </span>Custom <div> blocks<a class="headerlink" href="#custom-div-blocks" title="Permalink to this headline">¶</a></h2>
-<div class="my-class docutils">
+<h2><span class="section-number">3.3.21. </span>Custom &lt;div&gt; blocks<a class="headerlink" href="#custom-div-blocks" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{div} my-class
+**Some content.**
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="my-class docutils">
 <p><strong>Some content.</strong></p>
 </div>
+</div></blockquote>
+</div></blockquote>
 </div>
 <div class="section" id="check-for-missing-references">
 <h2><span class="section-number">3.3.22. </span>Check for missing references<a class="headerlink" href="#check-for-missing-references" title="Permalink to this headline">¶</a></h2>
@@ -1581,10 +1709,20 @@ I’m a <strong>substitution</strong></p>
 <div class="section" id="layout">
 <h2><span class="section-number">3.3.23. </span>Layout<a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h2>
 <p>full-width</p>
-<div class="full-width admonition note">
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
+:class: full-width
+Here&#39;s a note that will take the full width
+```
+</pre></div>
+</div>
+<blockquote>
+<div><div class="full-width admonition note">
 <p class="admonition-title">Note</p>
 <p>Here’s a note that will take the full width</p>
 </div>
+</div></blockquote>
+</div></blockquote>
 </div>
 <div class="section" id="proofs-theorems-and-algorithms">
 <h2><span class="section-number">3.3.24. </span>Proofs, Theorems, and Algorithms<a class="headerlink" href="#proofs-theorems-and-algorithms" title="Permalink to this headline">¶</a></h2>
