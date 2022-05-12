@@ -30,7 +30,7 @@ parts:
       - file: python/pandas
     - file: qc/qc
       sections:
-      - file: qc/qc-scipy
+      - file: qc/basic
       - file: qc/qiskit
       - file: qc/qulacs
       - file: qc/pennylane

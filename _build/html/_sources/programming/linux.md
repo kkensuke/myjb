@@ -25,8 +25,7 @@ You can find many Linux cheat sheets using Google.
 ~	home dir
 
 
-pwd:	show current directory\
-ls:		directory listing
+`pwd`:	show current directory
 
 `mkdir`: make directory
 ```zsh
