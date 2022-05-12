@@ -115,7 +115,7 @@ ginit() {
 ```
 You need to install GitHub CLI
 
-## Related to Python
+## Python
 ```
 alias py='python'
 alias py2='python2'

@@ -6,7 +6,7 @@ substitutions:
     {{ key1 }}
     ```
   image: |
-    ```{image} ../Programming/GitHub/img/GitHub-flow.png
+    ```{image} ./gitHub/img/GitHub-flow.png
     :alt: image
     :width: 200px
     ```
@@ -330,7 +330,7 @@ print(note)
 % :class: toggle = :class: dropdown?
 
 >````
->``{figure} ./Zotero/img/general.png
+>``{figure} ./gitHub/img/GitHub-flow.png
 >---
 >figclass: margin
 >alt: My figure text
@@ -339,7 +339,7 @@ print(note)
 >And here is my figure caption
 >```
 >````
->>```{figure} ./Zotero/img/general.png
+>>```{figure} ./gitHub/img/GitHub-flow.png
 >>---
 >>figclass: margin
 >>alt: My figure text
@@ -733,7 +733,7 @@ jb build mybookname/ --builder pdflatex [--individualpages]
 
 ````{note} Note
 If you would just like to generate the latex file you may use:
-```
+```bash
 jb build mybookname/ --builder latex
 ```
 ````
