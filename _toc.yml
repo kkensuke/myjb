@@ -28,6 +28,11 @@ parts:
       - file: python/scipy
       - file: python/sympy
       - file: python/pandas
+    - file: qc/qc
+      - file: qc/scipy
+      - file: qc/qiskit
+      - file: qc/qulacs
+      - file: qc/pennylane
     - file: jb/jb
       sections:
       - file: jb/mkjb
