@@ -5,7 +5,7 @@
 - Alias
 - GitHub
 - Commit Masssages with emoji
-- PATH as an environmental variable
+- PATH
 - Markdown
 - VScode extensions and settings
 

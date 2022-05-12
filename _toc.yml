@@ -10,18 +10,18 @@ defaults:  # The defaults key will be applied to all chapters and sub-sections
 parts:
   - numbered: 3
     chapters:
-    - file: programming/programming # chapters need at least one file before sections.
+    - file: basic/basic # chapters need at least one file before sections.
 #     title:
       sections:
-#      - glob: programming/* # cannot decide the order of files
-      - file: programming/packageManager
-      - file: programming/linux
-      - file: programming/alias
-      - file: programming/github/github
-      - file: programming/github/commitMessage
-      - file: programming/path
-      - file: programming/markdown
-      - file: programming/vscodeExtensions
+#      - glob: basic/* # cannot decide the order of files
+      - file: basic/packageManager
+      - file: basic/linux
+      - file: basic/alias
+      - file: basic/github/github
+      - file: basic/github/commitMessage
+      - file: basic/path
+      - file: basic/markdown
+      - file: basic/vscodeExtensions
     - file: python/python0
       sections:
       - file: python/python
