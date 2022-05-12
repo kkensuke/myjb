@@ -6,7 +6,7 @@ substitutions:
     {{ key1 }}
     ```
   image: |
-    ```{image} ../programming/github/img/GitHub-flow.png
+    ```{image} ../basic/github/img/GitHub-flow.png
     :alt: image
     :width: 200px
     ```
@@ -287,9 +287,9 @@ print(note)
 ## Reference documents
 
 >```
->See {doc}`../programming/alias` for more information.
+>See {doc}`../basic/alias` for more information.
 >```
->>See {doc}`../programming/alias` for more information.
+>>See {doc}`../basic/alias` for more information.
 
 ## Toggle
 >`````
@@ -340,7 +340,7 @@ print(note)
 >And here is my figure caption
 >```
 >````
->>```{figure} ../programming/github/img/GitHub-flow.png
+>>```{figure} ../basic/github/img/GitHub-flow.png
 >>---
 >>figclass: margin
 >>alt: My figure text
@@ -626,7 +626,7 @@ To use a substitution, first add front-matter content to the top of a page like 
 ---
 substitutions:
   image: |
-    ```{image} Programming/GitHub/img/GitHub-flow.png
+    ```{image} ../basic/github/img/GitHub-flow.png
     :alt: image
     :width: 200px
     ```
