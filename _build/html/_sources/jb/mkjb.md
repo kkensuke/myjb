@@ -83,7 +83,7 @@ Update GitHub Pages
 $ ghp-import -n -p -f _build/html
 ```
 
-Command `jbgh test-book` concludes all command needed for update. See [jbgh](../programming/alias#make-a-venv-and-create-a-jupyter-book)
+Command `jbgh test-book` concludes all command needed for update. See [jbgh](../programming/alias###Make-a-venv-and-create-a-jupyter-book)
 
 
 ## Other ways to create jb
