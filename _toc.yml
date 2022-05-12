@@ -29,7 +29,7 @@ parts:
       - file: python/sympy
       - file: python/pandas
     - file: qc/qc
-      - file: qc/scipy
+      - file: qc/qc-scipy
       - file: qc/qiskit
       - file: qc/qulacs
       - file: qc/pennylane
