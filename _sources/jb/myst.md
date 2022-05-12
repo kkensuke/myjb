@@ -6,7 +6,7 @@ substitutions:
     {{ key1 }}
     ```
   image: |
-    ```{image} ../programming/gitHub/img/GitHub-flow.png
+    ```{image} ../programming/github/img/GitHub-flow.png
     :alt: image
     :width: 200px
     ```
@@ -733,7 +733,7 @@ jb build mybookname/ --builder pdflatex [--individualpages]
 
 ````{note} Note
 If you would just like to generate the latex file you may use:
-```bash
+```
 jb build mybookname/ --builder latex
 ```
 ````
