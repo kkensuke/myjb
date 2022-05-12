@@ -59,4 +59,4 @@ You can use Google apps(Google map, Google Keep, YouTube, etc.) as extensions in
 
 
 ## Zotero
-Zotero is a free useful app for managing research papers. ([Settings](../zotero/zotero))
+Zotero is a free useful app for managing research papers.
