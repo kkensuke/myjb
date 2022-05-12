@@ -156,6 +156,7 @@ mkvjb() {
 	    └── test-book
 ```
 
+(jbgh)=
 ### Build and publish a jupyter-book
 ```
 jbgh(){
