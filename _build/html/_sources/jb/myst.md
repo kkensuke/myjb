@@ -731,14 +731,14 @@ or
 jb build mybookname/ --builder pdflatex [--individualpages]
 ```
 
-<!--
+
 ````{note}
 If you would just like to generate the latex file you may use:
 ```
 jb build mybookname/ --builder latex
 ```
 ````
--->
+
 
 ## Check external links in your book
 
