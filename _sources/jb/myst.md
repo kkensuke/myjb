@@ -6,7 +6,7 @@ substitutions:
     {{ key1 }}
     ```
   image: |
-    ```{image} ./gitHub/img/GitHub-flow.png
+    ```{image} ../programming/gitHub/img/GitHub-flow.png
     :alt: image
     :width: 200px
     ```
