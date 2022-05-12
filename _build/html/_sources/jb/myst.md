@@ -339,7 +339,7 @@ print(note)
 >And here is my figure caption
 >```
 >````
->>```{figure} ./gitHub/img/GitHub-flow.png
+>>```{figure} ../programming/github/img/GitHub-flow.png
 >>---
 >>figclass: margin
 >>alt: My figure text
@@ -725,9 +725,8 @@ Additionally, you can generate a badge directly from [shields.io](https://shield
 To build a PDF of your project using LaTeX, use the following command:
 ```
 jupyter-book build mybookname/ --builder pdflatex [--individualpages]
-Copy to clipboard
-or
 
+or
 jb build mybookname/ --builder pdflatex [--individualpages]
 ```
 
