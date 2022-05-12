@@ -660,6 +660,7 @@ substitutions:
 
 ## Footnotes
 
+This is a footnote[^mylabel].
 [^mylabel]: My footnote text.
 
 ## Custom \<div> blocks
