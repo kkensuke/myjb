@@ -41,12 +41,11 @@ substitutions:
 >...
 >see [target](target)
 >```
->
->>(target)=
->>### target
->>...
->>see [target](target)
->>
+(target)=
+### target
+...
+see [target](target)
+
 ## Quote
 >```
 >> this is a quote
