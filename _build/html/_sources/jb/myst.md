@@ -133,7 +133,8 @@ see [target](target)
 >so content can start here.
 >```
 >````
->```{note} Notes require **no** arguments,
+>```{note}
+>Notes require **no** arguments,
 >so content can start here.
 >```
 
@@ -730,7 +731,7 @@ or
 jb build mybookname/ --builder pdflatex [--individualpages]
 ```
 
-````{note} Note
+````{note}
 If you would just like to generate the latex file you may use:
 ```
 jb build mybookname/ --builder latex
