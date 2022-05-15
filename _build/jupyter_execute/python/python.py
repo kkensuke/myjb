@@ -1,31 +1,29 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# 
-
 # # Python and Jupyter
 
 # ## four arithmetic operations and print() function
 
-# In[2]:
+# In[1]:
 
 
 1+1
 
 
-# In[3]:
+# In[2]:
 
 
 print("Hello, world!")
 
 
-# In[14]:
+# In[3]:
 
 
 # This is a comment. It is not executed.
 
 
-# In[8]:
+# In[4]:
 
 
 print(3+4)
@@ -33,30 +31,30 @@ print('3+4')
 print('3'+'4')
 
 
-# In[27]:
+# In[5]:
 
 
 # This will be an error. You can't add a number and a string. 
 # You need to convert the string to a number or vice versa.
-# print(3+'4')
+print(3+'4')
 
 
-# In[28]:
+# In[6]:
 
 
 a = 3 # This is a variable. 
 b = '4'
-# print(a+b) # This will be the same as the above cell.
+print(a+b) # This will be the same as the above cell.
 
 
-# In[29]:
+# In[7]:
 
 
 print(a + int(b)) # This will convert the string to a number.
 print(str(a) + b) # This will convert the number to a string.
 
 
-# In[1]:
+# In[8]:
 
 
 # Basic arithmetic operations
@@ -69,7 +67,7 @@ print('floor division 5//2 = ',5//2)
 print('exponentiation 5**2 = ',5**2)
 
 
-# In[12]:
+# In[9]:
 
 
 # Instead of using a new line, you can use a semicolon.
@@ -78,7 +76,7 @@ print('adsf'); print('asdf')
 
 # ## List, tuple, set, dictionary
 
-# In[17]:
+# In[10]:
 
 
 l = [3,4,5]
@@ -89,14 +87,14 @@ l[1] = 7 # You can change the value of an element in a list.
 print(l)
 
 
-# In[31]:
+# In[11]:
 
 
 # You can use other types of data in a list.
 l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 
 
-# In[30]:
+# In[12]:
 
 
 t = (3,4,5)
@@ -106,14 +104,14 @@ t = (3,4,5)
 # However, a tuple uses less memory than a list.
 
 
-# In[22]:
+# In[13]:
 
 
 s = {3,4,5,5}
 print(s)
 
 
-# In[34]:
+# In[14]:
 
 
 d = {'a':3,'b':4,'c':5}
@@ -130,7 +128,7 @@ print(d.values()) # This will return a list of all the values in the dictionary.
 
 # ## Open a file
 
-# In[ ]:
+# In[15]:
 
 
 path = './sample.txt'
@@ -143,7 +141,7 @@ with open(path) as f:
 
 # ## For loops
 
-# In[2]:
+# In[16]:
 
 
 for i in range(5):
@@ -151,7 +149,7 @@ for i in range(5):
 # Index starts at 0.
 
 
-# In[3]:
+# In[17]:
 
 
 for i in range(5,10):
@@ -160,7 +158,7 @@ for i in range(5,10):
 # cf. range(5,13,2)
 
 
-# In[6]:
+# In[18]:
 
 
 items = ['a','b','c','d','e']
@@ -173,14 +171,14 @@ for i in range(len(items)):
     print(items[i])
 
 
-# In[7]:
+# In[19]:
 
 
 for i, item in enumerate(items):
     print(i, item)
 
 
-# In[8]:
+# In[20]:
 
 
 for _ in range(5):
@@ -189,32 +187,32 @@ for _ in range(5):
 
 # ## Comprehension
 
-# In[9]:
+# In[21]:
 
 
 [i for i in range(5)]
 
 
-# In[14]:
+# In[22]:
 
 
 data = [3,14,23,28,35,46,55,65,76,87,98,109,120,131,142]
 [x*10 for x in data]
 
 
-# In[12]:
+# In[23]:
 
 
 [x for x in data if x%2==0]
 
 
-# In[15]:
+# In[24]:
 
 
 [x if x>50 else x*10 for x in data]
 
 
-# In[16]:
+# In[25]:
 
 
 import numpy as np # This is a module. NumPy is a package that contains many useful functions for working with arrays.
@@ -225,20 +223,20 @@ print(fizz_buzz)
 
 # ## Functions
 
-# In[25]:
+# In[26]:
 
 
 def print_hello():
     print('Hello, world!')
 
 
-# In[26]:
+# In[27]:
 
 
 print_hello()
 
 
-# In[17]:
+# In[28]:
 
 
 def myfunc(arg1, arg2):
@@ -249,7 +247,7 @@ myfunc(3, 'Hello')
 # = myfunc(arg1=3, arg2='Hello')
 
 
-# In[11]:
+# In[29]:
 
 
 import numpy as np
@@ -262,7 +260,7 @@ print(x[:5])
 print(y[:5])
 
 
-# In[8]:
+# In[30]:
 
 
 plt.plot(x,y)
@@ -274,7 +272,7 @@ plt.show()
 
 # $$ f(x) = x^2 $$
 
-# In[4]:
+# In[32]:
 
 
 f = lambda x: x**2
@@ -284,7 +282,7 @@ print(f(3))
 # $$ f(x, t; a, b, v) = \frac{1}{\pi} \frac{2tbv}{(vt)^2 + (x-a)^2} $$
 # $$ a,b,v \,\text{are parameters}$$
 
-# In[5]:
+# In[33]:
 
 
 a = 1
