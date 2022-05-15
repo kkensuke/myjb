@@ -1,6 +1,8 @@
 # Linux/Unix
 
-You can find many Linux cheat sheets using Google.
+ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+     [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
+
 ## Basic
 
 | Command | Description |
