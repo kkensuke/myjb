@@ -1,6 +1,6 @@
 # Linux/Unix
 
-ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)\
      [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
 ## Basic
