@@ -7,7 +7,6 @@
 
 
 from sympy import *
-#sympy.init_printing()
 
 
 # In[2]:
@@ -45,10 +44,16 @@ factor(x**2-4*x+3)
 # In[7]:
 
 
-apart(1/(x**5-1))
+solve(x**2 - x - 1)
 
 
 # In[8]:
+
+
+apart(1/(x**5-1))
+
+
+# In[9]:
 
 
 a = Symbol('a') # Without real=True, a is treated as a complex number.
@@ -58,28 +63,28 @@ u = exp(a*x)*sin(b*x)
 display(u)
 
 
-# In[9]:
+# In[10]:
 
 
 int_u = integrate(u, x)
 display(int_u)
 
 
-# In[10]:
+# In[11]:
 
 
 R = diff(u, x, 2) + u + x
 display(R)
 
 
-# In[11]:
+# In[12]:
 
 
 k, N = symbols('k, N', integer = True)
 factor(summation(k, (k, 1, N) ))
 
 
-# In[12]:
+# In[ ]:
 
 
 s = Symbol('s')
@@ -91,7 +96,7 @@ int_l = integrate(l, (x, 0, 1))
 display(int_l)
 
 
-# In[40]:
+# In[ ]:
 
 
 limit(sin(x)/x, x, 0)

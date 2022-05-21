@@ -37,7 +37,8 @@ parts:
     - file: jb/jb
       sections:
       - file: jb/mkjb
-      - file : jb/myst
+      - file: jb/myst
+      - file: 35-226021_Lecture6/35-226021_Lecture6
     - file: others/others
       sections:
 #      - glob: others/*

@@ -90,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5. Others" href="../others/others.html" />
+    <link rel="next" title="4.5. Grover’s altorithm" href="../35-226021_Lecture6/35-226021_Lecture6.html" />
     <link rel="prev" title="4.1. Let’s make a Jupyter book" href="mkjb.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -266,6 +266,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2 current active">
     <a class="current reference internal" href="#">
      4.2. MyST
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../35-226021_Lecture6/35-226021_Lecture6.html">
+     4.5. Grover’s altorithm
     </a>
    </li>
   </ul>
@@ -1562,13 +1567,13 @@ My second tab with `some code`!
 </div>
 <blockquote>
 <div><div class="tabbed-set docutils">
-<input checked="checked" id="e95228e9-3b43-47b3-a3e1-0ab2070f67e8" name="bfac0d1c-729a-494e-89f2-1190b60ffe09" type="radio">
-</input><label class="tabbed-label" for="e95228e9-3b43-47b3-a3e1-0ab2070f67e8">
+<input checked="checked" id="e3a19127-0da5-4bb4-830e-22c6bed8e013" name="d86afc47-ed1b-48b5-b611-ea733d69562a" type="radio">
+</input><label class="tabbed-label" for="e3a19127-0da5-4bb4-830e-22c6bed8e013">
 Tab 1 title</label><div class="tabbed-content docutils">
 <p>My first tab</p>
 </div>
-<input id="ed5c9461-c3e8-479d-a52c-bb6f9859a25c" name="bfac0d1c-729a-494e-89f2-1190b60ffe09" type="radio">
-</input><label class="tabbed-label" for="ed5c9461-c3e8-479d-a52c-bb6f9859a25c">
+<input id="d05c6255-ccf3-468f-9535-1218896bd442" name="d86afc47-ed1b-48b5-b611-ea733d69562a" type="radio">
+</input><label class="tabbed-label" for="d05c6255-ccf3-468f-9535-1218896bd442">
 Tab 2 title</label><div class="tabbed-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
@@ -1628,8 +1633,8 @@ END PROGRAM main
 </div>
 <blockquote>
 <div><div class="tabbed-set docutils">
-<input checked="checked" id="cd557f83-9e6a-4da2-896e-707926a19fe7" name="6e11517b-3f32-4704-ade4-835caecca071" type="radio">
-</input><label class="tabbed-label" for="cd557f83-9e6a-4da2-896e-707926a19fe7">
+<input checked="checked" id="4f86ede0-f16a-493e-811b-f6657a6b8489" name="678d0474-5cde-4b1f-b2d6-d0b4e2439b57" type="radio">
+</input><label class="tabbed-label" for="4f86ede0-f16a-493e-811b-f6657a6b8489">
 c++</label><div class="tabbed-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -1637,16 +1642,16 @@ c++</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="581bf8e2-2732-48be-9667-ad1662dddac6" name="6e11517b-3f32-4704-ade4-835caecca071" type="radio">
-</input><label class="tabbed-label" for="581bf8e2-2732-48be-9667-ad1662dddac6">
+<input id="b4fea943-e524-4fa8-bb97-fd8aa44d226a" name="678d0474-5cde-4b1f-b2d6-d0b4e2439b57" type="radio">
+</input><label class="tabbed-label" for="b4fea943-e524-4fa8-bb97-fd8aa44d226a">
 python</label><div class="tabbed-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
    <span class="k">return</span>
 </pre></div>
 </div>
 </div>
-<input id="2bfa91fb-9282-4327-b56a-a3cad404b183" name="6e11517b-3f32-4704-ade4-835caecca071" type="radio">
-</input><label class="tabbed-label" for="2bfa91fb-9282-4327-b56a-a3cad404b183">
+<input id="8cd2d655-f55d-4450-a109-5c9d51338edc" name="678d0474-5cde-4b1f-b2d6-d0b4e2439b57" type="radio">
+</input><label class="tabbed-label" for="8cd2d655-f55d-4450-a109-5c9d51338edc">
 java</label><div class="tabbed-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
@@ -1655,16 +1660,16 @@ java</label><div class="tabbed-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="494c9c21-0a29-432b-a7d9-933cf7879e6d" name="6e11517b-3f32-4704-ade4-835caecca071" type="radio">
-</input><label class="tabbed-label" for="494c9c21-0a29-432b-a7d9-933cf7879e6d">
+<input id="04552445-551f-44fc-9493-b79370eee8b1" name="678d0474-5cde-4b1f-b2d6-d0b4e2439b57" type="radio">
+</input><label class="tabbed-label" for="04552445-551f-44fc-9493-b79370eee8b1">
 julia</label><div class="tabbed-content docutils">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">main</span><span class="p">()</span>
 <span class="k">end</span>
 </pre></div>
 </div>
 </div>
-<input id="bb85f4ec-92ae-490d-abd0-6864ed2ba076" name="6e11517b-3f32-4704-ade4-835caecca071" type="radio">
-</input><label class="tabbed-label" for="bb85f4ec-92ae-490d-abd0-6864ed2ba076">
+<input id="ef8bc154-d174-4cc2-bb6a-69be079fae4f" name="678d0474-5cde-4b1f-b2d6-d0b4e2439b57" type="radio">
+</input><label class="tabbed-label" for="ef8bc154-d174-4cc2-bb6a-69be079fae4f">
 fortran</label><div class="tabbed-content docutils">
 <div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
 <span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
@@ -1896,10 +1901,10 @@ To run the link checker, use the following command:</p>
             <p class="prev-next-title"><span class="section-number">4.1. </span>Let’s make a Jupyter book</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../others/others.html" title="next page">
+    <a class='right-next' id="next-link" href="../35-226021_Lecture6/35-226021_Lecture6.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">5. </span>Others</p>
+        <p class="prev-next-title"><span class="section-number">4.5. </span>Grover’s altorithm</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
