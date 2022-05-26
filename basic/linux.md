@@ -5,7 +5,7 @@ ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)\
 
 Here, we learn the command line. Command line is a text interface for your computer. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 
-In Mac, you can use command line with `terminal.app`
+In Mac, you can use the command line with `terminal.app`
 
 ## Basic
 
@@ -26,7 +26,9 @@ To begin with, we see shortcuts.
 |Ctrl + K| Cut the part of the line after the cursor|
 |Ctrl + Y| Paste the last thing you cut|
 
-### There are 4 special symbols and each of them represents a location.
+### Special symbols
+
+There are 4 special symbols and each of them represents a location.
 
 /	root dir\
 \.	current dir\
