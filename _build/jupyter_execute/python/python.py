@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # Python and Jupyter
+# # Python and Jupyterlab
 # 
 # > Python is a clear and powerful object-oriented programming language. - python doc
+# 
+# > JupyterLab is a flexible, extensible interface for interactive computing. - jupyter doc
+# 
+# [Python](https://www.python.org/) is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.
+# 
+# [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
 
 # ## four arithmetic operations and print() function
 
@@ -280,3 +286,6 @@ plt.show()
 f = lambda x: x**2
 print(f(3))
 
+
+# ## Reference
+# [Python Beginners Guide](https://wiki.python.org/moin/BeginnersGuide/Programmers)
