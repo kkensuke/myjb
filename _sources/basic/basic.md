@@ -7,6 +7,6 @@
 - [Commit Masssages with emoji](./github/commitMessage.md)
 - [$PATH](./path.md)
 - [Markdown](./markdown.md)
-- [VScode extensions and settings](./vscodeExtentions.md)
+- [VScode extensions and settings](./vscodeExtensions.md)
 
 
