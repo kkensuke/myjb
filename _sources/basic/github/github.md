@@ -26,8 +26,6 @@ Git has a branching mechanism that allows you to branch projects and develop eac
 ## Local repository and remote repository
 There are two types of repositories: local repositories on your PC and remote repositories on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.
 
-You can learn Git/GitHub in detail at [What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F) and [Bitbucket](https://www.atlassian.com/git/tutorials).
-
 ## Basic commands
 ### Create a new repository
 First, make a repository on the GitHub website without initializing.
@@ -240,9 +238,6 @@ $ gh alias list
 ```
 
 
-
-
-
-
-
-
+## Reference
+[What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)\\
+[Bitbucket](https://www.atlassian.com/git/tutorials).
