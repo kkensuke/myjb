@@ -1,6 +1,6 @@
 # Alias
 
-If you find some useful aliases, write them in `~/.zshrc`.
+If you find some useful aliases, write them in `~/.zshrc` or `~/.bashrc`.
 
 ## Basic
 
@@ -131,44 +131,6 @@ alias wpy='which python'
 alias acv='source venv/bin/activate'
 alias deac='deactivate'
 ```
-
-
-### Make a venv and create a jupyter-book
-```
-mkvjb() {
-	mkdir -p ~/jupyter-book/$1
-	cd ~/jupyter-book/$1
-	python3 -m venv venv
-	source venv/bin/activate
-	/Users/Username/jupyter-book/$1/venv/bin/python3 -m pip install --upgrade pip
-	pip install -U jupyter-book
-	jb create $1
-	cd $1
-	jb build .
-	open /Applications/Safari.app _build/html/index.html
-}
-```
-
-```
-~/jupyter-book
-	└── test-book
-	    ├── .venv
-	    └── test-book
-```
-
-(jbgh)=
-### Build and publish a jupyter-book
-```
-jbgh(){
-	cd ~/jupyter-book/$1/$1
-	jb build --all .
-	git add .
-	git commit -m add
-	git push origin main
-	ghp-import -n -p -f _build/html
-}
-```
-
 
 ## Related to Latex
 ### Copy latex-template directory to somewhere;
