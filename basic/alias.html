@@ -89,7 +89,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="1.4. GitHub" href="github/github.html" />
-    <link rel="prev" title="1.2. Linux/Unix" href="linux.html" />
+    <link rel="prev" title="1.2. Command line" href="linux.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
     
@@ -147,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="linux.html">
-     1.2. Linux/Unix
+     1.2. Command line
     </a>
    </li>
    <li class="toctree-l2 current active">
@@ -445,16 +445,6 @@ const thebe_selector_output = ".output, .cell_output"
      Activate a venv
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-venv-and-create-a-jupyter-book">
-     Make a venv and create a jupyter-book
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#build-and-publish-a-jupyter-book">
-     Build and publish a jupyter-book
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -560,16 +550,6 @@ const thebe_selector_output = ".output, .cell_output"
      Activate a venv
     </a>
    </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-venv-and-create-a-jupyter-book">
-     Make a venv and create a jupyter-book
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#build-and-publish-a-jupyter-book">
-     Build and publish a jupyter-book
-    </a>
-   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -595,7 +575,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="alias">
 <h1><span class="section-number">1.3. </span>Alias<a class="headerlink" href="#alias" title="Permalink to this headline">¶</a></h1>
-<p>If you find some useful aliases, write them in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code>.</p>
+<p>If you find some useful aliases, write them in <code class="docutils literal notranslate"><span class="pre">~/.zshrc</span></code> or <code class="docutils literal notranslate"><span class="pre">~/.bashrc</span></code>.</p>
 <div class="section" id="basic">
 <h2><span class="section-number">1.3.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="customize-and-colorize-prompt">
@@ -738,42 +718,6 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div>
-<div class="section" id="make-a-venv-and-create-a-jupyter-book">
-<h3>Make a venv and create a jupyter-book<a class="headerlink" href="#make-a-venv-and-create-a-jupyter-book" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mkvjb() {
-	mkdir -p ~/jupyter-book/$1
-	cd ~/jupyter-book/$1
-	python3 -m venv venv
-	source venv/bin/activate
-	/Users/Username/jupyter-book/$1/venv/bin/python3 -m pip install --upgrade pip
-	pip install -U jupyter-book
-	jb create $1
-	cd $1
-	jb build .
-	open /Applications/Safari.app _build/html/index.html
-}
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>~/jupyter-book
-	└── test-book
-	    ├── .venv
-	    └── test-book
-</pre></div>
-</div>
-</div>
-<div class="section" id="build-and-publish-a-jupyter-book">
-<span id="jbgh"></span><h3>Build and publish a jupyter-book<a class="headerlink" href="#build-and-publish-a-jupyter-book" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>jbgh(){
-	cd ~/jupyter-book/$1/$1
-	jb build --all .
-	git add .
-	git commit -m add
-	git push origin main
-	ghp-import -n -p -f _build/html
-}
-</pre></div>
-</div>
-</div>
 </div>
 <div class="section" id="related-to-latex">
 <h2><span class="section-number">1.3.4. </span>Related to Latex<a class="headerlink" href="#related-to-latex" title="Permalink to this headline">¶</a></h2>
@@ -818,7 +762,7 @@ const thebe_selector_output = ".output, .cell_output"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title"><span class="section-number">1.2. </span>Linux/Unix</p>
+            <p class="prev-next-title"><span class="section-number">1.2. </span>Command line</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="github/github.html" title="next page">
