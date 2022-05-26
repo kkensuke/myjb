@@ -1,6 +1,6 @@
 # Programming basics
 
-- [Homebrew and Virtual Environment for python
+- [Homebrew and Virtual Environment for python](./packageManager.md)
 - [Command line](./linux.md)
 - [Alias](./alias.md)
 - [GitHub](./github/github.md)
