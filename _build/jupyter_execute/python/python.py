@@ -9,15 +9,11 @@
 # 
 # [Python](https://www.python.org/) is a simple and most popular programming language and used in many fields like AI and machine learning, Data analytics, Data visualization, Web, Game, and so on.
 # 
-# [Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
+# [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
+# 
+# Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [this](../basic/packageManager.md#Venv).
 
-# ## four arithmetic operations and print() function
-
-# In[1]:
-
-
-1+1
-
+# ## print() function and four arithmetic operationsfour arithmetic operations
 
 # In[2]:
 
@@ -25,10 +21,16 @@
 print("Hello, world!")
 
 
-# In[3]:
+# In[1]:
 
 
-# This is a comment. It is not executed.
+# This is a comment. No output.
+
+
+# In[1]:
+
+
+1+1
 
 
 # In[4]:
@@ -47,12 +49,18 @@ print('3'+'4')
 print(3+'4')
 
 
-# In[6]:
+# In[3]:
 
 
 a = 3 # This is a variable. 
 b = '4'
 print(a+b) # This will be the same as the above cell.
+
+
+# In[4]:
+
+
+print(a, b)
 
 
 # In[7]:
@@ -66,13 +74,13 @@ print(str(a) + b) # This will convert the number to a string.
 
 
 # Basic arithmetic operations
-print('addition 1+1 = ',1+1)
-print('subtraction 5-1 = ',5-1)
-print('multiplication 2*2 = ',2*2)
-print('division 5/2 = ',5/2)
-print('modulus 5%2 = ',5%2)
-print('floor division 5//2 = ',5//2)
-print('exponentiation 5**2 = ',5**2)
+print('addition 1+1 = ', 1+1)
+print('subtraction 5-1 = ', 5-1)
+print('multiplication 2*2 = ', 2*2)
+print('division 5/2 = ', 5/2)
+print('modulus 5%2 = ', 5%2)
+print('floor division 5//2 = ', 5//2)
+print('exponentiation 5**2 = ', 5**2)
 
 
 # In[9]:

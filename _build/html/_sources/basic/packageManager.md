@@ -24,7 +24,7 @@ We (install homebrew and) make a venv (virtual environment) to manage python pac
 ## [Homebrew](https://docs.brew.sh/Installation)
 Homebrew is the Missing Package Manager for macOS (or Linux).
 To install it, input next code in the Terminal (you should check the newest code);
-```zsh
+```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
