@@ -14,7 +14,7 @@
 # Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [this](../basic/packageManager.md#Venv).
 
 # ---
-# ## print() function and four arithmetic operationsfour arithmetic operations
+# ## print() function and four arithmetic operations
 
 # In[2]:
 
