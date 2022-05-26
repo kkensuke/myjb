@@ -113,7 +113,7 @@ git config --global commit.template ~/.gitmessage
 ```
 
 
-Reference
+## Reference
 
 [jupyterbook Development Conventions](https://github.com/executablebooks/.github/blob/master/CONTRIBUTING.md#commit-messages)
 
