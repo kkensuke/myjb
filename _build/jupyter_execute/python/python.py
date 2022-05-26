@@ -13,6 +13,7 @@
 # 
 # Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [this](../basic/packageManager.md#Venv).
 
+# ---
 # ## print() function and four arithmetic operationsfour arithmetic operations
 
 # In[2]:
@@ -90,6 +91,7 @@ print('exponentiation 5**2 = ', 5**2)
 print('adsf'); print('asdf')
 
 
+# ---
 # ## List, tuple, set, dictionary
 
 # In[10]:
@@ -142,6 +144,7 @@ print(d.keys()) # This will return a list of all the keys in the dictionary.
 print(d.values()) # This will return a list of all the values in the dictionary.
 
 
+# ---
 # ## Open a file
 
 # In[15]:
@@ -155,6 +158,7 @@ with open(path) as f:
         print(l[i])
 
 
+# ---
 # ## For loops
 
 # In[16]:
@@ -201,6 +205,7 @@ for _ in range(5):
     print('Hello')
 
 
+# ---
 # ## Comprehension
 
 # In[21]:
@@ -237,6 +242,7 @@ fizz_buzz = ['fizzbuzz' if x%3==0 and x%5==0 else 'fizz' if x%3==0 else 'buzz' i
 print(fizz_buzz)
 
 
+# ---
 # ## Functions
 
 # In[26]:
@@ -284,7 +290,7 @@ plt.title('sin')
 plt.show()
 
 
-# ## lambda functions
+# ### lambda functions
 
 # $$ f(x) = x^2 $$
 
@@ -292,6 +298,7 @@ plt.show()
 
 
 f = lambda x: x**2
+
 print(f(3))
 
 
