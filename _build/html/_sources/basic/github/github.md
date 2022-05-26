@@ -239,5 +239,6 @@ $ gh alias list
 
 
 ## Reference
-[What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)\\
+[What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
+
 [Bitbucket](https://www.atlassian.com/git/tutorials).
