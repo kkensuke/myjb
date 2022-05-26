@@ -1,10 +1,11 @@
 # Package Manager and Virtual Environment
 
 What is a package manager?
-> A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer in a consistent manner.(Wikipedia)
+> A package manager or package-management system is a collection of software tools that automates the process of installing, upgrading, configuring, and removing computer programs for a computer in a consistent manner. - wikipedia
 
 
 There are various package managers.
+
 For OS level, 
 - Windows: vcpkg
 - Mac: Homebrew
@@ -18,6 +19,7 @@ For application level,
 - Python: pip, conda
 - R: conda, CRAN
 
+We (install homebrew and) make a venv (virtual environment) to manage python packages in the following.
 
 ## [Homebrew](https://docs.brew.sh/Installation)
 Homebrew is the Missing Package Manager for macOS (or Linux).

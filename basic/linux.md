@@ -1,9 +1,15 @@
-# Linux/Unix
+# Command line
 
 ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)\
      [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
+Here, we learn the command line. Command line is a text interface for your computer. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
+
+In Mac, you can use command line with `terminal.app`
+
 ## Basic
+
+To begin with, we see shortcuts. 
 
 | Command | Description |
 | --- | --- |
@@ -20,12 +26,14 @@ ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)\
 |Ctrl + K| Cut the part of the line after the cursor|
 |Ctrl + Y| Paste the last thing you cut|
 
+### There are 4 special symbols and each of them represents a location.
 
 /	root dir\
 \.	current dir\
 \.\.	parent dir\
 ~	home dir
 
+### basics commands
 
 `pwd`:	show current directory
 
