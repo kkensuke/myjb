@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # [Sympy](https://www.tutorialspoint.com/sympy/index.htm)
+# # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
+# > SymPy is a Python library for symbolic mathematics. - sympy doc
+# 
+# In the following, you see several example of sympy usage.
 
 # In[1]:
 

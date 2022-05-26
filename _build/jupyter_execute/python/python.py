@@ -2,6 +2,8 @@
 # coding: utf-8
 
 # # Python and Jupyter
+# 
+# > Python is a clear and powerful object-oriented programming language. - python doc
 
 # ## four arithmetic operations and print() function
 
@@ -277,24 +279,4 @@ plt.show()
 
 f = lambda x: x**2
 print(f(3))
-
-
-# $$ f(x, t; a, b, v) = \frac{1}{\pi} \frac{2tbv}{(vt)^2 + (x-a)^2} $$
-# $$ a,b,v \,\text{are parameters}$$
-
-# In[33]:
-
-
-a = 1
-b = 0.01
-v = 1
-
-func = lambda x, t: b*v**2*t/(v**2*t**2 + (x-a)**2)/np.pi
-
-x = np.linspace(-10,10,1000)
-t  =np.array([1,2,3,4,5])
-for it in t: 
-    y = func(x, np.ones(1000)*it)
-    plt.plot(x,y, label = 't = {}'.format(it))
-    plt.legend()
 

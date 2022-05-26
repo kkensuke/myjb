@@ -1,7 +1,11 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # [Scipy](https://docs.scipy.org/doc/scipy/index.html)
+# # [SciPY](https://docs.scipy.org/doc/scipy/index.html)
+# 
+# > SciPy is a collection of **mathematical algorithms and convenience functions** built on the NumPy extension of Python. - scippy doc
+# 
+# In the following, you see several example of scipy functions (differentiation, integration, optimization) to solve problems.
 
 # In[17]:
 
@@ -47,6 +51,8 @@ plt.title('Lotka-Volterra System')
 plt.show()
 
 
+# ---
+# ---
 # ## Integration
 # ### scipy.integrate.quad
 # Compute a definite integral.
@@ -70,6 +76,8 @@ print(ans)
 print(4**3 / 3.)  # analytical result
 
 
+# ---
+# ---
 # ## Root finding
 # ### scipy.optimize.root_scalar
 # Find a root of a scalar function.
@@ -95,6 +103,7 @@ print(sol.root)
 print((1+np.sqrt(5))/2) # analytical result
 
 
+# ---
 # ### scipy.optimize.root
 # Find a root of a vector function.
 # 
@@ -120,6 +129,7 @@ sol = optimize.root(fun, [0, 0], jac=jac, method='hybr')
 print(sol.x)
 
 
+# ---
 # ### scipy.optimize.minimize
 # Local (multivariate) optimization
 # 
@@ -143,6 +153,7 @@ res = minimize(f, x0, method='CG',options={'disp': True})
 res.x # solution
 
 
+# ---
 # ### scipy.optimize.least_squares
 # Least-squares
 # >```python

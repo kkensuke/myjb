@@ -90,7 +90,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2.2. Scipy" href="scipy.html" />
+    <link rel="next" title="2.2. SciPY" href="scipy.html" />
     <link rel="prev" title="2. Python" href="python0.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en">
@@ -201,12 +201,12 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="scipy.html">
-     2.2. Scipy
+     2.2. SciPY
     </a>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="sympy.html">
-     2.3. Sympy
+     2.3. SymPY
     </a>
    </li>
    <li class="toctree-l2">
@@ -502,6 +502,9 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="python-and-jupyter">
 <h1><span class="section-number">2.1. </span>Python and Jupyter<a class="headerlink" href="#python-and-jupyter" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Python is a clear and powerful object-oriented programming language. - python doc</p>
+</div></blockquote>
 <div class="section" id="four-arithmetic-operations-and-print-function">
 <h2><span class="section-number">2.1.1. </span>four arithmetic operations and print() function<a class="headerlink" href="#four-arithmetic-operations-and-print-function" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
@@ -1011,31 +1014,6 @@ Hello
 </div>
 </div>
 </div>
-<div class="math notranslate nohighlight">
-\[ f(x, t; a, b, v) = \frac{1}{\pi} \frac{2tbv}{(vt)^2 + (x-a)^2} \]</div>
-<div class="math notranslate nohighlight">
-\[ a,b,v \,\text{are parameters}\]</div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mf">0.01</span>
-<span class="n">v</span> <span class="o">=</span> <span class="mi">1</span>
-
-<span class="n">func</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">,</span> <span class="n">t</span><span class="p">:</span> <span class="n">b</span><span class="o">*</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="o">/</span><span class="p">(</span><span class="n">v</span><span class="o">**</span><span class="mi">2</span><span class="o">*</span><span class="n">t</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span>
-
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">1000</span><span class="p">)</span>
-<span class="n">t</span>  <span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
-<span class="k">for</span> <span class="n">it</span> <span class="ow">in</span> <span class="n">t</span><span class="p">:</span> 
-    <span class="n">y</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span><span class="o">*</span><span class="n">it</span><span class="p">)</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="s1">&#39;t = </span><span class="si">{}</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">it</span><span class="p">))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<img alt="../_images/python_41_0.png" src="../_images/python_41_0.png" />
-</div>
-</div>
 </div>
 </div>
 
@@ -1074,7 +1052,7 @@ Hello
     <a class='right-next' id="next-link" href="scipy.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><span class="section-number">2.2. </span>Scipy</p>
+        <p class="prev-next-title"><span class="section-number">2.2. </span>SciPY</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
