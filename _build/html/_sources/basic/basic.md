@@ -1,12 +1,12 @@
 # Programming basics
 
-- Install Homebrew and make a Virtual Environment of python
-- Command line
-- Alias
-- GitHub
-- Commit Masssages with emoji
-- PATH
-- Markdown
-- VScode extensions and settings
+- [Homebrew and Virtual Environment for python
+- [Command line](./linux.md)
+- [Alias](./alias.md)
+- [GitHub](./github/github.md)
+- [Commit Masssages with emoji](./github/commitMessage.md)
+- [$PATH](./path.md)
+- [Markdown](./markdown.md)
+- [VScode extensions and settings](./vscodeExtentions.md)
 
 
