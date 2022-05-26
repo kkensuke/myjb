@@ -1,5 +1,9 @@
 # Markdown
 
+reference https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiW8bKRiv33AhXFC94KHb5XAYgQFnoECAwQAQ&url=https%3A%2F%2Fwww.markdownguide.org%2F&usg=AOvVaw1fohdJEEbL6kohiJ-Pimbe
+
+Here, you can learn the basic usage of markdown. markdown is a simple, lightweight markup language for creating formatted text.
+This whole Jupyter Book cource code are also written in markdown (MyST). You can use markdown to make websites, documents, notes, book, presentations, email messages.
 
 >```md
 ># Heading 1
