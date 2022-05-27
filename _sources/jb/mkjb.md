@@ -1,6 +1,6 @@
 # Let's make a Jupyter book
 
-We are going to make a structure below.
+We are going to make the structure below.
 ```zsh
 ~/jupyter-book
 	└── test-book
