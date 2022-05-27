@@ -136,7 +136,6 @@ alias deac='deactivate'
 ### Copy latex-template directory to somewhere;
 ```
 mklt(){
-	cd ~/Report
-	cp -r latex_template ~/Report/$1
+	cp -r ~/github/physics/report/latex-template ./$1
 }
 ```
