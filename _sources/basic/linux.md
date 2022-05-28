@@ -1,8 +1,5 @@
 # Command line
 
-ref: [The Unix Shell](https://swcarpentry.github.io/shell-novice/)\
-     [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
-
 Here, we learn the command line. Command line is a text interface for your computer. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 
 In Mac, you can use the command line with `terminal.app`
@@ -319,4 +316,9 @@ grep 'string1 string2'  filename
 ln -s original-dir/file where/to/put/SymboliLink
 ```
 
+## Reference
+
+[The Unix Shell](https://swcarpentry.github.io/shell-novice/)
+
+[The Missing Semester of Your CS Education](https://missing.csail.mit.edu/)
 
