@@ -28,12 +28,12 @@ parts:
       - file: python/scipy
       - file: python/sympy
       - file: python/pandas
-    - file: qc/qc
-      sections:
-      - file: qc/basic
-      - file: qc/qiskit
-      - file: qc/qulacs
-      - file: qc/pennylane
+#    - file: qc/qc
+#      sections:
+#      - file: qc/basic
+#      - file: qc/qiskit
+#      - file: qc/qulacs
+#      - file: qc/pennylane
     - file: jb/jb
       sections:
       - file: jb/mkjb
