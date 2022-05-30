@@ -19,7 +19,7 @@ For application level,
 - Python: pip, conda
 - R: conda, CRAN
 
-We (install homebrew and) make a venv (virtual environment) to manage python packages in the following.
+In this page, we (install homebrew and) make a venv (virtual environment) to manage python packages.
 
 ## [Homebrew](https://docs.brew.sh/Installation)
 Homebrew is the Missing Package Manager for macOS (or Linux).
