@@ -11,6 +11,6 @@
 - [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
 - [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
-- [bracket pair]()
 
-## Settings
+[More](https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Installs)
+
