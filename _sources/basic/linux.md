@@ -165,12 +165,12 @@ mv dir1 dir4
 ```
 
 `ln -s`: make symbolic links
-Symbolic links is the file that contains a reference to another file.
+Symbolic links is the file that refers to another file.
 ```bash
 ln -s original-dir/file where/to/put/SymboliLink
 ```
 ```{note}
-Aliases store two pieces of information about the destination file - both the location and a file identifier. Symbolic links only store the other location. Although it seems aliases are more useful, you aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
+Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
 ```
 
 
