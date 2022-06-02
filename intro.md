@@ -2,7 +2,7 @@
 
 Under construction
 
-- Programming basics
-- Python
-- Jupyer book
-- Others
+- [Programming basics](basic.md)
+- [Python](python/python0.md)
+- [Jupyer book](jb/jb.md)
+- [Others](others/others.md)
