@@ -455,7 +455,7 @@ you can also check by;</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew doctor
 </pre></div>
 </div>
-<p>If you succeeded, you get; <code class="docutils literal notranslate"><span class="pre">Homebrew</span> <span class="pre">3.3.8</span></code>.</p>
+<p>If you succeed, you get; <code class="docutils literal notranslate"><span class="pre">Homebrew</span> <span class="pre">3.3.8</span></code>.</p>
 </div>
 <div class="section" id="venv">
 <h2><span class="section-number">1.1.2. </span><a class="reference external" href="https://docs.python.org/3/library/venv.html">Venv</a><a class="headerlink" href="#venv" title="Permalink to this headline">¶</a></h2>
@@ -490,7 +490,7 @@ Before installing something, you might have to upgrade <code class="docutils lit
 </pre></div>
 </div>
 <p>and let’s check:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip freeze
+<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>pip list --format<span class="o">=</span>freeze
 </pre></div>
 </div>
 <p>and you get <code class="docutils literal notranslate"><span class="pre">numpy==x.xx.x</span></code>.</p>
@@ -500,9 +500,9 @@ pip install pandas
 pip install jupyterlab
 </pre></div>
 </div>
-<p>Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is different from usual python packages.
+<p>Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is the web-based user interface for python.
 Scipy, which is for scientific computing, is also a useful package for some people.
-Now you can see many packages in your test virtual environment; try <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">freeze</span></code>, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
+Now you can see many packages in your test virtual environment; try <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">list</span> <span class="pre">--format=freeze</span></code>, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
 To deactivate the virtual env, just input: <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> in the terminal. To activate again; <code class="docutils literal notranslate"><span class="pre">source</span> <span class="pre">test/bin/activate</span></code>.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
@@ -521,7 +521,7 @@ To deactivate the virtual env, just input: <code class="docutils literal notrans
 </div>
 <p>Your default browser will show up and open jupyter-lab.</p>
 <p>To deactivate juypter-lab (not virtual env), in the Terminal; Control + c and you will be asked whether to quit, so enter y [yes].
-For more details, see Python page.</p>
+For more details, see <a class="reference internal" href="../jb/jb.html"><span class="doc std std-doc">Jupyter Book</span></a> page.</p>
 <p>You can also use jupyter notebook.</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>jupyter notebook
 </pre></div>
