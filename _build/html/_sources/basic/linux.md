@@ -164,7 +164,7 @@ If dir4 does not exist, the following operation is rename. Otherwise dir1 will b
 mv dir1 dir4
 ```
 
-`ln -s`: make symbolic links
+`ln -s`: make symbolic links<br>
 Symbolic links is the file that refers to another file.
 ```bash
 ln -s original-dir/file where/to/put/SymboliLink
