@@ -239,7 +239,7 @@ You can use `chmod -R` to change permissions recursively.
 `glob patterns` specify sets of filenames with wildcard characters. Using `glob` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
 
 There are several common wildcard characters:
-```bash
+```
 * : matches zero or more characters
 ? : matches any single character
 [abc] : matches any character in set
