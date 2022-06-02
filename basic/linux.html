@@ -605,6 +605,15 @@ mv file5 dir3
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links
+Symbolic links is the file that contains a reference to another file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Aliases store two pieces of information about the destination file - both the location and a file identifier. Symbolic links only store the other location. Although it seems aliases are more useful, you aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
+</div>
 <p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in tree format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
 You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install tree
@@ -808,10 +817,6 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 </tr>
 </tbody>
 </table>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: symbolic links</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
-</pre></div>
-</div>
 </div>
 <div class="section" id="reference">
 <h2><span class="section-number">1.2.3. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
