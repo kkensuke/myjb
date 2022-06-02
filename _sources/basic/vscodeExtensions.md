@@ -1,7 +1,7 @@
 # VScode extensions and settings
 
 ## Extensions
-- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme" target="_blank)
+- [Material Theme](https://marketplace.visualstudio.com/items?itemName=Equinusocio.vsc-material-theme){target="_blank"}
 - [Material Icon Theme](https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme)
 - [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 - [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)
@@ -14,3 +14,4 @@
 
 [More](https://marketplace.visualstudio.com/search?target=VSCode&category=All%20categories&sortBy=Installs)
 
+<a href="https://example.com" target="_blank">demo</a>
