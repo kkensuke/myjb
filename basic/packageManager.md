@@ -134,7 +134,10 @@ jupyter notebook
 ```
 
 ```{note}
-Renaming the virtual environment is not recommended.
+- Renaming the virtual environment
+- Renaming the parent directories of venv
+- Changing the location of venv
+is not recommended. 
 ```
 
 
