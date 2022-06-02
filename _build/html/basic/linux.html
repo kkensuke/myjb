@@ -710,12 +710,12 @@ chmod u+x file
 <h2><span class="section-number">1.2.2. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
 ? : matches any single character
-<span class="o">[</span>abc<span class="o">]</span> : matches any character <span class="k">in</span> <span class="nb">set</span>
-<span class="o">[</span>a-z<span class="o">]</span> : matches any character <span class="k">in</span> range
-<span class="o">[</span>!abc<span class="o">]</span> : matches any character not <span class="k">in</span> <span class="nb">set</span>
-<span class="o">[</span>!a-z<span class="o">]</span> : matches any character not <span class="k">in</span> range
+[abc] : matches any character in set
+[a-z] : matches any character in range
+[!abc] : matches any character not in set
+[!a-z] : matches any character not in range
 </pre></div>
 </div>
 <p>Some examples:</p>
