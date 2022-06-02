@@ -222,7 +222,7 @@ If you permit all operations(4+2+1) to owner and read and execute(4+1) to group 
 |r|	read|
 |w|	write|
 |x|	execute|
-```
+
 
 For example,
 ```bash
