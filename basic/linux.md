@@ -164,6 +164,16 @@ If dir4 does not exist, the following operation is rename. Otherwise dir1 will b
 mv dir1 dir4
 ```
 
+`ln -s`: make symbolic links
+Symbolic links is the file that contains a reference to another file.
+```bash
+ln -s original-dir/file where/to/put/SymboliLink
+```
+```{note}
+Aliases store two pieces of information about the destination file - both the location and a file identifier. Symbolic links only store the other location. Although it seems aliases are more useful, you aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
+```
+
+
 `tree`: print contents of current directory in tree format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
 You have to install `tree` command in bash first.
 ```bash
@@ -310,11 +320,6 @@ grep 'string1 string2'  filename
 |-m NUMBER | Stop grep command NUMBER selected lines|
 |-o | Display only matched parts of lines|
 
-
-`ln -s`: symbolic links
-```bash
-ln -s original-dir/file where/to/put/SymboliLink
-```
 
 ## Reference
 
