@@ -489,42 +489,42 @@ const thebe_selector_output = ".output, .cell_output"
 <h3>basics commands<a class="headerlink" href="#basics-commands" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">pwd</span></code>:	show current directory</p>
 <p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code>: make directory</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir ~/tmp
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir ~/tmp
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">cd</span></code>: change directory</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/tmp
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> ~/tmp
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">touch</span></code>: make file or directory</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch file
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">ls</span></code>: list files or directories</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ls
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
 <span class="c1"># file</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">mkdir</span> <span class="pre">-p</span></code>; make parent directories as needed</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir -p dir/subdir/ssubdir
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir -p dir/subdir/ssubdir
 ls
 <span class="c1"># file dir</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">rm</span></code>: remove file(s)<br />
 <code class="docutils literal notranslate"><span class="pre">rm</span> <span class="pre">-r</span></code>: remove directories and their contents</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm file
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm file
 rm -r dir
 </pre></div>
 </div>
 <p>cf.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rm -v file <span class="c1"># show filename when removed</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rm -v file <span class="c1"># show filename when removed</span>
 rm -i file <span class="c1"># comfirm whether to rmove</span>
 rm -f file <span class="c1"># force remove</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">rmdir</span></code>:		remove empty directory</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir dir
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir dir
 ls
 <span class="c1"># dir</span>
 rmdir dir
@@ -533,14 +533,14 @@ ls
 </pre></div>
 </div>
 <p>cf.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>rmdir -p dir/subdir/ssubdir
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>rmdir -p dir/subdir/ssubdir
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">echo</span></code>:</p>
 <ul class="simple">
 <li><p>print environment variables</p></li>
 </ul>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="nv">$PATH</span>
 </pre></div>
 </div>
 <ul class="simple">
@@ -550,23 +550,23 @@ ls
 </ul>
 </li>
 </ul>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt; <span class="o">[</span>filename<span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- Append
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt;&gt; <span class="o">[</span>filename<span class="o">]</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="o">[</span>Strings<span class="o">]</span> &gt;&gt; <span class="o">[</span>filename<span class="o">]</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">cat</span></code>: print file contents</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>touch file1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>touch file1
 <span class="nb">echo</span> hello &gt; file1
 cat file1
 <span class="c1"># hello</span>
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cat &gt; file2
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cat &gt; file2
 asdf  <span class="o">(</span>input something<span class="o">)</span>
 Ctrl + D <span class="o">(</span>end input<span class="o">)</span>
 cat file2
@@ -574,12 +574,12 @@ cat file2
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">cp</span></code>: copy file(s) or directory(ies)</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>cp file1 file3
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cp file1 file3
 cat file3
 <span class="c1"># hello</span>
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mkdir dir1
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir dir1
 touch dir1/file4
 cp -r dir1 dir2
 ls dir2
@@ -596,21 +596,21 @@ you will be asked whether to overwrite the contents of file2.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">mv</span></code>: move file(s) or directory(ies)
 If file5 does not exist, the following operation is rename</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv file1 file5
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv file1 file5
 mkdir dir3
 mv file5 dir3
 </pre></div>
 </div>
 <p>If dir4 does not exist, the following operation is rename. Otherwise dir1 will be moved to dir4.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in tree format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
-You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in zsh first.</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>brew install tree
+You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install tree
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>tree
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tree
 <span class="nb">test</span>
 ├── dir2
 │   └── file4
@@ -622,12 +622,12 @@ You have to install <code class="docutils literal notranslate"><span class="pre"
 └── file3
 </pre></div>
 </div>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># print directory contents up to level 2</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># print directory contents up to level 2</span>
 tree -L <span class="m">2</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">chomd</span></code>: change file modes(permissions)</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">755</span> file
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod <span class="m">755</span> file
 </pre></div>
 </div>
 <p>You can specify the mode with octal number or with symbol like <code class="docutils literal notranslate"><span class="pre">u+x</span></code> for user, <code class="docutils literal notranslate"><span class="pre">g+x</span></code> for group, <code class="docutils literal notranslate"><span class="pre">o+x</span></code> for others.</p>
@@ -697,7 +697,7 @@ If you permit all operations(4+2+1) to owner and read and execute(4+1) to group 
 </table>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 For example,
-```zsh
+```bash
 chmod u=rwx,g=rx,o=r file
 
 chmod u+x file
@@ -710,7 +710,7 @@ chmod u+x file
 <h2><span class="section-number">1.2.2. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
 ? : matches any single character
 <span class="o">[</span>abc<span class="o">]</span> : matches any character <span class="k">in</span> <span class="nb">set</span>
 <span class="o">[</span>a-z<span class="o">]</span> : matches any character <span class="k">in</span> range
@@ -719,7 +719,7 @@ chmod u+x file
 </pre></div>
 </div>
 <p>Some examples:</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
 mv * dir
 <span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `dir`</span>
 <span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`</span>
@@ -729,7 +729,7 @@ mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code>: find files and directories</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># search current directory for filename(not recursively)</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># search current directory for filename(not recursively)</span>
 find filename
 
 <span class="c1"># search target directory recursively for lecture0~lecture9 directories (cf. -type f)</span>
@@ -752,7 +752,7 @@ find . -name <span class="s1">&#39;*.txt&#39;</span> -exec rm <span class="o">{}
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">grep</span></code>: search files for patterns</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search any line that contains `word` in filename</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Search any line that contains `word` in filename</span>
 grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&#39;word&#39;</span> filename 
 
 grep <span class="s1">&#39;word&#39;</span> file1 file2 file3
@@ -811,7 +811,7 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 </tbody>
 </table>
 <p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: symbolic links</p>
-<div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
 </pre></div>
 </div>
 </div>

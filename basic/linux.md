@@ -37,28 +37,28 @@ There are 4 special symbols and each of them represents a location.
 `pwd`:	show current directory
 
 `mkdir`: make directory
-```zsh
+```bash
 mkdir ~/tmp
 ```
 
 `cd`: change directory
-```zsh
+```bash
 cd ~/tmp
 ```
 
 `touch`: make file or directory
-```zsh
+```bash
 touch file
 ```
 
 `ls`: list files or directories
-```zsh
+```bash
 ls
 # file
 ```
 
 `mkdir -p`; make parent directories as needed 
-```zsh
+```bash
 mkdir -p dir/subdir/ssubdir
 ls
 # file dir
@@ -66,20 +66,20 @@ ls
 
 `rm`: remove file(s)\
 `rm -r`: remove directories and their contents
-```zsh
+```bash
 rm file
 rm -r dir
 ```
 
 cf.
-```zsh
+```bash
 rm -v file # show filename when removed
 rm -i file # comfirm whether to rmove
 rm -f file # force remove
 ```
 
 `rmdir`:		remove empty directory
-```zsh
+```bash
 mkdir dir
 ls
 # dir
@@ -89,35 +89,35 @@ ls
 ```
 
 cf.
-```zsh
+```bash
 rmdir -p dir/subdir/ssubdir
 ```
 
 
 `echo`:
 - print environment variables
-```zsh
+```bash
 echo $PATH
 ```
 - make files with contents
     - Make new file or overwrite existing file
-```zsh
+```bash
 echo [Strings] > [filename]
 ```
     - Append
-```zsh
+```bash
 echo [Strings] >> [filename]
 ```
 
 `cat`: print file contents
-```zsh
+```bash
 touch file1
 echo hello > file1
 cat file1
 # hello
 ```
 
-```zsh
+```bash
 cat > file2
 asdf  (input something)
 Ctrl + D (end input)
@@ -126,13 +126,13 @@ cat file2
 ```
 
 `cp`: copy file(s) or directory(ies)
-```zsh
+```bash
 cp file1 file3
 cat file3
 # hello
 ```
 
-```zsh
+```bash
 mkdir dir1
 touch dir1/file4
 cp -r dir1 dir2
@@ -153,24 +153,24 @@ If the directory2 does not exist, the contents of dir1 will be copied to dir2. S
 
 `mv`: move file(s) or directory(ies)
 If file5 does not exist, the following operation is rename
-```zsh
+```bash
 mv file1 file5
 mkdir dir3
 mv file5 dir3
 ```
 
 If dir4 does not exist, the following operation is rename. Otherwise dir1 will be moved to dir4.
-```zsh
+```bash
 mv dir1 dir4
 ```
 
 `tree`: print contents of current directory in tree format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
-You have to install `tree` command in zsh first.
-```zsh
+You have to install `tree` command in bash first.
+```bash
 brew install tree
 ```
 
-```zsh
+```bash
 tree
 test
 ├── dir2
@@ -183,13 +183,13 @@ test
 └── file3
 ```
 
-```zsh
+```bash
 # print directory contents up to level 2
 tree -L 2
 ```
 
 `chomd`: change file modes(permissions)
-```zsh
+```bash
 chmod 755 file
 ```
 
@@ -225,7 +225,7 @@ If you permit all operations(4+2+1) to owner and read and execute(4+1) to group 
 ```
 
 For example,
-```zsh
+```bash
 chmod u=rwx,g=rx,o=r file
 
 chmod u+x file
@@ -239,7 +239,7 @@ You can use `chmod -R` to change permissions recursively.
 `glob patterns` specify sets of filenames with wildcard characters. Using `glob` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
 
 There are several common wildcard characters:
-```zsh
+```bash
 * : matches zero or more characters
 ? : matches any single character
 [abc] : matches any character in set
@@ -249,7 +249,7 @@ There are several common wildcard characters:
 ```
 
 Some examples:
-```zsh
+```bash
 # move all files and directories to `dir`
 mv * dir
 # move foo.txt, bar.txt, and baz.txt in path to `dir`
@@ -261,7 +261,7 @@ mv *{.py,.sh} dir
 
 
 `find`: find files and directories
-```zsh
+```bash
 # search current directory for filename(not recursively)
 find filename
 
@@ -285,7 +285,7 @@ find . -name '*.txt' -exec rm {} \;
 ```
 
 `grep`: search files for patterns
-```zsh
+```bash
 # Search any line that contains `word` in filename
 grep [-Options] 'word' filename 
 
@@ -312,7 +312,7 @@ grep 'string1 string2'  filename
 
 
 `ln -s`: symbolic links
-```zsh
+```bash
 ln -s original-dir/file where/to/put/SymboliLink
 ```
 
