@@ -605,7 +605,7 @@ Git has a branching mechanism that allows you to branch projects and develop eac
 </div>
 <div class="section" id="local-repository-and-remote-repository">
 <h2><span class="section-number">1.4.2. </span>Local repository and remote repository<a class="headerlink" href="#local-repository-and-remote-repository" title="Permalink to this headline">¶</a></h2>
-<p>There are two types of repositories: local repositories on your PC and remote repositories on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.</p>
+<p>There are two types of repositories: <code class="docutils literal notranslate"><span class="pre">local</span> <span class="pre">repositories</span></code> on your PC and <code class="docutils literal notranslate"><span class="pre">remote</span> <span class="pre">repositories</span></code> on a shared server. Each repository stores the history of changes and other information. This type of management is called distributed version control.</p>
 </div>
 <div class="section" id="basic-commands">
 <h2><span class="section-number">1.4.3. </span>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h2>
@@ -613,16 +613,16 @@ Git has a branching mechanism that allows you to branch projects and develop eac
 <h3>Create a new repository<a class="headerlink" href="#create-a-new-repository" title="Permalink to this headline">¶</a></h3>
 <p>First, make a repository on the GitHub website without initializing.
 Second, execute the commands below on the local computer</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="n">mkdir</span> <span class="n">project_name</span><span class="p">]</span>
-<span class="p">[</span><span class="n">cd</span> <span class="n">project_name</span><span class="p">]</span>
-<span class="n">echo</span> <span class="s2">&quot;# test&quot;</span> <span class="o">&gt;&gt;</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span>
-<span class="n">git</span> <span class="n">init</span>
-<span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
-<span class="p">(</span><span class="n">git</span> <span class="n">add</span> <span class="n">README</span><span class="o">.</span><span class="n">md</span><span class="p">)</span>
-<span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;first commit&quot;</span>
-<span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">M</span> <span class="n">main</span>
-<span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">Username</span><span class="o">&gt;/&lt;</span><span class="n">repository</span><span class="o">&gt;.</span><span class="n">git</span>
-<span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mkdir project_name<span class="o">]</span>
+<span class="o">[</span><span class="nb">cd</span> project_name<span class="o">]</span>
+<span class="nb">echo</span> <span class="s2">&quot;# test&quot;</span> &gt;&gt; README.md
+git init
+git add .
+<span class="o">(</span>git add README.md<span class="o">)</span>
+git commit -m <span class="s2">&quot;first commit&quot;</span>
+git branch -M main
+git remote add origin https://github.com/&lt;Username&gt;/&lt;repository&gt;.git
+git push -u origin main
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code> makes repository, or <code class="docutils literal notranslate"><span class="pre">.git</span></code>, in the current directory.</p>
@@ -630,6 +630,7 @@ Second, execute the commands below on the local computer</p>
 </div>
 <div class="section" id="push-an-existing-repository-from-the-command-line">
 <h3>push an existing repository from the command line<a class="headerlink" href="#push-an-existing-repository-from-the-command-line" title="Permalink to this headline">¶</a></h3>
+<p>If you have already made a local repository and not made remote repository, you just need to use the following commands after making a remote repository.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">remote</span> <span class="n">add</span> <span class="n">origin</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/&lt;</span><span class="n">Username</span><span class="o">&gt;/&lt;</span><span class="n">repository</span><span class="o">&gt;.</span><span class="n">git</span>
 <span class="n">git</span> <span class="n">branch</span> <span class="o">-</span><span class="n">M</span> <span class="n">main</span>
 <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">u</span> <span class="n">origin</span> <span class="n">main</span>
@@ -639,17 +640,17 @@ Second, execute the commands below on the local computer</p>
 <div class="section" id="clone">
 <h3>Clone<a class="headerlink" href="#clone" title="Permalink to this headline">¶</a></h3>
 <p>In an arbitrary directory,</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git clone [branch, or you can omit here for main] https://github.com/&lt;Username&gt;/&lt;repository&gt;.git
-$ cd &lt;repository&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git clone <span class="o">[</span>branch, or you can omit here <span class="k">for</span> main<span class="o">]</span> https://github.com/&lt;Username&gt;/&lt;repository&gt;.git
+$ <span class="nb">cd</span> &lt;repository&gt;
 </pre></div>
 </div>
 <p>After you add or modify files:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git add &lt;file&gt;
-($ git add .  # add current directory)
-($ git status)
-$ git commit -m &quot;&lt;comment&gt;&quot;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git add &lt;file&gt;
+<span class="o">(</span>$ git add .  <span class="c1"># add current directory)</span>
+<span class="o">(</span>$ git status<span class="o">)</span>
+$ git commit -m <span class="s2">&quot;&lt;comment&gt;&quot;</span>
 $ git push origin main
-($ git status)
+<span class="o">(</span>$ git status<span class="o">)</span>
 </pre></div>
 </div>
 <!--
@@ -666,13 +667,13 @@ $ git push origin main
 </div>
 <div class="section" id="take-new-changes-of-the-remote-repository-into-the-local-repository">
 <h3>take new changes of the remote repository into the local repository<a class="headerlink" href="#take-new-changes-of-the-remote-repository-into-the-local-repository" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git pull origin main
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git pull origin main
 </pre></div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>This is equivalent to</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git fetch
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git fetch
 $ git merge origin main
 </pre></div>
 </div>
@@ -683,36 +684,36 @@ $ git merge origin main
 <p>When you make a repository, the only main branch exists at first.
 So, you are in the main branch by default.</p>
 <p>You can check the current branch by</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git branch
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git branch
 </pre></div>
 </div>
 <p>You can see all branches including the remote branches by</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout -a
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -a
 </pre></div>
 </div>
 <p>1, Making new branch at local (branch not in remote)</p>
 <p>Let’s make a new branch!</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># make a branch
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># make a branch</span>
 $ git branch &lt;branch&gt;
-# switch to &lt;branch&gt; from main
+<span class="c1"># switch to &lt;branch&gt; from main</span>
 $ git checkout &lt;branch&gt;
 </pre></div>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>These two lines are equivalent to</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git checkout -b &lt;branch&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git checkout -b &lt;branch&gt;
 </pre></div>
 </div>
 </div>
 <p>Then reflect the new branch to the remote repository.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git push origin &lt;branch&gt;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git push origin &lt;branch&gt;
 </pre></div>
 </div>
 <p>2, when remote/branch already exists</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># create a new local branch pointing to the remote branch
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># create a new local branch pointing to the remote branch</span>
 $ git branch &lt;branch&gt; origin/&lt;branch&gt;
-# check out that branch
+<span class="c1"># check out that branch</span>
 $ git checkout &lt;branch&gt;
 </pre></div>
 </div>
@@ -740,15 +741,15 @@ To avoid it, making <code class="docutils literal notranslate"><span class="pre"
 <ul class="simple">
 <li><p>one time</p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git config --global core.excludesfile ~/.gitignore_global       
-$ echo &quot;function gi() { curl -sLw &quot;\n&quot; https://www.toptal.com/developers/gitignore/api/\$@ ;}&quot; &gt;&gt; \
-~/.rc &amp;&amp; source ~/.rc
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git config --global core.excludesfile ~/.gitignore_global       
+$ <span class="nb">echo</span> <span class="s2">&quot;function gi() { curl -sLw &quot;</span><span class="se">\n</span><span class="s2">&quot; https://www.toptal.com/developers/gitignore/api/\$@ ;}&quot;</span> &gt;&gt; <span class="se">\</span>
+~/.rc <span class="o">&amp;&amp;</span> <span class="nb">source</span> ~/.rc
 </pre></div>
 </div>
 <ul class="simple">
 <li><p>make <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code></p></li>
 </ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ gi macos,python,visualstudiocode &gt;&gt; ~/.gitignore_global
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ gi macos,python,visualstudiocode &gt;&gt; ~/.gitignore_global
 </pre></div>
 </div>
 <p>Refer to <a class="reference external" href="https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files">https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files</a> for details.</p>
@@ -766,9 +767,9 @@ Second, open the corresponding [.git-&gt;config], and [url = https://~.&lt;renam
 <h3>remove files<a class="headerlink" href="#remove-files" title="Permalink to this headline">¶</a></h3>
 <p>1, remove files from the repository and local directory
 2, remove files from the repository</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git rm FILENAME 1
-$ git rm --cached FILENAME 2
-$ git commit -m &quot;delete&quot;; git push origin main
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git rm FILENAME <span class="m">1</span>
+$ git rm --cached FILENAME <span class="m">2</span>
+$ git commit -m <span class="s2">&quot;delete&quot;</span><span class="p">;</span> git push origin main
 </pre></div>
 </div>
 </div>
@@ -780,13 +781,13 @@ $ git commit -m &quot;delete&quot;; git push origin main
 <h2><span class="section-number">1.4.4. </span>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="install">
 <h3>install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ brew install gh
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ brew install gh
 </pre></div>
 </div>
 </div>
 <div class="section" id="make-a-new-repository-based-on-the-current-directory">
 <h3>make a new repository based on the current directory<a class="headerlink" href="#make-a-new-repository-based-on-the-current-directory" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ git init; git add .
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ git init; git add .
 $ git commit -m &quot;Initial commit&quot;
 $ gh repo create --private --source=. --push&#39;
 </pre></div>
@@ -796,20 +797,20 @@ $ gh repo create --private --source=. --push&#39;
 <h3>make an alias to delete remote repository<a class="headerlink" href="#make-an-alias-to-delete-remote-repository" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="register">
 <h4>register<a class="headerlink" href="#register" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ gh alias set repo-delete &#39;api -X DELETE repos/$1&#39;
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ gh <span class="nb">alias</span> <span class="nb">set</span> repo-delete <span class="s1">&#39;api -X DELETE repos/$1&#39;</span>
 $ gh auth refresh -h github.com -s delete_repo
 </pre></div>
 </div>
 </div>
 <div class="section" id="usage-warning-no-confirmation">
 <h4>usage (WARNING: no confirmation!)<a class="headerlink" href="#usage-warning-no-confirmation" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ gh repo-delete user/myrepo
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ gh repo-delete user/myrepo
 </pre></div>
 </div>
 </div>
 <div class="section" id="comfirm">
 <h4>comfirm<a class="headerlink" href="#comfirm" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ gh alias list
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ gh <span class="nb">alias</span> list
 </pre></div>
 </div>
 </div>
