@@ -5,7 +5,7 @@
 
 - <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Material Icon Theme]</a>
 
-- <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme" target="_blank">Code Runner</a>
+- <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner" target="_blank">Code Runner</a>
 
 - <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker" target="_blank">Docker</a>
 
