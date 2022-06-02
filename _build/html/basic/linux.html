@@ -606,13 +606,13 @@ mv file5 dir3
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links
-Symbolic links is the file that contains a reference to another file.</p>
+Symbolic links is the file that refers to another file.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Aliases store two pieces of information about the destination file - both the location and a file identifier. Symbolic links only store the other location. Although it seems aliases are more useful, you aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
+<p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in tree format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
 You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
