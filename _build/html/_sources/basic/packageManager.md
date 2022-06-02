@@ -55,7 +55,7 @@ you can also check by;
 ```zsh
 brew doctor
 ```
-If you succeeded, you get; `Homebrew 3.3.8`.
+If you succeed, you get; `Homebrew 3.3.8`.
 
 ## [Venv](https://docs.python.org/3/library/venv.html)
 To make a virtual environment for python, venv is the easiest tool! Although there are pyenv or anaconda for python, they are not necessary for beginners.
@@ -93,7 +93,7 @@ pip install numpy
 ```
 and let's check:
 ```zsh
-pip freeze
+pip list --format=freeze
 ```
 and you get `numpy==x.xx.x`.
 
@@ -104,9 +104,9 @@ pip install pandas
 pip install jupyterlab
 ```
 
-Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is different from usual python packages.
+Matplotlib is a library for visualization, pandas for data analysis and manipulation, and jupyter-lab for web-based user interface for running python code. Jupyter-lab is the web-based user interface for python.
 Scipy, which is for scientific computing, is also a useful package for some people.
-Now you can see many packages in your test virtual environment; try `pip freeze`, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
+Now you can see many packages in your test virtual environment; try `pip list --format=freeze`, though you installed apparently just 4 or 5 packages. Actually, you installed many packages with jupyter-lab.
 To deactivate the virtual env, just input: `deactivate` in the terminal. To activate again; `source test/bin/activate`.
 
 ````{warning}
@@ -126,7 +126,7 @@ jupyter-lab
 Your default browser will show up and open jupyter-lab.
 
 To deactivate juypter-lab (not virtual env), in the Terminal; Control + c and you will be asked whether to quit, so enter y [yes]. 
-For more details, see Python page.
+For more details, see [Jupyter Book](../jb/jb.md) page.
 
 You can also use jupyter notebook.
 ```zsh
