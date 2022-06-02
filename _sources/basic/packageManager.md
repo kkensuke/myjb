@@ -137,6 +137,7 @@ jupyter notebook
 - Renaming the virtual environment
 - Renaming the parent directories of venv
 - Changing the location of venv
+
 is not recommended. 
 ```
 
