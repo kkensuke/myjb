@@ -7,6 +7,7 @@
 - DeepL
 - G app launcher
 - Zotero
+- Notion
 
 
 ## Rectangle
@@ -59,4 +60,7 @@ You can use Google apps(Google map, Google Keep, YouTube, etc.) as extensions in
 
 
 ## Zotero
-Zotero is a free useful app for managing research papers.
+Zotero is a free useful app for managing research papers. There is an iOS Zotero app.
+
+## Notion
+Notion is a markdown-based note app with many useful functions. You can use it for individual notes or your team documents (easy to share). Moreover, you can publish your documents on website at ease. 
