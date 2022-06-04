@@ -5,7 +5,7 @@
 # 
 # > SciPy is a collection of **mathematical algorithms and convenience functions** built on the NumPy extension of Python. - scippy doc
 # 
-# In the following, you see several example of scipy functions (differentiation, integration, optimization) to solve problems.
+# In this page, you see examples of scipy functions (differentiation, integration, optimization) to solve problems.
 
 # In[17]:
 

@@ -4,7 +4,7 @@
 # # [SymPY](https://www.tutorialspoint.com/sympy/index.htm)
 # > SymPy is a Python library for symbolic mathematics. - sympy doc
 # 
-# In the following, you see several example of sympy usage.
+# In this page, you see examples of sympy usage.
 
 # In[1]:
 

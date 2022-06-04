@@ -31,7 +31,7 @@ print("Hello, world!")
 # In[1]:
 
 
-1+1
+print(1+1)
 
 
 # In[4]:
@@ -61,6 +61,7 @@ print(a+b) # This will be the same as the above cell.
 # In[4]:
 
 
+# print out several inputs with `,`
 print(a, b)
 
 
@@ -98,7 +99,7 @@ print('adsf'); print('asdf')
 
 
 l = [3,4,5]
-index = 0
+index = 0 # index starts with 0
 print(l[index])
 
 l[1] = 7 # You can change the value of an element in a list.
@@ -112,12 +113,12 @@ print(l)
 l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 
 
-# In[12]:
+# In[1]:
 
 
 t = (3,4,5)
 
-# t[2] = 7
+t[2] = 7
 # You can't change the value of an element in a tuple.
 # However, a tuple uses less memory than a list.
 
