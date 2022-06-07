@@ -14,7 +14,14 @@
 # Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [this](../basic/packageManager.md#Venv).
 
 # ---
-# ## print() function and four arithmetic operations
+# ## print() function
+# 
+# `print()` function is the most basic function in python. It is used to print the value of any variable or expression.
+# Here, we will see how to use `print()` function with the usage of jupyter lab(notebook).
+
+# To begin with, let us print string "Hello World" using `print()` function. 
+# In jupyter lab(notebook), a code block is called a cell. A cell can contain multiple lines of code.
+# To execute the code, click on the cell(colored in blue(notebook:green)) and press `Shift+Enter` key.
 
 # In[2]:
 
@@ -22,11 +29,27 @@
 print("Hello, world!")
 
 
+# ### comment
+
+# When programming, we often put some comments to explain the code. In python, we can use `#` to write  comments.
+# 
+# If you want to comment out multiple lines, you can use `""" """` to write comments (actually, this is called docstrings).
+
 # In[1]:
 
 
 # This is a comment. No output.
 
+"""
+    This
+    is
+    a 
+    multiline
+    comment.
+"""
+
+
+# ### Arithmetic operations
 
 # In[1]:
 
@@ -34,9 +57,15 @@ print("Hello, world!")
 print(1+1)
 
 
+# In programming, every object has a data type. For example, the number `1` has the data type `int`.
+# The "Hello World" string has the data type `str`. If the data types are different, the operations will be performed differently.
+# 
+# For example, `+` operator is used to add two numbers, and `+` operator is used to concatenate two strings.
+
 # In[4]:
 
 
+# you cannot use strings to do math.
 print(3+4)
 print('3+4')
 print('3'+'4')
@@ -91,6 +120,16 @@ print('exponentiation 5**2 = ', 5**2)
 # Instead of using a new line, you can use a semicolon.
 print('adsf'); print('asdf')
 
+
+# ### jupyter lab usage
+
+# Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
+# If you want to write in markdown format, press `m` and then `Shift+Enter`. You go back to code format by pressing `y`.
+# Moreover, you can add a new cell by pressing `a` or `b`(`a` is for above, `b` is for below). 
+# Others; `x`; cut a cell. `c`; copy a cell. `v`; paste a cell.
+# 
+# [Markdown usage](../basic/markdown.md)
+# 
 
 # ---
 # ## List, tuple, set, dictionary
