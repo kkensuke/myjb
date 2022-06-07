@@ -392,8 +392,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#list-tuple-set-dictionary">
-   2.1.2. List, tuple, set, dictionary
+  <a class="reference internal nav-link" href="#collections-list-tuple-set-dictionary">
+   2.1.2. Collections(list, tuple, set, dictionary)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -471,8 +471,8 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#list-tuple-set-dictionary">
-   2.1.2. List, tuple, set, dictionary
+  <a class="reference internal nav-link" href="#collections-list-tuple-set-dictionary">
+   2.1.2. Collections(list, tuple, set, dictionary)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -713,15 +713,16 @@ asdf
 <div class="section" id="jupyter-lab-usage">
 <h3>jupyter lab usage<a class="headerlink" href="#jupyter-lab-usage" title="Permalink to this headline">¶</a></h3>
 <p>Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
-If you want to write in markdown format, press <code class="docutils literal notranslate"><span class="pre">m</span></code> and then <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. You go back to code format by pressing <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+If you want to write in markdown format, right click around the cell and press <code class="docutils literal notranslate"><span class="pre">m</span></code>, then <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. You go back to code format by pressing <code class="docutils literal notranslate"><span class="pre">y</span></code>.
 Moreover, you can add a new cell by pressing <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>(<code class="docutils literal notranslate"><span class="pre">a</span></code> is for above, <code class="docutils literal notranslate"><span class="pre">b</span></code> is for below).
 Others; <code class="docutils literal notranslate"><span class="pre">x</span></code>; cut a cell. <code class="docutils literal notranslate"><span class="pre">c</span></code>; copy a cell. <code class="docutils literal notranslate"><span class="pre">v</span></code>; paste a cell.</p>
 <p><a class="reference internal" href="../basic/markdown.html"><span class="doc std std-doc">Markdown usage</span></a></p>
 </div>
 </div>
 <hr class="docutils" />
-<div class="section" id="list-tuple-set-dictionary">
-<h2><span class="section-number">2.1.2. </span>List, tuple, set, dictionary<a class="headerlink" href="#list-tuple-set-dictionary" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="collections-list-tuple-set-dictionary">
+<h2><span class="section-number">2.1.2. </span>Collections(list, tuple, set, dictionary)<a class="headerlink" href="#collections-list-tuple-set-dictionary" title="Permalink to this headline">¶</a></h2>
+<p>List, tuple, set, dictionary are used to store data in different ways.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
@@ -838,6 +839,7 @@ Three
 <hr class="docutils" />
 <div class="section" id="for-loops">
 <h2><span class="section-number">2.1.4. </span>For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> is used to iterate over a collection of items.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
@@ -1010,6 +1012,8 @@ Hello
 <hr class="docutils" />
 <div class="section" id="functions">
 <h2><span class="section-number">2.1.6. </span>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">function</span></code> is a block of code which take inputs and returns outputs. It only runs when it is called.
+Actually, most code we write consists of functions.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">print_hello</span><span class="p">():</span>
@@ -1051,7 +1055,7 @@ Hello
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span> <span class="c1"># NumPy is a package that contains many useful functions for working with arrays.</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># Matplotlib is a package that contains many useful functions for plotting.</span>
 
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
