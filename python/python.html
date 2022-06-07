@@ -370,9 +370,26 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#print-function-and-four-arithmetic-operations">
-   2.1.1. print() function and four arithmetic operations
+  <a class="reference internal nav-link" href="#print-function">
+   2.1.1. print() function
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comment">
+     comment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arithmetic-operations">
+     Arithmetic operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-lab-usage">
+     jupyter lab usage
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list-tuple-set-dictionary">
@@ -432,9 +449,26 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#print-function-and-four-arithmetic-operations">
-   2.1.1. print() function and four arithmetic operations
+  <a class="reference internal nav-link" href="#print-function">
+   2.1.1. print() function
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#comment">
+     comment
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#arithmetic-operations">
+     Arithmetic operations
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#jupyter-lab-usage">
+     jupyter lab usage
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list-tuple-set-dictionary">
@@ -494,8 +528,13 @@ const thebe_selector_output = ".output, .cell_output"
 <p><a class="reference external" href="https://jupyterlab.readthedocs.io/en/stable/">JupyterLab</a> is a next-generation web-based user interface for python programming.</p>
 <p>Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to <a class="reference external" href="../basic/packageManager.md#Venv">this</a>.</p>
 <hr class="docutils" />
-<div class="section" id="print-function-and-four-arithmetic-operations">
-<h2><span class="section-number">2.1.1. </span>print() function and four arithmetic operations<a class="headerlink" href="#print-function-and-four-arithmetic-operations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="print-function">
+<h2><span class="section-number">2.1.1. </span>print() function<a class="headerlink" href="#print-function" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">print()</span></code> function is the most basic function in python. It is used to print the value of any variable or expression.
+Here, we will see how to use <code class="docutils literal notranslate"><span class="pre">print()</span></code> function with the usage of jupyter lab(notebook).</p>
+<p>To begin with, let us print string “Hello World” using <code class="docutils literal notranslate"><span class="pre">print()</span></code> function.
+In jupyter lab(notebook), a code block is called a cell. A cell can contain multiple lines of code.
+To execute the code, click on the cell(colored in blue(notebook:green)) and press <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code> key.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, world!&quot;</span><span class="p">)</span>
@@ -508,13 +547,28 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
+<div class="section" id="comment">
+<h3>comment<a class="headerlink" href="#comment" title="Permalink to this headline">¶</a></h3>
+<p>When programming, we often put some comments to explain the code. In python, we can use <code class="docutils literal notranslate"><span class="pre">#</span></code> to write  comments.</p>
+<p>If you want to comment out multiple lines, you can use <code class="docutils literal notranslate"><span class="pre">&quot;&quot;&quot;</span> <span class="pre">&quot;&quot;&quot;</span></code> to write comments (actually, this is called docstrings).</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># This is a comment. No output.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    This</span>
+<span class="sd">    is</span>
+<span class="sd">    a </span>
+<span class="sd">    multiline</span>
+<span class="sd">    comment.</span>
+<span class="sd">&quot;&quot;&quot;</span>
 </pre></div>
 </div>
 </div>
 </div>
+</div>
+<div class="section" id="arithmetic-operations">
+<h3>Arithmetic operations<a class="headerlink" href="#arithmetic-operations" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">1</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
@@ -527,9 +581,13 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 </div>
 </div>
+<p>In programming, every object has a data type. For example, the number <code class="docutils literal notranslate"><span class="pre">1</span></code> has the data type <code class="docutils literal notranslate"><span class="pre">int</span></code>.
+The “Hello World” string has the data type <code class="docutils literal notranslate"><span class="pre">str</span></code>. If the data types are different, the operations will be performed differently.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">+</span></code> operator is used to add two numbers, and <code class="docutils literal notranslate"><span class="pre">+</span></code> operator is used to concatenate two strings.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># you cannot use strings to do math.</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">3</span><span class="o">+</span><span class="mi">4</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;3+4&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;3&#39;</span><span class="o">+</span><span class="s1">&#39;4&#39;</span><span class="p">)</span>
 </pre></div>
@@ -650,6 +708,15 @@ asdf
 </pre></div>
 </div>
 </div>
+</div>
+</div>
+<div class="section" id="jupyter-lab-usage">
+<h3>jupyter lab usage<a class="headerlink" href="#jupyter-lab-usage" title="Permalink to this headline">¶</a></h3>
+<p>Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
+If you want to write in markdown format, press <code class="docutils literal notranslate"><span class="pre">m</span></code> and then <code class="docutils literal notranslate"><span class="pre">Shift+Enter</span></code>. You go back to code format by pressing <code class="docutils literal notranslate"><span class="pre">y</span></code>.
+Moreover, you can add a new cell by pressing <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">b</span></code>(<code class="docutils literal notranslate"><span class="pre">a</span></code> is for above, <code class="docutils literal notranslate"><span class="pre">b</span></code> is for below).
+Others; <code class="docutils literal notranslate"><span class="pre">x</span></code>; cut a cell. <code class="docutils literal notranslate"><span class="pre">c</span></code>; copy a cell. <code class="docutils literal notranslate"><span class="pre">v</span></code>; paste a cell.</p>
+<p><a class="reference internal" href="../basic/markdown.html"><span class="doc std std-doc">Markdown usage</span></a></p>
 </div>
 </div>
 <hr class="docutils" />
@@ -1011,7 +1078,7 @@ Hello
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/python_37_0.png" src="../_images/python_37_0.png" />
+<img alt="../_images/python_44_0.png" src="../_images/python_44_0.png" />
 </div>
 </div>
 <div class="section" id="lambda-functions">
