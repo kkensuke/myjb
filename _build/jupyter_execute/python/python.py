@@ -124,7 +124,7 @@ print('adsf'); print('asdf')
 # ### jupyter lab usage
 
 # Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
-# If you want to write in markdown format, press `m` and then `Shift+Enter`. You go back to code format by pressing `y`.
+# If you want to write in markdown format, right click around the cell and press `m`, then `Shift+Enter`. You go back to code format by pressing `y`.
 # Moreover, you can add a new cell by pressing `a` or `b`(`a` is for above, `b` is for below). 
 # Others; `x`; cut a cell. `c`; copy a cell. `v`; paste a cell.
 # 
@@ -132,7 +132,9 @@ print('adsf'); print('asdf')
 # 
 
 # ---
-# ## List, tuple, set, dictionary
+# ## Collections(list, tuple, set, dictionary)
+# 
+# List, tuple, set, dictionary are used to store data in different ways.
 
 # In[10]:
 
@@ -200,6 +202,8 @@ with open(path) as f:
 
 # ---
 # ## For loops
+# 
+# `for loop` is used to iterate over a collection of items.
 
 # In[16]:
 
@@ -284,6 +288,9 @@ print(fizz_buzz)
 
 # ---
 # ## Functions
+# 
+# `function` is a block of code which take inputs and returns outputs. It only runs when it is called. 
+# Actually, most code we write consists of functions.
 
 # In[26]:
 
@@ -312,7 +319,7 @@ myfunc(3, 'Hello')
 # In[29]:
 
 
-import numpy as np
+import numpy as np # NumPy is a package that contains many useful functions for working with arrays.
 import matplotlib.pyplot as plt # Matplotlib is a package that contains many useful functions for plotting.
 
 x = np.linspace(0,10, 100)
