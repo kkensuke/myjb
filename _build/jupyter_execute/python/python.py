@@ -126,7 +126,7 @@ print('adsf'); print('asdf')
 # Basically, code cells are used to write code. However, we can also use code cells to write comments in markdown format.
 # If you want to write in markdown format, right click around the cell and press `m`, then `Shift+Enter`. You go back to code format by pressing `y`.
 # Moreover, you can add a new cell by pressing `a` or `b`(`a` is for above, `b` is for below). 
-# Others; `x`; cut a cell. `c`; copy a cell. `v`; paste a cell.
+# Others; `x`; cut a cell. `c`; copy a cell. `v`; paste a cell. `z`; undo. 
 # 
 # [Markdown usage](../basic/markdown.md)
 # 
