@@ -863,15 +863,15 @@ mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
 <hr class="docutils" />
 <div class="section" id="pipeline-and-redirect">
 <h3>Pipeline and redirect<a class="headerlink" href="#pipeline-and-redirect" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    `|`: pipe
-    `&gt;`: redirect
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`|`: pipe
+`&gt;`: redirect
 </pre></div>
 </div>
 <p>In Unix-like systems, there are three types of streams, which
-connect computer programs and its environment; standard input (stdin), standard output (stdout), and standard error (stderr). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
-A pipe and a redirect are techniques that connects two programs by sending output from one command to the input of the other command.</p>
+connect computer programs and its environment; standard input (<code class="docutils literal notranslate"><span class="pre">stdin</span></code>), standard output (<code class="docutils literal notranslate"><span class="pre">stdout</span></code>), and standard error (<code class="docutils literal notranslate"><span class="pre">stderr</span></code>). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
+A <code class="docutils literal notranslate"><span class="pre">pipe</span></code> and a <code class="docutils literal notranslate"><span class="pre">redirect</span></code> are techniques that connects two programs by sending output from one command to the input of the other command.</p>
 <p><strong>pipeline</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout to stdin. The pipe is used to connect two commands. The following command, second command will take stdin from stdout of the previous command.</p>
+<p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout to stdin. Second command will take the stdout of the previous command as stdin.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span> <span class="p">|</span> head
 </pre></div>
 </div>

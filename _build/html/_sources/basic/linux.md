@@ -337,17 +337,17 @@ mv *{.py,.sh} dir
 ---
 ### Pipeline and redirect
 ```
-    `|`: pipe
-    `>`: redirect
+`|`: pipe
+`>`: redirect
 ```
 
 In Unix-like systems, there are three types of streams, which
-connect computer programs and its environment; standard input (stdin), standard output (stdout), and standard error (stderr). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
-A pipe and a redirect are techniques that connects two programs by sending output from one command to the input of the other command.
+connect computer programs and its environment; standard input (`stdin`), standard output (`stdout`), and standard error (`stderr`). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
+A `pipe` and a `redirect` are techniques that connects two programs by sending output from one command to the input of the other command.
 
 **pipeline**
 
-`|` stdout to stdin. The pipe is used to connect two commands. The following command, second command will take stdin from stdout of the previous command. 
+`|` stdout to stdin. Second command will take the stdout of the previous command as stdin. 
 
 ```bash
 history | head
