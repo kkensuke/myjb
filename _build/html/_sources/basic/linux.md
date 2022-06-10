@@ -336,10 +336,18 @@ mv *{.py,.sh} dir
 
 ---
 ### Pipeline and redirect
+```
+    `|`: pipe
+    `>`: redirect
+```
+
+In Unix-like systems, there are three types of streams, which
+connect computer programs and its environment; standard input (stdin), standard output (stdout), and standard error (stderr). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
+A pipe and a redirect are techniques that connects two programs by sending output from one command to the input of the other command.
 
 **pipeline**
 
-`|` stdout to stdin
+`|` stdout to stdin. The pipe is used to connect two commands. The following command, second command will take stdin from stdout of the previous command. 
 
 ```bash
 history | head
@@ -366,14 +374,14 @@ cat test.txt
 # fdsa
 ```
 
-In order to pipe and redirect at the same time, you use  `| tee` .
+In order to pipeline and redirect at the same time, you use  `| tee` .
 
 ```bash
 ls / | tee file | head
 ls /Desktop | tee -a[--append] file
 ```
 
-Error message is different from stdout, it is stderr. To remove stderr, use `2>/dev/null` .
+Error message is different from stdout, it is stderr. To remove stderr, add `2>/dev/null` .
 
 ---
 ### Combine commands
