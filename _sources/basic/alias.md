@@ -37,7 +37,8 @@ alias /='cd /'
 alias cp='cp -iv'
 alias grep='grep --color'
 alias his='history'
-#alias l='ls -CF --color=auto' # --color=auto does not work for terminal, but for iterm2
+# --color=auto does not work for terminal, but for iterm2
+#alias l='ls -CF --color=auto'
 #alias ls='ls -CF --color=auto'
 alias l='ls -CFG'
 alias ls='ls -CFG'
