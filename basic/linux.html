@@ -357,16 +357,31 @@ const thebe_selector_output = ".output, .cell_output"
      basics commands
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shell-globbing">
+     Shell globbing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pipeline-and-redirect">
+     Pipeline and redirect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combine-commands">
+     Combine commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#symbolic-links">
+     Symbolic links
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shell-globbing">
-   1.2.2. Shell globbing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reference">
-   1.2.3. Reference
+   1.2.2. Reference
   </a>
  </li>
 </ul>
@@ -404,16 +419,31 @@ const thebe_selector_output = ".output, .cell_output"
      basics commands
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shell-globbing">
+     Shell globbing
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pipeline-and-redirect">
+     Pipeline and redirect
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#combine-commands">
+     Combine commands
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#symbolic-links">
+     Symbolic links
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shell-globbing">
-   1.2.2. Shell globbing
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#reference">
-   1.2.3. Reference
+   1.2.2. Reference
   </a>
  </li>
 </ul>
@@ -427,11 +457,11 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="command-line">
 <h1><span class="section-number">1.2. </span>Command line<a class="headerlink" href="#command-line" title="Permalink to this headline">¶</a></h1>
-<p>Here, we learn the command line. Command line is a text interface for your computer. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.</p>
+<p>Here, we learn the command line. Command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.</p>
 <p>In Mac, you can use the command line with <code class="docutils literal notranslate"><span class="pre">terminal.app</span></code></p>
 <div class="section" id="basic">
 <h2><span class="section-number">1.2.1. </span>Basic<a class="headerlink" href="#basic" title="Permalink to this headline">¶</a></h2>
-<p>To begin with, we see shortcuts.</p>
+<p>To begin with, we check shortcuts.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="head"><p>Command</p></th>
@@ -477,6 +507,7 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
+<hr class="docutils" />
 <div class="section" id="special-symbols">
 <h3>Special symbols<a class="headerlink" href="#special-symbols" title="Permalink to this headline">¶</a></h3>
 <p>There are 4 special symbols and each of them represents a location.</p>
@@ -605,15 +636,6 @@ mv file5 dir3
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mv dir1 dir4
 </pre></div>
 </div>
-<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br>
-Symbolic links is the file that refers to another file.</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
-</div>
 <p><code class="docutils literal notranslate"><span class="pre">tree</span></code>: print contents of current directory in tree format. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-d</span></code> to print directory contents. You can use <code class="docutils literal notranslate"><span class="pre">tree</span> <span class="pre">-L</span></code> to print directory contents up to a certain level.
 You have to install <code class="docutils literal notranslate"><span class="pre">tree</span></code> command in bash first.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>brew install tree
@@ -712,9 +734,9 @@ chmod u+x file
 </div>
 <p>You can use <code class="docutils literal notranslate"><span class="pre">chmod</span> <span class="pre">-R</span></code> to change permissions recursively.</p>
 </div>
-</div>
+<hr class="docutils" />
 <div class="section" id="shell-globbing">
-<h2><span class="section-number">1.2.2. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h2>
+<h3>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">¶</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
@@ -725,14 +747,24 @@ chmod u+x file
 [!a-z] : matches any character not in range
 </pre></div>
 </div>
-<p>Some examples:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
-mv * dir
-<span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `dir`</span>
-<span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`</span>
-mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt dir
-<span class="c1"># move all pyhon and shell files to `dir`</span>
-mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
+<p><strong>extended pattern matching</strong></p>
+<ul class="simple">
+<li><p>*(pattern)    more than 0 times</p></li>
+<li><p>?(pattern)    0,1 times</p></li>
+<li><p>&#64;(pattern)   only 1 times</p></li>
+<li><p>+(pattern)    more than 1 times</p></li>
+<li><p>!(pattern)     not in the pattern</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls
+<span class="c1"># file1 file2 file3 file4 file11 file123</span>
+ls !<span class="o">(</span>file1<span class="o">)</span>
+<span class="c1"># file2 file3 file4 file11 file123</span>
+ls !<span class="o">(</span>file1<span class="p">|</span>file2<span class="o">)</span>
+<span class="c1"># file3  file4 file11 file123</span>
+ls file<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span>
+<span class="c1"># file1 file2 file3 file4</span>
+ls file<span class="o">[</span><span class="m">0</span>-9<span class="o">]</span>+<span class="o">([</span><span class="m">0</span>-9<span class="o">])</span>
+<span class="c1"># file11 file123</span>
 </pre></div>
 </div>
 <p><code class="docutils literal notranslate"><span class="pre">find</span></code>: find files and directories</p>
@@ -817,9 +849,108 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 </tr>
 </tbody>
 </table>
+<p>Some examples:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
+mv * dir
+<span class="c1"># move foo.txt, bar.txt, and baz.txt in path to `dir`</span>
+<span class="c1"># = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`</span>
+mv ./path/<span class="o">{</span>foo,bar,baz<span class="o">}</span>.txt dir
+<span class="c1"># move all pyhon and shell files to `dir`</span>
+mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="pipeline-and-redirect">
+<h3>Pipeline and redirect<a class="headerlink" href="#pipeline-and-redirect" title="Permalink to this headline">¶</a></h3>
+<p><strong>pipeline</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout to stdin</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span> <span class="p">|</span> head
+</pre></div>
+</div>
+<p><strong>redirect</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code> stdout to file</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span> &gt; hist.txt
+cat hist.txt <span class="p">|</span> head
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">&gt;&gt;</span></code>  add contents</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> asdf &gt; test.txt
+cat test.txt
+<span class="c1"># asdf</span>
+<span class="nb">echo</span> fdsa &gt;&gt; test.txt
+cat test.txt
+<span class="c1"># asdf</span>
+<span class="c1"># fdsa</span>
+</pre></div>
+</div>
+<p>In order to pipe and redirect at the same time, you use  <code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">tee</span></code> .</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls / <span class="p">|</span> tee file <span class="p">|</span> head
+ls /Desktop <span class="p">|</span> tee -a<span class="o">[</span>--append<span class="o">]</span> file
+</pre></div>
+</div>
+<p>Error message is different from stdout, it is stderr. To remove stderr, use <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> .</p>
+</div>
+<hr class="docutils" />
+<div class="section" id="combine-commands">
+<h3>Combine commands<a class="headerlink" href="#combine-commands" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code>    <code class="docutils literal notranslate"><span class="pre">command2</span></code> is executed even when <code class="docutils literal notranslate"><span class="pre">command1</span></code> puts stderr</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="p">;</span> command2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>several commands at the same time</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="p">&amp;</span> command2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> succeeded</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="o">&amp;&amp;</span> command2
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code> failed</p></li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>command1 <span class="o">||</span> command2
+</pre></div>
+</div>
+<p><strong>command using the other stdout</strong> <code class="docutils literal notranslate"><span class="pre">$()</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>date +%Y%D
+touch file_<span class="sb">`</span>date +%Y%D<span class="sb">`</span>
+<span class="c1"># touch file_$(date +%Y%D)</span>
+
+<span class="c1"># nested command</span>
+dirname <span class="k">$(</span>which cat<span class="k">)</span>
+ls <span class="k">$(</span>dirname <span class="k">$(</span>which cat<span class="k">))</span>
+</pre></div>
+</div>
+<p><strong>xargs</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">command1</span> <span class="pre">|</span> <span class="pre">xargs</span> <span class="pre">command2</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls ~ <span class="p">|</span> xargs <span class="nb">echo</span>
+ls ~ <span class="p">|</span> xargs -L <span class="m">1</span> <span class="nb">echo</span>
+</pre></div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="symbolic-links">
+<h3>Symbolic links<a class="headerlink" href="#symbolic-links" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br>
+Symbolic links is the file that refers to another file.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">alias</span></code> but <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">syslink</span></code>.</p>
+</div>
+</div>
 </div>
 <div class="section" id="reference">
-<h2><span class="section-number">1.2.3. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.2.2. </span>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://swcarpentry.github.io/shell-novice/">The Unix Shell</a></p>
 <p><a class="reference external" href="https://missing.csail.mit.edu/">The Missing Semester of Your CS Education</a></p>
 </div>
