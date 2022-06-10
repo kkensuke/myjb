@@ -4,7 +4,7 @@
 #######################################################################################
 # Book settings
 title                       : My note  # The title of the book. Will be placed in the left navbar.
-author                      : kkensuke           # The author of the book
+author                      : kk564            # The author of the book
 email                       :
 #authors                     :
 copyright                   : "2022"           # Copyright year to be placed in the footer
@@ -19,7 +19,7 @@ copyright                   : "2022"           # Copyright year to be placed in 
 #status                      : 
 #date                        : 
 #dedication                  : 
-abstract                    : note
+abstract                    : jupyterbook test
 
 # Patterns to skip when building the book. Can be glob-style (e.g. "*skip.ipynb")
 #exclude_patterns            : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", .gitignore]
@@ -78,7 +78,7 @@ html:
   comments:
     hypothesis              : true
     utterances              :
-      repo                  : "kkensuke/myjb"
+      repo                  : "kk564/myjb"
 
 #######################################################################################
 # LaTeX-specific settings
@@ -126,9 +126,10 @@ sphinx:
     mathjax3_config:
       TeX:
         Macros:
-          "ket"  : ["|#1\\rangle",1]
-          "bra"  : ["\\langle#1|",1]
-          "expval": ["\\langle#1\\rangle",1]
+          "N": "\\mathbb{N}"
+          "floor": ["\\lfloor#1\\rfloor", 1]
+          "bmat" : ["\\left[\\begin{array}"]
+          "emat" : ["\\end{array}\\right]"]
     latex_toplevel_sectioning: 'chapter'  # 'part'
     nb_merge_streams        : true        # Code contained in code cells may print outputs through both the stdout and stderr stream.
                                           # These outputs may appear in a mixed order and you may want them to be grouped and sorted to display the correct logical ordering.
