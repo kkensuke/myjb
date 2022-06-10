@@ -1,12 +1,12 @@
 # Command line
 
-Here, we learn the command line. Command line is a text interface for your computer. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
+Here, we learn the command line. Command line is a text interface to computers. You input text commands to your computer to do some operations, for example making or removing files, and changing files permissions, etc.
 
 In Mac, you can use the command line with `terminal.app`
 
 ## Basic
 
-To begin with, we see shortcuts. 
+To begin with, we check shortcuts. 
 
 | Command | Description |
 | --- | --- |
@@ -23,6 +23,7 @@ To begin with, we see shortcuts.
 |Ctrl + K| Cut the part of the line after the cursor|
 |Ctrl + Y| Paste the last thing you cut|
 
+---
 ### Special symbols
 
 There are 4 special symbols and each of them represents a location.
@@ -164,14 +165,6 @@ If dir4 does not exist, the following operation is rename. Otherwise dir1 will b
 mv dir1 dir4
 ```
 
-`ln -s`: make symbolic links<br>
-Symbolic links is the file that refers to another file.
-```bash
-ln -s original-dir/file where/to/put/SymboliLink
-```
-```{note}
-Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
-```
 
 
 `tree`: print contents of current directory in tree format. You can use `tree -d` to print directory contents. You can use `tree -L` to print directory contents up to a certain level.
@@ -243,8 +236,8 @@ chmod u+x file
 
 You can use `chmod -R` to change permissions recursively.
 
-
-## Shell globbing
+---
+### Shell globbing
 
 `glob patterns` specify sets of filenames with wildcard characters. Using `glob` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
 
@@ -258,15 +251,25 @@ There are several common wildcard characters:
 [!a-z] : matches any character not in range
 ```
 
-Some examples:
+**extended pattern matching**
+
+- *(pattern)    more than 0 times
+- ?(pattern)    0,1 times
+- @(pattern)   only 1 times
+- +(pattern)    more than 1 times
+- !(pattern)     not in the pattern
+
 ```bash
-# move all files and directories to `dir`
-mv * dir
-# move foo.txt, bar.txt, and baz.txt in path to `dir`
-# = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`
-mv ./path/{foo,bar,baz}.txt dir
-# move all pyhon and shell files to `dir`
-mv *{.py,.sh} dir
+ls
+# file1 file2 file3 file4 file11 file123
+ls !(file1)
+# file2 file3 file4 file11 file123
+ls !(file1|file2)
+# file3  file4 file11 file123
+ls file[0-9]
+# file1 file2 file3 file4
+ls file[0-9]+([0-9])
+# file11 file123
 ```
 
 
@@ -319,6 +322,119 @@ grep 'string1 string2'  filename
 |--color | Display matched pattern in colors|
 |-m NUMBER | Stop grep command NUMBER selected lines|
 |-o | Display only matched parts of lines|
+
+Some examples:
+```bash
+# move all files and directories to `dir`
+mv * dir
+# move foo.txt, bar.txt, and baz.txt in path to `dir`
+# = mv ./path/foo.txt ./path/bar.txt ./path/baz.txt `dir`
+mv ./path/{foo,bar,baz}.txt dir
+# move all pyhon and shell files to `dir`
+mv *{.py,.sh} dir
+```
+
+---
+### Pipeline and redirect
+
+**pipeline**
+
+`|` stdout to stdin
+
+```bash
+history | head
+```
+
+**redirect**
+
+``>`` stdout to file
+
+```bash
+history > hist.txt
+cat hist.txt | head
+```
+
+ `>>`  add contents
+
+```bash
+echo asdf > test.txt
+cat test.txt
+# asdf
+echo fdsa >> test.txt
+cat test.txt
+# asdf
+# fdsa
+```
+
+In order to pipe and redirect at the same time, you use  `| tee` .
+
+```bash
+ls / | tee file | head
+ls /Desktop | tee -a[--append] file
+```
+
+Error message is different from stdout, it is stderr. To remove stderr, use `2>/dev/null` .
+
+---
+### Combine commands
+
+%`;` `&` `&&` `||` `$()` `xargs`
+
+- `command2` after `commmand1`    `command2` is executed even when `command1` puts stderr
+
+```bash
+command1 ; command2
+```
+
+- several commands at the same time
+
+```bash
+command1 & command2
+```
+
+- `command2` after `commmand1` succeeded
+
+```bash
+command1 && command2
+```
+
+- `command2` after `commmand1` failed
+
+```bash
+command1 || command2
+```
+
+**command using the other stdout** `$()` 
+
+```bash
+date +%Y%D
+touch file_`date +%Y%D`
+# touch file_$(date +%Y%D)
+
+# nested command
+dirname $(which cat)
+ls $(dirname $(which cat))
+```
+
+**xargs**
+
+`command1 | xargs command2`
+
+```bash
+ls ~ | xargs echo
+ls ~ | xargs -L 1 echo
+```
+
+---
+### Symbolic links
+`ln -s`: make symbolic links<br>
+Symbolic links is the file that refers to another file.
+```bash
+ln -s original-dir/file where/to/put/SymboliLink
+```
+```{note}
+Aliases are similar to symlinks, but they are valid after you move the original files unlike symlinks. Although it seems aliases are more useful, aliases are not compatible with unix system. You cannot use like `cd alias` but `cd syslink`.
+```
 
 
 ## Reference
