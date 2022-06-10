@@ -863,8 +863,15 @@ mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
 <hr class="docutils" />
 <div class="section" id="pipeline-and-redirect">
 <h3>Pipeline and redirect<a class="headerlink" href="#pipeline-and-redirect" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    `|`: pipe
+    `&gt;`: redirect
+</pre></div>
+</div>
+<p>In Unix-like systems, there are three types of streams, which
+connect computer programs and its environment; standard input (stdin), standard output (stdout), and standard error (stderr). The input stream is the stream that receives data from the user. The output stream is the stream that sends data to the user. The error stream is the stream that sends error messages to the user.
+A pipe and a redirect are techniques that connects two programs by sending output from one command to the input of the other command.</p>
 <p><strong>pipeline</strong></p>
-<p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout to stdin</p>
+<p><code class="docutils literal notranslate"><span class="pre">|</span></code> stdout to stdin. The pipe is used to connect two commands. The following command, second command will take stdin from stdout of the previous command.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">history</span> <span class="p">|</span> head
 </pre></div>
 </div>
@@ -884,12 +891,12 @@ cat test.txt
 <span class="c1"># fdsa</span>
 </pre></div>
 </div>
-<p>In order to pipe and redirect at the same time, you use  <code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">tee</span></code> .</p>
+<p>In order to pipeline and redirect at the same time, you use  <code class="docutils literal notranslate"><span class="pre">|</span> <span class="pre">tee</span></code> .</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ls / <span class="p">|</span> tee file <span class="p">|</span> head
 ls /Desktop <span class="p">|</span> tee -a<span class="o">[</span>--append<span class="o">]</span> file
 </pre></div>
 </div>
-<p>Error message is different from stdout, it is stderr. To remove stderr, use <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> .</p>
+<p>Error message is different from stdout, it is stderr. To remove stderr, add <code class="docutils literal notranslate"><span class="pre">2&gt;/dev/null</span></code> .</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="combine-commands">
