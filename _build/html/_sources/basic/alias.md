@@ -28,30 +28,52 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 
 alias b='brew'
+alias cb='cd -'
+alias d='cd ~/Desktop'
+alias dl="cd ~/Downloads"
+alias class='cd ~/My\ Drive/master/class/'
 alias h='cd ~'
-alias p='pwd'
-# --color=auto does not work for terminal, but for iterm2
-#alias l='ls -CF --color=auto'
+alias /='cd /'
+alias cp='cp -iv'
+alias grep='grep --color'
+alias his='history'
+#alias l='ls -CF --color=auto' # --color=auto does not work for terminal, but for iterm2
 #alias ls='ls -CF --color=auto'
-alias l='ls -CGF'
-alias ls='ls -CGF'
+alias l='ls -CFG'
+alias ls='ls -CFG'
 alias la='l -a'
 alias ll='l -ahlS'
-alias his='history'
-alias tre='tree'
-alias tl='tree -La 2'
-
-alias cp='cp -iv'
 alias mv='mv -iv'
+alias ner='2>/dev/null'
+alias opc='open /Applications/CotEditor.app '
+alias opz='s;open /Applications/CotEditor.app .zshrc'
+alias opfire='open /Applications/Firefox.app '
+alias opgoo='open /Applications/Google\ Chrome.app '
+alias opsafari='open /Applications/Safari.app '
+alias p='pwd'
 alias rm='rm -iv'
 alias rmf='rm -vf'
 alias rmr='rm -ir'
 alias rmrf='rm -rvf'
+alias rl="exec ${SHELL} -l" #reload
+alias so='source'
+alias tree='tree -ah'
+alias tre='tree -ah'
+alias tl='tree -ahfL 2'
 
 alias v='vi'
-alias vz='vi ~/.'
-alias sz='source ~/.'
+alias vz='vi ~/.zshrc'
+alias sz='source ~/.zshrc'
 ```
+
+## Mac OS settings
+### Show/hide hidden files in Finder
+alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
+alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+
+### Hide/show all desktop icons
+alias dhide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
+alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 
 
 ## Related to GitHub
@@ -120,13 +142,16 @@ You need to install GitHub CLI
 
 ## Python
 ```
+alias python="/usr/bin/python3"
 alias py='python'
 alias py2='python2'
 alias py3='python3'
 
+alias pip='pip3'
 alias pin='pip install'
-alias p3in='pip3 install'
 alias wpy='which python'
+alias pf='pip list --format=freeze'
+alias pfr='pip list --format=freeze > requirements.txt'
 ```
 
 ### Activate a venv

@@ -368,6 +368,7 @@ cat hist.txt | head
 echo asdf > test.txt
 cat test.txt
 # asdf
+
 echo fdsa >> test.txt
 cat test.txt
 # asdf

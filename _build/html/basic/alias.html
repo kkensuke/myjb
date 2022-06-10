@@ -365,8 +365,25 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mac-os-settings">
+   1.3.2. Mac OS settings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#show-hide-hidden-files-in-finder">
+     Show/hide hidden files in Finder
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hide-show-all-desktop-icons">
+     Hide/show all desktop icons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#related-to-github">
-   1.3.2. Related to GitHub
+   1.3.3. Related to GitHub
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -405,7 +422,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#python">
-   1.3.3. Python
+   1.3.4. Python
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -417,7 +434,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#related-to-latex">
-   1.3.4. Related to Latex
+   1.3.5. Related to Latex
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -470,8 +487,25 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mac-os-settings">
+   1.3.2. Mac OS settings
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#show-hide-hidden-files-in-finder">
+     Show/hide hidden files in Finder
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#hide-show-all-desktop-icons">
+     Hide/show all desktop icons
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#related-to-github">
-   1.3.2. Related to GitHub
+   1.3.3. Related to GitHub
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -510,7 +544,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#python">
-   1.3.3. Python
+   1.3.4. Python
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -522,7 +556,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#related-to-latex">
-   1.3.4. Related to Latex
+   1.3.5. Related to Latex
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -571,35 +605,61 @@ Some command are long and you would feel copying them every time is a waste of t
 <span class="n">alias</span> <span class="o">....=</span><span class="s1">&#39;cd ../../..&#39;</span>
 
 <span class="n">alias</span> <span class="n">b</span><span class="o">=</span><span class="s1">&#39;brew&#39;</span>
+<span class="n">alias</span> <span class="n">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
+<span class="n">alias</span> <span class="n">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
+<span class="n">alias</span> <span class="n">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
+<span class="n">alias</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;cd ~/My\ Drive/master/class/&#39;</span>
 <span class="n">alias</span> <span class="n">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
-<span class="n">alias</span> <span class="n">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
-<span class="c1"># --color=auto does not work for terminal, but for iterm2</span>
-<span class="c1">#alias l=&#39;ls -CF --color=auto&#39;</span>
+<span class="n">alias</span> <span class="o">/=</span><span class="s1">&#39;cd /&#39;</span>
+<span class="n">alias</span> <span class="n">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
+<span class="n">alias</span> <span class="n">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
+<span class="n">alias</span> <span class="n">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<span class="c1">#alias l=&#39;ls -CF --color=auto&#39; # --color=auto does not work for terminal, but for iterm2</span>
 <span class="c1">#alias ls=&#39;ls -CF --color=auto&#39;</span>
-<span class="n">alias</span> <span class="n">l</span><span class="o">=</span><span class="s1">&#39;ls -CGF&#39;</span>
-<span class="n">alias</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;ls -CGF&#39;</span>
+<span class="n">alias</span> <span class="n">l</span><span class="o">=</span><span class="s1">&#39;ls -CFG&#39;</span>
+<span class="n">alias</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;ls -CFG&#39;</span>
 <span class="n">alias</span> <span class="n">la</span><span class="o">=</span><span class="s1">&#39;l -a&#39;</span>
 <span class="n">alias</span> <span class="n">ll</span><span class="o">=</span><span class="s1">&#39;l -ahlS&#39;</span>
-<span class="n">alias</span> <span class="n">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
-<span class="n">alias</span> <span class="n">tre</span><span class="o">=</span><span class="s1">&#39;tree&#39;</span>
-<span class="n">alias</span> <span class="n">tl</span><span class="o">=</span><span class="s1">&#39;tree -La 2&#39;</span>
-
-<span class="n">alias</span> <span class="n">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
 <span class="n">alias</span> <span class="n">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
+<span class="n">alias</span> <span class="n">ner</span><span class="o">=</span><span class="s1">&#39;2&gt;/dev/null&#39;</span>
+<span class="n">alias</span> <span class="n">opc</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app &#39;</span>
+<span class="n">alias</span> <span class="n">opz</span><span class="o">=</span><span class="s1">&#39;s;open /Applications/CotEditor.app .zshrc&#39;</span>
+<span class="n">alias</span> <span class="n">opfire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app &#39;</span>
+<span class="n">alias</span> <span class="n">opgoo</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app &#39;</span>
+<span class="n">alias</span> <span class="n">opsafari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app &#39;</span>
+<span class="n">alias</span> <span class="n">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
 <span class="n">alias</span> <span class="n">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
 <span class="n">alias</span> <span class="n">rmf</span><span class="o">=</span><span class="s1">&#39;rm -vf&#39;</span>
 <span class="n">alias</span> <span class="n">rmr</span><span class="o">=</span><span class="s1">&#39;rm -ir&#39;</span>
 <span class="n">alias</span> <span class="n">rmrf</span><span class="o">=</span><span class="s1">&#39;rm -rvf&#39;</span>
+<span class="n">alias</span> <span class="n">rl</span><span class="o">=</span><span class="s2">&quot;exec $</span><span class="si">{SHELL}</span><span class="s2"> -l&quot;</span> <span class="c1">#reload</span>
+<span class="n">alias</span> <span class="n">so</span><span class="o">=</span><span class="s1">&#39;source&#39;</span>
+<span class="n">alias</span> <span class="n">tree</span><span class="o">=</span><span class="s1">&#39;tree -ah&#39;</span>
+<span class="n">alias</span> <span class="n">tre</span><span class="o">=</span><span class="s1">&#39;tree -ah&#39;</span>
+<span class="n">alias</span> <span class="n">tl</span><span class="o">=</span><span class="s1">&#39;tree -ahfL 2&#39;</span>
 
 <span class="n">alias</span> <span class="n">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
-<span class="n">alias</span> <span class="n">vz</span><span class="o">=</span><span class="s1">&#39;vi ~/.&#39;</span>
-<span class="n">alias</span> <span class="n">sz</span><span class="o">=</span><span class="s1">&#39;source ~/.&#39;</span>
+<span class="n">alias</span> <span class="n">vz</span><span class="o">=</span><span class="s1">&#39;vi ~/.zshrc&#39;</span>
+<span class="n">alias</span> <span class="n">sz</span><span class="o">=</span><span class="s1">&#39;source ~/.zshrc&#39;</span>
 </pre></div>
 </div>
 </div>
 </div>
+<div class="section" id="mac-os-settings">
+<h2><span class="section-number">1.3.2. </span>Mac OS settings<a class="headerlink" href="#mac-os-settings" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="show-hide-hidden-files-in-finder">
+<h3>Show/hide hidden files in Finder<a class="headerlink" href="#show-hide-hidden-files-in-finder" title="Permalink to this headline">¶</a></h3>
+<p>alias show=“defaults write com.apple.finder AppleShowAllFiles -bool true &amp;&amp; killall Finder”
+alias hide=“defaults write com.apple.finder AppleShowAllFiles -bool false &amp;&amp; killall Finder”</p>
+</div>
+<div class="section" id="hide-show-all-desktop-icons">
+<h3>Hide/show all desktop icons<a class="headerlink" href="#hide-show-all-desktop-icons" title="Permalink to this headline">¶</a></h3>
+<p>alias dhide=“defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder”
+alias dshow=“defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder”</p>
+</div>
+</div>
 <div class="section" id="related-to-github">
-<h2><span class="section-number">1.3.2. </span>Related to GitHub<a class="headerlink" href="#related-to-github" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.3.3. </span>Related to GitHub<a class="headerlink" href="#related-to-github" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
 <span class="n">alias</span> <span class="n">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
 <span class="n">alias</span> <span class="n">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
@@ -671,14 +731,17 @@ Some command are long and you would feel copying them every time is a waste of t
 </div>
 </div>
 <div class="section" id="python">
-<h2><span class="section-number">1.3.3. </span>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">py</span><span class="o">=</span><span class="s1">&#39;python&#39;</span>
+<h2><span class="section-number">1.3.4. </span>Python<a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">python</span><span class="o">=</span><span class="s2">&quot;/usr/bin/python3&quot;</span>
+<span class="n">alias</span> <span class="n">py</span><span class="o">=</span><span class="s1">&#39;python&#39;</span>
 <span class="n">alias</span> <span class="n">py2</span><span class="o">=</span><span class="s1">&#39;python2&#39;</span>
 <span class="n">alias</span> <span class="n">py3</span><span class="o">=</span><span class="s1">&#39;python3&#39;</span>
 
+<span class="n">alias</span> <span class="n">pip</span><span class="o">=</span><span class="s1">&#39;pip3&#39;</span>
 <span class="n">alias</span> <span class="n">pin</span><span class="o">=</span><span class="s1">&#39;pip install&#39;</span>
-<span class="n">alias</span> <span class="n">p3in</span><span class="o">=</span><span class="s1">&#39;pip3 install&#39;</span>
 <span class="n">alias</span> <span class="n">wpy</span><span class="o">=</span><span class="s1">&#39;which python&#39;</span>
+<span class="n">alias</span> <span class="n">pf</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze&#39;</span>
+<span class="n">alias</span> <span class="n">pfr</span><span class="o">=</span><span class="s1">&#39;pip list --format=freeze &gt; requirements.txt&#39;</span>
 </pre></div>
 </div>
 <div class="section" id="activate-a-venv">
@@ -690,7 +753,7 @@ Some command are long and you would feel copying them every time is a waste of t
 </div>
 </div>
 <div class="section" id="related-to-latex">
-<h2><span class="section-number">1.3.4. </span>Related to Latex<a class="headerlink" href="#related-to-latex" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">1.3.5. </span>Related to Latex<a class="headerlink" href="#related-to-latex" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="copy-latex-template-directory-to-somewhere">
 <h3>Copy latex-template directory to somewhere;<a class="headerlink" href="#copy-latex-template-directory-to-somewhere" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mklt(){
