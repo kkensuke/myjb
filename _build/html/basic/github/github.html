@@ -611,17 +611,21 @@ Git has a branching mechanism that allows you to branch projects and develop eac
 <h2><span class="section-number">1.4.3. </span>Basic commands<a class="headerlink" href="#basic-commands" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="create-a-new-repository">
 <h3>Create a new repository<a class="headerlink" href="#create-a-new-repository" title="Permalink to this headline">¶</a></h3>
-<p>First, make a repository on the GitHub website without initializing.
+<p>First, make a repository on the <a class="reference external" href="https://github.com/">GitHub website</a> without initializing.
 Second, execute the commands below on the local computer</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="o">[</span>mkdir project_name<span class="o">]</span>
 <span class="o">[</span><span class="nb">cd</span> project_name<span class="o">]</span>
 <span class="nb">echo</span> <span class="s2">&quot;# test&quot;</span> &gt;&gt; README.md
+<span class="c1"># initialize the repository</span>
 git init
+<span class="c1"># add all files in the current directory to working tree</span>
 git add .
 <span class="o">(</span>git add README.md<span class="o">)</span>
+<span class="c1"># commit the changes to the local repository</span>
 git commit -m <span class="s2">&quot;first commit&quot;</span>
 git branch -M main
 git remote add origin https://github.com/&lt;Username&gt;/&lt;repository&gt;.git
+<span class="c1"># push the changes to the remote repository</span>
 git push -u origin main
 </pre></div>
 </div>

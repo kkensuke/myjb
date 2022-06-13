@@ -28,19 +28,23 @@ There are two types of repositories: `local repositories` on your PC and `remote
 
 ## Basic commands
 ### Create a new repository
-First, make a repository on the GitHub website without initializing.
+First, make a repository on the [GitHub website](https://github.com/) without initializing.
 Second, execute the commands below on the local computer
 
 ```bash
 [mkdir project_name]
 [cd project_name]
 echo "# test" >> README.md
+# initialize the repository
 git init
+# add all files in the current directory to working tree
 git add .
 (git add README.md)
+# commit the changes to the local repository
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/<Username>/<repository>.git
+# push the changes to the remote repository
 git push -u origin main
 ```
 
