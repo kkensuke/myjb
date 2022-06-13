@@ -1,7 +1,7 @@
 # Markdown
 
 Here, you can learn the basic usage of markdown. markdown is **a simple, lightweight markup language for creating formatted, structured text**.
-This whole Jupyter Book source code are also written in markdown (MyST). You can use markdown to make websites, documents, notes, book, presentations, email messages. MyST is one of markedown which have features for **scientific and technical documentation**.
+This whole Jupyter Book source code are also written in markdown (MyST). You can use markdown to make websites, documents, notes, book, presentations, email messages. MyST is one of markedown derivatives which have features for **scientific and technical documentation**.
 
 In the following, you see how to write markdown and how it looks like.
 
