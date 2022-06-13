@@ -69,12 +69,16 @@ alias sz='source ~/.zshrc'
 
 ## Mac OS settings
 ### Show/hide hidden files in Finder
+```
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
+```
 
 ### Hide/show all desktop icons
+```
 alias dhide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
+```
 
 
 ## Related to GitHub
