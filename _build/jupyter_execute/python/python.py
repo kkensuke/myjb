@@ -11,7 +11,7 @@
 # 
 # [JupyterLab](https://jupyterlab.readthedocs.io/en/stable/) is a next-generation web-based user interface for python programming.
 # 
-# Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [this](venv).
+# Here, you can learn basics of python and usage of JupyterLab. If you have not installed jupyteer-lab, refer to [venv](../basic/packageManager.md).
 
 # ---
 # ## print() function
