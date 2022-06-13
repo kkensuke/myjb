@@ -375,14 +375,14 @@ cat test.txt
 # fdsa
 ```
 
-In order to pipeline and redirect at the same time, you use  `| tee` .
+In order to pipe and redirect at the same time, you use  `| tee` .
 
 ```bash
 ls / | tee file | head
 ls /Desktop | tee -a[--append] file
 ```
 
-Error message is different from stdout, it is stderr. To remove stderr, add `2>/dev/null` .
+To remove stderr, add `2>/dev/null` .
 
 ---
 ### Combine commands
