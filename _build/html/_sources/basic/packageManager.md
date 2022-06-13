@@ -57,6 +57,7 @@ brew doctor
 ```
 If you succeed, you get; `Homebrew 3.3.8`.
 
+(venv)=
 ## [Venv](https://docs.python.org/3/library/venv.html)
 To make a virtual environment for python, venv is the easiest tool! Although there are pyenv or anaconda for python, they are not necessary for beginners.
 Let's make a virtual env.
