@@ -60,6 +60,7 @@ In the following, you see how to write Markdown and how it looks like.
 ---
 
 ## Color
+You can use HTML in Markdown.
 >```md
 ><font color="red">Red string</font>
 >```
