@@ -58,7 +58,7 @@ git push -u origin main
 
 
 ### push an existing repository from the command line
-If you have already made a local repository and not made remote repository, you just need to use the following commands after making a remote repository.
+If you have already made (or initialized) a local repository, you just need to use the following commands after making a remote repository.
 ```
 git remote add origin https://github.com/<Username>/<repository>.git
 git branch -M main
