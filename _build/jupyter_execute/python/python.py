@@ -20,8 +20,8 @@
 # Here, we will see how to use `print()` function with the usage of jupyter lab(notebook).
 
 # To begin with, let us print string "Hello World" using `print()` function. 
-# In jupyter lab(notebook), a code block is called a cell. A cell can contain multiple lines of code.
-# To execute the code, click on the cell(colored in blue(notebook:green)) and press `Shift+Enter` key.
+# In jupyter lab(notebook), a code block is called a `cell`. A cell can contain multiple lines of code.
+# To execute the code, click on the cell(colored in blue(jupyter notebook:green)) and press `Shift+Enter` key.
 
 # In[2]:
 
