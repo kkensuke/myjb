@@ -1,7 +1,7 @@
 # Alias
 
 If you are using command line, there must be commands you repeatedly use.
-Some command are long and you would feel copying them every time is a waste of time. In such case, you can use `alias` for a command. If you want to use `h` as an alias for `cd ~`, you define `alias h='cd ~'` in `~/.zshrc` (or `~/.bashrc`). If you can't find such files in your home directory, you can make with `touch ~/.zshrc`.
+Some commands are long and you would think that copying them every time is a waste of time. In such case, you can use `alias` for a command. If you want to use `h` as an alias for `cd ~`, you define `alias h='cd ~'` in `~/.zshrc` (or `~/.bashrc`). If you can't find such files in your home directory, you can make with `touch ~/.zshrc`.
 
 If you find some useful aliases, write them in `~/.zshrc`.
 
