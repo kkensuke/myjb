@@ -359,7 +359,7 @@ asdf
 
 
 ## Panel
-https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
+https://sphinx-design.readthedocs.io/en/latest/cards.html
 
 >`````
 >````{card}
