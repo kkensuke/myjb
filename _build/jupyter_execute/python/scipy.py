@@ -52,7 +52,6 @@ plt.show()
 
 
 # ---
-# ---
 # ## Integration
 # ### scipy.integrate.quad
 # Compute a definite integral.
@@ -76,7 +75,6 @@ print(ans)
 print(4**3 / 3.)  # analytical result
 
 
-# ---
 # ---
 # ## Root finding
 # ### scipy.optimize.root_scalar
