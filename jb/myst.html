@@ -4,11 +4,13 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>3.2. MyST &#8212; My note</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,20 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
@@ -39,6 +37,7 @@
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
@@ -79,7 +78,7 @@ var addUtterances = () => {
 commentsRunWhenDOMLoaded(addUtterances);
 </script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
@@ -107,7 +106,21 @@ const thebe_selector_output = ".output, .cell_output"
                 </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -116,9 +129,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
@@ -258,92 +272,197 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/jb/myst.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/kkensue/myjb"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/kkensue/myjb/issues/new?title=Issue%20on%20page%20%2Fjb/myst.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/kkensue/myjb/edit/main//jb/myst.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/kkensue/myjb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/kkensue/myjb/issues/new?title=Issue%20on%20page%20%2Fjb/myst.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/kkensue/myjb/edit/main//jb/myst.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/jb/myst.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
    3.2. MyST
@@ -602,12 +721,11 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
                 <h1>MyST</h1>
@@ -882,13 +1000,14 @@ const thebe_selector_output = ".output, .cell_output"
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="myst">
-<h1><span class="section-number">3.2. </span>MyST<a class="headerlink" href="#myst" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="heading">
-<h2><span class="section-number">3.2.1. </span>Heading<a class="headerlink" href="#heading" title="Permalink to this headline">¶</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="myst">
+<h1><span class="section-number">3.2. </span>MyST<a class="headerlink" href="#myst" title="Permalink to this headline">#</a></h1>
+<section id="heading">
+<h2><span class="section-number">3.2.1. </span>Heading<a class="headerlink" href="#heading" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Heading level 1</span>
 <span class="c1">## Heading level 2</span>
 <span class="c1">### Heading level 3</span>
@@ -897,27 +1016,27 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="c1">###### Heading level 6</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="heading-level-1">
-<h1><span class="section-number">3.3. </span>Heading level 1<a class="headerlink" href="#heading-level-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="heading-level-2">
-<h2><span class="section-number">3.3.1. </span>Heading level 2<a class="headerlink" href="#heading-level-2" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="heading-level-3">
-<h3>Heading level 3<a class="headerlink" href="#heading-level-3" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="heading-level-4">
-<h4>Heading level 4<a class="headerlink" href="#heading-level-4" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="heading-level-5">
-<h5>Heading level 5<a class="headerlink" href="#heading-level-5" title="Permalink to this headline">¶</a></h5>
-<div class="section" id="heading-level-6">
-<h6>Heading level 6<a class="headerlink" href="#heading-level-6" title="Permalink to this headline">¶</a></h6>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="section" id="target-headers">
-<h2><span class="section-number">3.3.2. </span>Target headers<a class="headerlink" href="#target-headers" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="heading-level-1">
+<h1><span class="section-number">3.3. </span>Heading level 1<a class="headerlink" href="#heading-level-1" title="Permalink to this headline">#</a></h1>
+<section id="heading-level-2">
+<h2><span class="section-number">3.3.1. </span>Heading level 2<a class="headerlink" href="#heading-level-2" title="Permalink to this headline">#</a></h2>
+<section id="heading-level-3">
+<h3>Heading level 3<a class="headerlink" href="#heading-level-3" title="Permalink to this headline">#</a></h3>
+<section id="heading-level-4">
+<h4>Heading level 4<a class="headerlink" href="#heading-level-4" title="Permalink to this headline">#</a></h4>
+<section id="heading-level-5">
+<h5>Heading level 5<a class="headerlink" href="#heading-level-5" title="Permalink to this headline">#</a></h5>
+<section id="heading-level-6">
+<h6>Heading level 6<a class="headerlink" href="#heading-level-6" title="Permalink to this headline">#</a></h6>
+</section>
+</section>
+</section>
+</section>
+</section>
+<section id="target-headers">
+<h2><span class="section-number">3.3.2. </span>Target headers<a class="headerlink" href="#target-headers" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">target</span><span class="p">)</span><span class="o">=</span>
 <span class="c1">### target</span>
@@ -926,14 +1045,14 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 </div></blockquote>
-<div class="section" id="target">
-<span id="id1"></span><h3>target<a class="headerlink" href="#target" title="Permalink to this headline">¶</a></h3>
+<section id="target">
+<span id="id1"></span><h3>target<a class="headerlink" href="#target" title="Permalink to this headline">#</a></h3>
 <p>…
 see <a class="reference internal" href="#target"><span class="std std-ref">target</span></a></p>
-</div>
-</div>
-<div class="section" id="quote">
-<h2><span class="section-number">3.3.3. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="quote">
+<h2><span class="section-number">3.3.3. </span>Quote<a class="headerlink" href="#quote" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span> <span class="n">this</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">quote</span>
 </pre></div>
@@ -942,21 +1061,21 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 <div><p>this is a quote</p>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="end-line">
-<h2><span class="section-number">3.3.4. </span>End line<a class="headerlink" href="#end-line" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="end-line">
+<h2><span class="section-number">3.3.4. </span>End line<a class="headerlink" href="#end-line" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">end</span> <span class="n">of</span> <span class="n">some</span> <span class="n">text</span><span class="o">.</span>
 <span class="o">---</span>
 </pre></div>
 </div>
 </div></blockquote>
-</div>
-<div class="section" id="this-is-the-end-of-some-text">
-<h2><span class="section-number">3.3.5. </span>This is the end of some text.<a class="headerlink" href="#this-is-the-end-of-some-text" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="line-comment">
-<h2><span class="section-number">3.3.6. </span>Line comment<a class="headerlink" href="#line-comment" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="this-is-the-end-of-some-text">
+<h2><span class="section-number">3.3.5. </span>This is the end of some text.<a class="headerlink" href="#this-is-the-end-of-some-text" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="line-comment">
+<h2><span class="section-number">3.3.6. </span>Line comment<a class="headerlink" href="#line-comment" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span> <span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">line</span> <span class="n">comment</span><span class="o">.</span>
 </pre></div>
@@ -964,9 +1083,9 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 <blockquote>
 <div></div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="block-break">
-<h2><span class="section-number">3.3.7. </span>Block break<a class="headerlink" href="#block-break" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="block-break">
+<h2><span class="section-number">3.3.7. </span>Block break<a class="headerlink" href="#block-break" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">example</span> <span class="n">of</span>
 <span class="o">+++</span> <span class="p">{</span><span class="s2">&quot;meta&quot;</span><span class="p">:</span> <span class="s2">&quot;data&quot;</span><span class="p">}</span>
@@ -978,9 +1097,9 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 <p>a block break</p>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="list">
-<h2><span class="section-number">3.3.8. </span>List<a class="headerlink" href="#list" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="list">
+<h2><span class="section-number">3.3.8. </span>List<a class="headerlink" href="#list" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mf">1.</span> <span class="n">First</span> <span class="n">item</span>
 <span class="mf">2.</span> <span class="n">Second</span> <span class="n">item</span>
@@ -990,7 +1109,7 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </pre></div>
 </div>
 <blockquote>
-<div><ol class="simple">
+<div><ol class="arabic simple">
 <li><p>First item</p></li>
 <li><p>Second item</p>
 <ul class="simple">
@@ -1005,9 +1124,9 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </ol>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="table">
-<h2><span class="section-number">3.3.9. </span>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="table">
+<h2><span class="section-number">3.3.9. </span>Table<a class="headerlink" href="#table" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{list-table} This table title
 :header-rows: 1
@@ -1024,7 +1143,7 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </div>
 </div></blockquote>
 <table class="table" id="example-table">
-<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">This table title</span><a class="headerlink" href="#example-table" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">This table title</span><a class="headerlink" href="#example-table" title="Permalink to this table">#</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -1043,9 +1162,9 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </tr>
 </tbody>
 </table>
-</div>
-<div class="section" id="admonition">
-<h2><span class="section-number">3.3.10. </span>admonition<a class="headerlink" href="#admonition" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="admonition">
+<h2><span class="section-number">3.3.10. </span>admonition<a class="headerlink" href="#admonition" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{admonition} This is a title
 An example of an admonition with a title.
@@ -1173,7 +1292,7 @@ see also
 </pre></div>
 </div>
 <blockquote>
-<div><p><span class="fa fa-check text-success mr-1"></span> This is an example of Roles (check mark &amp; success color).</p>
+<div><p><span class="fa fa-check, text-success mr-1"></span> This is an example of Roles (check mark &amp; success color).</p>
 </div></blockquote>
 </div></blockquote>
 <blockquote>
@@ -1181,11 +1300,11 @@ see also
 </pre></div>
 </div>
 <blockquote>
-<div><p><span class="fa fa-check text-info mr-1"></span> This is an example of Roles (check mark &amp; info color).</p>
+<div><p><span class="fa fa-check, text-info mr-1"></span> This is an example of Roles (check mark &amp; info color).</p>
 </div></blockquote>
 </div></blockquote>
-<div class="section" id="figure-parameters">
-<h3>Figure parameters<a class="headerlink" href="#figure-parameters" title="Permalink to this headline">¶</a></h3>
+<section id="figure-parameters">
+<h3>Figure parameters<a class="headerlink" href="#figure-parameters" title="Permalink to this headline">#</a></h3>
 <p>The following options are supported:</p>
 <dl class="simple myst">
 <dt><code class="docutils literal notranslate"><span class="pre">scale</span></code> : integer percentage</dt><dd><p>Uniformly scale the figure. The default is “100” which indicates no scaling. The symbol “%” is optional.</p>
@@ -1203,10 +1322,10 @@ see also
 <dt><code class="docutils literal notranslate"><span class="pre">figclass</span></code> : text</dt><dd><p>Value of the figure’s class attribute which can be used to add custom CSS or JavaScript. Predefined options include:</p>
 </dd>
 </dl>
-</div>
-</div>
-<div class="section" id="math">
-<h2><span class="section-number">3.3.11. </span>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="math">
+<h2><span class="section-number">3.3.11. </span>Math<a class="headerlink" href="#math" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>This is an example of an
 inline equation $z=\sqrt{x^2+y^2}$.
@@ -1226,22 +1345,22 @@ equation ref: {eq}`mylabel`
 </div>
 <blockquote>
 <div><div class="math notranslate nohighlight" id="equation-mylabel">
-<span class="eqno">(3.1)<a class="headerlink" href="#equation-mylabel" title="Permalink to this equation">¶</a></span>\[z=\sqrt{x^2+y^2}\]</div>
+<span class="eqno">(3.1)<a class="headerlink" href="#equation-mylabel" title="Permalink to this equation">#</a></span>\[z=\sqrt{x^2+y^2}\]</div>
 <p>equation ref: <a class="reference internal" href="#equation-mylabel">(3.1)</a></p>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="executable-code">
-<h2><span class="section-number">3.3.12. </span>Executable code<a class="headerlink" href="#executable-code" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="executable-code">
+<h2><span class="section-number">3.3.12. </span>Executable code<a class="headerlink" href="#executable-code" title="Permalink to this headline">#</a></h2>
 <!--
 ```{code-cell} ipython3
 note = "Python syntax highlighting"
 print(note)
 ```
 -->
-</div>
-<div class="section" id="reference-documents">
-<h2><span class="section-number">3.3.13. </span>Reference documents<a class="headerlink" href="#reference-documents" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="reference-documents">
+<h2><span class="section-number">3.3.13. </span>Reference documents<a class="headerlink" href="#reference-documents" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>See {doc}`../basic/alias` for more information.
 </pre></div>
@@ -1250,9 +1369,9 @@ print(note)
 <div><p>See <a class="reference internal" href="../basic/alias.html"><span class="doc">Alias</span></a> for more information.</p>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="toggle">
-<h2><span class="section-number">3.3.14. </span>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="toggle">
+<h2><span class="section-number">3.3.14. </span>Toggle<a class="headerlink" href="#toggle" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{toggle}
 ```python
@@ -1269,9 +1388,9 @@ print(&#39;hello&#39;)
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="margin">
-<h2><span class="section-number">3.3.15. </span>Margin<a class="headerlink" href="#margin" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="margin">
+<h2><span class="section-number">3.3.15. </span>Margin<a class="headerlink" href="#margin" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{margin} **My margin title**
 Here is my margin content, it is pretty cool!
@@ -1279,10 +1398,10 @@ Here is my margin content, it is pretty cool!
 </pre></div>
 </div>
 <blockquote>
-<div><div class="margin sidebar">
+<div><aside class="margin sidebar">
 <p class="sidebar-title"><strong>My margin title</strong></p>
 <p>Here is my margin content, it is pretty cool!</p>
-</div>
+</aside>
 </div></blockquote>
 </div></blockquote>
 <hr class="docutils" />
@@ -1313,10 +1432,12 @@ And here is my figure caption
 </pre></div>
 </div>
 <blockquote>
-<div><div class="margin figure align-default" id="myfig4">
+<div><figure class="margin align-default" id="myfig4">
 <img alt="My figure text" src="../_images/GitHub-flow.png" />
-<p class="caption"><span class="caption-number">Fig. 3.1 </span><span class="caption-text">And here is my figure caption</span><a class="headerlink" href="#myfig4" title="Permalink to this image">¶</a></p>
-</div>
+<figcaption>
+<p><span class="caption-number">Fig. 3.1 </span><span class="caption-text">And here is my figure caption</span><a class="headerlink" href="#myfig4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
 </div></blockquote>
 </div></blockquote>
 <!--
@@ -1326,9 +1447,9 @@ asdf
 asdf
 ```
 -->
-</div>
-<div class="section" id="panel">
-<h2><span class="section-number">3.3.16. </span>Panel<a class="headerlink" href="#panel" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="panel">
+<h2><span class="section-number">3.3.16. </span>Panel<a class="headerlink" href="#panel" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://sphinx-panels.readthedocs.io/en/latest/#panels-usage">https://sphinx-panels.readthedocs.io/en/latest/#panels-usage</a></p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{panels}
@@ -1348,41 +1469,11 @@ Panel footer 2
 </pre></div>
 </div>
 <blockquote>
-<div><div class="sphinx-bs container pb-4 docutils">
-<div class="row docutils">
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text">Panel header 1</p>
-</div>
-<div class="card-body docutils">
-<p class="card-text">Panel body 1</p>
-</div>
-<div class="card-footer docutils">
-<p class="card-text">Panel footer 1</p>
-</div>
-</div>
-</div>
-<div class="d-flex col-lg-6 col-md-6 col-sm-6 col-xs-12 p-2 docutils">
-<div class="card w-100 shadow docutils">
-<div class="card-header docutils">
-<p class="card-text">Panel header 2</p>
-</div>
-<div class="card-body docutils">
-<p class="card-text">Panel body 2</p>
-</div>
-<div class="card-footer docutils">
-<p class="card-text">Panel footer 2</p>
-</div>
-</div>
-</div>
-</div>
-</div>
+<div></div></blockquote>
 </div></blockquote>
-</div></blockquote>
-</div>
-<div class="section" id="badge">
-<h2><span class="section-number">3.3.17. </span>Badge<a class="headerlink" href="#badge" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="badge">
+<h2><span class="section-number">3.3.17. </span>Badge<a class="headerlink" href="#badge" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{badge}`primary,badge-primary`
 {badge}`primary,badge-primary badge-pill`
@@ -1398,20 +1489,20 @@ Panel footer 2
 </pre></div>
 </div>
 <blockquote>
-<div><p><span class="sphinx-bs badge badge-primary">primary</span>
-<span class="sphinx-bs badge badge-primary badge-pill">primary</span></p>
-<p><span class="sphinx-bs badge badge-primary">primary</span>
-<span class="sphinx-bs badge badge-secondary">secondary</span>
-<span class="sphinx-bs badge badge-info">info</span>
-<span class="sphinx-bs badge badge-success">success</span>
-<span class="sphinx-bs badge badge-danger">danger</span>
-<span class="sphinx-bs badge badge-warning">warning</span>
-<span class="sphinx-bs badge badge-light">light</span>
-<span class="sphinx-bs badge badge-dark">dark</span></p>
+<div><p><a href="#id2"><span class="problematic" id="id3">primary,badge-primary</span></a>
+<a href="#id4"><span class="problematic" id="id5">primary,badge-primary badge-pill</span></a></p>
+<p><a href="#id6"><span class="problematic" id="id7">primary,badge-primary</span></a>
+<a href="#id8"><span class="problematic" id="id9">secondary,badge-secondary</span></a>
+<a href="#id10"><span class="problematic" id="id11">info,badge-info</span></a>
+<a href="#id12"><span class="problematic" id="id13">success,badge-success</span></a>
+<a href="#id14"><span class="problematic" id="id15">danger,badge-danger</span></a>
+<a href="#id16"><span class="problematic" id="id17">warning,badge-warning</span></a>
+<a href="#id18"><span class="problematic" id="id19">light,badge-light</span></a>
+<a href="#id20"><span class="problematic" id="id21">dark,badge-dark</span></a></p>
 </div></blockquote>
 </div></blockquote>
-<div class="section" id="dropdown">
-<h3>dropdown<a class="headerlink" href="#dropdown" title="Permalink to this headline">¶</a></h3>
+<section id="dropdown">
+<h3>dropdown<a class="headerlink" href="#dropdown" title="Permalink to this headline">#</a></h3>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{dropdown}
 :animate: fade-in-slide-down
@@ -1424,20 +1515,13 @@ git push origin main
 </pre></div>
 </div>
 <blockquote>
-<div><details class="sphinx-bs dropdown card mb-3 fade-in-slide-down">
-<summary class="summary-title card-header">
-<svg viewBox="0 0 36 24" width="36" height="16" xmlns="http://www.w3.org/2000/svg"
-    class="octicon no-title" aria-hidden="true">
-  <g xmlns="http://www.w3.org/2000/svg" class="jp-icon3">
-    <circle cx="0" cy="12" r="6"></circle>
-    <circle cx="18" cy="12" r="6"></circle>
-    <circle cx="36" cy="12" r="6"></circle>
-  </g>
-</svg><div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
+<div><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3 sd-fade-in-slide-down">
+<summary class="sd-summary-title sd-card-header">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-kebab-horizontal" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M6 12a2 2 0 11-4 0 2 2 0 014 0zm8 0a2 2 0 11-4 0 2 2 0 014 0zm6 2a2 2 0 100-4 2 2 0 000 4z"></path></svg><div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
 <span class="n">git</span> <span class="n">commit</span> <span class="o">-</span><span class="n">m</span> <span class="s2">&quot;update&quot;</span>
 <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="n">main</span>
@@ -1460,10 +1544,10 @@ Some hidden toggle content!
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-</div>
-<div class="section" id="definition-lists">
-<h2><span class="section-number">3.3.18. </span>Definition lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="definition-lists">
+<h2><span class="section-number">3.3.18. </span>Definition lists<a class="headerlink" href="#definition-lists" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Term</span> <span class="mi">1</span>
 <span class="p">:</span> <span class="n">Definition</span>
@@ -1493,9 +1577,9 @@ A second term
 </div>
 <blockquote>
 <div><dl class="glossary simple">
-<dt id="term-Term-one">Term one<a class="headerlink" href="#term-Term-one" title="Permalink to this term">¶</a></dt><dd><p>An indented explanation of term 1</p>
+<dt id="term-Term-one">Term one<a class="headerlink" href="#term-Term-one" title="Permalink to this term">#</a></dt><dd><p>An indented explanation of term 1</p>
 </dd>
-<dt id="term-A-second-term">A second term<a class="headerlink" href="#term-A-second-term" title="Permalink to this term">¶</a></dt><dd><p>An indented explanation of term2</p>
+<dt id="term-A-second-term">A second term<a class="headerlink" href="#term-A-second-term" title="Permalink to this term">#</a></dt><dd><p>An indented explanation of term2</p>
 </dd>
 </dl>
 </div></blockquote>
@@ -1515,8 +1599,8 @@ Here is a cool quotation.
 </div></blockquote>
 </div></blockquote>
 </div></blockquote>
-<div class="section" id="tabs">
-<h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">¶</a></h3>
+<section id="tabs">
+<h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">#</a></h3>
 <p>ex1</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tabbed} Tab 1 title
@@ -1529,19 +1613,7 @@ My second tab with `some code`!
 </pre></div>
 </div>
 <blockquote>
-<div><div class="tabbed-set docutils">
-<input checked="checked" id="de4cdeee-4959-4b79-9fba-c1d8c3a08423" name="677d94ff-08e6-4a00-8498-5e181ebb6829" type="radio">
-</input><label class="tabbed-label" for="de4cdeee-4959-4b79-9fba-c1d8c3a08423">
-Tab 1 title</label><div class="tabbed-content docutils">
-<p>My first tab</p>
-</div>
-<input id="be82b9d0-577d-4e69-93d0-03730cbe1381" name="677d94ff-08e6-4a00-8498-5e181ebb6829" type="radio">
-</input><label class="tabbed-label" for="be82b9d0-577d-4e69-93d0-03730cbe1381">
-Tab 2 title</label><div class="tabbed-content docutils">
-<p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
-</div>
-</div>
-</div></blockquote>
+<div></div></blockquote>
 </div></blockquote>
 <p>ex2</p>
 <blockquote>
@@ -1595,57 +1667,12 @@ END PROGRAM main
 </pre></div>
 </div>
 <blockquote>
-<div><div class="tabbed-set docutils">
-<input checked="checked" id="46590601-f099-4bb8-bf23-1ecad43d707d" name="da707308-b4d4-4b6f-8395-f98bb20aacdc" type="radio">
-</input><label class="tabbed-label" for="46590601-f099-4bb8-bf23-1ecad43d707d">
-c++</label><div class="tabbed-content docutils">
-<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
-<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
-<span class="p">}</span><span class="w"></span>
-</pre></div>
-</div>
-</div>
-<input id="bb27b586-2161-44f7-889c-fa6d8e6db90d" name="da707308-b4d4-4b6f-8395-f98bb20aacdc" type="radio">
-</input><label class="tabbed-label" for="bb27b586-2161-44f7-889c-fa6d8e6db90d">
-python</label><div class="tabbed-content docutils">
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-   <span class="k">return</span>
-</pre></div>
-</div>
-</div>
-<input id="8d2c76e7-5d79-473b-b0db-d673abdb3caf" name="da707308-b4d4-4b6f-8395-f98bb20aacdc" type="radio">
-</input><label class="tabbed-label" for="8d2c76e7-5d79-473b-b0db-d673abdb3caf">
-java</label><div class="tabbed-content docutils">
-<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span> <span class="p">{</span>
-   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
-   <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<input id="5f7b4eef-06ab-4ea1-865b-a38c7c6d938d" name="da707308-b4d4-4b6f-8395-f98bb20aacdc" type="radio">
-</input><label class="tabbed-label" for="5f7b4eef-06ab-4ea1-865b-a38c7c6d938d">
-julia</label><div class="tabbed-content docutils">
-<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span> <span class="n">main</span><span class="p">()</span>
-<span class="k">end</span>
-</pre></div>
-</div>
-</div>
-<input id="8bcb0340-5635-4d98-bf72-68db5de69c30" name="da707308-b4d4-4b6f-8395-f98bb20aacdc" type="radio">
-</input><label class="tabbed-label" for="8bcb0340-5635-4d98-bf72-68db5de69c30">
-fortran</label><div class="tabbed-content docutils">
-<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
-<span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
-</pre></div>
-</div>
-</div>
-</div>
+<div></div></blockquote>
 </div></blockquote>
-</div></blockquote>
-</div>
-</div>
-<div class="section" id="key">
-<h2><span class="section-number">3.3.19. </span>key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="key">
+<h2><span class="section-number">3.3.19. </span>key<a class="headerlink" href="#key" title="Permalink to this headline">#</a></h2>
 <p>To use a substitution, first add front-matter content to the top of a page like so:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
 substitutions:
@@ -1659,8 +1686,8 @@ substitutions:
 </div>
 <p>and use like this: <code class="docutils literal notranslate"><span class="pre">{{image}}</span></code></p>
 <a class="reference internal image-reference" href="../_images/GitHub-flow.png"><img alt="image" src="../_images/GitHub-flow.png" style="width: 200px;" /></a>
-<div class="section" id="define-substitutions-for-your-whole-book">
-<h3>Define substitutions for your whole book<a class="headerlink" href="#define-substitutions-for-your-whole-book" title="Permalink to this headline">¶</a></h3>
+<section id="define-substitutions-for-your-whole-book">
+<h3>Define substitutions for your whole book<a class="headerlink" href="#define-substitutions-for-your-whole-book" title="Permalink to this headline">#</a></h3>
 <p>You can also define book-level substitution variables with the following configuration:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">parse</span><span class="p">:</span>
   <span class="n">myst_substitutions</span><span class="p">:</span>
@@ -1668,31 +1695,31 @@ substitutions:
 </pre></div>
 </div>
 <p>global value: global-value</p>
-</div>
-<div class="section" id="formatting-substitutions">
-<h3>Formatting substitutions<a class="headerlink" href="#formatting-substitutions" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="formatting-substitutions">
+<h3>Formatting substitutions<a class="headerlink" href="#formatting-substitutions" title="Permalink to this headline">#</a></h3>
 <p>The original key1: I’m a <strong>substitution</strong>
 I’m a <strong>substitution</strong></p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">substitutions</span><span class="p">:</span>
   <span class="n">repo_url</span><span class="p">:</span> <span class="p">[</span><span class="n">my</span> <span class="n">repo</span> <span class="n">url</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">executablebooks</span><span class="o">/</span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span><span class="p">)</span>
 </pre></div>
 </div>
-</div>
-</div>
-<div class="section" id="footnotes">
-<h2><span class="section-number">3.3.20. </span>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="footnotes">
+<h2><span class="section-number">3.3.20. </span>Footnotes<a class="headerlink" href="#footnotes" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="ow">is</span> <span class="n">a</span> <span class="n">footnote</span><span class="p">[</span><span class="o">^</span><span class="n">mylabel</span><span class="p">]</span><span class="o">.</span>
 <span class="p">[</span><span class="o">^</span><span class="n">mylabel</span><span class="p">]:</span> <span class="n">My</span> <span class="n">footnote</span> <span class="n">text</span><span class="o">.</span>
 </pre></div>
 </div>
 <blockquote>
-<div><p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id2">1</a>.</p>
+<div><p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id22">1</a>.</p>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="custom-div-blocks">
-<h2><span class="section-number">3.3.21. </span>Custom &lt;div&gt; blocks<a class="headerlink" href="#custom-div-blocks" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="custom-div-blocks">
+<h2><span class="section-number">3.3.21. </span>Custom &lt;div&gt; blocks<a class="headerlink" href="#custom-div-blocks" title="Permalink to this headline">#</a></h2>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{div} my-class
 **Some content.**
@@ -1705,16 +1732,16 @@ I’m a <strong>substitution</strong></p>
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="check-for-missing-references">
-<h2><span class="section-number">3.3.22. </span>Check for missing references<a class="headerlink" href="#check-for-missing-references" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="check-for-missing-references">
+<h2><span class="section-number">3.3.22. </span>Check for missing references<a class="headerlink" href="#check-for-missing-references" title="Permalink to this headline">#</a></h2>
 <p>You can check for missing references when building a Jupyter Book. To do so, use the following options:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="o">-</span><span class="n">W</span> <span class="o">-</span><span class="n">n</span> <span class="o">--</span><span class="n">keep</span><span class="o">-</span><span class="n">going</span> <span class="n">docs</span><span class="o">/</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="layout">
-<h2><span class="section-number">3.3.23. </span>Layout<a class="headerlink" href="#layout" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="layout">
+<h2><span class="section-number">3.3.23. </span>Layout<a class="headerlink" href="#layout" title="Permalink to this headline">#</a></h2>
 <p>full-width</p>
 <blockquote>
 <div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{note}
@@ -1730,9 +1757,9 @@ Here&#39;s a note that will take the full width
 </div>
 </div></blockquote>
 </div></blockquote>
-</div>
-<div class="section" id="proofs-theorems-and-algorithms">
-<h2><span class="section-number">3.3.24. </span>Proofs, Theorems, and Algorithms<a class="headerlink" href="#proofs-theorems-and-algorithms" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="proofs-theorems-and-algorithms">
+<h2><span class="section-number">3.3.24. </span>Proofs, Theorems, and Algorithms<a class="headerlink" href="#proofs-theorems-and-algorithms" title="Permalink to this headline">#</a></h2>
 <p>This is not currently a default package in jupyter-book as is a relatively new package.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">sphinx</span><span class="o">-</span><span class="n">proof</span>
 </pre></div>
@@ -1744,23 +1771,23 @@ Here&#39;s a note that will take the full width
 </pre></div>
 </div>
 <p><a class="reference external" href="https://sphinx-proof.readthedocs.io/en/latest/syntax.html">https://sphinx-proof.readthedocs.io/en/latest/syntax.html</a></p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="build-and-publish-outputs">
-<h1><span class="section-number">3.4. </span>Build and publish outputs<a class="headerlink" href="#build-and-publish-outputs" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="store-code-outputs-and-insert-into-content">
-<h2><span class="section-number">3.4.1. </span>Store code outputs and insert into content<a class="headerlink" href="#store-code-outputs-and-insert-into-content" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="build-and-publish-outputs">
+<h1><span class="section-number">3.4. </span>Build and publish outputs<a class="headerlink" href="#build-and-publish-outputs" title="Permalink to this headline">#</a></h1>
+<section id="store-code-outputs-and-insert-into-content">
+<h2><span class="section-number">3.4.1. </span>Store code outputs and insert into content<a class="headerlink" href="#store-code-outputs-and-insert-into-content" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://jupyterbook.org/content/executable/output-insert.html">https://jupyterbook.org/content/executable/output-insert.html</a></p>
-</div>
-<div class="section" id="generate-a-badge-for-your-book">
-<h2><span class="section-number">3.4.2. </span>Generate a badge for your book<a class="headerlink" href="#generate-a-badge-for-your-book" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="generate-a-badge-for-your-book">
+<h2><span class="section-number">3.4.2. </span>Generate a badge for your book<a class="headerlink" href="#generate-a-badge-for-your-book" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://github.com/kk564/jb-test.git"><img alt="Jupyter Book Badge" src="https://jupyterbook.org/badge.svg" /></a>
 Additionally, you can generate a badge directly from <a class="reference external" href="https://shields.io/">shields.io</a>. Here’s the URL to auto-generate the badge above, using a base64-encoded version of the Jupyter Book logo. Feel free to modify this as you wish!</p>
-</div>
-<div class="section" id="build-a-pdf-using-latex">
-<h2><span class="section-number">3.4.3. </span>Build a PDF using LaTeX<a class="headerlink" href="#build-a-pdf-using-latex" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="book-style-pdf">
-<h3>Book Style PDF<a class="headerlink" href="#book-style-pdf" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="build-a-pdf-using-latex">
+<h2><span class="section-number">3.4.3. </span>Build a PDF using LaTeX<a class="headerlink" href="#build-a-pdf-using-latex" title="Permalink to this headline">#</a></h2>
+<section id="book-style-pdf">
+<h3>Book Style PDF<a class="headerlink" href="#book-style-pdf" title="Permalink to this headline">#</a></h3>
 <p>To build a PDF of your project using LaTeX, use the following command:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">build</span> <span class="n">mybookname</span><span class="o">/</span> <span class="o">--</span><span class="n">builder</span> <span class="n">pdflatex</span> <span class="p">[</span><span class="o">--</span><span class="n">individualpages</span><span class="p">]</span>
 
@@ -1775,10 +1802,10 @@ Additionally, you can generate a badge directly from <a class="reference externa
 </pre></div>
 </div>
 </div>
-</div>
-</div>
-<div class="section" id="check-external-links-in-your-book">
-<h2><span class="section-number">3.4.4. </span>Check external links in your book<a class="headerlink" href="#check-external-links-in-your-book" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="check-external-links-in-your-book">
+<h2><span class="section-number">3.4.4. </span>Check external links in your book<a class="headerlink" href="#check-external-links-in-your-book" title="Permalink to this headline">#</a></h2>
 <p>If you’d like to make sure that the links outside of your book are valid, run the Sphinx link checker with Jupyter Book. This will check each of your external links and ensure that they resolve.</p>
 <p>Note that you must ensure each link is the right target, the link checker will only ensure that it resolves.
 To run the link checker, use the following command:</p>
@@ -1786,9 +1813,9 @@ To run the link checker, use the following command:</p>
 </pre></div>
 </div>
 <p>It will print the status of each link in your book so that you may resolve any incorrect links later on.</p>
-</div>
-<div class="section" id="configuring-to-improve-accessibility">
-<h2><span class="section-number">3.4.5. </span>Configuring to Improve Accessibility<a class="headerlink" href="#configuring-to-improve-accessibility" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="configuring-to-improve-accessibility">
+<h2><span class="section-number">3.4.5. </span>Configuring to Improve Accessibility<a class="headerlink" href="#configuring-to-improve-accessibility" title="Permalink to this headline">#</a></h2>
 <p>Declaring the primary language used in your book assists screen reader and browser translation tools.</p>
 <p>Language can be configured by providing the appropriate language code to the language option, under sphinx configuration in your _config.yml file:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
@@ -1796,9 +1823,9 @@ To run the link checker, use the following command:</p>
     <span class="n">language</span><span class="p">:</span> <span class="n">en</span>
 </pre></div>
 </div>
-</div>
-<div class="section" id="defining-tex-macros">
-<h2><span class="section-number">3.4.6. </span>Defining TeX macros<a class="headerlink" href="#defining-tex-macros" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="defining-tex-macros">
+<h2><span class="section-number">3.4.6. </span>Defining TeX macros<a class="headerlink" href="#defining-tex-macros" title="Permalink to this headline">#</a></h2>
 <p>You can add LaTeX macros for the whole book by defining them under the Macros option of the TeX block. For example, the following two macros have been pre-defined in the Sphinx configuration</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sphinx</span><span class="p">:</span>
   <span class="n">config</span><span class="p">:</span>
@@ -1820,17 +1847,17 @@ To run the link checker, use the following command:</p>
 ```
 </pre></div>
 </div>
-</div>
-<div class="section" id="api-reference-from-docstrings">
-<h2><span class="section-number">3.4.7. </span>API reference from docstrings<a class="headerlink" href="#api-reference-from-docstrings" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="api-reference-from-docstrings">
+<h2><span class="section-number">3.4.7. </span>API reference from docstrings<a class="headerlink" href="#api-reference-from-docstrings" title="Permalink to this headline">#</a></h2>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="mylabel"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dt class="label" id="mylabel"><span class="brackets"><a class="fn-backref" href="#id22">1</a></span></dt>
 <dd><p>My footnote text.</p>
 </dd>
 </dl>
-</div>
-</div>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -1854,9 +1881,11 @@ To run the link checker, use the following command:</p>
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="mkjb.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -1872,27 +1901,31 @@ To run the link checker, use the following command:</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By kkensuke<br/>
+  
+      &copy; Copyright 2022.<br/>
+    <div class="extra_footer">
+      Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+    </div>
+</p>
+        </footer>
+    </div>
     
-      By kkensuke<br/>
-    
-        &copy; Copyright 2022.<br/>
-      <div class="extra_footer">
-        Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-      </div>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
