@@ -362,7 +362,7 @@ asdf
 https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 
 >`````
->````{panels}
+>````{grid}
 >Panel header 1
 >^^^
 >Panel body 1
@@ -377,7 +377,7 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 >Panel footer 2
 >````
 >`````
->>````{panels}
+>>````{grid}
 >>Panel header 1
 >>^^^
 >>Panel body 1
@@ -398,7 +398,7 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 >{bdg-primary}`primary` {bdg-primary-line}`primary-line`
 >{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
 >{bdg-success}`success` {bdg-success-line}`success-line`
->{bdg-info}`info`, {bdg-info-line}`info-line`
+>{bdg-info}`info` {bdg-info-line}`info-line`
 >{bdg-warning}`warning` {bdg-warning-line}`warning-line`
 >{bdg-danger}`danger` {bdg-danger-line}`danger-line`
 >{bdg-light}`light` {bdg-light-line}`light-line`
