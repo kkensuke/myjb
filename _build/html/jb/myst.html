@@ -1462,30 +1462,26 @@ asdf
 <h2><span class="section-number">3.3.16. </span>Panel<a class="headerlink" href="#panel" title="Permalink to this headline">#</a></h2>
 <p><a class="reference external" href="https://sphinx-panels.readthedocs.io/en/latest/#panels-usage">https://sphinx-panels.readthedocs.io/en/latest/#panels-usage</a></p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{grid}
-Panel header 1
-^^^
-Panel body 1
-+++
-Panel footer 1
----
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">..</span> <span class="n">panels</span><span class="p">::</span>
+<span class="n">Panel</span> <span class="n">header</span> <span class="mi">1</span>
+<span class="o">^^^</span>
+<span class="n">Panel</span> <span class="n">body</span> <span class="mi">1</span>
+<span class="o">+++</span>
+<span class="n">Panel</span> <span class="n">footer</span> <span class="mi">1</span>
+<span class="o">---</span>
 
-Panel header 2
-^^^
-Panel body 2
-+++
-Panel footer 2
-````
+<span class="n">Panel</span> <span class="n">header</span> <span class="mi">2</span>
+<span class="o">^^^</span>
+<span class="n">Panel</span> <span class="n">body</span> <span class="mi">2</span>
+<span class="o">+++</span>
+<span class="n">Panel</span> <span class="n">footer</span> <span class="mi">2</span>
 </pre></div>
 </div>
 <blockquote>
-<div><div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
-<div class="sd-row docutils">
-<p>Panel header 1
+<div><p>… panels::
+Panel header 1
 ^^^
 Panel body 1</p>
-</div>
-</div>
 </div></blockquote>
 </div></blockquote>
 </section>
@@ -1637,13 +1633,13 @@ My second tab with `some code`!
 </div>
 <blockquote>
 <div><div class="sd-tab-set docutils">
-<input checked="checked" id="32a4ae98-beb1-4714-95b8-b71582d6ca85" name="d4b39a64-2b05-4b96-8338-beb9d2094a58" type="radio">
-</input><label class="sd-tab-label" for="32a4ae98-beb1-4714-95b8-b71582d6ca85">
+<input checked="checked" id="96c55e62-f614-4100-a0e0-e466100b1445" name="b6679f43-f9b3-4177-8e3c-f832d6e7cd87" type="radio">
+</input><label class="sd-tab-label" for="96c55e62-f614-4100-a0e0-e466100b1445">
 Tab 1 title</label><div class="sd-tab-content docutils">
 <p>My first tab</p>
 </div>
-<input id="863ade87-e23a-4810-be10-3969f673ca95" name="d4b39a64-2b05-4b96-8338-beb9d2094a58" type="radio">
-</input><label class="sd-tab-label" for="863ade87-e23a-4810-be10-3969f673ca95">
+<input id="1370fc8f-8492-41a6-9f17-63df93b23d95" name="b6679f43-f9b3-4177-8e3c-f832d6e7cd87" type="radio">
+</input><label class="sd-tab-label" for="1370fc8f-8492-41a6-9f17-63df93b23d95">
 Tab 2 title</label><div class="sd-tab-content docutils">
 <p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
 </div>
@@ -1705,8 +1701,8 @@ END PROGRAM main
 </div>
 <blockquote>
 <div><div class="sd-tab-set docutils">
-<input checked="checked" id="cf01116a-5413-4a15-b508-5d665603ad59" name="f500e410-ce85-41e2-a3b7-119d7d761e0d" type="radio">
-</input><label class="sd-tab-label" for="cf01116a-5413-4a15-b508-5d665603ad59">
+<input checked="checked" id="c3402684-932a-4443-9cee-c907b2665681" name="65b4ac17-47b5-4119-9cad-4a5bc1ee6b0e" type="radio">
+</input><label class="sd-tab-label" for="c3402684-932a-4443-9cee-c907b2665681">
 c++</label><div class="sd-tab-content docutils">
 <div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
@@ -1714,16 +1710,16 @@ c++</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="fd6f9083-d350-4452-8d88-7b3d99c1426b" name="f500e410-ce85-41e2-a3b7-119d7d761e0d" type="radio">
-</input><label class="sd-tab-label" for="fd6f9083-d350-4452-8d88-7b3d99c1426b">
+<input id="ab1d171c-7763-47e5-a9bd-31daa6b59783" name="65b4ac17-47b5-4119-9cad-4a5bc1ee6b0e" type="radio">
+</input><label class="sd-tab-label" for="ab1d171c-7763-47e5-a9bd-31daa6b59783">
 python</label><div class="sd-tab-content docutils">
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
    <span class="k">return</span>
 </pre></div>
 </div>
 </div>
-<input id="714fd972-a12b-44fb-94d4-1f2c457bac0b" name="f500e410-ce85-41e2-a3b7-119d7d761e0d" type="radio">
-</input><label class="sd-tab-label" for="714fd972-a12b-44fb-94d4-1f2c457bac0b">
+<input id="2004187f-9a0d-4c78-9bc0-3347866822d6" name="65b4ac17-47b5-4119-9cad-4a5bc1ee6b0e" type="radio">
+</input><label class="sd-tab-label" for="2004187f-9a0d-4c78-9bc0-3347866822d6">
 java</label><div class="sd-tab-content docutils">
 <div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
 <span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
@@ -1732,16 +1728,16 @@ java</label><div class="sd-tab-content docutils">
 </pre></div>
 </div>
 </div>
-<input id="05b0012f-1c67-4747-b43d-6f30e2214373" name="f500e410-ce85-41e2-a3b7-119d7d761e0d" type="radio">
-</input><label class="sd-tab-label" for="05b0012f-1c67-4747-b43d-6f30e2214373">
+<input id="38e591ad-e6ef-4e7f-bf15-7dfa351bd625" name="65b4ac17-47b5-4119-9cad-4a5bc1ee6b0e" type="radio">
+</input><label class="sd-tab-label" for="38e591ad-e6ef-4e7f-bf15-7dfa351bd625">
 julia</label><div class="sd-tab-content docutils">
 <div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"></span>
 <span class="k">end</span><span class="w"></span>
 </pre></div>
 </div>
 </div>
-<input id="88a9cbc9-6aab-44cd-a149-641326f2b1e7" name="f500e410-ce85-41e2-a3b7-119d7d761e0d" type="radio">
-</input><label class="sd-tab-label" for="88a9cbc9-6aab-44cd-a149-641326f2b1e7">
+<input id="944764f2-f299-426f-897e-97a55e8c4990" name="65b4ac17-47b5-4119-9cad-4a5bc1ee6b0e" type="radio">
+</input><label class="sd-tab-label" for="944764f2-f299-426f-897e-97a55e8c4990">
 fortran</label><div class="sd-tab-content docutils">
 <div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
 <span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>

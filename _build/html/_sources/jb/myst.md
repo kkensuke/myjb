@@ -361,8 +361,8 @@ asdf
 ## Panel
 https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 
->`````
->````{grid}
+>```
+>.. panels::
 >Panel header 1
 >^^^
 >Panel body 1
@@ -375,9 +375,8 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 >Panel body 2
 >+++
 >Panel footer 2
->````
->`````
->>````{grid}
+>```
+>>.. panels::
 >>Panel header 1
 >>^^^
 >>Panel body 1
@@ -390,7 +389,7 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 >>Panel body 2
 >>+++
 >>Panel footer 2
->>````
+>>
 
 ## Badge
 >```
