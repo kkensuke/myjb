@@ -502,27 +502,27 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 ### tabs
 
 ex1
->````
->```{tabbed} Tab 1 title
+>````{tab-set}
+>```{tab-item} Tab 1 title
 >My first tab
 >```
 >
->```{tabbed} Tab 2 title
+>```{tab-item} Tab 2 title
 >My second tab with `some code`!
 >```
 >````
->>```{tabbed} Tab 1 title
+>>```{tab-item} Tab 1 title
 >>My first tab
 >>```
 >>
->>```{tabbed} Tab 2 title
+>>```{tab-item} Tab 2 title
 >>My second tab with `some code`!
 >>```
 
 
 ex2
->`````
->````{tabbed} c++
+>`````{tab-set}
+>````{tab-item} c++
 >
 >```{code-block} c++
 >
@@ -532,7 +532,7 @@ ex2
 >```
 >````
 >
->````{tabbed} python
+>````{tab-item} python
 >
 >```{code-block} python
 >
@@ -541,7 +541,7 @@ ex2
 >```
 >````
 >
->````{tabbed} java
+>````{tab-item} java
 >
 >```{code-block} java
 >
@@ -552,7 +552,7 @@ ex2
 >```
 >````
 >
->````{tabbed} julia
+>````{tab-item} julia
 >
 >```{code-block} julia
 >
@@ -561,7 +561,7 @@ ex2
 >```
 >````
 >
->````{tabbed} fortran
+>````{tab-item} fortran
 >
 >```{code-block} fortran
 >
@@ -571,7 +571,8 @@ ex2
 >````
 >`````
 >
->>````{tabbed} c++
+>>`````{tab-set}
+>>````{tab-item} c++
 >>
 >>```{code-block} c++
 >>
@@ -581,7 +582,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} python
+>>````{tab-item} python
 >>
 >>```{code-block} python
 >>
@@ -590,7 +591,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} java
+>>````{tab-item} java
 >>
 >>```{code-block} java
 >>
@@ -601,7 +602,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} julia
+>>````{tab-item} julia
 >>
 >>```{code-block} julia
 >>
@@ -610,7 +611,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} fortran
+>>````{tab-item} fortran
 >>
 >>```{code-block} fortran
 >>
@@ -618,6 +619,7 @@ ex2
 >>END PROGRAM main
 >>```
 >>````
+>>`````
 
 ## key
 

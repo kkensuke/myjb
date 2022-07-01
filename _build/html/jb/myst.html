@@ -1603,71 +1603,127 @@ Here is a cool quotation.
 <h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">#</a></h3>
 <p>ex1</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tabbed} Tab 1 title
-My first tab
-```
-
-```{tabbed} Tab 2 title
-My second tab with `some code`!
-```
-</pre></div>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="a42a1b35-59d2-48fe-91e4-c79294f4c06d" name="eca5b33d-7d14-42d1-9462-9db86fac6ee6" type="radio">
+</input><label class="sd-tab-label" for="a42a1b35-59d2-48fe-91e4-c79294f4c06d">
+Tab 1 title</label><div class="sd-tab-content docutils">
+<p>My first tab</p>
+</div>
+<input id="417530a6-9da7-485e-905b-bbeb1822f91f" name="eca5b33d-7d14-42d1-9462-9db86fac6ee6" type="radio">
+</input><label class="sd-tab-label" for="417530a6-9da7-485e-905b-bbeb1822f91f">
+Tab 2 title</label><div class="sd-tab-content docutils">
+<p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
+</div>
 </div>
 <blockquote>
-<div></div></blockquote>
+<div><div class="sd-tab-item docutils">
+<p class="sd-tab-label rubric">Tab 1 title</p>
+<div class="sd-tab-content docutils">
+<p>My first tab</p>
+</div>
+</div>
+<div class="sd-tab-item docutils">
+<p class="sd-tab-label rubric">Tab 2 title</p>
+<div class="sd-tab-content docutils">
+<p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
+</div>
+</div>
+</div></blockquote>
 </div></blockquote>
 <p>ex2</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tabbed} c++
-
-```{code-block} c++
-
-int main(const int argc, const char **argv) {
- return 0;
-}
-```
-````
-
-````{tabbed} python
-
-```{code-block} python
-
-def main():
-   return
-```
-````
-
-````{tabbed} java
-
-```{code-block} java
-
-class Main {
-   public static void main(String[] args) {
-   }
-}
-```
-````
-
-````{tabbed} julia
-
-```{code-block} julia
-
-function main()
-end
-```
-````
-
-````{tabbed} fortran
-
-```{code-block} fortran
-
-PROGRAM main
-END PROGRAM main
-```
-````
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="b9e856fb-42e3-48a9-a0f6-a2b9a46eebf6" name="30f637bf-07c8-4750-bd0b-3176e8eaeb28" type="radio">
+</input><label class="sd-tab-label" for="b9e856fb-42e3-48a9-a0f6-a2b9a46eebf6">
+c++</label><div class="sd-tab-content docutils">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </pre></div>
 </div>
+</div>
+<input id="2d7b90ab-5ac5-4e4b-a517-c9a76e9cf23d" name="30f637bf-07c8-4750-bd0b-3176e8eaeb28" type="radio">
+</input><label class="sd-tab-label" for="2d7b90ab-5ac5-4e4b-a517-c9a76e9cf23d">
+python</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+   <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+<input id="3295eb74-71cb-4814-9dc8-42d58e701f11" name="30f637bf-07c8-4750-bd0b-3176e8eaeb28" type="radio">
+</input><label class="sd-tab-label" for="3295eb74-71cb-4814-9dc8-42d58e701f11">
+java</label><div class="sd-tab-content docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="e5e7e971-861b-4e9b-981c-cd970f5c1c7e" name="30f637bf-07c8-4750-bd0b-3176e8eaeb28" type="radio">
+</input><label class="sd-tab-label" for="e5e7e971-861b-4e9b-981c-cd970f5c1c7e">
+julia</label><div class="sd-tab-content docutils">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="943ba92c-6a8e-48bc-96c5-71f9f82a284e" name="30f637bf-07c8-4750-bd0b-3176e8eaeb28" type="radio">
+</input><label class="sd-tab-label" for="943ba92c-6a8e-48bc-96c5-71f9f82a284e">
+fortran</label><div class="sd-tab-content docutils">
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
+<span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
 <blockquote>
-<div></div></blockquote>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="83f12436-9145-406d-81fb-507bdcee9a2e" name="9ac1b6fe-a72a-4af6-ba21-fdaf6f2c4ab1" type="radio">
+</input><label class="sd-tab-label" for="83f12436-9145-406d-81fb-507bdcee9a2e">
+c++</label><div class="sd-tab-content docutils">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="587db0cc-fdef-4165-b650-c6b88227e4b4" name="9ac1b6fe-a72a-4af6-ba21-fdaf6f2c4ab1" type="radio">
+</input><label class="sd-tab-label" for="587db0cc-fdef-4165-b650-c6b88227e4b4">
+python</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+   <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+<input id="805117ff-7968-4b8e-a83b-579ee3b8ceca" name="9ac1b6fe-a72a-4af6-ba21-fdaf6f2c4ab1" type="radio">
+</input><label class="sd-tab-label" for="805117ff-7968-4b8e-a83b-579ee3b8ceca">
+java</label><div class="sd-tab-content docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="71788a5f-5087-453e-a482-dd271133af02" name="9ac1b6fe-a72a-4af6-ba21-fdaf6f2c4ab1" type="radio">
+</input><label class="sd-tab-label" for="71788a5f-5087-453e-a482-dd271133af02">
+julia</label><div class="sd-tab-content docutils">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="f0374fe6-27fe-4b7e-9daa-3683c9882449" name="9ac1b6fe-a72a-4af6-ba21-fdaf6f2c4ab1" type="radio">
+</input><label class="sd-tab-label" for="f0374fe6-27fe-4b7e-9daa-3683c9882449">
+fortran</label><div class="sd-tab-content docutils">
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
+<span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></blockquote>
 </div></blockquote>
 </section>
 </section>
