@@ -395,24 +395,24 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 ## Badge
 >```
 >{bdg}`plain badge`
->{bdg-primary}`primary`, {bdg-primary-line}`primary-line`
->{bdg-secondary}`secondary`, {bdg-secondary-line}`secondary-line`
->{bdg-success}`success`, {bdg-success-line}`success-line`
+>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+>{bdg-success}`success` {bdg-success-line}`success-line`
 >{bdg-info}`info`, {bdg-info-line}`info-line`
->{bdg-warning}`warning`, {bdg-warning-line}`warning-line`
->{bdg-danger}`danger`, {bdg-danger-line}`danger-line`
->{bdg-light}`light`, {bdg-light-line}`light-line`
->{bdg-dark}`dark`, {bdg-dark-line}`dark-line`
+>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+>{bdg-light}`light` {bdg-light-line}`light-line`
+>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
 >```
 >>{bdg}`plain badge`
->>{bdg-primary}`primary`, {bdg-primary-line}`primary-line`
->>{bdg-secondary}`secondary`, {bdg-secondary-line}`secondary-line`
->>{bdg-success}`success`, {bdg-success-line}`success-line`
->>{bdg-info}`info`, {bdg-info-line}`info-line`
->>{bdg-warning}`warning`, {bdg-warning-line}`warning-line`
->>{bdg-danger}`danger`, {bdg-danger-line}`danger-line`
->>{bdg-light}`light`, {bdg-light-line}`light-line`
->>{bdg-dark}`dark`, {bdg-dark-line}`dark-line`
+>>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+>>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+>>{bdg-success}`success` {bdg-success-line}`success-line`
+>>{bdg-info}`info` {bdg-info-line}`info-line`
+>>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+>>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+>>{bdg-light}`light` {bdg-light-line}`light-line`
+>>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
 
 
 %{link-badge}`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
