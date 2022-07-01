@@ -502,6 +502,7 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 ### tabs
 
 ex1
+>`````
 >````{tab-set}
 >```{tab-item} Tab 1 title
 >My first tab
@@ -511,6 +512,8 @@ ex1
 >My second tab with `some code`!
 >```
 >````
+>`````
+>>````{tab-set}
 >>```{tab-item} Tab 1 title
 >>My first tab
 >>```
@@ -518,9 +521,10 @@ ex1
 >>```{tab-item} Tab 2 title
 >>My second tab with `some code`!
 >>```
-
+>>````
 
 ex2
+>``````
 >`````{tab-set}
 >````{tab-item} c++
 >
@@ -570,7 +574,7 @@ ex2
 >```
 >````
 >`````
->
+>``````
 >>`````{tab-set}
 >>````{tab-item} c++
 >>
