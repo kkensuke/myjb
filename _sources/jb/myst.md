@@ -359,64 +359,46 @@ asdf
 
 
 ## Panel
-https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
+https://sphinx-design.readthedocs.io/en/latest/cards.html
 
 >`````
->````{panels}
+>````{card}
 >Panel header 1
 >^^^
 >Panel body 1
 >+++
 >Panel footer 1
->---
->
->Panel header 2
->^^^
->Panel body 2
->+++
->Panel footer 2
 >````
 >`````
->>````{panels}
+>>````{card}
 >>Panel header 1
 >>^^^
 >>Panel body 1
 >>+++
 >>Panel footer 1
->>---
->>
->>Panel header 2
->>^^^
->>Panel body 2
->>+++
->>Panel footer 2
 >>````
 
 ## Badge
 >```
->{badge}`primary,badge-primary`
->{badge}`primary,badge-primary badge-pill`
->
->{badge}`primary,badge-primary`
->{badge}`secondary,badge-secondary`
->{badge}`info,badge-info`
->{badge}`success,badge-success`
->{badge}`danger,badge-danger`
->{badge}`warning,badge-warning`
->{badge}`light,badge-light`
->{badge}`dark,badge-dark`
+>{bdg}`plain badge`
+>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+>{bdg-success}`success` {bdg-success-line}`success-line`
+>{bdg-info}`info` {bdg-info-line}`info-line`
+>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+>{bdg-light}`light` {bdg-light-line}`light-line`
+>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
 >```
->>{badge}`primary,badge-primary`
->>{badge}`primary,badge-primary badge-pill`
->>
->>{badge}`primary,badge-primary`
->>{badge}`secondary,badge-secondary`
->>{badge}`info,badge-info`
->>{badge}`success,badge-success`
->>{badge}`danger,badge-danger`
->>{badge}`warning,badge-warning`
->>{badge}`light,badge-light`
->>{badge}`dark,badge-dark`
+>>{bdg}`plain badge`
+>>{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+>>{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+>>{bdg-success}`success` {bdg-success-line}`success-line`
+>>{bdg-info}`info` {bdg-info-line}`info-line`
+>>{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+>>{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+>>{bdg-light}`light` {bdg-light-line}`light-line`
+>>{bdg-dark}`dark` {bdg-dark-line}`dark-line`
 
 
 %{link-badge}`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
@@ -502,27 +484,31 @@ https://sphinx-panels.readthedocs.io/en/latest/#panels-usage
 ### tabs
 
 ex1
->````
->```{tabbed} Tab 1 title
+>`````
+>````{tab-set}
+>```{tab-item} Tab 1 title
 >My first tab
 >```
 >
->```{tabbed} Tab 2 title
+>```{tab-item} Tab 2 title
 >My second tab with `some code`!
 >```
 >````
->>```{tabbed} Tab 1 title
+>`````
+>>````{tab-set}
+>>```{tab-item} Tab 1 title
 >>My first tab
 >>```
 >>
->>```{tabbed} Tab 2 title
+>>```{tab-item} Tab 2 title
 >>My second tab with `some code`!
 >>```
-
+>>````
 
 ex2
->`````
->````{tabbed} c++
+>``````
+>`````{tab-set}
+>````{tab-item} c++
 >
 >```{code-block} c++
 >
@@ -532,7 +518,7 @@ ex2
 >```
 >````
 >
->````{tabbed} python
+>````{tab-item} python
 >
 >```{code-block} python
 >
@@ -541,7 +527,7 @@ ex2
 >```
 >````
 >
->````{tabbed} java
+>````{tab-item} java
 >
 >```{code-block} java
 >
@@ -552,7 +538,7 @@ ex2
 >```
 >````
 >
->````{tabbed} julia
+>````{tab-item} julia
 >
 >```{code-block} julia
 >
@@ -561,7 +547,7 @@ ex2
 >```
 >````
 >
->````{tabbed} fortran
+>````{tab-item} fortran
 >
 >```{code-block} fortran
 >
@@ -570,8 +556,9 @@ ex2
 >```
 >````
 >`````
->
->>````{tabbed} c++
+>``````
+>>`````{tab-set}
+>>````{tab-item} c++
 >>
 >>```{code-block} c++
 >>
@@ -581,7 +568,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} python
+>>````{tab-item} python
 >>
 >>```{code-block} python
 >>
@@ -590,7 +577,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} java
+>>````{tab-item} java
 >>
 >>```{code-block} java
 >>
@@ -601,7 +588,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} julia
+>>````{tab-item} julia
 >>
 >>```{code-block} julia
 >>
@@ -610,7 +597,7 @@ ex2
 >>```
 >>````
 >>
->>````{tabbed} fortran
+>>````{tab-item} fortran
 >>
 >>```{code-block} fortran
 >>
@@ -618,6 +605,7 @@ ex2
 >>END PROGRAM main
 >>```
 >>````
+>>`````
 
 ## key
 

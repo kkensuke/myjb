@@ -31,7 +31,7 @@ There are two types of repositories: `local repositories` on your PC and `remote
 First, make a repository on the [GitHub website](https://github.com/) without initializing.
 Second, execute the commands below on the local computer
 
-```bash
+```
 [mkdir project_name]
 [cd project_name]
 echo "# test" >> README.md
@@ -67,13 +67,13 @@ git push -u origin main
 
 ### Clone
 In an arbitrary directory,
-```bash
+```
 $ git clone [branch, or you can omit here for main] https://github.com/<Username>/<repository>.git
 $ cd <repository>
 ```
 
 After you add or modify files:
-```bash
+```
 $ git add <file>
 ($ git add .  # add current directory)
 ($ git status)
@@ -95,13 +95,13 @@ $ git push origin main
 -->
 
 ### take new changes of the remote repository into the local repository
-```bash
+```
 $ git pull origin main
 ```
 
 ````{tip}
 This is equivalent to
-```bash
+```
 $ git fetch
 $ git merge origin main
 ```
@@ -113,19 +113,19 @@ When you make a repository, the only main branch exists at first.
 So, you are in the main branch by default. 
 
 You can check the current branch by
-```bash
+```
 $ git branch
 ```
 
 You can see all branches including the remote branches by
-```bash
+```
 $ git checkout -a
 ```
 
 1, Making new branch at local (branch not in remote)
 
 Let's make a new branch!
-```bash
+```
 # make a branch
 $ git branch <branch>
 # switch to <branch> from main
@@ -134,18 +134,18 @@ $ git checkout <branch>
 
 ````{tip}
 These two lines are equivalent to
-```bash
+```
 $ git checkout -b <branch>
 ```
 ````
 
 Then reflect the new branch to the remote repository.
-```bash
+```
 $ git push origin <branch>
 ```
 
 2, when remote/branch already exists
-```bash
+```
 # create a new local branch pointing to the remote branch
 $ git branch <branch> origin/<branch>
 # check out that branch
@@ -180,14 +180,14 @@ install .gitignore.io from https://docs.gitignore.io/install/command-line
 for macOS :
 
 - one time
-```bash
+```
 $ git config --global core.excludesfile ~/.gitignore_global       
 $ echo "function gi() { curl -sLw "\n" https://www.toptal.com/developers/gitignore/api/\$@ ;}" >> \
 ~/.rc && source ~/.rc
 ```
 
 - make `.gitignore`
-```bash
+```
 $ gi macos,python,visualstudiocode >> ~/.gitignore_global
 ```
 Refer to https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for details.
@@ -207,7 +207,7 @@ All you have to do is remove the `.git` directory.
 1, remove files from the repository and local directory
 2, remove files from the repository
 
-```bash
+```
 $ git rm FILENAME 1
 $ git rm --cached FILENAME 2
 $ git commit -m "delete"; git push origin main
@@ -222,28 +222,28 @@ $ git commit -m "delete"; git push origin main
 
 ## GitHub CLI
 ### install
-```bash
+```
 $ brew install gh
 ```
 ### make a new repository based on the current directory
-```bash
+```
 $ git init; git add .
 $ git commit -m "Initial commit"
 $ gh repo create --private --source=. --push'
 ```
 ### make an alias to delete remote repository
 #### register
-```bash
+```
 $ gh alias set repo-delete 'api -X DELETE repos/$1'
 $ gh auth refresh -h github.com -s delete_repo
 ```
 #### usage (WARNING: no confirmation!)
-```bash
+```
 $ gh repo-delete user/myrepo
 ```
 
 #### comfirm
-```bash
+```
 $ gh alias list
 ```
 

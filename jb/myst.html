@@ -1109,7 +1109,7 @@ see <a class="reference internal" href="#target"><span class="std std-ref">targe
 </pre></div>
 </div>
 <blockquote>
-<div><ol class="arabic simple">
+<div><ol class="simple">
 <li><p>First item</p></li>
 <li><p>Second item</p>
 <ul class="simple">
@@ -1450,55 +1450,56 @@ asdf
 </section>
 <section id="panel">
 <h2><span class="section-number">3.3.16. </span>Panel<a class="headerlink" href="#panel" title="Permalink to this headline">#</a></h2>
-<p><a class="reference external" href="https://sphinx-panels.readthedocs.io/en/latest/#panels-usage">https://sphinx-panels.readthedocs.io/en/latest/#panels-usage</a></p>
+<p><a class="reference external" href="https://sphinx-design.readthedocs.io/en/latest/cards.html">https://sphinx-design.readthedocs.io/en/latest/cards.html</a></p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{panels}
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{card}
 Panel header 1
 ^^^
 Panel body 1
 +++
 Panel footer 1
----
-
-Panel header 2
-^^^
-Panel body 2
-+++
-Panel footer 2
 ````
 </pre></div>
 </div>
 <blockquote>
-<div></div></blockquote>
+<div><div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-sm docutils">
+<div class="sd-card-header docutils">
+<p class="sd-card-text">Panel header 1</p>
+</div>
+<div class="sd-card-body docutils">
+<p class="sd-card-text">Panel body 1</p>
+</div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text">Panel footer 1</p>
+</div>
+</div>
+</div></blockquote>
 </div></blockquote>
 </section>
 <section id="badge">
 <h2><span class="section-number">3.3.17. </span>Badge<a class="headerlink" href="#badge" title="Permalink to this headline">#</a></h2>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{badge}`primary,badge-primary`
-{badge}`primary,badge-primary badge-pill`
-
-{badge}`primary,badge-primary`
-{badge}`secondary,badge-secondary`
-{badge}`info,badge-info`
-{badge}`success,badge-success`
-{badge}`danger,badge-danger`
-{badge}`warning,badge-warning`
-{badge}`light,badge-light`
-{badge}`dark,badge-dark`
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>{bdg}`plain badge`
+{bdg-primary}`primary` {bdg-primary-line}`primary-line`
+{bdg-secondary}`secondary` {bdg-secondary-line}`secondary-line`
+{bdg-success}`success` {bdg-success-line}`success-line`
+{bdg-info}`info` {bdg-info-line}`info-line`
+{bdg-warning}`warning` {bdg-warning-line}`warning-line`
+{bdg-danger}`danger` {bdg-danger-line}`danger-line`
+{bdg-light}`light` {bdg-light-line}`light-line`
+{bdg-dark}`dark` {bdg-dark-line}`dark-line`
 </pre></div>
 </div>
 <blockquote>
-<div><p><a href="#id2"><span class="problematic" id="id3">primary,badge-primary</span></a>
-<a href="#id4"><span class="problematic" id="id5">primary,badge-primary badge-pill</span></a></p>
-<p><a href="#id6"><span class="problematic" id="id7">primary,badge-primary</span></a>
-<a href="#id8"><span class="problematic" id="id9">secondary,badge-secondary</span></a>
-<a href="#id10"><span class="problematic" id="id11">info,badge-info</span></a>
-<a href="#id12"><span class="problematic" id="id13">success,badge-success</span></a>
-<a href="#id14"><span class="problematic" id="id15">danger,badge-danger</span></a>
-<a href="#id16"><span class="problematic" id="id17">warning,badge-warning</span></a>
-<a href="#id18"><span class="problematic" id="id19">light,badge-light</span></a>
-<a href="#id20"><span class="problematic" id="id21">dark,badge-dark</span></a></p>
+<div><p><span class="sd-sphinx-override sd-badge">plain badge</span>
+<span class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary">primary</span> <span class="sd-sphinx-override sd-badge sd-outline-primary sd-text-primary">primary-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-secondary sd-bg-text-secondary">secondary</span> <span class="sd-sphinx-override sd-badge sd-outline-secondary sd-text-secondary">secondary-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-success sd-bg-text-success">success</span> <span class="sd-sphinx-override sd-badge sd-outline-success sd-text-success">success-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-info sd-bg-text-info">info</span> <span class="sd-sphinx-override sd-badge sd-outline-info sd-text-info">info-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-warning sd-bg-text-warning">warning</span> <span class="sd-sphinx-override sd-badge sd-outline-warning sd-text-warning">warning-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-danger sd-bg-text-danger">danger</span> <span class="sd-sphinx-override sd-badge sd-outline-danger sd-text-danger">danger-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-light sd-bg-text-light">light</span> <span class="sd-sphinx-override sd-badge sd-outline-light sd-text-light">light-line</span>
+<span class="sd-sphinx-override sd-badge sd-bg-dark sd-bg-text-dark">dark</span> <span class="sd-sphinx-override sd-badge sd-outline-dark sd-text-dark">dark-line</span></p>
 </div></blockquote>
 </div></blockquote>
 <section id="dropdown">
@@ -1603,21 +1604,36 @@ Here is a cool quotation.
 <h3>tabs<a class="headerlink" href="#tabs" title="Permalink to this headline">#</a></h3>
 <p>ex1</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>```{tabbed} Tab 1 title
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tab-set}
+```{tab-item} Tab 1 title
 My first tab
 ```
 
-```{tabbed} Tab 2 title
+```{tab-item} Tab 2 title
 My second tab with `some code`!
 ```
+````
 </pre></div>
 </div>
 <blockquote>
-<div></div></blockquote>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="36637250-52fd-4a9e-9bc1-bc34d6e4e82b" name="d7ad71bb-9d89-47e6-b080-4618efbb0bfb" type="radio">
+</input><label class="sd-tab-label" for="36637250-52fd-4a9e-9bc1-bc34d6e4e82b">
+Tab 1 title</label><div class="sd-tab-content docutils">
+<p>My first tab</p>
+</div>
+<input id="cd5f8f69-e76a-4550-9a42-3b70ea2fd8f7" name="d7ad71bb-9d89-47e6-b080-4618efbb0bfb" type="radio">
+</input><label class="sd-tab-label" for="cd5f8f69-e76a-4550-9a42-3b70ea2fd8f7">
+Tab 2 title</label><div class="sd-tab-content docutils">
+<p>My second tab with <code class="docutils literal notranslate"><span class="pre">some</span> <span class="pre">code</span></code>!</p>
+</div>
+</div>
+</div></blockquote>
 </div></blockquote>
 <p>ex2</p>
 <blockquote>
-<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>````{tabbed} c++
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`````{tab-set}
+````{tab-item} c++
 
 ```{code-block} c++
 
@@ -1627,7 +1643,7 @@ int main(const int argc, const char **argv) {
 ```
 ````
 
-````{tabbed} python
+````{tab-item} python
 
 ```{code-block} python
 
@@ -1636,7 +1652,7 @@ def main():
 ```
 ````
 
-````{tabbed} java
+````{tab-item} java
 
 ```{code-block} java
 
@@ -1647,7 +1663,7 @@ class Main {
 ```
 ````
 
-````{tabbed} julia
+````{tab-item} julia
 
 ```{code-block} julia
 
@@ -1656,7 +1672,7 @@ end
 ```
 ````
 
-````{tabbed} fortran
+````{tab-item} fortran
 
 ```{code-block} fortran
 
@@ -1664,10 +1680,56 @@ PROGRAM main
 END PROGRAM main
 ```
 ````
+`````
 </pre></div>
 </div>
 <blockquote>
-<div></div></blockquote>
+<div><div class="sd-tab-set docutils">
+<input checked="checked" id="f29d4c1e-bc18-4fd8-a9a8-e1efba215d73" name="31a0a88b-3d40-42a6-8a58-a38c6e56587a" type="radio">
+</input><label class="sd-tab-label" for="f29d4c1e-bc18-4fd8-a9a8-e1efba215d73">
+c++</label><div class="sd-tab-content docutils">
+<div class="highlight-c++ notranslate"><div class="highlight"><pre><span></span><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">argc</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="w"> </span><span class="o">**</span><span class="n">argv</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="261e5546-6c64-4f68-ab5b-8770f7275491" name="31a0a88b-3d40-42a6-8a58-a38c6e56587a" type="radio">
+</input><label class="sd-tab-label" for="261e5546-6c64-4f68-ab5b-8770f7275491">
+python</label><div class="sd-tab-content docutils">
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+   <span class="k">return</span>
+</pre></div>
+</div>
+</div>
+<input id="20bbb31f-0f82-4742-994a-b5997be99a1d" name="31a0a88b-3d40-42a6-8a58-a38c6e56587a" type="radio">
+</input><label class="sd-tab-label" for="20bbb31f-0f82-4742-994a-b5997be99a1d">
+java</label><div class="sd-tab-content docutils">
+<div class="highlight-java notranslate"><div class="highlight"><pre><span></span><span class="kd">class</span> <span class="nc">Main</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="593daff3-439b-41dc-8808-f81648d4c7a6" name="31a0a88b-3d40-42a6-8a58-a38c6e56587a" type="radio">
+</input><label class="sd-tab-label" for="593daff3-439b-41dc-8808-f81648d4c7a6">
+julia</label><div class="sd-tab-content docutils">
+<div class="highlight-julia notranslate"><div class="highlight"><pre><span></span><span class="k">function</span><span class="w"> </span><span class="n">main</span><span class="p">()</span><span class="w"></span>
+<span class="k">end</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<input id="bfc41a63-cf76-4ce2-aa8c-bd3488951372" name="31a0a88b-3d40-42a6-8a58-a38c6e56587a" type="radio">
+</input><label class="sd-tab-label" for="bfc41a63-cf76-4ce2-aa8c-bd3488951372">
+fortran</label><div class="sd-tab-content docutils">
+<div class="highlight-fortran notranslate"><div class="highlight"><pre><span></span><span class="k">PROGRAM </span><span class="n">main</span><span class="w"></span>
+<span class="k">END PROGRAM </span><span class="n">main</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div></blockquote>
 </div></blockquote>
 </section>
 </section>
@@ -1714,7 +1776,7 @@ I’m a <strong>substitution</strong></p>
 </pre></div>
 </div>
 <blockquote>
-<div><p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id22">1</a>.</p>
+<div><p>This is a footnote<a class="footnote-reference brackets" href="#mylabel" id="id2">1</a>.</p>
 </div></blockquote>
 </div></blockquote>
 </section>
@@ -1852,7 +1914,7 @@ To run the link checker, use the following command:</p>
 <h2><span class="section-number">3.4.7. </span>API reference from docstrings<a class="headerlink" href="#api-reference-from-docstrings" title="Permalink to this headline">#</a></h2>
 <hr class="footnotes docutils" />
 <dl class="footnote brackets">
-<dt class="label" id="mylabel"><span class="brackets"><a class="fn-backref" href="#id22">1</a></span></dt>
+<dt class="label" id="mylabel"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
 <dd><p>My footnote text.</p>
 </dd>
 </dl>
