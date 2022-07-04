@@ -506,12 +506,81 @@ title="Print to PDF"
     </ul>
   </div>
 </div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#declare-symbols">
+   2.3.1. Declare symbols
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#expansion">
+   2.3.2. Expansion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#substitution">
+   2.3.3. Substitution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#factorization">
+   2.3.4. Factorization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solve-equations">
+   2.3.5. Solve equations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partial-fraction-decomposition">
+   2.3.6. Partial fraction decomposition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrals-and-derivatives">
+   2.3.7. Integrals and derivatives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summation">
+   2.3.8. Summation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limits">
+   2.3.9. Limits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-examples">
+   2.3.10. Other Examples
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
@@ -523,6 +592,64 @@ title="Print to PDF"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#declare-symbols">
+   2.3.1. Declare symbols
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#expansion">
+   2.3.2. Expansion
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#substitution">
+   2.3.3. Substitution
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#factorization">
+   2.3.4. Factorization
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solve-equations">
+   2.3.5. Solve equations
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#partial-fraction-decomposition">
+   2.3.6. Partial fraction decomposition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#integrals-and-derivatives">
+   2.3.7. Integrals and derivatives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#summation">
+   2.3.8. Summation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limits">
+   2.3.9. Limits
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other-examples">
+   2.3.10. Other Examples
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -543,6 +670,8 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+<section id="declare-symbols">
+<h2><span class="section-number">2.3.1. </span>Declare symbols<a class="headerlink" href="#declare-symbols" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
@@ -562,6 +691,9 @@ title="Print to PDF"
 \[\displaystyle \left(x + y\right)^{2}\]</div>
 </div>
 </div>
+</section>
+<section id="expansion">
+<h2><span class="section-number">2.3.2. </span>Expansion<a class="headerlink" href="#expansion" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">expand</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
@@ -574,6 +706,9 @@ title="Print to PDF"
 \[\displaystyle x^{2} + 2 x y + y^{2}\]</div>
 </div>
 </div>
+</section>
+<section id="substitution">
+<h2><span class="section-number">2.3.3. </span>Substitution<a class="headerlink" href="#substitution" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">f</span><span class="o">.</span><span class="n">subs</span><span class="p">({</span><span class="n">x</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="n">y</span><span class="p">:</span><span class="mi">2</span><span class="p">})</span>
@@ -585,6 +720,9 @@ title="Print to PDF"
 \[\displaystyle 9\]</div>
 </div>
 </div>
+</section>
+<section id="factorization">
+<h2><span class="section-number">2.3.4. </span>Factorization<a class="headerlink" href="#factorization" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">factor</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">4</span><span class="o">*</span><span class="n">x</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span>
@@ -596,6 +734,9 @@ title="Print to PDF"
 \[\displaystyle \left(x - 3\right) \left(x - 1\right)\]</div>
 </div>
 </div>
+</section>
+<section id="solve-equations">
+<h2><span class="section-number">2.3.5. </span>Solve equations<a class="headerlink" href="#solve-equations" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">solve</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
@@ -608,6 +749,9 @@ title="Print to PDF"
 </div>
 </div>
 </div>
+</section>
+<section id="partial-fraction-decomposition">
+<h2><span class="section-number">2.3.6. </span>Partial fraction decomposition<a class="headerlink" href="#partial-fraction-decomposition" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">apart</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">5</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
@@ -619,6 +763,9 @@ title="Print to PDF"
 \[\displaystyle - \frac{x^{3} + 2 x^{2} + 3 x + 4}{5 \left(x^{4} + x^{3} + x^{2} + x + 1\right)} + \frac{1}{5 \left(x - 1\right)}\]</div>
 </div>
 </div>
+</section>
+<section id="integrals-and-derivatives">
+<h2><span class="section-number">2.3.7. </span>Integrals and derivatives<a class="headerlink" href="#integrals-and-derivatives" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">)</span> <span class="c1"># Without real=True, a is treated as a complex number.</span>
@@ -643,7 +790,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_latex math notranslate nohighlight">
-\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} - \frac{e^{- i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{e^{i b x} \cos{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
+\[\begin{split}\displaystyle \begin{cases} 0 &amp; \text{for}\: a = 0 \wedge b = 0 \\\frac{x e^{- i b x} \sin{\left(b x \right)}}{2} - \frac{i x e^{- i b x} \cos{\left(b x \right)}}{2} + \frac{i e^{- i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = - i b \\\frac{x e^{i b x} \sin{\left(b x \right)}}{2} + \frac{i x e^{i b x} \cos{\left(b x \right)}}{2} - \frac{i e^{i b x} \sin{\left(b x \right)}}{2 b} &amp; \text{for}\: a = i b \\\frac{a e^{a x} \sin{\left(b x \right)}}{a^{2} + b^{2}} - \frac{b e^{a x} \cos{\left(b x \right)}}{a^{2} + b^{2}} &amp; \text{otherwise} \end{cases}\end{split}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -658,6 +805,9 @@ title="Print to PDF"
 \[\displaystyle x + \left(a^{2} \sin{\left(b x \right)} + 2 a b \cos{\left(b x \right)} - b^{2} \sin{\left(b x \right)}\right) e^{a x} + e^{a x} \sin{\left(b x \right)}\]</div>
 </div>
 </div>
+</section>
+<section id="summation">
+<h2><span class="section-number">2.3.8. </span>Summation<a class="headerlink" href="#summation" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k</span><span class="p">,</span> <span class="n">N</span> <span class="o">=</span> <span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;k, N&#39;</span><span class="p">,</span> <span class="n">integer</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
@@ -670,23 +820,9 @@ title="Print to PDF"
 \[\displaystyle \frac{N \left(N + 1\right)}{2}\]</div>
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
-<span class="n">t</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
-
-<span class="n">l</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
-
-<span class="n">int_l</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
-<span class="n">display</span><span class="p">(</span><span class="n">int_l</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_latex math notranslate nohighlight">
-\[\displaystyle \frac{s^{2}}{4} + \frac{t}{3} + \frac{5}{2}\]</div>
-</div>
-</div>
+</section>
+<section id="limits">
+<h2><span class="section-number">2.3.9. </span>Limits<a class="headerlink" href="#limits" title="Permalink to this headline">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">limit</span><span class="p">(</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">/</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -698,6 +834,38 @@ title="Print to PDF"
 \[\displaystyle 1\]</div>
 </div>
 </div>
+</section>
+<section id="other-examples">
+<h2><span class="section-number">2.3.10. </span>Other Examples<a class="headerlink" href="#other-examples" title="Permalink to this headline">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;s&#39;</span><span class="p">)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;t&#39;</span><span class="p">)</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="p">(</span><span class="n">s</span><span class="o">**</span><span class="mi">2</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="n">t</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">+</span> <span class="p">(</span><span class="mi">3</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle s^{2} x^{3} + t x^{2} + 3 x + 1\]</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">int_l</span> <span class="o">=</span> <span class="n">integrate</span><span class="p">(</span><span class="n">l</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">int_l</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{s^{2}}{4} + \frac{t}{3} + \frac{5}{2}\]</div>
+</div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
