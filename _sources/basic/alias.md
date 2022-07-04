@@ -138,7 +138,7 @@ ginit() {
 	gh repo create --private --source=. --push'
 }
 ```
-You need to install GitHub CLI to use `gh` command.
+You need to install [GitHub CLI](https://cli.github.com/) to use `gh` command.
 
 ### gitignore.io
 gitignore.io enable us to make .gitignore file easily
