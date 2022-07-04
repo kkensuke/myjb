@@ -81,7 +81,7 @@ alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall
 ```
 
 
-## Related to GitHub
+## GitHub
 ```
 alias g='git'
 alias ga='git add'
@@ -129,12 +129,7 @@ gacp(){
 }
 ```
 
-### gitignore.io enable us to make .gitignore file easily
-```
-function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
-```
-
-### Make a new repository based on the current directory
+For example, you can define an alias of making a repository with just one command.
 ```
 ginit() {
 	git init
@@ -143,7 +138,13 @@ ginit() {
 	gh repo create --private --source=. --push'
 }
 ```
-You need to install GitHub CLI
+You need to install GitHub CLI to use `gh` command.
+
+### gitignore.io
+gitignore.io enable us to make .gitignore file easily
+```
+function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+```
 
 ## Python
 ```
@@ -165,7 +166,7 @@ alias acv='source venv/bin/activate'
 alias deac='deactivate'
 ```
 
-## Related to Latex
+## Latex
 ### Copy latex-template directory to somewhere;
 ```
 mklt(){
