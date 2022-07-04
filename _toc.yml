@@ -8,7 +8,7 @@ defaults:  # The defaults key will be applied to all chapters and sub-sections
 #  numbered: 3
 
 parts:
-  - numbered: 3
+  - numbered: 4
     chapters:
     - file: basic/basic # chapters need at least one file before sections.
 #     title:

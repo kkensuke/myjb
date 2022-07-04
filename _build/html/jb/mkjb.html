@@ -468,17 +468,17 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#make-directories">
-     Make directories
+     3.1.1.1. Make directories
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#update-pip">
-     Update pip:
+     3.1.1.2. Update pip:
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-a-new-jupyter-book">
-     Create a new jupyter-book.
+     3.1.1.3. Create a new jupyter-book.
     </a>
    </li>
   </ul>
@@ -500,12 +500,12 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-a-more-complete-book-from-interactive-prompts">
-     Create a more complete book from interactive prompts.
+     3.1.4.1. Create a more complete book from interactive prompts.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-book-files-from-a-table-of-contents">
-     Create book files from a Table of Contents
+     3.1.4.2. Create book files from a Table of Contents
     </a>
    </li>
   </ul>
@@ -536,17 +536,17 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#make-directories">
-     Make directories
+     3.1.1.1. Make directories
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#update-pip">
-     Update pip:
+     3.1.1.2. Update pip:
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-a-new-jupyter-book">
-     Create a new jupyter-book.
+     3.1.1.3. Create a new jupyter-book.
     </a>
    </li>
   </ul>
@@ -568,12 +568,12 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-a-more-complete-book-from-interactive-prompts">
-     Create a more complete book from interactive prompts.
+     3.1.4.1. Create a more complete book from interactive prompts.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#create-book-files-from-a-table-of-contents">
-     Create book files from a Table of Contents
+     3.1.4.2. Create book files from a Table of Contents
     </a>
    </li>
   </ul>
@@ -600,7 +600,7 @@ title="Print to PDF"
 <section id="make-a-jupyter-book">
 <h2><span class="section-number">3.1.1. </span>Make a jupyter book<a class="headerlink" href="#make-a-jupyter-book" title="Permalink to this headline">#</a></h2>
 <section id="make-directories">
-<h3>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.1.1. </span>Make directories<a class="headerlink" href="#make-directories" title="Permalink to this headline">#</a></h3>
 <p>At first, we make the structure and activate a venv(virtual environment).</p>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ mkdir -p ~/jupyter-book/test-book
 $ <span class="nb">cd</span> ~/jupyter-book/test-book
@@ -615,7 +615,7 @@ $ <span class="nb">source</span> venv/bin/activate
 <p>You can see that you are using python in the venv.</p>
 </section>
 <section id="update-pip">
-<h3>Update pip:<a class="headerlink" href="#update-pip" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.1.2. </span>Update pip:<a class="headerlink" href="#update-pip" title="Permalink to this headline">#</a></h3>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ /Users/&lt;home&gt;/jupyter-book/test-book/venv/bin/python3 -m pip install --upgrade pip
 </pre></div>
 </div>
@@ -625,7 +625,7 @@ $ <span class="nb">source</span> venv/bin/activate
 </div>
 </section>
 <section id="create-a-new-jupyter-book">
-<h3>Create a new jupyter-book.<a class="headerlink" href="#create-a-new-jupyter-book" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.1.3. </span>Create a new jupyter-book.<a class="headerlink" href="#create-a-new-jupyter-book" title="Permalink to this headline">#</a></h3>
 <div class="highlight-zsh notranslate"><div class="highlight"><pre><span></span>$ jb create test-book
 $ <span class="nb">cd</span> test-book
 $ jb build .
@@ -674,7 +674,7 @@ $ git push origin main
 <section id="other-ways-to-create-jb">
 <h2><span class="section-number">3.1.4. </span>Other ways to create jb<a class="headerlink" href="#other-ways-to-create-jb" title="Permalink to this headline">#</a></h2>
 <section id="create-a-more-complete-book-from-interactive-prompts">
-<h3>Create a more complete book from interactive prompts.<a class="headerlink" href="#create-a-more-complete-book-from-interactive-prompts" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.4.1. </span>Create a more complete book from interactive prompts.<a class="headerlink" href="#create-a-more-complete-book-from-interactive-prompts" title="Permalink to this headline">#</a></h3>
 <p>Jupyter Book also provides a Jupyter Book cookiecutter that can be used to interactively create a book directory structure.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">create</span> <span class="n">mynewbook</span><span class="o">/</span> <span class="o">--</span><span class="n">cookiecutter</span>
 </pre></div>
@@ -682,7 +682,7 @@ $ git push origin main
 <p><a class="reference external" href="https://github.com/executablebooks/cookiecutter-jupyter-book">https://github.com/executablebooks/cookiecutter-jupyter-book</a></p>
 </section>
 <section id="create-book-files-from-a-table-of-contents">
-<h3>Create book files from a Table of Contents<a class="headerlink" href="#create-book-files-from-a-table-of-contents" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">3.1.4.2. </span>Create book files from a Table of Contents<a class="headerlink" href="#create-book-files-from-a-table-of-contents" title="Permalink to this headline">#</a></h3>
 <p>It is possible to use a _toc.yml file in order to create the skeleton of a book automatically. This is useful if you wish to quickly generate empty files from a single structure, and then populate them with content yourselves.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">toc</span> <span class="n">to</span><span class="o">-</span><span class="n">project</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">_toc</span><span class="o">.</span><span class="n">yml</span>
 </pre></div>
