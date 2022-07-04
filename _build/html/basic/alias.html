@@ -501,8 +501,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#related-to-github">
-   1.3.3. Related to GitHub
+  <a class="reference internal nav-link" href="#github">
+   1.3.3. GitHub
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -528,13 +528,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gitignore-io-enable-us-to-make-gitignore-file-easily">
-     gitignore.io enable us to make .gitignore file easily
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-the-current-directory">
-     Make a new repository based on the current directory
+    <a class="reference internal nav-link" href="#gitignore-io">
+     gitignore.io
     </a>
    </li>
   </ul>
@@ -552,8 +547,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#related-to-latex">
-   1.3.5. Related to Latex
+  <a class="reference internal nav-link" href="#latex">
+   1.3.5. Latex
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -622,8 +617,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#related-to-github">
-   1.3.3. Related to GitHub
+  <a class="reference internal nav-link" href="#github">
+   1.3.3. GitHub
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -649,13 +644,8 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#gitignore-io-enable-us-to-make-gitignore-file-easily">
-     gitignore.io enable us to make .gitignore file easily
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#make-a-new-repository-based-on-the-current-directory">
-     Make a new repository based on the current directory
+    <a class="reference internal nav-link" href="#gitignore-io">
+     gitignore.io
     </a>
    </li>
   </ul>
@@ -673,8 +663,8 @@ title="Print to PDF"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#related-to-latex">
-   1.3.5. Related to Latex
+  <a class="reference internal nav-link" href="#latex">
+   1.3.5. Latex
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -782,8 +772,8 @@ Some commands are long and you would think that copying them every time is a was
 </div>
 </section>
 </section>
-<section id="related-to-github">
-<h2><span class="section-number">1.3.3. </span>Related to GitHub<a class="headerlink" href="#related-to-github" title="Permalink to this headline">#</a></h2>
+<section id="github">
+<h2><span class="section-number">1.3.3. </span>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">g</span><span class="o">=</span><span class="s1">&#39;git&#39;</span>
 <span class="n">alias</span> <span class="n">ga</span><span class="o">=</span><span class="s1">&#39;git add&#39;</span>
 <span class="n">alias</span> <span class="n">gb</span><span class="o">=</span><span class="s1">&#39;git branch&#39;</span>
@@ -834,15 +824,7 @@ Some commands are long and you would think that copying them every time is a was
 <span class="p">}</span>
 </pre></div>
 </div>
-</section>
-<section id="gitignore-io-enable-us-to-make-gitignore-file-easily">
-<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a> enable us to make .gitignore file easily<a class="headerlink" href="#gitignore-io-enable-us-to-make-gitignore-file-easily" title="Permalink to this headline">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
-</pre></div>
-</div>
-</section>
-<section id="make-a-new-repository-based-on-the-current-directory">
-<h3>Make a new repository based on the current directory<a class="headerlink" href="#make-a-new-repository-based-on-the-current-directory" title="Permalink to this headline">#</a></h3>
+<p>For example, you can define an alias of making a repository with just one command.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ginit</span><span class="p">()</span> <span class="p">{</span>
 	<span class="n">git</span> <span class="n">init</span>
 	<span class="n">git</span> <span class="n">add</span> <span class="o">.</span>
@@ -851,7 +833,14 @@ Some commands are long and you would think that copying them every time is a was
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>You need to install GitHub CLI</p>
+<p>You need to install GitHub CLI to use <code class="docutils literal notranslate"><span class="pre">gh</span></code> command.</p>
+</section>
+<section id="gitignore-io">
+<h3><a class="reference external" href="http://gitignore.io">gitignore.io</a><a class="headerlink" href="#gitignore-io" title="Permalink to this headline">#</a></h3>
+<p><a class="reference external" href="http://gitignore.io">gitignore.io</a> enable us to make .gitignore file easily</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>function gi() { curl -sLw n https://www.toptal.com/developers/gitignore/api/$@ ;}
+</pre></div>
+</div>
 </section>
 </section>
 <section id="python">
@@ -876,8 +865,8 @@ Some commands are long and you would think that copying them every time is a was
 </div>
 </section>
 </section>
-<section id="related-to-latex">
-<h2><span class="section-number">1.3.5. </span>Related to Latex<a class="headerlink" href="#related-to-latex" title="Permalink to this headline">#</a></h2>
+<section id="latex">
+<h2><span class="section-number">1.3.5. </span>Latex<a class="headerlink" href="#latex" title="Permalink to this headline">#</a></h2>
 <section id="copy-latex-template-directory-to-somewhere">
 <h3>Copy latex-template directory to somewhere;<a class="headerlink" href="#copy-latex-template-directory-to-somewhere" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>mklt(){
