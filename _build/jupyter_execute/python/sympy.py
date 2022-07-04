@@ -49,7 +49,7 @@ f.subs({x:1, y:2})
 # In[9]:
 
 
-factor(x**2-4*x+3)
+factor( x**2 - 4*x + 3 )
 
 
 # ## Solve equations
@@ -104,6 +104,8 @@ factor(summation(k, (k, 1, N) ))
 
 
 # ## Limits
+# 
+# $$ \lim_{x \to 0} \frac{\sin x}{x} = 1 $$
 
 # In[18]:
 
