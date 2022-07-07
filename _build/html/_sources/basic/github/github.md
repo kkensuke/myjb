@@ -2,9 +2,9 @@
 title: GitHub
 summary: 
 description: Usage of GitHub
-author: kk564
-date: 2020-01-23
-some_url: 
+author: kkensuke
+date: 2022-07-06
+some_url:
 tags:
   - 
   - 
