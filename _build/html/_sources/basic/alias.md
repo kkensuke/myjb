@@ -71,10 +71,8 @@ alias sz='source ~/.zshrc'
 
 # open apps
 alias opc='open /Applications/CotEditor.app'
-alias opz='s;open /Applications/CotEditor.app .zshrc'
 alias opfire='open /Applications/Firefox.app'
-alias opjb='gj;open /Applications/Firefox.app _build/html/index.html'
-alias opgoo='open /Applications/Google\ Chrome.app '
+alias opgo='open /Applications/Google\ Chrome.app '
 alias opsafari='open /Applications/Safari.app'
 ``` 
 
