@@ -18,25 +18,20 @@ precmd() { precmd() { echo } }
 ```
 
 ### Frequently used commands
-```
-# https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/
-export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
 
+```
+# change directory
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
-
-alias b='brew'
 alias cb='cd -'
 alias d='cd ~/Desktop'
 alias dl="cd ~/Downloads"
-alias class='cd ~/My\ Drive/master/class/'
 alias h='cd ~'
 alias /='cd /'
-alias cp='cp -iv'
-alias grep='grep --color'
-alias his='history'
+
+
+# show files
 # --color=auto does not work for terminal, but for iterm2
 #alias l='ls -CF --color=auto'
 #alias ls='ls -CF --color=auto'
@@ -44,41 +39,64 @@ alias l='ls -CFG'
 alias ls='ls -CFG'
 alias la='l -a'
 alias ll='l -ahlS'
-alias mv='mv -iv'
-alias ner='2>/dev/null'
-alias opc='open /Applications/CotEditor.app '
-alias opz='s;open /Applications/CotEditor.app .zshrc'
-alias opfire='open /Applications/Firefox.app '
-alias opgoo='open /Applications/Google\ Chrome.app '
-alias opsafari='open /Applications/Safari.app '
+alias tree='tree -ah'
+alias tr='tree'
+alias tl='tree -ahfL'
 alias p='pwd'
+
+
+# edit files
+alias cp='cp -iv'
+alias mv='mv -iv'
 alias rm='rm -iv'
 alias rmf='rm -vf'
 alias rmr='rm -ir'
 alias rmrf='rm -rvf'
-alias rl="exec ${SHELL} -l" #reload
-alias so='source'
-alias tree='tree -ah'
-alias tre='tree -ah'
-alias tl='tree -ahfL 2'
 
+
+# others
+alias b='brew'
+alias his='history'
+alias grep='grep --color'
+alias ner='2>/dev/null'
+alias rl="exec ${SHELL} -l" #reload
+
+
+# vim
 alias v='vi'
 alias vz='vi ~/.zshrc'
+alias so='source'
 alias sz='source ~/.zshrc'
-```
+
+
+# open apps
+alias opc='open /Applications/CotEditor.app'
+alias opz='s;open /Applications/CotEditor.app .zshrc'
+alias opfire='open /Applications/Firefox.app'
+alias opjb='gj;open /Applications/Firefox.app _build/html/index.html'
+alias opgoo='open /Applications/Google\ Chrome.app '
+alias opsafari='open /Applications/Safari.app'
+``` 
 
 ## Mac OS settings
 ### Show/hide hidden files in Finder
 ```
 alias show="defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder"
 alias hide="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder"
-```
+``` 
 
 ### Hide/show all desktop icons
 ```
 alias dhide="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
 alias dshow="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
 ```
+
+### Screenshot
+```
+alias dwl='defaults write com.apple.screencapture location'
+alias ddl='defaults delete com.apple.screencapture location'
+alias drl='defaults read com.apple.screencapture location'
+``` 
 
 
 ## GitHub

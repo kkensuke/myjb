@@ -498,6 +498,11 @@ title="Print to PDF"
      1.3.2.2. Hide/show all desktop icons
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#screenshot">
+     1.3.2.3. Screenshot
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -614,6 +619,11 @@ title="Print to PDF"
      1.3.2.2. Hide/show all desktop icons
     </a>
    </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#screenshot">
+     1.3.2.3. Screenshot
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -705,24 +715,18 @@ Some commands are long and you would think that copying them every time is a was
 </section>
 <section id="frequently-used-commands">
 <h3><span class="section-number">1.3.1.3. </span>Frequently used commands<a class="headerlink" href="#frequently-used-commands" title="Permalink to this headline">#</a></h3>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># https://www.cyberciti.biz/faq/apple-mac-osx-terminal-color-ls-output-option/</span>
-<span class="n">export</span> <span class="n">CLICOLOR</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">export</span> <span class="n">LSCOLORS</span><span class="o">=</span><span class="n">GxFxCxDxBxegedabagaced</span>
-
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># change directory</span>
 <span class="n">alias</span> <span class="o">..=</span><span class="s1">&#39;cd ..&#39;</span>
 <span class="n">alias</span> <span class="o">...=</span><span class="s1">&#39;cd ../..&#39;</span>
 <span class="n">alias</span> <span class="o">....=</span><span class="s1">&#39;cd ../../..&#39;</span>
-
-<span class="n">alias</span> <span class="n">b</span><span class="o">=</span><span class="s1">&#39;brew&#39;</span>
 <span class="n">alias</span> <span class="n">cb</span><span class="o">=</span><span class="s1">&#39;cd -&#39;</span>
 <span class="n">alias</span> <span class="n">d</span><span class="o">=</span><span class="s1">&#39;cd ~/Desktop&#39;</span>
 <span class="n">alias</span> <span class="n">dl</span><span class="o">=</span><span class="s2">&quot;cd ~/Downloads&quot;</span>
-<span class="n">alias</span> <span class="n">class</span><span class="o">=</span><span class="s1">&#39;cd ~/My\ Drive/master/class/&#39;</span>
 <span class="n">alias</span> <span class="n">h</span><span class="o">=</span><span class="s1">&#39;cd ~&#39;</span>
 <span class="n">alias</span> <span class="o">/=</span><span class="s1">&#39;cd /&#39;</span>
-<span class="n">alias</span> <span class="n">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
-<span class="n">alias</span> <span class="n">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
-<span class="n">alias</span> <span class="n">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+
+
+<span class="c1"># show files</span>
 <span class="c1"># --color=auto does not work for terminal, but for iterm2</span>
 <span class="c1">#alias l=&#39;ls -CF --color=auto&#39;</span>
 <span class="c1">#alias ls=&#39;ls -CF --color=auto&#39;</span>
@@ -730,27 +734,43 @@ Some commands are long and you would think that copying them every time is a was
 <span class="n">alias</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;ls -CFG&#39;</span>
 <span class="n">alias</span> <span class="n">la</span><span class="o">=</span><span class="s1">&#39;l -a&#39;</span>
 <span class="n">alias</span> <span class="n">ll</span><span class="o">=</span><span class="s1">&#39;l -ahlS&#39;</span>
-<span class="n">alias</span> <span class="n">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
-<span class="n">alias</span> <span class="n">ner</span><span class="o">=</span><span class="s1">&#39;2&gt;/dev/null&#39;</span>
-<span class="n">alias</span> <span class="n">opc</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app &#39;</span>
-<span class="n">alias</span> <span class="n">opz</span><span class="o">=</span><span class="s1">&#39;s;open /Applications/CotEditor.app .zshrc&#39;</span>
-<span class="n">alias</span> <span class="n">opfire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app &#39;</span>
-<span class="n">alias</span> <span class="n">opgoo</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app &#39;</span>
-<span class="n">alias</span> <span class="n">opsafari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app &#39;</span>
+<span class="n">alias</span> <span class="n">tree</span><span class="o">=</span><span class="s1">&#39;tree -ah&#39;</span>
+<span class="n">alias</span> <span class="n">tr</span><span class="o">=</span><span class="s1">&#39;tree&#39;</span>
+<span class="n">alias</span> <span class="n">tl</span><span class="o">=</span><span class="s1">&#39;tree -ahfL&#39;</span>
 <span class="n">alias</span> <span class="n">p</span><span class="o">=</span><span class="s1">&#39;pwd&#39;</span>
+
+
+<span class="c1"># edit files</span>
+<span class="n">alias</span> <span class="n">cp</span><span class="o">=</span><span class="s1">&#39;cp -iv&#39;</span>
+<span class="n">alias</span> <span class="n">mv</span><span class="o">=</span><span class="s1">&#39;mv -iv&#39;</span>
 <span class="n">alias</span> <span class="n">rm</span><span class="o">=</span><span class="s1">&#39;rm -iv&#39;</span>
 <span class="n">alias</span> <span class="n">rmf</span><span class="o">=</span><span class="s1">&#39;rm -vf&#39;</span>
 <span class="n">alias</span> <span class="n">rmr</span><span class="o">=</span><span class="s1">&#39;rm -ir&#39;</span>
 <span class="n">alias</span> <span class="n">rmrf</span><span class="o">=</span><span class="s1">&#39;rm -rvf&#39;</span>
-<span class="n">alias</span> <span class="n">rl</span><span class="o">=</span><span class="s2">&quot;exec $</span><span class="si">{SHELL}</span><span class="s2"> -l&quot;</span> <span class="c1">#reload</span>
-<span class="n">alias</span> <span class="n">so</span><span class="o">=</span><span class="s1">&#39;source&#39;</span>
-<span class="n">alias</span> <span class="n">tree</span><span class="o">=</span><span class="s1">&#39;tree -ah&#39;</span>
-<span class="n">alias</span> <span class="n">tre</span><span class="o">=</span><span class="s1">&#39;tree -ah&#39;</span>
-<span class="n">alias</span> <span class="n">tl</span><span class="o">=</span><span class="s1">&#39;tree -ahfL 2&#39;</span>
 
+
+<span class="c1"># others</span>
+<span class="n">alias</span> <span class="n">b</span><span class="o">=</span><span class="s1">&#39;brew&#39;</span>
+<span class="n">alias</span> <span class="n">his</span><span class="o">=</span><span class="s1">&#39;history&#39;</span>
+<span class="n">alias</span> <span class="n">grep</span><span class="o">=</span><span class="s1">&#39;grep --color&#39;</span>
+<span class="n">alias</span> <span class="n">ner</span><span class="o">=</span><span class="s1">&#39;2&gt;/dev/null&#39;</span>
+<span class="n">alias</span> <span class="n">rl</span><span class="o">=</span><span class="s2">&quot;exec $</span><span class="si">{SHELL}</span><span class="s2"> -l&quot;</span> <span class="c1">#reload</span>
+
+
+<span class="c1"># vim</span>
 <span class="n">alias</span> <span class="n">v</span><span class="o">=</span><span class="s1">&#39;vi&#39;</span>
 <span class="n">alias</span> <span class="n">vz</span><span class="o">=</span><span class="s1">&#39;vi ~/.zshrc&#39;</span>
+<span class="n">alias</span> <span class="n">so</span><span class="o">=</span><span class="s1">&#39;source&#39;</span>
 <span class="n">alias</span> <span class="n">sz</span><span class="o">=</span><span class="s1">&#39;source ~/.zshrc&#39;</span>
+
+
+<span class="c1"># open apps</span>
+<span class="n">alias</span> <span class="n">opc</span><span class="o">=</span><span class="s1">&#39;open /Applications/CotEditor.app&#39;</span>
+<span class="n">alias</span> <span class="n">opz</span><span class="o">=</span><span class="s1">&#39;s;open /Applications/CotEditor.app .zshrc&#39;</span>
+<span class="n">alias</span> <span class="n">opfire</span><span class="o">=</span><span class="s1">&#39;open /Applications/Firefox.app&#39;</span>
+<span class="n">alias</span> <span class="n">opjb</span><span class="o">=</span><span class="s1">&#39;gj;open /Applications/Firefox.app _build/html/index.html&#39;</span>
+<span class="n">alias</span> <span class="n">opgoo</span><span class="o">=</span><span class="s1">&#39;open /Applications/Google\ Chrome.app &#39;</span>
+<span class="n">alias</span> <span class="n">opsafari</span><span class="o">=</span><span class="s1">&#39;open /Applications/Safari.app&#39;</span>
 </pre></div>
 </div>
 </section>
@@ -768,6 +788,14 @@ Some commands are long and you would think that copying them every time is a was
 <h3><span class="section-number">1.3.2.2. </span>Hide/show all desktop icons<a class="headerlink" href="#hide-show-all-desktop-icons" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">dhide</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool false &amp;&amp; killall Finder&quot;</span>
 <span class="n">alias</span> <span class="n">dshow</span><span class="o">=</span><span class="s2">&quot;defaults write com.apple.finder CreateDesktop -bool true &amp;&amp; killall Finder&quot;</span>
+</pre></div>
+</div>
+</section>
+<section id="screenshot">
+<h3><span class="section-number">1.3.2.3. </span>Screenshot<a class="headerlink" href="#screenshot" title="Permalink to this headline">#</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">dwl</span><span class="o">=</span><span class="s1">&#39;defaults write com.apple.screencapture location&#39;</span>
+<span class="n">alias</span> <span class="n">ddl</span><span class="o">=</span><span class="s1">&#39;defaults delete com.apple.screencapture location&#39;</span>
+<span class="n">alias</span> <span class="n">drl</span><span class="o">=</span><span class="s1">&#39;defaults read com.apple.screencapture location&#39;</span>
 </pre></div>
 </div>
 </section>
