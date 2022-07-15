@@ -58,7 +58,6 @@ git remote add origin https://github.com/Username/test-book.git
 git push -u origin main
 ```
 
-One time
 ```zsh
 $ pip install ghp-import
 $ ghp-import -n -p -f _build/html
