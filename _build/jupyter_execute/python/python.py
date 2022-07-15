@@ -150,7 +150,7 @@ print(l)
 # In[11]:
 
 
-# You can use other types of data in a list.
+# You can use different types of data in a list.
 l = [3,4,5,'a','b','c', True, False, [1,2,3]]
 
 
