@@ -114,31 +114,10 @@ alias gpl='git pull'
 alias gpom='git push origin main'
 alias gs='git status'
 ```
-### 2 ways to define aliases
-#### Non-interactive
-```
-alias gcm='git commit -m '
-# usage: gcm "add"
-
-Or
-
-# use alias as a function
-gcm(){ git commit -m "$1" }
-# usage: gcm add
-```
-
-#### Interactive
-```
-gcm() {
-	echo "Comment: " && read comment
-	git commit -m "${comment}"
-}
-```
-
 
 ### Define an alias of several commands
 ```
-gacp(){
+gacp() {
 	git add .
 	git commit -m "$1"
 	git push origin main
@@ -155,6 +134,16 @@ ginit() {
 }
 ```
 You need to install [GitHub CLI](https://cli.github.com/) to use `gh` command.
+
+
+### Interactive
+```
+gcm() {
+	echo "Comment: " && read comment
+	git commit -m "${comment}"
+}
+```
+
 
 ### gitignore.io
 gitignore.io enable us to make .gitignore file easily
@@ -185,7 +174,7 @@ alias deac='deactivate'
 ## Latex
 ### Copy latex-template directory to somewhere;
 ```
-mklt(){
+mklt() {
 	cp -r ~/github/physics/report/latex-template ./$1
 }
 ```
