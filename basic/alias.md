@@ -32,9 +32,6 @@ alias /='cd /'
 
 
 # show files
-# --color=auto does not work for terminal, but for iterm2
-#alias l='ls -CF --color=auto'
-#alias ls='ls -CF --color=auto'
 alias l='ls -CFG'
 alias ls='ls -CFG'
 alias la='l -a'
@@ -71,9 +68,9 @@ alias sz='source ~/.zshrc'
 
 # open apps
 alias opc='open /Applications/CotEditor.app'
-alias opfire='open /Applications/Firefox.app'
-alias opgo='open /Applications/Google\ Chrome.app '
-alias opsafari='open /Applications/Safari.app'
+alias firefox='open /Applications/Firefox.app'
+alias chrome='open /Applications/Google\ Chrome.app'
+alias safari='open /Applications/Safari.app'
 ``` 
 
 ## Mac OS settings
