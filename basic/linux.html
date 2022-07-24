@@ -482,18 +482,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brace-expansion">
+     1.2.1.4. Brace Expansion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#pipeline-and-redirect">
-     1.2.1.4. Pipeline and redirect
+     1.2.1.5. Pipeline and redirect
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#combine-commands">
-     1.2.1.5. Combine commands
+     1.2.1.6. Combine commands
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#symbolic-links">
-     1.2.1.6. Symbolic links
+     1.2.1.7. Symbolic links
     </a>
    </li>
   </ul>
@@ -543,18 +548,23 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#brace-expansion">
+     1.2.1.4. Brace Expansion
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#pipeline-and-redirect">
-     1.2.1.4. Pipeline and redirect
+     1.2.1.5. Pipeline and redirect
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#combine-commands">
-     1.2.1.5. Combine commands
+     1.2.1.6. Combine commands
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#symbolic-links">
-     1.2.1.6. Symbolic links
+     1.2.1.7. Symbolic links
     </a>
    </li>
   </ul>
@@ -856,7 +866,7 @@ chmod u+x file
 <hr class="docutils" />
 <section id="shell-globbing">
 <h3><span class="section-number">1.2.1.3. </span>Shell globbing<a class="headerlink" href="#shell-globbing" title="Permalink to this headline">#</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">glob</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. Using <code class="docutils literal notranslate"><span class="pre">glob</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
+<p><code class="docutils literal notranslate"><span class="pre">globbing</span> <span class="pre">patterns</span></code> specify sets of filenames with wildcard characters. <code class="docutils literal notranslate"><span class="pre">globbing</span> <span class="pre">patterns</span></code> is a powerful way to find files that match a pattern. For example, <code class="docutils literal notranslate"><span class="pre">*.txt</span></code> means all files with the extension <code class="docutils literal notranslate"><span class="pre">.txt</span></code> in the current directory.</p>
 <p>There are several common wildcard characters:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* : matches zero or more characters
 ? : matches any single character
@@ -915,6 +925,7 @@ grep <span class="o">[</span>-Options<span class="o">]</span> <span class="s1">&
 
 grep <span class="s1">&#39;word&#39;</span> file1 file2 file3
 grep <span class="s1">&#39;string1 string2&#39;</span>  filename
+ls <span class="p">|</span> grep <span class="s1">&#39;\\.txt$)&#39;</span>
 </pre></div>
 </div>
 <table class="colwidths-auto table">
@@ -968,6 +979,9 @@ grep <span class="s1">&#39;string1 string2&#39;</span>  filename
 </tr>
 </tbody>
 </table>
+</section>
+<section id="brace-expansion">
+<h3><span class="section-number">1.2.1.4. </span>Brace Expansion<a class="headerlink" href="#brace-expansion" title="Permalink to this headline">#</a></h3>
 <p>Some examples:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># move all files and directories to `dir`</span>
 mv * dir
@@ -981,7 +995,7 @@ mv *<span class="o">{</span>.py,.sh<span class="o">}</span> dir
 </section>
 <hr class="docutils" />
 <section id="pipeline-and-redirect">
-<h3><span class="section-number">1.2.1.4. </span>Pipeline and redirect<a class="headerlink" href="#pipeline-and-redirect" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">1.2.1.5. </span>Pipeline and redirect<a class="headerlink" href="#pipeline-and-redirect" title="Permalink to this headline">#</a></h3>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>`|`: pipe
 `&gt;`: redirect
 </pre></div>
@@ -1020,7 +1034,7 @@ ls /Desktop <span class="p">|</span> tee -a<span class="o">[</span>--append<span
 </section>
 <hr class="docutils" />
 <section id="combine-commands">
-<h3><span class="section-number">1.2.1.5. </span>Combine commands<a class="headerlink" href="#combine-commands" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">1.2.1.6. </span>Combine commands<a class="headerlink" href="#combine-commands" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">command2</span></code> after <code class="docutils literal notranslate"><span class="pre">commmand1</span></code>    <code class="docutils literal notranslate"><span class="pre">command2</span></code> is executed even when <code class="docutils literal notranslate"><span class="pre">command1</span></code> puts stderr</p></li>
 </ul>
@@ -1064,7 +1078,7 @@ ls ~ <span class="p">|</span> xargs -L <span class="m">1</span> <span class="nb"
 </section>
 <hr class="docutils" />
 <section id="symbolic-links">
-<h3><span class="section-number">1.2.1.6. </span>Symbolic links<a class="headerlink" href="#symbolic-links" title="Permalink to this headline">#</a></h3>
+<h3><span class="section-number">1.2.1.7. </span>Symbolic links<a class="headerlink" href="#symbolic-links" title="Permalink to this headline">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">ln</span> <span class="pre">-s</span></code>: make symbolic links<br>
 Symbolic links is the file that refers to another file.</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s original-dir/file where/to/put/SymboliLink

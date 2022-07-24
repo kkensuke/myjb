@@ -239,7 +239,7 @@ You can use `chmod -R` to change permissions recursively.
 ---
 ### Shell globbing
 
-`glob patterns` specify sets of filenames with wildcard characters. Using `glob` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
+`globbing patterns` specify sets of filenames with wildcard characters. `globbing patterns` is a powerful way to find files that match a pattern. For example, `*.txt` means all files with the extension `.txt` in the current directory.
 
 There are several common wildcard characters:
 ```
@@ -304,6 +304,7 @@ grep [-Options] 'word' filename
 
 grep 'word' file1 file2 file3
 grep 'string1 string2'  filename
+ls | grep '\\.txt$)'
 ```
 
 | Options |	Description |
@@ -322,6 +323,9 @@ grep 'string1 string2'  filename
 |--color | Display matched pattern in colors|
 |-m NUMBER | Stop grep command NUMBER selected lines|
 |-o | Display only matched parts of lines|
+
+### Brace Expansion
+
 
 Some examples:
 ```bash
